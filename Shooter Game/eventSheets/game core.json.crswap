@@ -1,0 +1,5560 @@
+{
+	"name": "GAME CORE",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "GLOBAL VARIABLES"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "On Start",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 692585381970969
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Player_Fill",
+							"sid": 656611457546487,
+							"parameters": {
+								"object": "Player",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Player_Fill",
+							"sid": 809818980756437,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Player",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-world-gravity",
+							"objectClass": "Asteroids",
+							"sid": 357515840196037,
+							"behaviorType": "Physics",
+							"parameters": {
+								"gravity": "0"
+							}
+						},
+						{
+							"id": "set-solid-collision-filter",
+							"objectClass": "Player",
+							"sid": 623566530070741,
+							"parameters": {
+								"mode": "exclusive",
+								"tags": "\"Drone Shield\""
+							}
+						}
+					],
+					"sid": 261339697548126
+				}
+			],
+			"sid": 627608858107802
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Every Tick",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Controller",
+							"sid": 458730869983026,
+							"parameters": {
+								"instance-variable": "AngleToPlayer",
+								"value": "angle(Self.X, Self.Y, Player.X, Player.Y)"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Controller",
+							"sid": 123490109682162,
+							"parameters": {
+								"instance-variable": "DistanceToPlayer",
+								"value": "distance(Self.X, Self.Y, Player.X, Player.Y)"
+							}
+						}
+					],
+					"sid": 306009652805590,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 238711855095341,
+									"parameters": {
+										"instance-variable": "IsImmobile"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle-toward-position",
+									"objectClass": "Player",
+									"sid": 765893218849505,
+									"parameters": {
+										"x": "Mouse.X",
+										"y": "Mouse.Y"
+									}
+								}
+							],
+							"sid": 522678959486903
+						}
+					]
+				}
+			],
+			"sid": 742586482447509
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Camera",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "Camera Move",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Camera",
+							"sid": 630240867508420,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "Player.X",
+								"end-y": "Player.Y",
+								"time": "0.2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 138431869932993
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 516342169009034,
+							"parameters": {
+								"interval-seconds": "0.2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Camera Move",
+							"sid": 473970206894441
+						}
+					],
+					"sid": 182933857712724
+				}
+			],
+			"sid": 387606181202228
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "Player Move - Up",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 876144117154348,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "up"
+							}
+						}
+					],
+					"sid": 812547990000371
+				},
+				{
+					"functionName": "Player Move - Down",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 248604730687357,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "down"
+							}
+						}
+					],
+					"sid": 827928185777387
+				},
+				{
+					"functionName": "Player Move - Left",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 537680410213155,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 608985924508772
+				},
+				{
+					"functionName": "Player Move - Right",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 747000221109695,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 709278777598989
+				},
+				{
+					"functionName": "Player Activate Current Power",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "PowerNum",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 254660673743169
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 435100412680749,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 255765436448636,
+									"parameters": {
+										"instance-variable": "IsPowerActive"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 743678419214587,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 341447304684163,
+											"parameters": {
+												"variable": "PowerNum",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 910614393539234,
+											"parameters": {
+												"object": "Player_ParticleShield",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "pin-to-object-properties",
+											"objectClass": "Player_ParticleShield",
+											"sid": 767795593335826,
+											"behaviorType": "Pin",
+											"parameters": {
+												"pin-to": "Player",
+												"x": true,
+												"y": true,
+												"angle": true,
+												"width-type": "no",
+												"height-type": "no",
+												"z": false
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 879288445041597,
+											"parameters": {
+												"instance-variable": "IsPowerActive",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 956875551019110
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 419535513281666,
+											"parameters": {
+												"variable": "PowerNum",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 952923136130894,
+											"parameters": {
+												"instance-variable": "IsPowerActive",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 968530938974145
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 504921416792643,
+											"parameters": {
+												"variable": "PowerNum",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 621388895672786,
+											"parameters": {
+												"instance-variable": "IsPowerActive",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-scale",
+											"objectClass": "Player",
+											"sid": 138290633364646,
+											"parameters": {
+												"scale": "0.2"
+											}
+										},
+										{
+											"id": "set-scale",
+											"objectClass": "Player_Fill",
+											"sid": 439354445099172,
+											"parameters": {
+												"scale": "0.2"
+											}
+										}
+									],
+									"sid": 594070133165687
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 175305719496280,
+											"parameters": {
+												"variable": "PowerNum",
+												"comparison": 0,
+												"value": "3"
+											}
+										},
+										{
+											"id": "pick-nearestfurthest",
+											"objectClass": "TeleportPoint",
+											"sid": 350767172051543,
+											"parameters": {
+												"which": "nearest",
+												"x": "Player.X",
+												"y": "Player.Y"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "Player",
+											"sid": 500581966067469,
+											"parameters": {
+												"object": "TeleportPoint",
+												"image-point-optional": "0"
+											}
+										}
+									],
+									"sid": 367991022656386
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "Player Deactivate Current Power",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "PowerNum",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 273671328441822
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 346959786423822,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 792419639509401,
+									"parameters": {
+										"instance-variable": "IsPowerActive"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 242155576387250,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 947476973499460,
+											"parameters": {
+												"variable": "PowerNum",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "Player_ParticleShield",
+											"sid": 524445712611550
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 353252681694387,
+											"parameters": {
+												"instance-variable": "IsPowerActive",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 557879559170786
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 158763313149592,
+											"parameters": {
+												"variable": "PowerNum",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 443549554301045,
+											"parameters": {
+												"instance-variable": "IsPowerActive",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 899136613552102
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 672912721750946,
+											"parameters": {
+												"variable": "PowerNum",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 101490114861909,
+											"parameters": {
+												"instance-variable": "IsPowerActive",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-scale",
+											"objectClass": "Player",
+											"sid": 926028902277220,
+											"parameters": {
+												"scale": "1"
+											}
+										},
+										{
+											"id": "set-scale",
+											"objectClass": "Player_Fill",
+											"sid": 761732304718043,
+											"parameters": {
+												"scale": "1"
+											}
+										}
+									],
+									"sid": 833758162633453
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "Player Summon Current Drone",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "DroneNum",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 734805286573828
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 811011321561623,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 243223205019254,
+									"parameters": {
+										"variable": "DroneNum",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Player",
+									"sid": 865533375988684,
+									"parameters": {
+										"object": "Player_SwarmDrone",
+										"layer": "L_Main",
+										"image-point": "2"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Player",
+									"sid": 453901025711583,
+									"parameters": {
+										"object": "Player_SwarmDrone",
+										"layer": "L_Main",
+										"image-point": "3"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Player",
+									"sid": 318897855306736,
+									"parameters": {
+										"object": "Player_SwarmDrone",
+										"layer": "L_Main",
+										"image-point": "4"
+									}
+								}
+							],
+							"sid": 829508747213090
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 749428180654673,
+									"parameters": {
+										"instance-variable": "IsDroneActive"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 842994090648078
+						}
+					]
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Controls",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 423635869811364,
+									"parameters": {
+										"instance-variable": "IsImmobile"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 194305922292724,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 820014335790946,
+											"parameters": {
+												"key": 87
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Player Move - Up",
+											"sid": 913091168143720
+										}
+									],
+									"sid": 519951370730322
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 555789258840055,
+											"parameters": {
+												"key": 65
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Player Move - Left",
+											"sid": 943140897182982
+										}
+									],
+									"sid": 414513608046871
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 928661327305617,
+											"parameters": {
+												"key": 83
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Player Move - Down",
+											"sid": 581594239685631
+										}
+									],
+									"sid": 438931943989928
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 619587071778459,
+											"parameters": {
+												"key": 68
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Player Move - Right",
+											"sid": 337045912789665
+										}
+									],
+									"sid": 385923112609057
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 922390256355164,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Player Summon Current Drone",
+									"sid": 687857058578586,
+									"parameters": [
+										"Player.Drone_CurrentDroneNum"
+									]
+								}
+							],
+							"sid": 465312902137692
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-button-released",
+									"objectClass": "Mouse",
+									"sid": 385478124435659,
+									"parameters": {
+										"mouse-button": "left"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 456365976900257,
+									"parameters": {
+										"instance-variable": "Weapon_CurrentWeaponNum",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 797871309155565,
+									"parameters": {
+										"instance-variable": "IsImmobile"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 219294734289329,
+									"parameters": {
+										"instance-variable": "IsImmobile",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 416442877180568
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "mouse-button-is-down",
+									"objectClass": "Mouse",
+									"sid": 346031129297226,
+									"parameters": {
+										"mouse-button": "left"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 238252425854498,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 256773323787235,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentWeaponNum",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 365264801066055
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-timer",
+											"objectClass": "Player",
+											"sid": 304959292079580,
+											"behaviorType": "Timer",
+											"parameters": {
+												"tag": "\"Shoot\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 354469101019925,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player",
+													"sid": 205180007114860,
+													"parameters": {
+														"instance-variable": "Weapon_CurrentWeaponNum",
+														"comparison": 0,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "Create Projectile",
+													"sid": 216551713844760,
+													"parameters": [
+														"Player.UID",
+														"Player.ImagePointX(1)",
+														"Player.ImagePointY(1)",
+														"Player.Angle",
+														"0",
+														"0",
+														"1",
+														"3",
+														"150",
+														"0",
+														true,
+														false,
+														false,
+														false,
+														false,
+														false,
+														false,
+														true,
+														true,
+														true,
+														false
+													]
+												}
+											],
+											"sid": 879028019515098
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player",
+													"sid": 351356028261697,
+													"parameters": {
+														"instance-variable": "Weapon_CurrentWeaponNum",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "Create Projectile",
+													"sid": 943703758722227,
+													"parameters": [
+														"Player.UID",
+														"Player.ImagePointX(1)",
+														"Player.ImagePointY(1)",
+														"Player.Angle",
+														"1",
+														"0",
+														"1",
+														"1",
+														"300",
+														"0",
+														true,
+														false,
+														false,
+														false,
+														false,
+														false,
+														false,
+														true,
+														true,
+														true,
+														false
+													]
+												}
+											],
+											"sid": 707369757738801,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-boolean-instance-variable-set",
+															"objectClass": "Player",
+															"sid": 869393104002663,
+															"parameters": {
+																"instance-variable": "IsImmobile"
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "Player",
+															"sid": 569355241644608,
+															"parameters": {
+																"instance-variable": "IsImmobile",
+																"value": "true"
+															}
+														}
+													],
+													"sid": 949393486999939
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player",
+													"sid": 706650208351318,
+													"parameters": {
+														"instance-variable": "Weapon_CurrentWeaponNum",
+														"comparison": 0,
+														"value": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "Create Projectile",
+													"sid": 553507329981498,
+													"parameters": [
+														"Player.UID",
+														"Player.ImagePointX(1)",
+														"Player.ImagePointY(1)",
+														"Player.Angle",
+														"1",
+														"0",
+														"1",
+														"5",
+														"300",
+														"0",
+														true,
+														false,
+														false,
+														true,
+														true,
+														false,
+														false,
+														true,
+														false,
+														true,
+														false
+													]
+												},
+												{
+													"callFunction": "Create Projectile",
+													"sid": 340296967573631,
+													"parameters": [
+														"Player.UID",
+														"Player.ImagePointX(1)",
+														"Player.ImagePointY(1)",
+														"Player.Angle - 20",
+														"1",
+														"0",
+														"1",
+														"5",
+														"300",
+														"0",
+														true,
+														false,
+														false,
+														true,
+														true,
+														false,
+														false,
+														true,
+														false,
+														true,
+														false
+													]
+												},
+												{
+													"callFunction": "Create Projectile",
+													"sid": 198352692253736,
+													"parameters": [
+														"Player.UID",
+														"Player.ImagePointX(1)",
+														"Player.ImagePointY(1)",
+														"Player.Angle + 20",
+														"1",
+														"0",
+														"1",
+														"5",
+														"300",
+														"0",
+														true,
+														false,
+														false,
+														true,
+														true,
+														false,
+														false,
+														true,
+														false,
+														true,
+														false
+													]
+												}
+											],
+											"sid": 785454274257831
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player",
+													"sid": 935093655319783,
+													"parameters": {
+														"instance-variable": "Weapon_CurrentWeaponNum",
+														"comparison": 0,
+														"value": "3"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "Create Projectile",
+													"sid": 369380824607292,
+													"parameters": [
+														"Player.UID",
+														"Player.ImagePointX(1)",
+														"Player.ImagePointY(1)",
+														"Player.Angle - 30",
+														"1",
+														"0",
+														"1",
+														"3",
+														"150",
+														"0",
+														true,
+														false,
+														false,
+														true,
+														false,
+														false,
+														false,
+														true,
+														false,
+														true,
+														true
+													]
+												},
+												{
+													"callFunction": "Create Projectile",
+													"sid": 727631401326707,
+													"parameters": [
+														"Player.UID",
+														"Player.ImagePointX(1)",
+														"Player.ImagePointY(1)",
+														"Player.Angle + 30",
+														"1",
+														"0",
+														"1",
+														"3",
+														"150",
+														"0",
+														true,
+														false,
+														false,
+														true,
+														false,
+														false,
+														false,
+														true,
+														false,
+														true,
+														true
+													]
+												}
+											],
+											"sid": 475607097913264
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player",
+													"sid": 117649266959658,
+													"parameters": {
+														"instance-variable": "Weapon_CurrentWeaponNum",
+														"comparison": 0,
+														"value": "4"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "Create Projectile",
+													"sid": 464731327659681,
+													"parameters": [
+														"Player.UID",
+														"Player.ImagePointX(1)",
+														"Player.ImagePointY(1)",
+														"Player.Angle + (random(60)-30)",
+														"1",
+														"0",
+														"1",
+														"3",
+														"200",
+														"0",
+														true,
+														false,
+														false,
+														false,
+														false,
+														false,
+														false,
+														false,
+														true,
+														true,
+														false
+													]
+												},
+												{
+													"callFunction": "Create Projectile",
+													"sid": 601376390060509,
+													"parameters": [
+														"Player.UID",
+														"Player.ImagePointX(1)",
+														"Player.ImagePointY(1)",
+														"Player.Angle + (random(60)-30)",
+														"1",
+														"0",
+														"1",
+														"3",
+														"200",
+														"0",
+														true,
+														false,
+														false,
+														false,
+														false,
+														false,
+														false,
+														false,
+														true,
+														true,
+														false
+													]
+												},
+												{
+													"callFunction": "Create Projectile",
+													"sid": 218766992094857,
+													"parameters": [
+														"Player.UID",
+														"Player.ImagePointX(1)",
+														"Player.ImagePointY(1)",
+														"Player.Angle + (random(60)-30)",
+														"1",
+														"0",
+														"1",
+														"3",
+														"200",
+														"0",
+														true,
+														false,
+														false,
+														false,
+														false,
+														false,
+														false,
+														false,
+														true,
+														true,
+														false
+													]
+												},
+												{
+													"callFunction": "Create Projectile",
+													"sid": 465801219318769,
+													"parameters": [
+														"Player.UID",
+														"Player.ImagePointX(1)",
+														"Player.ImagePointY(1)",
+														"Player.Angle + (random(60)-30)",
+														"1",
+														"0",
+														"1",
+														"3",
+														"200",
+														"0",
+														true,
+														false,
+														false,
+														false,
+														false,
+														false,
+														false,
+														false,
+														true,
+														true,
+														false
+													]
+												},
+												{
+													"callFunction": "Create Projectile",
+													"sid": 697745453659033,
+													"parameters": [
+														"Player.UID",
+														"Player.ImagePointX(1)",
+														"Player.ImagePointY(1)",
+														"Player.Angle + (random(60)-30)",
+														"1",
+														"0",
+														"1",
+														"3",
+														"200",
+														"0",
+														true,
+														false,
+														false,
+														false,
+														false,
+														false,
+														false,
+														false,
+														true,
+														true,
+														false
+													]
+												}
+											],
+											"sid": 357174764129282
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-timer-running",
+											"objectClass": "Player",
+											"sid": 838779651155730,
+											"behaviorType": "Timer",
+											"parameters": {
+												"tag": "\"Shoot\""
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "start-timer",
+											"objectClass": "Player",
+											"sid": 357987450503183,
+											"behaviorType": "Timer",
+											"parameters": {
+												"duration": "Self.Bullet_Cooldown",
+												"type": "once",
+												"tag": "\"Shoot\""
+											}
+										}
+									],
+									"sid": 602524545986350
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-click",
+									"objectClass": "Mouse",
+									"sid": 718487835414220,
+									"parameters": {
+										"mouse-button": "right",
+										"click-type": "clicked"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Player Activate Current Power",
+									"sid": 911408631242951,
+									"parameters": [
+										"Player.Power_CurrentPowerNum"
+									]
+								}
+							],
+							"sid": 967257597144233
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-button-released",
+									"objectClass": "Mouse",
+									"sid": 110058225223914,
+									"parameters": {
+										"mouse-button": "right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Player Deactivate Current Power",
+									"sid": 530351907448497,
+									"parameters": [
+										"Player.Power_CurrentPowerNum"
+									]
+								}
+							],
+							"sid": 527039689304426
+						}
+					],
+					"sid": 175016874707121
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Weapons",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 639908138636633,
+									"parameters": {
+										"instance-variable": "Weapon_CurrentWeaponNum",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 709471538992467,
+									"parameters": {
+										"instance-variable": "Bullet_Cooldown",
+										"comparison": 1,
+										"value": "Cooldown_Weapon1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Player",
+									"sid": 955723584739190,
+									"parameters": {
+										"instance-variable": "Bullet_Cooldown",
+										"value": "Cooldown_Weapon1"
+									}
+								}
+							],
+							"sid": 697713466849260
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 981540911848882,
+									"parameters": {
+										"instance-variable": "Weapon_CurrentWeaponNum",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 708479899897628,
+									"parameters": {
+										"instance-variable": "Bullet_Cooldown",
+										"comparison": 1,
+										"value": "Cooldown_Weapon2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Player",
+									"sid": 912286419358888,
+									"parameters": {
+										"instance-variable": "Bullet_Cooldown",
+										"value": "Cooldown_Weapon2"
+									}
+								}
+							],
+							"sid": 107241763552000
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 488827235967684,
+									"parameters": {
+										"instance-variable": "Weapon_CurrentWeaponNum",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 400738229189217,
+									"parameters": {
+										"instance-variable": "Bullet_Cooldown",
+										"comparison": 1,
+										"value": "Cooldown_Weapon3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Player",
+									"sid": 166157428707202,
+									"parameters": {
+										"instance-variable": "Bullet_Cooldown",
+										"value": "Cooldown_Weapon3"
+									}
+								}
+							],
+							"sid": 196457043505654
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 401275694912777,
+									"parameters": {
+										"instance-variable": "Weapon_CurrentWeaponNum",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 177524120760582,
+									"parameters": {
+										"instance-variable": "Bullet_Cooldown",
+										"comparison": 1,
+										"value": "Cooldown_Weapon4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Player",
+									"sid": 363630181837213,
+									"parameters": {
+										"instance-variable": "Bullet_Cooldown",
+										"value": "Cooldown_Weapon4"
+									}
+								}
+							],
+							"sid": 983312440574091
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 928128735979536,
+									"parameters": {
+										"instance-variable": "Weapon_CurrentWeaponNum",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 884650569651712,
+									"parameters": {
+										"instance-variable": "Bullet_Cooldown",
+										"comparison": 1,
+										"value": "Cooldown_Weapon5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Player",
+									"sid": 682337649453435,
+									"parameters": {
+										"instance-variable": "Bullet_Cooldown",
+										"value": "Cooldown_Weapon5"
+									}
+								}
+							],
+							"sid": 929881328328678
+						}
+					],
+					"sid": 825603880415567
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Powers",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Particle Shield",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Bullet_E",
+											"sid": 417351703242606,
+											"parameters": {
+												"object": "Player_ParticleShield"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "Bullet_E",
+											"sid": 856005785557092
+										}
+									],
+									"sid": 567957848942343
+								}
+							],
+							"sid": 880112866199823
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Radar Invisibility",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [],
+							"sid": 551130883507871
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Shrink Module",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [],
+							"sid": 883686952442568
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Teleport Module",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [],
+							"sid": 353674878872331
+						}
+					],
+					"sid": 242746967060091
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Drones",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Swarm Decoy",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-timer",
+											"objectClass": "Player_SwarmDrone",
+											"sid": 579213194389919,
+											"behaviorType": "Timer",
+											"parameters": {
+												"tag": "\"new angle\""
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player_SwarmDrone",
+											"sid": 531797354637413,
+											"parameters": {
+												"instance-variable": "TargetUID",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-angle-of-motion",
+											"objectClass": "Player_SwarmDrone",
+											"sid": 843663933172013,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"angle": "Self.Bullet.AngleOfMotion + round(random(240)-120)"
+											}
+										}
+									],
+									"sid": 900698048985161
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player_SwarmDrone",
+											"sid": 823814614954995,
+											"parameters": {
+												"object": "Enemy_Controller"
+											}
+										},
+										{
+											"id": "is-enabled",
+											"objectClass": "Player_SwarmDrone",
+											"sid": 423363677960554,
+											"behaviorType": "Bullet"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "Player_SwarmDrone",
+											"sid": 641188979446491,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"state": "disabled"
+											}
+										}
+									],
+									"sid": 101821483947756
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player_SwarmDrone",
+											"sid": 749831739618228,
+											"parameters": {
+												"object": "Enemy_Controller"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "is-enabled",
+											"objectClass": "Player_SwarmDrone",
+											"sid": 374745587937002,
+											"behaviorType": "Bullet",
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "Player_SwarmDrone",
+											"sid": 370339852022016,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"state": "enabled"
+											}
+										}
+									],
+									"sid": 910211718026680
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 805136501994643,
+											"parameters": {
+												"object": "Player_SwarmDrone"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 839716755452282,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player_SwarmDrone",
+													"sid": 265781480019951,
+													"parameters": {
+														"instance-variable": "TargetUID",
+														"comparison": 0,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 265015971486212,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "has-los-to-object",
+															"objectClass": "Player_SwarmDrone",
+															"sid": 442128303238355,
+															"behaviorType": "LineOfSight",
+															"parameters": {
+																"object": "Enemy_Controller",
+																"image-point": "0"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Player_SwarmDrone",
+															"sid": 451553346263130,
+															"parameters": {
+																"instance-variable": "TargetUID",
+																"value": "Enemy_Controller.UID"
+															}
+														}
+													],
+													"sid": 327019907952864
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 279930800634756
+														}
+													],
+													"actions": [],
+													"sid": 919799487254176,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "is-timer-running",
+																	"objectClass": "Player_SwarmDrone",
+																	"sid": 447528623148565,
+																	"behaviorType": "Timer",
+																	"parameters": {
+																		"tag": "\"new angle\""
+																	},
+																	"isInverted": true
+																}
+															],
+															"actions": [
+																{
+																	"id": "start-timer",
+																	"objectClass": "Player_SwarmDrone",
+																	"sid": 429819850963250,
+																	"behaviorType": "Timer",
+																	"parameters": {
+																		"duration": "1.0",
+																		"type": "once",
+																		"tag": "\"new angle\""
+																	}
+																}
+															],
+															"sid": 254040571730184
+														}
+													]
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player_SwarmDrone",
+													"sid": 998066083860525,
+													"parameters": {
+														"instance-variable": "TargetUID",
+														"comparison": 0,
+														"value": "0"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [],
+											"sid": 184344769350398,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "object-uid-exists",
+															"objectClass": "System",
+															"sid": 701933491637649,
+															"parameters": {
+																"uid": "Player_SwarmDrone.TargetUID"
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Player_SwarmDrone",
+															"sid": 652340555891932,
+															"parameters": {
+																"instance-variable": "TargetUID",
+																"value": "0"
+															}
+														}
+													],
+													"sid": 340959666978469
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "pick-by-unique-id",
+															"objectClass": "Enemy_Controller",
+															"sid": 611241503677410,
+															"parameters": {
+																"unique-id": "Player_SwarmDrone.TargetUID"
+															}
+														}
+													],
+													"actions": [],
+													"sid": 302286424937014,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "has-los-to-object",
+																	"objectClass": "Player_SwarmDrone",
+																	"sid": 563030492384541,
+																	"behaviorType": "LineOfSight",
+																	"parameters": {
+																		"object": "Enemy_Controller",
+																		"image-point": "0"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-angle-of-motion",
+																	"objectClass": "Player_SwarmDrone",
+																	"sid": 502396007157838,
+																	"behaviorType": "Bullet",
+																	"parameters": {
+																		"angle": "angle(Self.X, Self.Y, Enemy_Controller.X, Enemy_Controller.Y)"
+																	}
+																}
+															],
+															"sid": 205999963081792
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							],
+							"sid": 372711714237398
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Stealth Portal",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [],
+							"sid": 654327296243946
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Singularity Bomb",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [],
+							"sid": 134566870168523
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Swarm Spawner",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [],
+							"sid": 751099535357187
+						}
+					],
+					"sid": 522477859591832
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Health/Death",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 302662037219068
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Energy",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 888718741390113
+				}
+			],
+			"sid": 768628009271031
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemies",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Enemy_Controller",
+							"sid": 102883430314356,
+							"parameters": {
+								"instance-variable": "CurrentHealth",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Enemy_Controller",
+							"sid": 879549958201883
+						}
+					],
+					"sid": 167608886671186
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Asteroid",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Asteroids",
+									"sid": 803174909255656,
+									"parameters": {
+										"object": "Bullet_P"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-impulse-at-angle",
+									"objectClass": "Asteroids",
+									"sid": 969136153502076,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "2",
+										"angle": "Bullet_P.Bullet.AngleOfMotion",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 542624586920888
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "AsteroidLvl3",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "AsteroidLvl3",
+											"sid": 641611889227669,
+											"parameters": {
+												"object": "Bullet_P"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "AsteroidLvl3",
+											"sid": 257500853338919,
+											"parameters": {
+												"instance-variable": "Health",
+												"comparison": 3,
+												"value": "0"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Bullet_P",
+											"sid": 138509491912128,
+											"parameters": {
+												"instance-variable": "IsHeavyWeapon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "AsteroidLvl3",
+											"sid": 273331731795191
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "AsteroidLvl3",
+											"sid": 867760266334139,
+											"parameters": {
+												"object": "AsteroidLvl2",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "apply-impulse-at-angle",
+											"objectClass": "AsteroidLvl2",
+											"sid": 501893175384516,
+											"behaviorType": "Physics",
+											"parameters": {
+												"impulse": "2",
+												"angle": "random(0,360)",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "AsteroidLvl3",
+											"sid": 389044399283500,
+											"parameters": {
+												"object": "AsteroidLvl2",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "apply-impulse-at-angle",
+											"objectClass": "AsteroidLvl2",
+											"sid": 539012502817559,
+											"behaviorType": "Physics",
+											"parameters": {
+												"impulse": "2",
+												"angle": "random(0,360)",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "AsteroidLvl3",
+											"sid": 229233474469591,
+											"parameters": {
+												"object": "AsteroidLvl2",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "apply-impulse-at-angle",
+											"objectClass": "AsteroidLvl2",
+											"sid": 992222030593897,
+											"behaviorType": "Physics",
+											"parameters": {
+												"impulse": "2",
+												"angle": "random(0,360)",
+												"image-point": "0"
+											}
+										}
+									],
+									"sid": 544270303385614
+								}
+							],
+							"sid": 220789779427982
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "AsteroidLvl2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "AsteroidLvl2",
+											"sid": 324516812262692,
+											"parameters": {
+												"object": "Bullet_P"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "AsteroidLvl2",
+											"sid": 472661394032970,
+											"parameters": {
+												"instance-variable": "Health",
+												"comparison": 3,
+												"value": "0"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Bullet_P",
+											"sid": 188705542177199,
+											"parameters": {
+												"instance-variable": "IsMediumWeapon"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Bullet_P",
+											"sid": 898685465324150,
+											"parameters": {
+												"instance-variable": "IsHeavyWeapon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "AsteroidLvl2",
+											"sid": 992274577702296
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "AsteroidLvl2",
+											"sid": 216760431809386,
+											"parameters": {
+												"object": "AsteroidLvl1",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "apply-impulse-at-angle",
+											"objectClass": "AsteroidLvl1",
+											"sid": 487628919845744,
+											"behaviorType": "Physics",
+											"parameters": {
+												"impulse": "2",
+												"angle": "random(0,360)",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "AsteroidLvl2",
+											"sid": 945329700133304,
+											"parameters": {
+												"object": "AsteroidLvl1",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "apply-impulse-at-angle",
+											"objectClass": "AsteroidLvl1",
+											"sid": 288568508792278,
+											"behaviorType": "Physics",
+											"parameters": {
+												"impulse": "2",
+												"angle": "random(0,360)",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "AsteroidLvl2",
+											"sid": 317759613907201,
+											"parameters": {
+												"object": "AsteroidLvl1",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "apply-impulse-at-angle",
+											"objectClass": "AsteroidLvl1",
+											"sid": 837518664827217,
+											"behaviorType": "Physics",
+											"parameters": {
+												"impulse": "2",
+												"angle": "random(0,360)",
+												"image-point": "0"
+											}
+										}
+									],
+									"sid": 430700437349604
+								}
+							],
+							"sid": 610853010810590
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "AsteroidLvl1",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "AsteroidLvl1",
+											"sid": 253268085702114,
+											"parameters": {
+												"object": "Bullet_P"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "AsteroidLvl1",
+											"sid": 627314485633581,
+											"parameters": {
+												"instance-variable": "Health",
+												"comparison": 3,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "AsteroidLvl1",
+											"sid": 868046293393990
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "AsteroidLvl1",
+											"sid": 642302224833464,
+											"parameters": {
+												"object": "AsteroidLvl0",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "apply-impulse-at-angle",
+											"objectClass": "AsteroidLvl0",
+											"sid": 174917750995114,
+											"behaviorType": "Physics",
+											"parameters": {
+												"impulse": "2",
+												"angle": "random(0,360)",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "AsteroidLvl1",
+											"sid": 423137613752714,
+											"parameters": {
+												"object": "AsteroidLvl0",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "apply-impulse-at-angle",
+											"objectClass": "AsteroidLvl0",
+											"sid": 110282567444925,
+											"behaviorType": "Physics",
+											"parameters": {
+												"impulse": "2",
+												"angle": "random(0,360)",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "AsteroidLvl1",
+											"sid": 660987426843590,
+											"parameters": {
+												"object": "AsteroidLvl0",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "apply-impulse-at-angle",
+											"objectClass": "AsteroidLvl0",
+											"sid": 430010723046748,
+											"behaviorType": "Physics",
+											"parameters": {
+												"impulse": "2",
+												"angle": "random(0,360)",
+												"image-point": "0"
+											}
+										}
+									],
+									"sid": 678789231869747
+								}
+							],
+							"sid": 784877972307195
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Asteroidoneshot",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "AsteroidLvl0",
+											"sid": 727685509912010,
+											"parameters": {
+												"object": "Bullet_P"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "AsteroidLvl0",
+											"sid": 387723890386623
+										}
+									],
+									"sid": 152449853238011
+								}
+							],
+							"sid": 284162324524648
+						}
+					],
+					"sid": 521342131596239
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Stationary Shooting Enemy",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Enemy_Controller",
+									"sid": 114502012009715,
+									"parameters": {
+										"instance-variable": "EnemyType",
+										"comparison": 0,
+										"value": "\"Sit\""
+									}
+								},
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 423160371712496,
+									"parameters": {
+										"object": "Enemy_Controller"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 572350345148351,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-enabled",
+											"objectClass": "Enemy_Controller",
+											"sid": 424969652590052,
+											"behaviorType": "Orbit"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "Enemy_Controller",
+											"sid": 207099408650910,
+											"behaviorType": "Orbit",
+											"parameters": {
+												"state": "disabled"
+											}
+										}
+									],
+									"sid": 610635019569967
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Player",
+											"sid": 484483791128876,
+											"parameters": {
+												"instance-variable": "IsPowerActive"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [],
+									"sid": 391489099224733,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "has-los-to-object",
+													"objectClass": "Enemy_Controller",
+													"sid": 993724336987128,
+													"behaviorType": "LineOfSight",
+													"parameters": {
+														"object": "Player",
+														"image-point": "0"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 833602995163807,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "on-timer",
+															"objectClass": "Enemy_Controller",
+															"sid": 426851382299441,
+															"behaviorType": "Timer",
+															"parameters": {
+																"tag": "\"Shoot\""
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Enemy_Controller",
+															"sid": 637286480798814,
+															"parameters": {
+																"object": "Bullet_E",
+																"layer": "L_Main",
+																"image-point": "0"
+															}
+														},
+														{
+															"id": "set-angle-of-motion",
+															"objectClass": "Bullet_E",
+															"sid": 596352676207001,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
+															}
+														}
+													],
+													"sid": 153496959851266
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-timer-running",
+															"objectClass": "Enemy_Controller",
+															"sid": 337877343920484,
+															"behaviorType": "Timer",
+															"parameters": {
+																"tag": "\"Shoot\""
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [
+														{
+															"id": "start-timer",
+															"objectClass": "Enemy_Controller",
+															"sid": 291612705690588,
+															"behaviorType": "Timer",
+															"parameters": {
+																"duration": "Self.Bullet_Cooldown",
+																"type": "once",
+																"tag": "\"Shoot\""
+															}
+														}
+													],
+													"sid": 449796404143614
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Player",
+											"sid": 718120776425473,
+											"parameters": {
+												"instance-variable": "IsPowerActive"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 404312649791275,
+											"parameters": {
+												"instance-variable": "Power_CurrentPowerNum",
+												"comparison": 1,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 564743006750089,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "has-los-to-object",
+													"objectClass": "Enemy_Controller",
+													"sid": 360606242009660,
+													"behaviorType": "LineOfSight",
+													"parameters": {
+														"object": "Player",
+														"image-point": "0"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 241252635772108,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "on-timer",
+															"objectClass": "Enemy_Controller",
+															"sid": 407171062351087,
+															"behaviorType": "Timer",
+															"parameters": {
+																"tag": "\"Shoot\""
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Enemy_Controller",
+															"sid": 909776761089698,
+															"parameters": {
+																"object": "Bullet_E",
+																"layer": "L_Main",
+																"image-point": "0"
+															}
+														},
+														{
+															"id": "set-angle-of-motion",
+															"objectClass": "Bullet_E",
+															"sid": 191029180565401,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
+															}
+														}
+													],
+													"sid": 405259897574293
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-timer-running",
+															"objectClass": "Enemy_Controller",
+															"sid": 758212967025161,
+															"behaviorType": "Timer",
+															"parameters": {
+																"tag": "\"Shoot\""
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [
+														{
+															"id": "start-timer",
+															"objectClass": "Enemy_Controller",
+															"sid": 444105841013602,
+															"behaviorType": "Timer",
+															"parameters": {
+																"duration": "Self.Bullet_Cooldown",
+																"type": "once",
+																"tag": "\"Shoot\""
+															}
+														}
+													],
+													"sid": 496580175065206
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"sid": 171002448315474
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Chase & Ram Enemy",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Enemy_Controller",
+									"sid": 650089574649800,
+									"parameters": {
+										"instance-variable": "EnemyType",
+										"comparison": 0,
+										"value": "\"Chase\""
+									}
+								},
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 992962854310430,
+									"parameters": {
+										"object": "Enemy_Controller"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 191408027052765,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Enemy_Controller",
+											"sid": 267422303712167,
+											"parameters": {
+												"instance-variable": "DistanceToPlayer",
+												"comparison": 4,
+												"value": "1000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "stop",
+											"objectClass": "Enemy_Controller",
+											"sid": 155829547169288,
+											"behaviorType": "Pathfinding"
+										}
+									],
+									"sid": 610976874413859
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "has-los-to-object",
+											"objectClass": "Enemy_Controller",
+											"sid": 536523944393950,
+											"behaviorType": "LineOfSight",
+											"parameters": {
+												"object": "Player",
+												"image-point": "0"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Enemy_Controller",
+											"sid": 959587045109114,
+											"parameters": {
+												"instance-variable": "DistanceToPlayer",
+												"comparison": 3,
+												"value": "600"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 876554757975127,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-calculating-path",
+													"objectClass": "Enemy_Controller",
+													"sid": 910145123140692,
+													"behaviorType": "Pathfinding",
+													"isInverted": true
+												},
+												{
+													"id": "is-moving-along-path",
+													"objectClass": "Enemy_Controller",
+													"sid": 359217466808073,
+													"behaviorType": "Pathfinding",
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "find-path",
+													"objectClass": "Enemy_Controller",
+													"sid": 590585318083491,
+													"behaviorType": "Pathfinding",
+													"parameters": {
+														"x": "Player.X",
+														"y": "Player.Y"
+													}
+												}
+											],
+											"sid": 713748078644939
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-path-found",
+													"objectClass": "Enemy_Controller",
+													"sid": 493162068558343,
+													"behaviorType": "Pathfinding"
+												}
+											],
+											"actions": [
+												{
+													"id": "move-along-path",
+													"objectClass": "Enemy_Controller",
+													"sid": 868034015972977,
+													"behaviorType": "Pathfinding"
+												}
+											],
+											"sid": 634452134829165
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-failed-to-find-path",
+													"objectClass": "Enemy_Controller",
+													"sid": 688762625898844,
+													"behaviorType": "Pathfinding"
+												}
+											],
+											"actions": [
+												{
+													"id": "find-path",
+													"objectClass": "Enemy_Controller",
+													"sid": 384725305408613,
+													"behaviorType": "Pathfinding",
+													"parameters": {
+														"x": "Player.X",
+														"y": "Player.Y"
+													}
+												}
+											],
+											"sid": 796151572132340
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Player",
+											"sid": 272638947123700,
+											"parameters": {
+												"instance-variable": "IsPowerActive"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [],
+									"sid": 863589737261114,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "has-los-to-object",
+													"objectClass": "Enemy_Controller",
+													"sid": 719899887941189,
+													"behaviorType": "LineOfSight",
+													"parameters": {
+														"object": "Player",
+														"image-point": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-at-angle",
+													"objectClass": "Enemy_Controller",
+													"sid": 695103678549776,
+													"parameters": {
+														"angle": "Self.AngleToPlayer",
+														"distance": "Self.8Direction.MaxSpeed/60"
+													}
+												}
+											],
+											"sid": 631404838681785,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-moving-along-path",
+															"objectClass": "Enemy_Controller",
+															"sid": 256022376231679,
+															"behaviorType": "Pathfinding"
+														}
+													],
+													"actions": [
+														{
+															"id": "stop",
+															"objectClass": "Enemy_Controller",
+															"sid": 803662310649070,
+															"behaviorType": "Pathfinding"
+														}
+													],
+													"sid": 820934058701760
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Player",
+											"sid": 317092381859652,
+											"parameters": {
+												"instance-variable": "IsPowerActive"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 811437918117364,
+											"parameters": {
+												"instance-variable": "Power_CurrentPowerNum",
+												"comparison": 1,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 605200961269136,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "has-los-to-object",
+													"objectClass": "Enemy_Controller",
+													"sid": 976478938272142,
+													"behaviorType": "LineOfSight",
+													"parameters": {
+														"object": "Player",
+														"image-point": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-at-angle",
+													"objectClass": "Enemy_Controller",
+													"sid": 342382592224422,
+													"parameters": {
+														"angle": "Self.AngleToPlayer",
+														"distance": "Self.8Direction.MaxSpeed/60"
+													}
+												}
+											],
+											"sid": 529180681096865,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-moving-along-path",
+															"objectClass": "Enemy_Controller",
+															"sid": 740555626427138,
+															"behaviorType": "Pathfinding"
+														}
+													],
+													"actions": [
+														{
+															"id": "stop",
+															"objectClass": "Enemy_Controller",
+															"sid": 288222849130500,
+															"behaviorType": "Pathfinding"
+														}
+													],
+													"sid": 780987999788552
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-enabled",
+											"objectClass": "Enemy_Controller",
+											"sid": 397116399980650,
+											"behaviorType": "Pathfinding",
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "Enemy_Controller",
+											"sid": 780015979096785,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"set": "enabled"
+											}
+										}
+									],
+									"sid": 761312274046570
+								}
+							]
+						}
+					],
+					"sid": 188506413316815
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Chase & Shoot",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Enemy_Controller",
+									"sid": 183253476672590,
+									"parameters": {
+										"instance-variable": "EnemyType",
+										"comparison": 0,
+										"value": "\"Chase & Shoot\""
+									}
+								},
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 466960129720096,
+									"parameters": {
+										"object": "Enemy_Controller"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 592880486297514,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Enemy_Controller",
+											"sid": 749169972984288,
+											"parameters": {
+												"instance-variable": "DistanceToPlayer",
+												"comparison": 4,
+												"value": "1000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "stop",
+											"objectClass": "Enemy_Controller",
+											"sid": 561332294000165,
+											"behaviorType": "Pathfinding"
+										}
+									],
+									"sid": 274616805076430
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "has-los-to-object",
+											"objectClass": "Enemy_Controller",
+											"sid": 476099019741066,
+											"behaviorType": "LineOfSight",
+											"parameters": {
+												"object": "Player",
+												"image-point": "0"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Enemy_Controller",
+											"sid": 524279541326438,
+											"parameters": {
+												"instance-variable": "DistanceToPlayer",
+												"comparison": 3,
+												"value": "600"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 343715961189128,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-calculating-path",
+													"objectClass": "Enemy_Controller",
+													"sid": 230494944826147,
+													"behaviorType": "Pathfinding",
+													"isInverted": true
+												},
+												{
+													"id": "is-moving-along-path",
+													"objectClass": "Enemy_Controller",
+													"sid": 657595986433914,
+													"behaviorType": "Pathfinding",
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "find-path",
+													"objectClass": "Enemy_Controller",
+													"sid": 208604810910421,
+													"behaviorType": "Pathfinding",
+													"parameters": {
+														"x": "Player.X",
+														"y": "Player.Y"
+													}
+												}
+											],
+											"sid": 327617245830018
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-path-found",
+													"objectClass": "Enemy_Controller",
+													"sid": 266393849976398,
+													"behaviorType": "Pathfinding"
+												}
+											],
+											"actions": [
+												{
+													"id": "move-along-path",
+													"objectClass": "Enemy_Controller",
+													"sid": 887785092505403,
+													"behaviorType": "Pathfinding"
+												}
+											],
+											"sid": 855808758845720
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-failed-to-find-path",
+													"objectClass": "Enemy_Controller",
+													"sid": 886092682532099,
+													"behaviorType": "Pathfinding"
+												}
+											],
+											"actions": [
+												{
+													"id": "find-path",
+													"objectClass": "Enemy_Controller",
+													"sid": 536389480715173,
+													"behaviorType": "Pathfinding",
+													"parameters": {
+														"x": "Player.X",
+														"y": "Player.Y"
+													}
+												}
+											],
+											"sid": 864915430188915
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Player",
+											"sid": 241566946627171,
+											"parameters": {
+												"instance-variable": "IsPowerActive"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [],
+									"sid": 291382473482859,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "has-los-to-object",
+													"objectClass": "Enemy_Controller",
+													"sid": 439737121962971,
+													"behaviorType": "LineOfSight",
+													"parameters": {
+														"object": "Player",
+														"image-point": "0"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 949221250470493,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "Enemy_Controller",
+															"sid": 765681063673032,
+															"parameters": {
+																"instance-variable": "DistanceToPlayer",
+																"comparison": 5,
+																"value": "60"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "move-at-angle",
+															"objectClass": "Enemy_Controller",
+															"sid": 375141891714492,
+															"parameters": {
+																"angle": "Self.AngleToPlayer",
+																"distance": "Self.8Direction.MaxSpeed/60"
+															}
+														}
+													],
+													"sid": 597250924831929
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "on-timer",
+															"objectClass": "Enemy_Controller",
+															"sid": 840425694563717,
+															"behaviorType": "Timer",
+															"parameters": {
+																"tag": "\"Shoot\""
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Enemy_Controller",
+															"sid": 633161827267685,
+															"parameters": {
+																"object": "Bullet_E",
+																"layer": "L_Main",
+																"image-point": "0"
+															}
+														},
+														{
+															"id": "set-angle-of-motion",
+															"objectClass": "Bullet_E",
+															"sid": 765544507220232,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
+															}
+														}
+													],
+													"sid": 473421132078202
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-timer-running",
+															"objectClass": "Enemy_Controller",
+															"sid": 949042792913338,
+															"behaviorType": "Timer",
+															"parameters": {
+																"tag": "\"Shoot\""
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [
+														{
+															"id": "start-timer",
+															"objectClass": "Enemy_Controller",
+															"sid": 767568989395643,
+															"behaviorType": "Timer",
+															"parameters": {
+																"duration": "Self.Bullet_Cooldown",
+																"type": "once",
+																"tag": "\"Shoot\""
+															}
+														}
+													],
+													"sid": 351634492361404
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-moving-along-path",
+															"objectClass": "Enemy_Controller",
+															"sid": 443267817538120,
+															"behaviorType": "Pathfinding"
+														}
+													],
+													"actions": [
+														{
+															"id": "stop",
+															"objectClass": "Enemy_Controller",
+															"sid": 202241019934603,
+															"behaviorType": "Pathfinding"
+														}
+													],
+													"sid": 165247057040992
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Player",
+											"sid": 877248081915722,
+											"parameters": {
+												"instance-variable": "IsPowerActive"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 666055438545644,
+											"parameters": {
+												"instance-variable": "Power_CurrentPowerNum",
+												"comparison": 1,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 829197671322586,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "has-los-to-object",
+													"objectClass": "Enemy_Controller",
+													"sid": 492622276517068,
+													"behaviorType": "LineOfSight",
+													"parameters": {
+														"object": "Player",
+														"image-point": "0"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 805623091249928,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "Enemy_Controller",
+															"sid": 848735919486346,
+															"parameters": {
+																"instance-variable": "DistanceToPlayer",
+																"comparison": 5,
+																"value": "60"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "move-at-angle",
+															"objectClass": "Enemy_Controller",
+															"sid": 283767502845658,
+															"parameters": {
+																"angle": "Self.AngleToPlayer",
+																"distance": "Self.8Direction.MaxSpeed/60"
+															}
+														}
+													],
+													"sid": 532127775576909
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "on-timer",
+															"objectClass": "Enemy_Controller",
+															"sid": 790206275716672,
+															"behaviorType": "Timer",
+															"parameters": {
+																"tag": "\"Shoot\""
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Enemy_Controller",
+															"sid": 719643947941531,
+															"parameters": {
+																"object": "Bullet_E",
+																"layer": "L_Main",
+																"image-point": "0"
+															}
+														},
+														{
+															"id": "set-angle-of-motion",
+															"objectClass": "Bullet_E",
+															"sid": 517332065118554,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
+															}
+														}
+													],
+													"sid": 790112305454093
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-timer-running",
+															"objectClass": "Enemy_Controller",
+															"sid": 453357327248019,
+															"behaviorType": "Timer",
+															"parameters": {
+																"tag": "\"Shoot\""
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [
+														{
+															"id": "start-timer",
+															"objectClass": "Enemy_Controller",
+															"sid": 682936108741261,
+															"behaviorType": "Timer",
+															"parameters": {
+																"duration": "Self.Bullet_Cooldown",
+																"type": "once",
+																"tag": "\"Shoot\""
+															}
+														}
+													],
+													"sid": 629799084614860
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-moving-along-path",
+															"objectClass": "Enemy_Controller",
+															"sid": 248063592042291,
+															"behaviorType": "Pathfinding"
+														}
+													],
+													"actions": [
+														{
+															"id": "stop",
+															"objectClass": "Enemy_Controller",
+															"sid": 475842659165803,
+															"behaviorType": "Pathfinding"
+														}
+													],
+													"sid": 698265932361903
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-enabled",
+											"objectClass": "Enemy_Controller",
+											"sid": 317719160004679,
+											"behaviorType": "Pathfinding",
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "Enemy_Controller",
+											"sid": 589181353533324,
+											"behaviorType": "Pathfinding",
+											"parameters": {
+												"set": "enabled"
+											}
+										}
+									],
+									"sid": 215660490169717
+								}
+							]
+						}
+					],
+					"sid": 536597727429502
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Stealth Bomber",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 283672515722199
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Healer Ship",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 693575734135543
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Mothership",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 171201376421301
+				}
+			],
+			"sid": 636279942700759
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Interactable Objects",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Locks",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Ball Lock",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [],
+							"sid": 195488430175478
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Touch Lock",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [],
+							"sid": 372446704837478
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Killcount Lock",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [],
+							"sid": 312932288700106
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Target Kill Lock",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [],
+							"sid": 317286447374180
+						}
+					],
+					"sid": 252237177471598
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Key",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 269882750118949
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Hazard Block",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 930395110021897
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Movable Block",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 818536097420626
+				}
+			],
+			"sid": 409238126860523
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Particles",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "Create Effect Particle",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "OwnerUID",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 348797698444796
+						},
+						{
+							"name": "Hue",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 936036117932878
+						},
+						{
+							"name": "Saturation",
+							"type": "number",
+							"initialValue": "100",
+							"comment": "",
+							"sid": 562954305630014
+						},
+						{
+							"name": "Luminosity",
+							"type": "number",
+							"initialValue": "100",
+							"comment": "",
+							"sid": 182905585553868
+						},
+						{
+							"name": "IsProjectileParticle",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 331146214625912
+						},
+						{
+							"name": "IsPlayerParticle",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 143395886138464
+						},
+						{
+							"name": "IsEnemyParticle",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 707446675789260
+						},
+						{
+							"name": "IsOneShot",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 103275951430778
+						},
+						{
+							"name": "IsPinParticle",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 452700938029590
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 874256586795480
+				}
+			],
+			"sid": 553040764439674
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Projectiles",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "Create Projectile",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "OwnerUID",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 148364623848811
+						},
+						{
+							"name": "X",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 370604842211290
+						},
+						{
+							"name": "Y",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 112454118482503
+						},
+						{
+							"name": "AngleOfMotion",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 893685547337374
+						},
+						{
+							"name": "SpriteNum",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 305815518452162
+						},
+						{
+							"name": "EffectNum",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 954641772635734
+						},
+						{
+							"name": "Power",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 313884232338490
+						},
+						{
+							"name": "DestroyTimer",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 464770669849073
+						},
+						{
+							"name": "ProjectileSpeed",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 219757011608488
+						},
+						{
+							"name": "ExplosionNum",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 646535839112871
+						},
+						{
+							"name": "IsPlayer",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 560839827088796
+						},
+						{
+							"name": "IsEnemy",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 264912369743111
+						},
+						{
+							"name": "IsNeutral",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 976370589618910
+						},
+						{
+							"name": "IsBouncy",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 350896290079821
+						},
+						{
+							"name": "IsExplosive",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 905622547454004
+						},
+						{
+							"name": "IsMediumWeapon",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 560515160071067
+						},
+						{
+							"name": "IsHeavyWeapon",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 367247447165836
+						},
+						{
+							"name": "DestroyOnImpact_Enemy",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 980696811442342
+						},
+						{
+							"name": "DestroyOnImpact_Wall",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 181643962871259
+						},
+						{
+							"name": "HasDestroyTimer",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 932207527602425
+						},
+						{
+							"name": "IsEnemySeeking",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 686899634942835
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 760532304067244,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 782443342945470,
+									"parameters": {
+										"variable": "IsPlayer"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 979278127868062,
+									"parameters": {
+										"object-to-create": "Bullet_P",
+										"layer": "0",
+										"x": "X",
+										"y": "Y"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Bullet_P",
+									"sid": 378662331486354,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "AngleOfMotion"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Bullet_P",
+									"sid": 655519665459510,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "ProjectileSpeed"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Bullet_P",
+									"sid": 305979858337171,
+									"parameters": {
+										"frame-number": "SpriteNum"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Bullet_P",
+									"sid": 974395207019673,
+									"parameters": {
+										"instance-variable": "DestroyTimer",
+										"value": "DestroyTimer"
+									}
+								}
+							],
+							"sid": 446613502341703,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 727288337978408,
+											"parameters": {
+												"variable": "IsBouncy"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_P",
+											"sid": 211279666852151,
+											"parameters": {
+												"instance-variable": "BouneOnWall",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 115439812719679
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 882322491683344,
+											"parameters": {
+												"variable": "DestroyOnImpact_Enemy"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_P",
+											"sid": 293265692135905,
+											"parameters": {
+												"instance-variable": "DestroyOnImpact_Enemy",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 793640889929454
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 160963460881538,
+											"parameters": {
+												"variable": "DestroyOnImpact_Wall"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_P",
+											"sid": 915807845339096,
+											"parameters": {
+												"instance-variable": "DestroyOnImpact_Wall",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 316583931966009
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 796127977854993,
+											"parameters": {
+												"variable": "HasDestroyTimer"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_P",
+											"sid": 316274149047883,
+											"parameters": {
+												"instance-variable": "HasDestroyTimer",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 666110151538738
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 435707362557989,
+											"parameters": {
+												"variable": "IsEnemySeeking"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_P",
+											"sid": 925605610069136,
+											"parameters": {
+												"instance-variable": "SeekEnemy",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 526423186163824
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 860857957114958,
+											"parameters": {
+												"variable": "IsExplosive"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_P",
+											"sid": 431239522785132,
+											"parameters": {
+												"instance-variable": "ExplodeOnDestruction",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Bullet_P",
+											"sid": 368198689691860,
+											"parameters": {
+												"instance-variable": "ExplosionNum",
+												"value": "ExplosionNum"
+											}
+										}
+									],
+									"sid": 153373221131788
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 831657390887422,
+											"parameters": {
+												"variable": "IsMediumWeapon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_P",
+											"sid": 478639596598921,
+											"parameters": {
+												"instance-variable": "IsMediumWeapon",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 187129996779259
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 248546485340470,
+											"parameters": {
+												"variable": "IsHeavyWeapon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_P",
+											"sid": 142300842546537,
+											"parameters": {
+												"instance-variable": "IsHeavyWeapon",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 692653776807504
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 505210520846255,
+									"parameters": {
+										"variable": "IsNeutral"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 463369401167435,
+									"parameters": {
+										"object-to-create": "Bullet_N",
+										"layer": "0",
+										"x": "X",
+										"y": "Y"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Bullet_N",
+									"sid": 191109738779046,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "AngleOfMotion"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Bullet_N",
+									"sid": 911855625581445,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "ProjectileSpeed"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Bullet_N",
+									"sid": 521025091669460,
+									"parameters": {
+										"frame-number": "SpriteNum"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Bullet_N",
+									"sid": 872336078746484,
+									"parameters": {
+										"instance-variable": "DestroyTimer",
+										"value": "DestroyTimer"
+									}
+								}
+							],
+							"sid": 608491233720680,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 386624155497866,
+											"parameters": {
+												"variable": "IsBouncy"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_N",
+											"sid": 128932894779986,
+											"parameters": {
+												"instance-variable": "BouneOnWall",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 968656969740297
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 929656894001712,
+											"parameters": {
+												"variable": "DestroyOnImpact_Enemy"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_N",
+											"sid": 601870946933587,
+											"parameters": {
+												"instance-variable": "DestroyOnImpact_Enemy",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 608525618213710
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 699933561245563,
+											"parameters": {
+												"variable": "DestroyOnImpact_Wall"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_N",
+											"sid": 333244660831485,
+											"parameters": {
+												"instance-variable": "DestroyOnImpact_Wall",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 727754077541383
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 980809591380059,
+											"parameters": {
+												"variable": "HasDestroyTimer"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_N",
+											"sid": 583373516601809,
+											"parameters": {
+												"instance-variable": "HasDestroyTimer",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 405666450897971
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 354509374617134,
+											"parameters": {
+												"variable": "IsEnemySeeking"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_N",
+											"sid": 176087364039453,
+											"parameters": {
+												"instance-variable": "SeekEnemy",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 193695973749239
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 604285579047988,
+											"parameters": {
+												"variable": "IsExplosive"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_N",
+											"sid": 377758666986982,
+											"parameters": {
+												"instance-variable": "ExplodeOnDestruction",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Bullet_N",
+											"sid": 888502791022751,
+											"parameters": {
+												"instance-variable": "ExplosionNum",
+												"value": "ExplosionNum"
+											}
+										}
+									],
+									"sid": 918491348107931
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 254781541971536,
+											"parameters": {
+												"variable": "IsMediumWeapon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_N",
+											"sid": 379222420766322,
+											"parameters": {
+												"instance-variable": "IsMediumWeapon",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 533660065269476
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 201826234686870,
+											"parameters": {
+												"variable": "IsHeavyWeapon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_N",
+											"sid": 342972844072089,
+											"parameters": {
+												"instance-variable": "IsHeavyWeapon",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 679092331572003
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 638925977885640,
+									"parameters": {
+										"variable": "IsEnemy"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 647499751502706,
+									"parameters": {
+										"object-to-create": "Bullet_E",
+										"layer": "0",
+										"x": "X",
+										"y": "Y"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Bullet_E",
+									"sid": 472357447527442,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "AngleOfMotion"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Bullet_E",
+									"sid": 649153570002173,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "ProjectileSpeed"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Bullet_E",
+									"sid": 884300632460204,
+									"parameters": {
+										"frame-number": "SpriteNum"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Bullet_E",
+									"sid": 681216243373460,
+									"parameters": {
+										"instance-variable": "DestroyTimer",
+										"value": "DestroyTimer"
+									}
+								}
+							],
+							"sid": 952453694905403,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 159776967470060,
+											"parameters": {
+												"variable": "IsBouncy"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_E",
+											"sid": 379556632130498,
+											"parameters": {
+												"instance-variable": "BouneOnWall",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 745530624041805
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 797906502334637,
+											"parameters": {
+												"variable": "DestroyOnImpact_Enemy"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_E",
+											"sid": 448009347816650,
+											"parameters": {
+												"instance-variable": "DestroyOnImpact_Enemy",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 182173330888678
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 988957156891721,
+											"parameters": {
+												"variable": "DestroyOnImpact_Wall"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_E",
+											"sid": 571638176620060,
+											"parameters": {
+												"instance-variable": "DestroyOnImpact_Wall",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 578740558963217
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 472434044475173,
+											"parameters": {
+												"variable": "HasDestroyTimer"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_E",
+											"sid": 392396230529155,
+											"parameters": {
+												"instance-variable": "HasDestroyTimer",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 813625595509163
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 476748937250995,
+											"parameters": {
+												"variable": "IsEnemySeeking"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_E",
+											"sid": 364832903014968,
+											"parameters": {
+												"instance-variable": "SeekEnemy",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 309545832567182
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 536496934204458,
+											"parameters": {
+												"variable": "IsExplosive"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_E",
+											"sid": 252026815112752,
+											"parameters": {
+												"instance-variable": "ExplodeOnDestruction",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Bullet_E",
+											"sid": 325212441399386,
+											"parameters": {
+												"instance-variable": "ExplosionNum",
+												"value": "ExplosionNum"
+											}
+										}
+									],
+									"sid": 669374158868017
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 553894572830660,
+											"parameters": {
+												"variable": "IsMediumWeapon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_E",
+											"sid": 790254043085027,
+											"parameters": {
+												"instance-variable": "IsMediumWeapon",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 922338631691447
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 712829221240273,
+											"parameters": {
+												"variable": "IsHeavyWeapon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bullet_E",
+											"sid": 661717466509056,
+											"parameters": {
+												"instance-variable": "IsHeavyWeapon",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 486141109400482
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Bullet_P",
+							"sid": 335508506542864,
+							"parameters": {
+								"object": "Enemy_Controller"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Bullet_P",
+							"sid": 161085712477554,
+							"parameters": {
+								"instance-variable": "DestroyOnImpact_Enemy"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Enemy_Controller",
+							"sid": 902940266436725,
+							"parameters": {
+								"instance-variable": "CurrentHealth",
+								"value": "Bullet_P.Damage"
+							}
+						}
+					],
+					"sid": 119592001148782,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Bullet_P",
+									"sid": 588895675021679
+								}
+							],
+							"sid": 501153266990546
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Bullet_P",
+							"sid": 513725444794566,
+							"parameters": {
+								"object": "Asteroids"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Asteroids",
+							"sid": 273943533001379,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "Bullet_P.Damage"
+							}
+						}
+					],
+					"sid": 914738898116251,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Bullet_P",
+									"sid": 741399167180646,
+									"parameters": {
+										"instance-variable": "DestroyOnImpact_Enemy"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Bullet_P",
+									"sid": 340469203669381
+								}
+							],
+							"sid": 181358363021996
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-timer",
+							"objectClass": "Bullets",
+							"sid": 472216211440451,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"Destroy\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Bullets",
+							"sid": 879531105551143
+						}
+					],
+					"sid": 624841699973023
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Bullets",
+							"sid": 387067531623242,
+							"parameters": {
+								"instance-variable": "HasDestroyTimer"
+							}
+						},
+						{
+							"id": "is-timer-running",
+							"objectClass": "Bullets",
+							"sid": 871859155612178,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"Destroy\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "start-timer",
+							"objectClass": "Bullets",
+							"sid": 198035792541889,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "Self.DestroyTimer",
+								"type": "once",
+								"tag": "\"Destroy\""
+							}
+						}
+					],
+					"sid": 367476716030611
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-timer",
+							"objectClass": "Bullets",
+							"sid": 493263456300456,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"Initialize\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 774342001444521,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Bullet_P",
+									"sid": 451230432864749,
+									"parameters": {
+										"instance-variable": "BouneOnWall"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-bounce-off-solids",
+									"objectClass": "Bullet_P",
+									"sid": 470881720948070,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": true
+									}
+								}
+							],
+							"sid": 922967413763210
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Bullet_P",
+							"sid": 367080996277423
+						}
+					],
+					"actions": [
+						{
+							"id": "start-timer",
+							"objectClass": "Bullet_P",
+							"sid": 390498458069290,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "dt",
+								"type": "once",
+								"tag": "\"Initialize\""
+							}
+						}
+					],
+					"sid": 517298276813101
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Bullet_P",
+							"sid": 799517521024487,
+							"parameters": {
+								"instance-variable": "SeekEnemy"
+							}
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 165925643627698,
+							"parameters": {
+								"object": "Bullet_P"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 898389183100933,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Bullet_P",
+									"sid": 802180248448277,
+									"parameters": {
+										"instance-variable": "TargetUID",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "Enemy_Controller",
+									"sid": 955508456870047,
+									"parameters": {
+										"which": "nearest",
+										"x": "Bullet_P.X",
+										"y": "Bullet_P.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Bullet_P",
+									"sid": 360409020227570,
+									"parameters": {
+										"instance-variable": "TargetUID",
+										"value": "Enemy_Controller.UID"
+									}
+								}
+							],
+							"sid": 840344902235309
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Bullet_P",
+									"sid": 819280475245409,
+									"parameters": {
+										"instance-variable": "TargetUID",
+										"comparison": 0,
+										"value": "0"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 925333894425598,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "object-uid-exists",
+											"objectClass": "System",
+											"sid": 163667445797303,
+											"parameters": {
+												"uid": "Bullet_P.TargetUID"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Bullet_P",
+											"sid": 639922654649088,
+											"parameters": {
+												"instance-variable": "TargetUID",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 764304382425716
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "Enemy_Controller",
+											"sid": 719575969294016,
+											"parameters": {
+												"unique-id": "Bullet_P.TargetUID"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 776092075505822,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 952905027628087,
+													"parameters": {
+														"first-value": "Bullet_P.Bullet.AngleOfMotion",
+														"comparison": 4,
+														"second-value": "angle(Bullet_P.X, Bullet_P.Y, Enemy_Controller.X, Enemy_Controller.Y)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-angle-of-motion",
+													"objectClass": "Bullet_P",
+													"sid": 208419873182305,
+													"behaviorType": "Bullet",
+													"parameters": {
+														"angle": "Self.Bullet.AngleOfMotion - 3"
+													}
+												}
+											],
+											"sid": 467586290474487
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 447839453268312,
+													"parameters": {
+														"first-value": "Bullet_P.Bullet.AngleOfMotion",
+														"comparison": 2,
+														"second-value": "angle(Bullet_P.X, Bullet_P.Y, Enemy_Controller.X, Enemy_Controller.Y)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-angle-of-motion",
+													"objectClass": "Bullet_P",
+													"sid": 440722785919158,
+													"behaviorType": "Bullet",
+													"parameters": {
+														"angle": "Self.Bullet.AngleOfMotion + 3"
+													}
+												}
+											],
+											"sid": 902562601756465
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Bullet_P",
+							"sid": 615084241060369,
+							"parameters": {
+								"object": "Wall_Solid"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Bullet_P",
+							"sid": 596263432957017,
+							"parameters": {
+								"instance-variable": "DestroyOnImpact_Wall"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Bullet_P",
+							"sid": 454389269036578
+						}
+					],
+					"sid": 790910305509646
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Bullet_P",
+							"sid": 777119375578645
+						}
+					],
+					"actions": [],
+					"sid": 493453040617998,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Bullet_P",
+									"sid": 114534109962331,
+									"parameters": {
+										"instance-variable": "ExplodeOnDestruction"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 323637534776187,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Bullet_P",
+											"sid": 378916586679783,
+											"parameters": {
+												"instance-variable": "ExplosionNum",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Create Projectile",
+											"sid": 626140647371038,
+											"parameters": [
+												"Player.UID",
+												"Bullet_P.X",
+												"Bullet_P.Y",
+												"Bullet_P.Bullet.AngleOfMotion",
+												"0",
+												"0",
+												"1",
+												"1",
+												"200",
+												"0",
+												true,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												true,
+												false
+											]
+										},
+										{
+											"callFunction": "Create Projectile",
+											"sid": 734855185681633,
+											"parameters": [
+												"Player.UID",
+												"Bullet_P.X",
+												"Bullet_P.Y",
+												"Bullet_P.Bullet.AngleOfMotion + 60",
+												"0",
+												"0",
+												"1",
+												"1",
+												"200",
+												"0",
+												true,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												true,
+												false
+											]
+										},
+										{
+											"callFunction": "Create Projectile",
+											"sid": 923446018285322,
+											"parameters": [
+												"Player.UID",
+												"Bullet_P.X",
+												"Bullet_P.Y",
+												"Bullet_P.Bullet.AngleOfMotion + 120",
+												"0",
+												"0",
+												"1",
+												"1",
+												"200",
+												"0",
+												true,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												true,
+												false
+											]
+										},
+										{
+											"callFunction": "Create Projectile",
+											"sid": 655553588148858,
+											"parameters": [
+												"Player.UID",
+												"Bullet_P.X",
+												"Bullet_P.Y",
+												"Bullet_P.Bullet.AngleOfMotion + 180",
+												"0",
+												"0",
+												"1",
+												"1",
+												"200",
+												"0",
+												true,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												true,
+												false
+											]
+										},
+										{
+											"callFunction": "Create Projectile",
+											"sid": 748139217523064,
+											"parameters": [
+												"Player.UID",
+												"Bullet_P.X",
+												"Bullet_P.Y",
+												"Bullet_P.Bullet.AngleOfMotion + 240",
+												"0",
+												"0",
+												"1",
+												"1",
+												"200",
+												"0",
+												true,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												true,
+												false
+											]
+										},
+										{
+											"callFunction": "Create Projectile",
+											"sid": 548535184551855,
+											"parameters": [
+												"Player.UID",
+												"Bullet_P.X",
+												"Bullet_P.Y",
+												"Bullet_P.Bullet.AngleOfMotion + 300",
+												"0",
+												"0",
+												"1",
+												"1",
+												"200",
+												"0",
+												true,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												false,
+												true,
+												false
+											]
+										}
+									],
+									"sid": 312116987971554
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 162516808430477
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Tilesets",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Solid Wall",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 409398409839159
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Bullet Wall",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 824079567458176
+				}
+			],
+			"sid": 610292773177891
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "HUD",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Health Display",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 908753529423011
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Energy Display",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 162367246992152
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Active Weapon Display",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 342694740873420
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Active Power Display",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 264024875762848
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Active Drone Display",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 847068329279106
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Overshield Display",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 202555838409507
+				}
+			],
+			"sid": 982544291596815
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "UI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 497492820647270
+		}
+	],
+	"sid": 350339920077027
+}

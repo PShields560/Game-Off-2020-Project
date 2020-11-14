@@ -1,0 +1,57 @@
+{
+	"name": "AsteroidLvl3",
+	"plugin-id": "Sprite",
+	"sid": 940569258003028,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 121,
+						"height": 127,
+						"originX": 0.5041322314049587,
+						"originY": 0.4881889763779528,
+						"originalSource": "C:\\Users\\Jacob\\Dropbox\\Game Off 2020\\Images\\Asteroid - Level 3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4125021,
+						"collisionPoly": {
+							"points": [
+								0.15702479338842976,
+								0.15748031496062992,
+								0.5041322314049587,
+								0.015748031496062992,
+								0.8099173553719008,
+								0.1889763779527559,
+								0.9752066115702479,
+								0.4881889763779528,
+								0.8842975206611571,
+								0.8503937007874016,
+								0.5041322314049587,
+								0.968503937007874,
+								0.03305785123966942,
+								0.9291338582677166,
+								0.09917355371900827,
+								0.4881889763779528
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 926944292261725,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

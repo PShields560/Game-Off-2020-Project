@@ -1,0 +1,127 @@
+{
+	"name": "Enemy_Controller",
+	"plugin-id": "Sprite",
+	"sid": 983331263822399,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "EnemyType",
+			"type": "string",
+			"desc": "Move&Shoot, Sit&Shoot, Chase",
+			"sid": 372954486882149
+		},
+		{
+			"name": "Bullet_Cooldown",
+			"type": "number",
+			"desc": "",
+			"sid": 523080958415847
+		},
+		{
+			"name": "DistanceToPlayer",
+			"type": "number",
+			"desc": "",
+			"sid": 571683539149150
+		},
+		{
+			"name": "AngleToPlayer",
+			"type": "number",
+			"desc": "",
+			"sid": 657323777341546
+		},
+		{
+			"name": "CurrentHealth",
+			"type": "number",
+			"desc": "",
+			"sid": 205082487773489
+		},
+		{
+			"name": "MaxHealth",
+			"type": "number",
+			"desc": "",
+			"sid": 249365870773061
+		},
+		{
+			"name": "WeaponNum",
+			"type": "number",
+			"desc": "",
+			"sid": 994981542324332
+		},
+		{
+			"name": "Weapon_FireRate",
+			"type": "number",
+			"desc": "",
+			"sid": 355615349029547
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 597462047952382
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 887423543086423
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 677313715025391
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 500540316060284
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 617416326022623
+		},
+		{
+			"behaviorId": "Orbit",
+			"name": "Orbit",
+			"sid": 876325624402112
+		},
+		{
+			"behaviorId": "Pathfinding",
+			"name": "Pathfinding",
+			"sid": 939173341920746
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 576824990686254
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\square.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1711046,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 995800732034015,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,135 @@
+{
+	"name": "Boss_Controller",
+	"plugin-id": "Sprite",
+	"sid": 569515443254388,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "EnemyType",
+			"type": "string",
+			"desc": "Move&Shoot, Sit&Shoot, Chase",
+			"sid": 894237009562738
+		},
+		{
+			"name": "Bullet_Cooldown",
+			"type": "number",
+			"desc": "",
+			"sid": 264746679589467
+		},
+		{
+			"name": "DistanceToPlayer",
+			"type": "number",
+			"desc": "",
+			"sid": 713143997685167
+		},
+		{
+			"name": "AngleToPlayer",
+			"type": "number",
+			"desc": "",
+			"sid": 430170183992591
+		},
+		{
+			"name": "CurrentHealth",
+			"type": "number",
+			"desc": "",
+			"sid": 407264679786819
+		},
+		{
+			"name": "MaxHealth",
+			"type": "number",
+			"desc": "",
+			"sid": 673495736675606
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 340347231453532
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 483597925605848
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 565290902862480
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 224307296197265
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 199143062882527
+		},
+		{
+			"behaviorId": "Orbit",
+			"name": "Orbit",
+			"sid": 322178375822868
+		},
+		{
+			"behaviorId": "Pathfinding",
+			"name": "Pathfinding",
+			"sid": 370333546014196
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 961953517373718
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\square.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4244651,
+						"collisionPoly": {
+							"points": [
+								0.041666666666666664,
+								0.041666666666666664,
+								0.5,
+								0,
+								0.9166666666666666,
+								0.041666666666666664,
+								0.9583333333333334,
+								0.5,
+								0.9166666666666666,
+								0.9166666666666666,
+								0.5,
+								0.9583333333333334,
+								0.041666666666666664,
+								0.9166666666666666,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 201847519585693,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

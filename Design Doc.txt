@@ -1,0 +1,99 @@
+Game Overview:
+A level based top down shooter arcade game where every level is a self contained slice of gameplay that incorporates aspects of and builds upon lessons from previous levels. The game will consist of fighting hordes of simple enemies, dodging/destroying asteroids, solving puzzles, and fighting bosses. The game will have roughly 30 levels, and each level will have its own theme. Boss levels will always give the player a new weapon/drone/power after the first time completing the level. Other levels will have weapons/drones/powers as hidden or "not-so-hidden" collectibles inside of the game levels. Certain levels will be impossible to progress through without obtaining certain powers. The final boss level will be some sort of giant death star type of ship that satisfies the "moonshot" theme.
+
+Story:
+The player is the best space fighter pilot ever and the main enemy sucks and wants to claim that title for themselves. The player must complete every level and defeat the main enemy at every turn in order to prove once and for all that they are the undisputed greatest space fighter pilot ever.
+
+Game Controls (WASD or Arrow Key control option):
+Left Click         - Shoot
+Right Click        - Target
+WASD/Arrow Keys    - Move
+P                  - Pause
+Q/E or Mouse Wheel - Switch Weapon
+Z/X or </> or 1234 - Switch Power
+
+General Features:
+-Menu Screen/Level Select/Credits all visible in one screen w. no menu navigation
+-
+
+Player Weapons:
+-Machine Gun                         - Done
+-Particle Beam                       - Done
+-Bouncy Bombs                        - Done
+-Seeking Darts                       - Done
+-Ion Shotgun                         - Done
+-Jump Jet Battering Ram              - 
+
+Player Powers:
+-Particle Shield                     - Done
+-Radar Invisibility                  - Done
+-Shrink Module                       - Done
+-Teleport                            - Done
+
+Enemy Types:
+-Stationary Shooting                 - Done
+-Find & Chase Player "battering ram" - Done
+-Find & Chase Player & Shooting      - Done
+-"Neutral" Splitting Asteroid        - Done
+-Stealth Bomb Ships                  - 
+-"Mothership" Spawner                - 
+-Healer Ship                         - 
+
+Interactable Objects:
+-Bullet Key/Toggle                   - 
+-Player Key/Toggle                   - 
+-Enemy Kills Key                     - 
+-Specific Enemy Kills Key            - 
+-Lock/Key Object                     - 
+-Lock Block                          - 
+-No Target Zone                      - 
+-Hazard Spike                        - 
+-Health/Energy/Shield Pickups        - Done
+-Solid Wall                          - Done
+-Bullet Wall                         - Done
+-"Dashed" Wall (for shrinking)       - Done
+
+Bosses:
+-Strong Enemy Ship
+-Super Giant Ship
+-Crazy Super Ship Fleet
+-Giant Death Star Ship Core
+-Crescent Moon Death Star Ship Frame
+-Crescent Moon Death Star Ship
+-Half Moon Death Star Moon Ship
+-Full Moon Death Star Moon Ship
+-New Moon Death Star Moon Ship
+
+Levels:
+-Tutorial Level
+-Easy first level
+-Enemy Pit 1 - Unlock Particle Beam
+-Boss Battle 1 - Unlock Decoy Drones
+-Decoy Test
+-Decoy Puzzle
+-Boss Battle 2 - Unlock Particle Shield
+-Shield Test - Unlock Bouncy Bomb
+-Shield Puzzle
+-Shield + Decoy Puzzle
+-Boss Battle 3 - Unlock Radar Invisibility
+-Invisibility Test
+-Invisibility Enemy Pit
+-Invisibility + Decoy Puzzle - Unlock Seeking Darts
+-Boss Battle 4 - Unlock Singularity Bomb Drone
+-Singularity Bomb Puzzle
+-Singularity Bomb + Shield Puzzle
+-Singularity Bomb + Invisibility Enemy Pit
+-Boss Battle 5 - Unlock Shrink Module
+-Shrink + Singularity Puzzle
+-Shrink + Decoy Puzzle - Unlock Shock Generator
+-Shrink Enemy Pit
+-Boss Battle 6 - Unlock Teleport Drone
+-Teleport Enemy Pit
+-Teleport + Shield Puzzle
+-Teleport + Invisibility Enemy Pit - Unlock Battering Ram
+-Boss Battle 7 - Unlock Mothership Drone
+-Mothership Drone Enemy Pit
+-Mothership Drone + Shrink Puzzle
+-Mothership Drone + Shield Enemy Pit
+-Boss Battle 8 - Unlock Teleport
+-Boss Battle 9

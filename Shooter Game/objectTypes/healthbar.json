@@ -1,0 +1,32 @@
+{
+	"name": "HealthBar",
+	"plugin-id": "NinePatch",
+	"sid": 248829550208829,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Index",
+			"type": "number",
+			"desc": "",
+			"sid": 173266135553586
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "hsladjust",
+			"name": "AdjustHSL"
+		}
+	],
+	"image": {
+		"width": 61,
+		"height": 8,
+		"originX": 0.5,
+		"originY": 0.5625,
+		"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\HealthBarInner.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 9433521,
+		"useCollisionPoly": true
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"name": "Particle_Gas",
+	"plugin-id": "Particles",
+	"sid": 157137447293007,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "hsladjust",
+			"name": "AdjustHSL"
+		}
+	],
+	"image": {
+		"width": 96,
+		"height": 97,
+		"originX": 0.59375,
+		"originY": 0.9175257731958762,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8757656,
+		"useCollisionPoly": true
+	}
+}

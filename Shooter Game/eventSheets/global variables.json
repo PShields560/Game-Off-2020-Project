@@ -1,0 +1,446 @@
+{
+	"name": "GLOBAL VARIABLES",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "L_BG1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 726921076190202
+		},
+		{
+			"eventType": "variable",
+			"name": "L_BG2",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 913043040034104
+		},
+		{
+			"eventType": "variable",
+			"name": "L_BG3",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 526204524545458
+		},
+		{
+			"eventType": "variable",
+			"name": "L_BG4",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 521285812944732
+		},
+		{
+			"eventType": "variable",
+			"name": "L_BG_Obj1",
+			"type": "number",
+			"initialValue": "4",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 743380347501121
+		},
+		{
+			"eventType": "variable",
+			"name": "L_BG_Obj2",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 906325565260542
+		},
+		{
+			"eventType": "variable",
+			"name": "L_BG_Obj3",
+			"type": "number",
+			"initialValue": "6",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 395719297892392
+		},
+		{
+			"eventType": "variable",
+			"name": "L_Main",
+			"type": "number",
+			"initialValue": "7",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 603678015205665
+		},
+		{
+			"eventType": "variable",
+			"name": "L_FG_Obj1",
+			"type": "number",
+			"initialValue": "8",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 364466118702088
+		},
+		{
+			"eventType": "variable",
+			"name": "L_FG_Obj2",
+			"type": "number",
+			"initialValue": "9",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 815502686650807
+		},
+		{
+			"eventType": "variable",
+			"name": "L_HUD1",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 584397831924609
+		},
+		{
+			"eventType": "variable",
+			"name": "L_HUD2",
+			"type": "number",
+			"initialValue": "11",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 219400274046138
+		},
+		{
+			"eventType": "variable",
+			"name": "L_HUD3",
+			"type": "number",
+			"initialValue": "12",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 783575418996219
+		},
+		{
+			"eventType": "variable",
+			"name": "L_HUD4",
+			"type": "number",
+			"initialValue": "13",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 377268596963766
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI1",
+			"type": "number",
+			"initialValue": "14",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 529178538073991
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI2",
+			"type": "number",
+			"initialValue": "15",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 358293296031346
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI3",
+			"type": "number",
+			"initialValue": "16",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 488841056475761
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI4",
+			"type": "number",
+			"initialValue": "17",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 180995847212321
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI5",
+			"type": "number",
+			"initialValue": "18",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 574068881819474
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI6",
+			"type": "number",
+			"initialValue": "19",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 780246791961067
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI7",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 647512204374538
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI8",
+			"type": "number",
+			"initialValue": "21",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 672403252395066
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI9",
+			"type": "number",
+			"initialValue": "22",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 513268153276011
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI10",
+			"type": "number",
+			"initialValue": "23",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 587208152645803
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI11",
+			"type": "number",
+			"initialValue": "24",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 409469946550389
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI12",
+			"type": "number",
+			"initialValue": "25",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 486141381020678
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI13",
+			"type": "number",
+			"initialValue": "26",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 471383448781985
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI14",
+			"type": "number",
+			"initialValue": "27",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 368077089296310
+		},
+		{
+			"eventType": "variable",
+			"name": "L_UI15",
+			"type": "number",
+			"initialValue": "28",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 235533460912020
+		},
+		{
+			"eventType": "variable",
+			"name": "Cooldown_Weapon1",
+			"type": "number",
+			"initialValue": "0.2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 805136076503242
+		},
+		{
+			"eventType": "variable",
+			"name": "Cooldown_Weapon2",
+			"type": "number",
+			"initialValue": "0.02",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 111778685895842
+		},
+		{
+			"eventType": "variable",
+			"name": "Cooldown_Weapon3",
+			"type": "number",
+			"initialValue": "0.5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 983614515245352
+		},
+		{
+			"eventType": "variable",
+			"name": "Cooldown_Weapon4",
+			"type": "number",
+			"initialValue": "0.3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 883784808830525
+		},
+		{
+			"eventType": "variable",
+			"name": "Cooldown_Weapon5",
+			"type": "number",
+			"initialValue": "0.5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 804495959064422
+		},
+		{
+			"eventType": "variable",
+			"name": "Energy_Weapon1",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 409385573233903
+		},
+		{
+			"eventType": "variable",
+			"name": "Energy_Weapon2",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 312548064862492
+		},
+		{
+			"eventType": "variable",
+			"name": "Energy_Weapon3",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 914316804579873
+		},
+		{
+			"eventType": "variable",
+			"name": "Energy_Weapon4",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 298031170268378
+		},
+		{
+			"eventType": "variable",
+			"name": "Energy_Weapon5",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 707053101040458
+		},
+		{
+			"eventType": "variable",
+			"name": "Energy_Power1",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 509050684450852
+		},
+		{
+			"eventType": "variable",
+			"name": "Energy_Power2",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 402913076750445
+		},
+		{
+			"eventType": "variable",
+			"name": "Energy_Power3",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 462949036928954
+		},
+		{
+			"eventType": "variable",
+			"name": "Energy_Power4",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 372227686761696
+		},
+		{
+			"eventType": "variable",
+			"name": "OvershieldMax",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 878295643302365
+		}
+	],
+	"sid": 861189234454270
+}

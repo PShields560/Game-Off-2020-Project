@@ -1,0 +1,27 @@
+{
+	"name": "EnergyBar",
+	"plugin-id": "NinePatch",
+	"sid": 282812195080980,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "MaxWidth",
+			"type": "number",
+			"desc": "",
+			"sid": 188695846408001
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 61,
+		"height": 8,
+		"originX": 0.5,
+		"originY": 0.6640625,
+		"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\EnergyBarInner.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7433937,
+		"useCollisionPoly": true
+	}
+}

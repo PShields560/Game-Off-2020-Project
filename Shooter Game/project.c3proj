@@ -1,0 +1,624 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 21800,
+	"name": "TwinstickShooterTOTHEMOON",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Orbit",
+			"name": "Orbit",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "hsladjust",
+			"name": "Adjust HSL",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowhorizontal",
+			"name": "Glow horizontal",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowvertical",
+			"name": "Glow vertical",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		}
+	],
+	"uniqueId": "jw2b8vxjk45",
+	"objectTypes": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Player",
+							"Player_Fill",
+							"Player_TargetPoint"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"Player_ParticleShield"
+								],
+								"subfolders": [],
+								"name": "Powers"
+							}
+						],
+						"name": "Player"
+					},
+					{
+						"items": [
+							"Bullet_P",
+							"Bullet_N",
+							"Bullet_E"
+						],
+						"subfolders": [],
+						"name": "Bullets"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"AsteroidLvl2",
+									"AsteroidLvl3",
+									"AsteroidLvl1",
+									"AsteroidLvl0"
+								],
+								"subfolders": [],
+								"name": "Asteroids"
+							},
+							{
+								"items": [
+									"Boss_Controller",
+									"Enemy_Controller"
+								],
+								"subfolders": [],
+								"name": "_CONTROLLERS"
+							},
+							{
+								"items": [
+									"Enemy_SitShooter_1"
+								],
+								"subfolders": [],
+								"name": "Stationary Shooter"
+							},
+							{
+								"items": [
+									"Enemy_ChaseHit_1"
+								],
+								"subfolders": [],
+								"name": "Chasing Melee"
+							},
+							{
+								"items": [
+									"Enemy_Bomber_1"
+								],
+								"subfolders": [],
+								"name": "Stealth Bomber"
+							},
+							{
+								"items": [
+									"Enemy_Healer_1"
+								],
+								"subfolders": [],
+								"name": "Healer"
+							},
+							{
+								"items": [
+									"Enemy_Spawner_1"
+								],
+								"subfolders": [],
+								"name": "Spawner Mothership"
+							},
+							{
+								"items": [
+									"Enemy_ChaseShoot_1"
+								],
+								"subfolders": [],
+								"name": "Chasing Shooter"
+							}
+						],
+						"name": "Enemies"
+					},
+					{
+						"items": [
+							"TeleportPoint",
+							"Pickup_Shield",
+							"Pickup_HP_Restore",
+							"Pickup_EnergyOverdrive"
+						],
+						"subfolders": [],
+						"name": "Interactable Objects"
+					},
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "Collectable Objects"
+					}
+				],
+				"name": "Sprites"
+			},
+			{
+				"items": [
+					"BG_BLACK"
+				],
+				"subfolders": [],
+				"name": "Backgrounds"
+			},
+			{
+				"items": [
+					"Wall_Solid",
+					"Wall_Bullet"
+				],
+				"subfolders": [],
+				"name": "Tilesets"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Particle_Gas",
+							"Stars_Blue",
+							"Stars_Green",
+							"Stars_Purple",
+							"Stars_Red",
+							"Stars_White",
+							"Stars_Yellow"
+						],
+						"subfolders": [],
+						"name": "Background"
+					}
+				],
+				"name": "Particles"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"HealthBar",
+							"EnergyBar",
+							"ShieldBar",
+							"Icon_HP",
+							"Icon_Shield",
+							"Icon_Energy",
+							"Bullet_Icon",
+							"Icon_HP4"
+						],
+						"subfolders": [],
+						"name": "HUD"
+					},
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "UI"
+					}
+				],
+				"name": "UI Objects"
+			},
+			{
+				"items": [
+					"Camera"
+				],
+				"subfolders": [],
+				"name": "_CONTROL OBJECTS"
+			},
+			{
+				"items": [
+					"Txt_HUD",
+					"Txt_UI",
+					"Txt_Game"
+				],
+				"subfolders": [],
+				"name": "Text"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Data"
+			},
+			{
+				"items": [
+					"Keyboard",
+					"Mouse"
+				],
+				"subfolders": [],
+				"name": "Inputs"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"Bullets",
+			"Asteroids",
+			"Pickups"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Test Layout",
+			"Loading Screen"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"GAME CORE",
+			"Loading",
+			"GLOBAL VARIABLES"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "Fipps.otf",
+					"type": "application/font-sfnt",
+					"sid": 165949810209813
+				},
+				{
+					"name": "munro.ttf",
+					"type": "application/font-sfnt",
+					"sid": 626160778045117
+				},
+				{
+					"name": "munro-narrow.ttf",
+					"type": "application/font-sfnt",
+					"sid": 744434783217083
+				},
+				{
+					"name": "munro-small.ttf",
+					"type": "application/font-sfnt",
+					"sid": 570048905363289
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 333842206003992,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 849132438576341,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 903044292722027,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 380859387130247,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 718766186320086,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 693191407905662,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 277045600666930,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "landscape",
+		"enableWebGL": true,
+		"gpuPreference": "high-performance",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true,
+		"cordovaiOSScheme": "app"
+	},
+	"viewportWidth": 640,
+	"viewportHeight": 360,
+	"firstLayout": "Loading Screen"
+}

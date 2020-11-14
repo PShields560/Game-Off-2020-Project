@@ -1,0 +1,57 @@
+{
+	"name": "Pickup_HP_Restore",
+	"plugin-id": "Sprite",
+	"sid": 148351525208493,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 18,
+						"height": 17,
+						"originX": 0.5296296296296297,
+						"originY": 0.4392156862745098,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\Heart.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2138939,
+						"collisionPoly": {
+							"points": [
+								0.14585537918871253,
+								0.03286647992530345,
+								0.5296296296296297,
+								0,
+								0.8682539682539683,
+								0.03286647992530345,
+								0.9444444444444444,
+								0.4392156862745098,
+								0.8682539682539683,
+								0.7977591036414565,
+								0.5296296296296297,
+								0.8933706816059757,
+								0.14585537918871253,
+								0.7977591036414565,
+								0.05555555555555555,
+								0.4392156862745098
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 740019404012718,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

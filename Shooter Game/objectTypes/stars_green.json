@@ -1,0 +1,20 @@
+{
+	"name": "Stars_Green",
+	"plugin-id": "Particles",
+	"sid": 880784620613446,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 7,
+		"height": 7,
+		"originX": 0.14285714285714285,
+		"originY": 2.7142857142857144,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2308682,
+		"useCollisionPoly": true
+	}
+}

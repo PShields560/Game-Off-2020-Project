@@ -1,0 +1,37 @@
+{
+	"name": "Asteroids",
+	"plugin-id": "Sprite",
+	"sid": 979452884804874,
+	"instanceVariables": [
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "",
+			"sid": 818641917401877
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 477104604358341
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 411698235549982
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 534878120813041
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"AsteroidLvl0",
+		"AsteroidLvl3",
+		"AsteroidLvl2",
+		"AsteroidLvl1"
+	]
+}

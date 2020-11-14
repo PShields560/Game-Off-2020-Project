@@ -1,0 +1,32 @@
+{
+	"name": "Wall_Solid",
+	"plugin-id": "Tilemap",
+	"sid": 208812526326264,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 539762969533225
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 752491106114383
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 96,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\Tiles MC Diagonal.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1437560,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

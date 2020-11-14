@@ -1,0 +1,29 @@
+{
+	"name": "Pickups",
+	"plugin-id": "Sprite",
+	"sid": 888172675491609,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 791762849025917
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 893844455697177
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 243355275068807
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Pickup_EnergyOverdrive",
+		"Pickup_HP_Restore",
+		"Pickup_Shield"
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"name": "ShieldBar",
+	"plugin-id": "NinePatch",
+	"sid": 713620149663858,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "MaxWidth",
+			"type": "number",
+			"desc": "",
+			"sid": 387569123867303
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 61,
+		"height": 8,
+		"originX": 0.5,
+		"originY": 0.8291015625,
+		"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\ShieldBarInner.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1712376,
+		"useCollisionPoly": true
+	}
+}

@@ -1,0 +1,442 @@
+{
+	"name": "Bullet_Icon",
+	"plugin-id": "Sprite",
+	"sid": 760156638470560,
+	"isGlobal": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "hsladjust",
+			"name": "AdjustHSL"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 9,
+						"height": 9,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\icon_projectile_player-1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6712812,
+						"collisionPoly": {
+							"points": [
+								0.2222222222222222,
+								0.2222222222222222,
+								0.5103359173126615,
+								0.09560723514211888,
+								0.7674418604651162,
+								0.21705426356589147,
+								0.8940568475452199,
+								0.47416020671834613,
+								0.7700258397932815,
+								0.7751937984496122,
+								0.5077519379844961,
+								0.8863049095607236,
+								0.24289405684754517,
+								0.7571059431524546,
+								0.1111111111111111,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 9,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\icon_projectile_player-2-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6102964,
+						"collisionPoly": {
+							"points": [
+								0.1111111111111111,
+								0.2222222222222222,
+								0.5,
+								0.2222222222222222,
+								0.8333333333333334,
+								0.2222222222222222,
+								0.9444444444444444,
+								0.5,
+								0.7777777777777778,
+								0.5555555555555556,
+								0.5,
+								0.5555555555555556,
+								0.16666666666666666,
+								0.5555555555555556,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 9,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\icon_projectile_player-3-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1241287,
+						"collisionPoly": {
+							"points": [
+								0.2222222222222222,
+								0.125,
+								0.5,
+								0,
+								0.6666666666666666,
+								0.125,
+								0.6666666666666666,
+								0.5,
+								0.6666666666666666,
+								0.8125,
+								0.5,
+								0.9375,
+								0.2222222222222222,
+								0.8125,
+								0.2222222222222222,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 9,
+						"height": 9,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\icon_projectile_player-4-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2559851,
+						"collisionPoly": {
+							"points": [
+								0.3333333333333333,
+								0.3333333333333333,
+								0.5,
+								0.3333333333333333,
+								0.5555555555555556,
+								0.3333333333333333,
+								0.7777777777777778,
+								0.5,
+								0.5555555555555556,
+								0.5555555555555556,
+								0.5,
+								0.5555555555555556,
+								0.3333333333333333,
+								0.5555555555555556,
+								0.1111111111111111,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 15,
+						"height": 15,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\icon_projectile_player-5-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4399448,
+						"collisionPoly": {
+							"points": [
+								0.26666666666666666,
+								0.26666666666666666,
+								0.5,
+								0.06666666666666667,
+								0.6666666666666666,
+								0.26666666666666666,
+								0.8666666666666667,
+								0.5,
+								0.6666666666666666,
+								0.6666666666666666,
+								0.5,
+								0.8666666666666667,
+								0.26666666666666666,
+								0.6666666666666666,
+								0.06666666666666667,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 15,
+						"height": 15,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\icon_projectile_player-6-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1615673,
+						"collisionPoly": {
+							"points": [
+								0.2,
+								0.2,
+								0.5,
+								0.2,
+								0.7333333333333333,
+								0.2,
+								0.7333333333333333,
+								0.5,
+								0.7333333333333333,
+								0.7333333333333333,
+								0.5,
+								0.7333333333333333,
+								0.2,
+								0.7333333333333333,
+								0.2,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 11,
+						"height": 11,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\icon_projectile_player-7-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4494694,
+						"collisionPoly": {
+							"points": [
+								0.2727272727272727,
+								0.2727272727272727,
+								0.5,
+								0.09090909090909091,
+								0.6363636363636364,
+								0.2727272727272727,
+								0.8181818181818182,
+								0.5,
+								0.6363636363636364,
+								0.6363636363636364,
+								0.5,
+								0.8181818181818182,
+								0.2727272727272727,
+								0.6363636363636364,
+								0.09090909090909091,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 15,
+						"height": 15,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\icon_projectile_player-8-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2318003,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0.4,
+								0.6,
+								0.3333333333333333,
+								0.8666666666666667,
+								0.5,
+								0.5,
+								0.5333333333333333,
+								0.4,
+								0.5333333333333333,
+								0.3333333333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 11,
+						"height": 11,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\icon_projectile_player-9-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6488871,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0.09090909090909091,
+								0.9090909090909091,
+								0,
+								0.8181818181818182,
+								0.5,
+								0.9090909090909091,
+								0.9090909090909091,
+								0.5,
+								0.8181818181818182,
+								0,
+								0.9090909090909091,
+								0.09090909090909091,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 11,
+						"height": 11,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\icon_projectile_player-10-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 742866,
+						"collisionPoly": {
+							"points": [
+								0.18181818181818182,
+								0.18181818181818182,
+								0.5,
+								0,
+								0.7272727272727273,
+								0.18181818181818182,
+								0.9090909090909091,
+								0.5,
+								0.7272727272727273,
+								0.7272727272727273,
+								0.5,
+								0.9090909090909091,
+								0.18181818181818182,
+								0.7272727272727273,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 11,
+						"height": 11,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\icon_projectile_player-11-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3613084,
+						"collisionPoly": {
+							"points": [
+								0.2727272727272727,
+								0.2727272727272727,
+								0.5,
+								0.18181818181818182,
+								0.6363636363636364,
+								0.2727272727272727,
+								0.7272727272727273,
+								0.5,
+								0.6363636363636364,
+								0.6363636363636364,
+								0.5,
+								0.7272727272727273,
+								0.2727272727272727,
+								0.6363636363636364,
+								0.18181818181818182,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 25,
+						"height": 25,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\Mine.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6787955,
+						"collisionPoly": {
+							"points": [
+								0.28,
+								0.28,
+								0.5,
+								0.04,
+								0.68,
+								0.28,
+								0.92,
+								0.5,
+								0.68,
+								0.68,
+								0.5,
+								0.92,
+								0.28,
+								0.68,
+								0.04,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 25,
+						"height": 25,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\Spinner.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5502099,
+						"collisionPoly": {
+							"points": [
+								0.28,
+								0.28,
+								0.5,
+								0.24,
+								0.68,
+								0.28,
+								0.72,
+								0.5,
+								0.68,
+								0.68,
+								0.5,
+								0.72,
+								0.28,
+								0.68,
+								0.24,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 171399569165229,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

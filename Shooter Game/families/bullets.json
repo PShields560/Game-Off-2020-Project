@@ -1,0 +1,110 @@
+{
+	"name": "Bullets",
+	"plugin-id": "Sprite",
+	"sid": 824640966714227,
+	"instanceVariables": [
+		{
+			"name": "DestroyOnImpact_Enemy",
+			"type": "boolean",
+			"desc": "",
+			"sid": 369981952592214
+		},
+		{
+			"name": "DestroyOnImpact_Wall",
+			"type": "boolean",
+			"desc": "",
+			"sid": 744763404033879
+		},
+		{
+			"name": "BouneOnWall",
+			"type": "boolean",
+			"desc": "",
+			"sid": 441895139601366
+		},
+		{
+			"name": "SeekEnemy",
+			"type": "boolean",
+			"desc": "",
+			"sid": 799370307037652
+		},
+		{
+			"name": "ExplodeOnDestruction",
+			"type": "boolean",
+			"desc": "",
+			"sid": 964862802985604
+		},
+		{
+			"name": "DestroyTimer",
+			"type": "number",
+			"desc": "",
+			"sid": 687975545185316
+		},
+		{
+			"name": "Speed",
+			"type": "number",
+			"desc": "",
+			"sid": 994718292277434
+		},
+		{
+			"name": "TargetUID",
+			"type": "number",
+			"desc": "",
+			"sid": 307258904747159
+		},
+		{
+			"name": "Damage",
+			"type": "number",
+			"desc": "",
+			"sid": 178808098796828
+		},
+		{
+			"name": "IsMediumWeapon",
+			"type": "boolean",
+			"desc": "",
+			"sid": 288472505185986
+		},
+		{
+			"name": "IsHeavyWeapon",
+			"type": "boolean",
+			"desc": "",
+			"sid": 893261276622580
+		},
+		{
+			"name": "ExplosionNum",
+			"type": "number",
+			"desc": "",
+			"sid": 685994965743336
+		},
+		{
+			"name": "HasDestroyTimer",
+			"type": "boolean",
+			"desc": "",
+			"sid": 720685789485050
+		},
+		{
+			"name": "AngleToTarget",
+			"type": "number",
+			"desc": "",
+			"sid": 833556227957902
+		},
+		{
+			"name": "IsReady",
+			"type": "boolean",
+			"desc": "",
+			"sid": 560844469690022
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 606667840799840
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Bullet_N",
+		"Bullet_P",
+		"Bullet_E"
+	]
+}

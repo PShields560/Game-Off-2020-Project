@@ -1,0 +1,27 @@
+{
+	"name": "Loading",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 387194730121249
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 109207326768856,
+					"parameters": {
+						"layout": "Test Layout"
+					}
+				}
+			],
+			"sid": 302908480878443
+		}
+	],
+	"sid": 598296358585235
+}

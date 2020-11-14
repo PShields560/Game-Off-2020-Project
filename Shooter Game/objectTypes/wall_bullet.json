@@ -1,0 +1,32 @@
+{
+	"name": "Wall_Bullet",
+	"plugin-id": "Tilemap",
+	"sid": 685254741802962,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 792511296090515
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 817892110698325
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 176,
+		"height": 80,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\tiles walk through.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6426000,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

@@ -1,0 +1,212 @@
+{
+	"name": "Player",
+	"plugin-id": "Sprite",
+	"sid": 420769100004708,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Bullet_Cooldown",
+			"type": "number",
+			"desc": "",
+			"sid": 293359468764915
+		},
+		{
+			"name": "IsPowerActive",
+			"type": "boolean",
+			"desc": "",
+			"sid": 675709708545568
+		},
+		{
+			"name": "Power_CurrentPowerNum",
+			"type": "number",
+			"desc": "",
+			"sid": 468293805685238
+		},
+		{
+			"name": "Power_CurrentEnergyCost",
+			"type": "number",
+			"desc": "",
+			"sid": 593132767989093
+		},
+		{
+			"name": "IsDroneActive",
+			"type": "boolean",
+			"desc": "",
+			"sid": 171161625630698
+		},
+		{
+			"name": "Drone_CurrentDroneNum",
+			"type": "number",
+			"desc": "",
+			"sid": 614500015978285
+		},
+		{
+			"name": "Weapon_CurrentWeaponNum",
+			"type": "number",
+			"desc": "",
+			"sid": 883407802283874
+		},
+		{
+			"name": "Weapon_CurrentEnergyCost",
+			"type": "number",
+			"desc": "",
+			"sid": 465302118501885
+		},
+		{
+			"name": "IsImmobile",
+			"type": "boolean",
+			"desc": "",
+			"sid": 749194339426617
+		},
+		{
+			"name": "Health_Current",
+			"type": "number",
+			"desc": "",
+			"sid": 318369813914098
+		},
+		{
+			"name": "Health_Max",
+			"type": "number",
+			"desc": "",
+			"sid": 332091213272024
+		},
+		{
+			"name": "Energy_Current",
+			"type": "number",
+			"desc": "",
+			"sid": 287973965531909
+		},
+		{
+			"name": "Energy_Max",
+			"type": "number",
+			"desc": "",
+			"sid": 963794476988118
+		},
+		{
+			"name": "Shield_Current",
+			"type": "number",
+			"desc": "",
+			"sid": 385485233439558
+		},
+		{
+			"name": "IsOvershieldActive",
+			"type": "boolean",
+			"desc": "",
+			"sid": 729848107336939
+		},
+		{
+			"name": "IsEnergyOverdriveActive",
+			"type": "boolean",
+			"desc": "",
+			"sid": 378484496010007
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 666122764997521
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 249859163896309
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 396579592282540
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 347796468273608
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 944670844438844
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 992184050171265
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "hsladjust",
+			"name": "AdjustHSL"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 45,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\Player Ships\\1_outline.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9190393,
+						"collisionPoly": {
+							"points": [
+								0.017283950617283952,
+								0.36666666666666675,
+								0.25555555555555515,
+								0,
+								0.7333333333333333,
+								0.275,
+								0.9333333333333333,
+								0.5,
+								0.7333333333333333,
+								0.7,
+								0.25308641975308616,
+								0.983333333333333,
+								0.007407407407407387,
+								0.6166666666666673,
+								0.13333333333333333,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8888888888888888,
+								"y": 0.5
+							},
+							{
+								"name": "Image Point 2",
+								"x": 1,
+								"y": 0
+							},
+							{
+								"name": "Image Point 3",
+								"x": 1.2444444444444445,
+								"y": 0.475
+							},
+							{
+								"name": "Image Point 4",
+								"x": 1,
+								"y": 1
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 552171084263381,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

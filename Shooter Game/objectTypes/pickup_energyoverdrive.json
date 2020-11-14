@@ -1,0 +1,57 @@
+{
+	"name": "Pickup_EnergyOverdrive",
+	"plugin-id": "Sprite",
+	"sid": 741642156619892,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 12,
+						"height": 17,
+						"originX": 0.5444444444444444,
+						"originY": 0.4392156862745098,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\EnergyRestore.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8871733,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.03286647992530345,
+								0.5444444444444444,
+								0,
+								1,
+								0.03286647992530345,
+								1,
+								0.4392156862745098,
+								1,
+								0.7977591036414565,
+								0.5444444444444444,
+								0.8933706816059757,
+								0,
+								0.7977591036414565,
+								0,
+								0.4392156862745098
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 699462086945635,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

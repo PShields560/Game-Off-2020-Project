@@ -1,0 +1,22 @@
+{
+	"name": "Txt_HUD",
+	"plugin-id": "Text",
+	"sid": 259874227282872,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"sid": 967780525093837
+		},
+		{
+			"name": "Tag",
+			"type": "string",
+			"desc": "",
+			"sid": 657409656725536
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
