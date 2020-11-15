@@ -1,0 +1,88 @@
+{
+	"name": "LockBlock",
+	"plugin-id": "Sprite",
+	"sid": 350625534671556,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "IsTouchLock",
+			"type": "boolean",
+			"desc": "",
+			"sid": 285463416462287
+		},
+		{
+			"name": "IsBulletLock",
+			"type": "boolean",
+			"desc": "",
+			"sid": 575268830435263
+		},
+		{
+			"name": "IsBallLock",
+			"type": "boolean",
+			"desc": "",
+			"sid": 971961006433812
+		},
+		{
+			"name": "KeyID",
+			"type": "number",
+			"desc": "",
+			"sid": 690574293986537
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 387276417424576
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 34,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\lock block.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1539299,
+						"collisionPoly": {
+							"points": [
+								0.3235294117647059,
+								0.3235294117647059,
+								0.5,
+								0.029411764705882353,
+								0.6470588235294118,
+								0.3235294117647059,
+								0.9411764705882353,
+								0.5,
+								0.6470588235294118,
+								0.6470588235294118,
+								0.5,
+								1,
+								0.3235294117647059,
+								0.6470588235294118,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 337074026108199,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

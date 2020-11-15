@@ -489,6 +489,27 @@
 								}
 							],
 							"sid": 522678959486903
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player_TargetPoint",
+									"sid": 325618933254711,
+									"parameters": {
+										"object": "NoTargetZone"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Player_TargetPoint",
+									"sid": 551311591056982
+								}
+							],
+							"sid": 179098883411809
 						}
 					]
 				}
@@ -2619,6 +2640,15 @@
 										"mouse-button": "right",
 										"click-type": "clicked"
 									}
+								},
+								{
+									"id": "cursor-is-over-object",
+									"objectClass": "Mouse",
+									"sid": 984802215987249,
+									"parameters": {
+										"object": "NoTargetZone"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [],
@@ -3234,6 +3264,29 @@
 									"sid": 427857018304181
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 816470859378446,
+									"parameters": {
+										"object": "Asteroids"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Damage Player",
+									"sid": 839491295427093,
+									"parameters": [
+										"1"
+									]
+								}
+							],
+							"sid": 814714981258432
 						}
 					],
 					"sid": 302662037219068
@@ -3882,87 +3935,127 @@
 											}
 										},
 										{
-											"id": "compare-instance-variable",
+											"id": "on-collision-with-another-object",
 											"objectClass": "AsteroidLvl1",
-											"sid": 627314485633581,
+											"sid": 697792019975674,
 											"parameters": {
-												"instance-variable": "Health",
-												"comparison": 3,
-												"value": "0"
+												"object": "Player"
 											}
 										}
 									],
-									"actions": [
+									"actions": [],
+									"sid": 678789231869747,
+									"children": [
 										{
-											"id": "destroy",
-											"objectClass": "AsteroidLvl1",
-											"sid": 868046293393990
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "AsteroidLvl1",
+													"sid": 596200104253855,
+													"parameters": {
+														"instance-variable": "Health",
+														"comparison": 3,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "AsteroidLvl1",
+													"sid": 267568284782182
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "AsteroidLvl1",
+													"sid": 514512331525949,
+													"parameters": {
+														"object": "AsteroidLvl0",
+														"layer": "L_Main",
+														"image-point": "0"
+													}
+												},
+												{
+													"id": "apply-impulse-at-angle",
+													"objectClass": "AsteroidLvl0",
+													"sid": 995406697665141,
+													"behaviorType": "Physics",
+													"parameters": {
+														"impulse": "2",
+														"angle": "random(0,360)",
+														"image-point": "0"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "AsteroidLvl1",
+													"sid": 377022044130111,
+													"parameters": {
+														"object": "AsteroidLvl0",
+														"layer": "L_Main",
+														"image-point": "0"
+													}
+												},
+												{
+													"id": "apply-impulse-at-angle",
+													"objectClass": "AsteroidLvl0",
+													"sid": 540235665729362,
+													"behaviorType": "Physics",
+													"parameters": {
+														"impulse": "2",
+														"angle": "random(0,360)",
+														"image-point": "0"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "AsteroidLvl1",
+													"sid": 621919004816050,
+													"parameters": {
+														"object": "AsteroidLvl0",
+														"layer": "L_Main",
+														"image-point": "0"
+													}
+												},
+												{
+													"id": "apply-impulse-at-angle",
+													"objectClass": "AsteroidLvl0",
+													"sid": 439927560241455,
+													"behaviorType": "Physics",
+													"parameters": {
+														"impulse": "2",
+														"angle": "random(0,360)",
+														"image-point": "0"
+													}
+												}
+											],
+											"sid": 189342471073726
 										},
 										{
-											"id": "spawn-another-object",
-											"objectClass": "AsteroidLvl1",
-											"sid": 642302224833464,
-											"parameters": {
-												"object": "AsteroidLvl0",
-												"layer": "L_Main",
-												"image-point": "0"
-											}
-										},
-										{
-											"id": "apply-impulse-at-angle",
-											"objectClass": "AsteroidLvl0",
-											"sid": 174917750995114,
-											"behaviorType": "Physics",
-											"parameters": {
-												"impulse": "2",
-												"angle": "random(0,360)",
-												"image-point": "0"
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "AsteroidLvl1",
-											"sid": 423137613752714,
-											"parameters": {
-												"object": "AsteroidLvl0",
-												"layer": "L_Main",
-												"image-point": "0"
-											}
-										},
-										{
-											"id": "apply-impulse-at-angle",
-											"objectClass": "AsteroidLvl0",
-											"sid": 110282567444925,
-											"behaviorType": "Physics",
-											"parameters": {
-												"impulse": "2",
-												"angle": "random(0,360)",
-												"image-point": "0"
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "AsteroidLvl1",
-											"sid": 660987426843590,
-											"parameters": {
-												"object": "AsteroidLvl0",
-												"layer": "L_Main",
-												"image-point": "0"
-											}
-										},
-										{
-											"id": "apply-impulse-at-angle",
-											"objectClass": "AsteroidLvl0",
-											"sid": 430010723046748,
-											"behaviorType": "Physics",
-											"parameters": {
-												"impulse": "2",
-												"angle": "random(0,360)",
-												"image-point": "0"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 104713550647674
+												}
+											],
+											"actions": [
+												{
+													"id": "subtract-from-instvar",
+													"objectClass": "AsteroidLvl1",
+													"sid": 799396951244318,
+													"parameters": {
+														"instance-variable": "Health",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 646955235606211
 										}
 									],
-									"sid": 678789231869747
+									"isOrBlock": true
 								}
 							],
 							"sid": 784877972307195
@@ -3984,6 +4077,14 @@
 											"parameters": {
 												"object": "Bullet_P"
 											}
+										},
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "AsteroidLvl0",
+											"sid": 706721057875805,
+											"parameters": {
+												"object": "Player"
+											}
 										}
 									],
 									"actions": [
@@ -3993,7 +4094,8 @@
 											"sid": 387723890386623
 										}
 									],
-									"sid": 152449853238011
+									"sid": 152449853238011,
+									"isOrBlock": true
 								}
 							],
 							"sid": 284162324524648
@@ -5619,38 +5721,374 @@
 						{
 							"eventType": "group",
 							"disabled": false,
-							"title": "Key Lock",
+							"title": "Bullet Key",
 							"description": "",
 							"isActiveOnStart": true,
-							"children": [],
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Bullet_P",
+											"sid": 727150788429774,
+											"parameters": {
+												"object": "Key_Bullet"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Key_Bullet",
+											"sid": 862375269091052,
+											"parameters": {
+												"instance-variable": "IsHold"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Destroy Lock Block",
+											"sid": 163374428712488,
+											"parameters": [
+												"Key_Bullet.KeyID",
+												true,
+												false,
+												false
+											]
+										}
+									],
+									"sid": 213894270812587
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Bullet_P",
+											"sid": 453698769054960,
+											"parameters": {
+												"object": "Key_Bullet"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Key_Bullet",
+											"sid": 603200727578295,
+											"parameters": {
+												"instance-variable": "IsHold"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 159617022560786
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Disable Lock Block",
+											"sid": 362626280074188,
+											"parameters": [
+												"Key_Bullet.KeyID",
+												true,
+												false,
+												false
+											]
+										}
+									],
+									"sid": 769053725169332
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Bullet_P",
+											"sid": 924482041397718,
+											"parameters": {
+												"object": "Key_Bullet"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Key_Bullet",
+											"sid": 820376974145574,
+											"parameters": {
+												"instance-variable": "IsHold"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 287504931129400
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Enable Lock Block",
+											"sid": 384150266020124,
+											"parameters": [
+												"Key_Bullet.KeyID",
+												true,
+												false,
+												false
+											]
+										}
+									],
+									"sid": 264510835121339
+								}
+							],
 							"sid": 195488430175478
 						},
 						{
 							"eventType": "group",
 							"disabled": false,
-							"title": "Touch Lock",
+							"title": "Touch Key",
 							"description": "",
 							"isActiveOnStart": true,
-							"children": [],
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Player",
+											"sid": 804166999527728,
+											"parameters": {
+												"object": "Key_Touch"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Key_Touch",
+											"sid": 108643495288349,
+											"parameters": {
+												"instance-variable": "IsHold"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Destroy Lock Block",
+											"sid": 587587637867739,
+											"parameters": [
+												"Key_Touch.KeyID",
+												false,
+												true,
+												false
+											]
+										}
+									],
+									"sid": 376023234257525
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 382433188239297,
+											"parameters": {
+												"object": "Key_Touch"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Key_Touch",
+											"sid": 283742289227926,
+											"parameters": {
+												"instance-variable": "IsHold"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 714179192481023
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Disable Lock Block",
+											"sid": 803596411398875,
+											"parameters": [
+												"Key_Touch.KeyID",
+												false,
+												true,
+												false
+											]
+										}
+									],
+									"sid": 645919894380230
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 714642822956594,
+											"parameters": {
+												"object": "Key_Touch"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Key_Touch",
+											"sid": 562620218914959,
+											"parameters": {
+												"instance-variable": "IsHold"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 272786171336582
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Enable Lock Block",
+											"sid": 565872962386478,
+											"parameters": [
+												"Key_Touch.KeyID",
+												false,
+												true,
+												false
+											]
+										}
+									],
+									"sid": 238564900813219
+								}
+							],
 							"sid": 372446704837478
 						},
 						{
 							"eventType": "group",
 							"disabled": false,
-							"title": "Killcount Lock",
+							"title": "Ball Key",
 							"description": "",
 							"isActiveOnStart": true,
-							"children": [],
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Ball",
+											"sid": 852839635304424,
+											"parameters": {
+												"object": "Key_Ball"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Key_Ball",
+											"sid": 906491229598502,
+											"parameters": {
+												"instance-variable": "IsHold"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Destroy Lock Block",
+											"sid": 586209960232062,
+											"parameters": [
+												"Key_Ball.KeyID",
+												false,
+												false,
+												true
+											]
+										}
+									],
+									"sid": 910635186531368
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Ball",
+											"sid": 603404894516346,
+											"parameters": {
+												"object": "Key_Ball"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Key_Ball",
+											"sid": 628083986652305,
+											"parameters": {
+												"instance-variable": "IsHold"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 820503965331206
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Disable Lock Block",
+											"sid": 682885455652490,
+											"parameters": [
+												"Key_Ball.KeyID",
+												false,
+												false,
+												true
+											]
+										}
+									],
+									"sid": 784560250513912
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Ball",
+											"sid": 462030888431594,
+											"parameters": {
+												"object": "Key_Ball"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Key_Ball",
+											"sid": 442569739947175,
+											"parameters": {
+												"instance-variable": "IsHold"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 413006181808817
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Enable Lock Block",
+											"sid": 230564590113576,
+											"parameters": [
+												"Key_Ball.KeyID",
+												false,
+												false,
+												true
+											]
+										}
+									],
+									"sid": 637931211938150
+								}
+							],
 							"sid": 312932288700106
-						},
-						{
-							"eventType": "group",
-							"disabled": false,
-							"title": "Target Kill Lock",
-							"description": "",
-							"isActiveOnStart": true,
-							"children": [],
-							"sid": 317286447374180
 						}
 					],
 					"sid": 252237177471598
@@ -5658,19 +6096,34 @@
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Key",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [],
-					"sid": 269882750118949
-				},
-				{
-					"eventType": "group",
-					"disabled": false,
 					"title": "Hazard Spike",
 					"description": "",
 					"isActiveOnStart": true,
-					"children": [],
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 284791813933603,
+									"parameters": {
+										"object": "HazardSpike"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Damage Player",
+									"sid": 100394163363248,
+									"parameters": [
+										"3"
+									]
+								}
+							],
+							"sid": 220727205011571
+						}
+					],
 					"sid": 930395110021897
 				},
 				{
@@ -5679,7 +6132,522 @@
 					"title": "Lock Block",
 					"description": "",
 					"isActiveOnStart": true,
-					"children": [],
+					"children": [
+						{
+							"functionName": "Destroy Lock Block",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [
+								{
+									"name": "KeyID",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"sid": 340019286101400
+								},
+								{
+									"name": "IsBullet",
+									"type": "boolean",
+									"initialValue": "false",
+									"comment": "",
+									"sid": 599479705086205
+								},
+								{
+									"name": "IsTouch",
+									"type": "boolean",
+									"initialValue": "false",
+									"comment": "",
+									"sid": 977832133038917
+								},
+								{
+									"name": "IsBall",
+									"type": "boolean",
+									"initialValue": "false",
+									"comment": "",
+									"sid": 949791923530846
+								}
+							],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 242682836996114,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 516004638818098,
+											"parameters": {
+												"variable": "IsBall"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "LockBlock",
+											"sid": 154737252988092,
+											"parameters": {
+												"instance-variable": "KeyID",
+												"comparison": 0,
+												"value": "KeyID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "LockBlock",
+											"sid": 723779446525888
+										}
+									],
+									"sid": 114280053888962
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 628514038675117
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 226159473852294,
+											"parameters": {
+												"variable": "IsBullet"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "LockBlock",
+											"sid": 336037653620406,
+											"parameters": {
+												"instance-variable": "KeyID",
+												"comparison": 0,
+												"value": "KeyID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "LockBlock",
+											"sid": 117707036388455
+										}
+									],
+									"sid": 710682945641473
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 845965011243394
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 259588190175846,
+											"parameters": {
+												"variable": "IsTouch"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "LockBlock",
+											"sid": 199180140546311,
+											"parameters": {
+												"instance-variable": "KeyID",
+												"comparison": 0,
+												"value": "KeyID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "LockBlock",
+											"sid": 206898595848066
+										}
+									],
+									"sid": 373233573055353
+								}
+							]
+						},
+						{
+							"functionName": "Disable Lock Block",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [
+								{
+									"name": "KeyID",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"sid": 814302065873110
+								},
+								{
+									"name": "IsBullet",
+									"type": "boolean",
+									"initialValue": "false",
+									"comment": "",
+									"sid": 143136710736862
+								},
+								{
+									"name": "IsTouch",
+									"type": "boolean",
+									"initialValue": "false",
+									"comment": "",
+									"sid": 506132124289761
+								},
+								{
+									"name": "IsBall",
+									"type": "boolean",
+									"initialValue": "false",
+									"comment": "",
+									"sid": 342410846299803
+								}
+							],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 937477412914445,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 126190218565278,
+											"parameters": {
+												"variable": "IsBall"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "LockBlock",
+											"sid": 121031165006601,
+											"parameters": {
+												"instance-variable": "KeyID",
+												"comparison": 0,
+												"value": "KeyID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "LockBlock",
+											"sid": 287346498786669,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 795736227851492
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 429796369979872
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 904782616380473,
+											"parameters": {
+												"variable": "IsBullet"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "LockBlock",
+											"sid": 575818252061758,
+											"parameters": {
+												"instance-variable": "KeyID",
+												"comparison": 0,
+												"value": "KeyID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "LockBlock",
+											"sid": 279436769685615,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 881557401357607
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 568495526239901
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 759571183280837,
+											"parameters": {
+												"variable": "IsTouch"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "LockBlock",
+											"sid": 498013772734904,
+											"parameters": {
+												"instance-variable": "KeyID",
+												"comparison": 0,
+												"value": "KeyID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "LockBlock",
+											"sid": 840049040291815,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 281092976703225
+								}
+							]
+						},
+						{
+							"functionName": "Enable Lock Block",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [
+								{
+									"name": "KeyID",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"sid": 997234304995913
+								},
+								{
+									"name": "IsBullet",
+									"type": "boolean",
+									"initialValue": "false",
+									"comment": "",
+									"sid": 551953925857072
+								},
+								{
+									"name": "IsTouch",
+									"type": "boolean",
+									"initialValue": "false",
+									"comment": "",
+									"sid": 306774970257426
+								},
+								{
+									"name": "IsBall",
+									"type": "boolean",
+									"initialValue": "false",
+									"comment": "",
+									"sid": 621183363579235
+								}
+							],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 630133650512724,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 531995587054422,
+											"parameters": {
+												"variable": "IsBall"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "LockBlock",
+											"sid": 169372549537956,
+											"parameters": {
+												"instance-variable": "KeyID",
+												"comparison": 0,
+												"value": "KeyID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "LockBlock",
+											"sid": 929175863295653,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 185284240972302
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 691195308559104
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 518251077758441,
+											"parameters": {
+												"variable": "IsBullet"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "LockBlock",
+											"sid": 280632535301198,
+											"parameters": {
+												"instance-variable": "KeyID",
+												"comparison": 0,
+												"value": "KeyID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "LockBlock",
+											"sid": 670745553464526,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 469280815927777
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 410141451217410
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 485814300049368,
+											"parameters": {
+												"variable": "IsTouch"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "LockBlock",
+											"sid": 636624049513413,
+											"parameters": {
+												"instance-variable": "KeyID",
+												"comparison": 0,
+												"value": "KeyID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "LockBlock",
+											"sid": 380980428147099,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 117992863365116
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-visible",
+									"objectClass": "LockBlock",
+									"sid": 826462722262302,
+									"isInverted": true
+								},
+								{
+									"id": "is-enabled",
+									"objectClass": "LockBlock",
+									"sid": 236518457313057,
+									"behaviorType": "Solid"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "LockBlock",
+									"sid": 573147794404032,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								}
+							],
+							"sid": 213141684851054
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-visible",
+									"objectClass": "LockBlock",
+									"sid": 115152569444634
+								},
+								{
+									"id": "is-enabled",
+									"objectClass": "LockBlock",
+									"sid": 308681126832479,
+									"behaviorType": "Solid",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "LockBlock",
+									"sid": 403624268767095,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 890597911117779
+						}
+					],
 					"sid": 860813521462215
 				},
 				{

@@ -295,7 +295,7 @@
 			"eventType": "variable",
 			"name": "Cooldown_Weapon1",
 			"type": "number",
-			"initialValue": "0.2",
+			"initialValue": "0.15",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": true,

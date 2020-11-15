@@ -35,19 +35,18 @@ Enemy Types:
 -Find & Chase Player "battering ram" - Done
 -Find & Chase Player & Shooting      - Done
 -"Neutral" Splitting Asteroid        - Done
--Stealth Bomb Ships                  - 
+-Bomb Ships                          - 
 -"Mothership" Spawner                - 
 -Healer Ship                         - 
 
 Interactable Objects:
--Bullet Key/Toggle                   - 
--Player Key/Toggle                   - 
--Enemy Kills Key                     - 
--Specific Enemy Kills Key            - 
--Lock/Key Object                     - 
--Lock Block                          - 
--No Target Zone                      - 
--Hazard Spike                        - 
+-Bullet Key                          - Done
+-Player Key                          - Done
+-Ball Key                            - Done
+-Lock Block                          - Done
+-Lock Trigger                        - Done
+-No Target Zone                      - Done
+-Hazard Spike                        - Done
 -Health/Energy/Shield Pickups        - Done
 -Solid Wall                          - Done
 -Bullet Wall                         - Done

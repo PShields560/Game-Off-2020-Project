@@ -136,6 +136,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Rotate",
 			"name": "Rotate",
 			"author": "Scirra",
@@ -170,14 +178,6 @@
 			"type": "behavior",
 			"id": "Pathfinding",
 			"name": "Pathfinding",
-			"author": "Scirra",
-			"version": "r218",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Physics",
-			"name": "Physics",
 			"author": "Scirra",
 			"version": "r218",
 			"bundled": false
@@ -324,10 +324,16 @@
 					},
 					{
 						"items": [
-							"TeleportPoint",
+							"Key_Touch",
 							"Pickup_Shield",
 							"Pickup_HP_Restore",
-							"Pickup_EnergyOverdrive"
+							"Pickup_EnergyOverdrive",
+							"HazardSpike",
+							"NoTargetZone",
+							"LockBlock",
+							"Key_Bullet",
+							"Key_Ball",
+							"Ball"
 						],
 						"subfolders": [],
 						"name": "Interactable Objects"
@@ -436,7 +442,8 @@
 		"items": [
 			"Bullets",
 			"Asteroids",
-			"Pickups"
+			"Pickups",
+			"Keys"
 		],
 		"subfolders": []
 	},

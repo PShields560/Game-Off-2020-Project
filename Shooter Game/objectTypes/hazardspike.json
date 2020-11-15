@@ -1,0 +1,63 @@
+{
+	"name": "HazardSpike",
+	"plugin-id": "Sprite",
+	"sid": 420396194730464,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 610151243939320
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 36,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\Spike.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2978671,
+						"collisionPoly": {
+							"points": [
+								0.3333333333333333,
+								0.3333333333333333,
+								0.5,
+								0.05555555555555555,
+								0.6388888888888888,
+								0.3333333333333333,
+								0.9166666666666666,
+								0.5,
+								0.6388888888888888,
+								0.6388888888888888,
+								0.5,
+								0.9722222222222222,
+								0.3333333333333333,
+								0.6388888888888888,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 534088501259979,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"name": "Keys",
+	"plugin-id": "Sprite",
+	"sid": 473054754219573,
+	"instanceVariables": [
+		{
+			"name": "KeyID",
+			"type": "number",
+			"desc": "",
+			"sid": 799135207003418
+		},
+		{
+			"name": "IsHold",
+			"type": "boolean",
+			"desc": "",
+			"sid": 616392129256044
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Key_Ball",
+		"Key_Bullet",
+		"Key_Touch"
+	]
+}
