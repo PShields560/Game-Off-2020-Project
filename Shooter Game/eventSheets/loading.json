@@ -14,9 +14,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 109207326768856,
+					"sid": 956874513169849,
 					"parameters": {
-						"layout": "Test Layout"
+						"layout": "Menu Screen"
 					}
 				}
 			],

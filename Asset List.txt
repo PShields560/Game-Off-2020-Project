@@ -1,0 +1,111 @@
+General Asset List
+
+The overall style I'm trying to go for with this game is something like a glowing neon space shooter similar to the style of Geometry Wars.
+
+All art assets will appear in the game with a glow effect added to them. Sprites with brightly colored solid outlines and semi transparent fill colors or just sprites that are a solid outline tend to work best with the effects applied.
+
+-------------------------------------------------------------
+Art:
+
+Player Stuff
+-Player Starter Ship
+-Player Unlockable Alternate Ships (will not affect gameplay)
+-Player Target Reticle
+
+Enemies
+-Stationary Turret Enemy
+-Battering Ram Ship Enemy
+-Space Fighter Ship Enemy
+-Space Bomber Ship Enemy
+-Healer Ship Enemy
+-Spawner "Mothership" Enemy
+
+Neutral "Enemies"
+-Tiny Asteroid
+-Medium Asteroid
+-Large Asteroid
+-Giant Asteroid
+-Colossal Asteroid
+
+Projectiles
+-Machine Gun Bullet
+-Photon Laser Bullet
+-Seeking Dart Bullet
+-Bouncy Bomb Bullet
+-Particle Shotgun Bullet
+
+Interactable Objects
+-Health Pickup
+-Shield Pickup
+-Energy Pickup
+-Lock Block
+-Hazard Spike
+-Ball
+-Touch to Unlock Key
+-Shoot to Unlock Key
+-Touch w. Ball to Unlock Key
+-Solid Walls 47-tile Tileset
+-Bullet Walls 47-tile Tileset
+-"No Target Zone" Repeating Background
+
+HUD and UI
+-Health Bar/Hearts/Indicator (Object will appear as a line of "hearts" and will be their original color or greyed out to indicate how much health the player has left)
+-Shield Bar 9 patch image
+-Energy Bar 9 patch image
+-Health Icon
+-Energy Icon
+-Shield Icon
+-UI Box
+
+-------------------------------------------------------------
+SFX:
+-Player Shoot Machine Gun
+-Player Shoot Photon Laser
+-Player Shoot Seeking Darts
+-Player Shoot Bouncy Bombs
+-Player Shoot Particle Shotgun
+-Player Bomb Explosion
+-Player Set Target Position
+-Player Set Target Enemy
+-Player Set Target Ball
+-Player Set Target Failure
+-Player Hit by Projectile
+-Player Death
+-Player Touch Health Pickup
+-Player Touch Shield Pickup
+-Player Touch Energy Pickup
+-Player Touch Wall
+-Player Touch Ball
+-Player Impact Hazard Spike
+
+-Enemy Shoot Machine Gun
+-Enemy Shoot Photon Laser
+-Enemy Shoot Seeking Darts
+-Enemy Shoot Bouncy Bombs
+-Enemy Shoot Particle Shotgun
+-Enemy Hit by Projectiles
+-Enemy Bomb Explosion
+-Enemy Death
+-Enemy Impact Player
+
+-Projectile Bounce
+-Projectile Impact Wall
+-Projectile Impact Asteroid
+
+-Asteroid Impact Wall
+-Asteroid Impact Player
+-Asteroid Explosion
+
+-Lock Block Explode
+-Lock Block Toggle Off
+-Lock Block Toggle On
+-Touch Key Activate
+-Touch Key Deactivate
+-Bullet Key Activate
+-Bullet Key Deactivate
+-Ball Key Activate
+-Ball Key Deactivate
+
+-UI Interactable Text Click
+-UI Button Click
+-Pause Menu Open/Close

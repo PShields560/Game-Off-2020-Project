@@ -1,0 +1,68 @@
+{
+	"name": "LevelIcon",
+	"plugin-id": "Sprite",
+	"sid": 216034316497296,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Index",
+			"type": "number",
+			"desc": "",
+			"sid": 516407702311184
+		},
+		{
+			"name": "LevelName",
+			"type": "string",
+			"desc": "",
+			"sid": 852643527146335
+		},
+		{
+			"name": "Name",
+			"type": "string",
+			"desc": "",
+			"sid": 176944114597505
+		},
+		{
+			"name": "Description",
+			"type": "string",
+			"desc": "",
+			"sid": 907711642128500
+		},
+		{
+			"name": "Score",
+			"type": "number",
+			"desc": "",
+			"sid": 747297964493425
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6414254,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 985116311659503,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

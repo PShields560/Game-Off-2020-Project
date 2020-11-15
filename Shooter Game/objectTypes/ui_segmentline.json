@@ -1,0 +1,20 @@
+{
+	"name": "UI_SegmentLine",
+	"plugin-id": "NinePatch",
+	"sid": 464996959051844,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 30,
+		"height": 3,
+		"originX": 0.5,
+		"originY": -4.666666666666667,
+		"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\uiinner.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 4839336,
+		"useCollisionPoly": true
+	}
+}

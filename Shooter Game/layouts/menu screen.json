@@ -1,11 +1,11 @@
 {
-	"name": "Loading Screen",
+	"name": "Menu Screen",
 	"layers": [
 		{
 			"name": "BG_1",
 			"overriden": 1,
 			"instances": [],
-			"sid": 326382265308815,
+			"sid": 168384973593684,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -33,7 +33,7 @@
 			"name": "BG_2",
 			"overriden": 1,
 			"instances": [],
-			"sid": 252389449527864,
+			"sid": 105006891514036,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -61,7 +61,7 @@
 			"name": "BG_3",
 			"overriden": 1,
 			"instances": [],
-			"sid": 583988765687204,
+			"sid": 483128733511742,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -89,7 +89,7 @@
 			"name": "BG_4",
 			"overriden": 1,
 			"instances": [],
-			"sid": 368247259921847,
+			"sid": 388382156265490,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -117,7 +117,7 @@
 			"name": "BG_Obj_1",
 			"overriden": 0,
 			"instances": [],
-			"sid": 227116583020570,
+			"sid": 182277491324194,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -145,7 +145,7 @@
 			"name": "BG_Obj_2",
 			"overriden": 0,
 			"instances": [],
-			"sid": 121943956822212,
+			"sid": 465404235799964,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -173,7 +173,7 @@
 			"name": "BG_Obj_3",
 			"overriden": 0,
 			"instances": [],
-			"sid": 456893196470886,
+			"sid": 286069164634535,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -201,7 +201,7 @@
 			"name": "Main Game Layer",
 			"overriden": 0,
 			"instances": [],
-			"sid": 197084532920009,
+			"sid": 209164097396531,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -229,7 +229,7 @@
 			"name": "FG_Obj_1",
 			"overriden": 0,
 			"instances": [],
-			"sid": 489666648832231,
+			"sid": 657676967034106,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -257,7 +257,7 @@
 			"name": "FG_Obj_2",
 			"overriden": 0,
 			"instances": [],
-			"sid": 284574824807699,
+			"sid": 675939375680346,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -285,7 +285,7 @@
 			"name": "HUD_1",
 			"overriden": 1,
 			"instances": [],
-			"sid": 302515921335288,
+			"sid": 835014832112974,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -313,7 +313,7 @@
 			"name": "HUD_2",
 			"overriden": 1,
 			"instances": [],
-			"sid": 279820881544695,
+			"sid": 345806723577912,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -341,7 +341,7 @@
 			"name": "HUD_3",
 			"overriden": 1,
 			"instances": [],
-			"sid": 330694955940086,
+			"sid": 336587181642035,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -369,7 +369,7 @@
 			"name": "HUD_4",
 			"overriden": 1,
 			"instances": [],
-			"sid": 958670136647308,
+			"sid": 860106178520072,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -397,7 +397,7 @@
 			"name": "UI_1",
 			"overriden": 1,
 			"instances": [],
-			"sid": 723669203109496,
+			"sid": 563439888402669,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -425,7 +425,7 @@
 			"name": "UI_2",
 			"overriden": 1,
 			"instances": [],
-			"sid": 852552547765726,
+			"sid": 100026894439354,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -453,7 +453,7 @@
 			"name": "UI_3",
 			"overriden": 1,
 			"instances": [],
-			"sid": 764156859109744,
+			"sid": 994559538881225,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -481,7 +481,7 @@
 			"name": "UI_4",
 			"overriden": 1,
 			"instances": [],
-			"sid": 705145787855699,
+			"sid": 101544442256643,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -509,7 +509,7 @@
 			"name": "UI_5",
 			"overriden": 1,
 			"instances": [],
-			"sid": 868963475157916,
+			"sid": 505813456714077,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -537,7 +537,7 @@
 			"name": "UI_6",
 			"overriden": 1,
 			"instances": [],
-			"sid": 170554993670663,
+			"sid": 379726766696497,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -565,7 +565,7 @@
 			"name": "UI_7",
 			"overriden": 1,
 			"instances": [],
-			"sid": 148871481211294,
+			"sid": 197897297279974,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -593,7 +593,7 @@
 			"name": "UI_8",
 			"overriden": 1,
 			"instances": [],
-			"sid": 475238355421247,
+			"sid": 990429079882325,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -621,7 +621,7 @@
 			"name": "UI_9",
 			"overriden": 1,
 			"instances": [],
-			"sid": 581606752672395,
+			"sid": 112774140305073,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -649,7 +649,7 @@
 			"name": "UI_10",
 			"overriden": 1,
 			"instances": [],
-			"sid": 302204684930639,
+			"sid": 567762580077954,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -677,7 +677,7 @@
 			"name": "UI_11",
 			"overriden": 1,
 			"instances": [],
-			"sid": 670930707779511,
+			"sid": 819067178840118,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -705,7 +705,7 @@
 			"name": "UI_12",
 			"overriden": 1,
 			"instances": [],
-			"sid": 801694606506739,
+			"sid": 496485377875704,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -733,7 +733,7 @@
 			"name": "UI_13",
 			"overriden": 1,
 			"instances": [],
-			"sid": 932993357887007,
+			"sid": 508040566896663,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -761,7 +761,7 @@
 			"name": "UI_14",
 			"overriden": 1,
 			"instances": [],
-			"sid": 742331053888093,
+			"sid": 543644661022666,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -811,7 +811,7 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 5,
+					"uid": 60,
 					"instanceVariables": {
 						"ID": 0,
 						"Tag": ""
@@ -835,7 +835,7 @@
 					}
 				}
 			],
-			"sid": 768178742156382,
+			"sid": 595386112126322,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -860,11 +860,11 @@
 			"global": false
 		}
 	],
-	"sid": 383194610508030,
+	"sid": 371078400127096,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2560,
 	"height": 1440,
 	"unboundedScrolling": false,
-	"eventSheet": "Loading"
+	"eventSheet": "Menu Screen"
 }

@@ -71,6 +71,42 @@
 							"parameters": {
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 796898700785375,
+							"parameters": {
+								"layer": "L_HUD1",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 424368003752402,
+							"parameters": {
+								"layer": "L_HUD2",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 884147694120072,
+							"parameters": {
+								"layer": "L_HUD3",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 959888405570554,
+							"parameters": {
+								"layer": "L_HUD4",
+								"visibility": "visible"
+							}
 						}
 					],
 					"sid": 261339697548126,
@@ -1207,6 +1243,57 @@
 										}
 									],
 									"sid": 554626255127433
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "Ball",
+											"sid": 461132819494970,
+											"parameters": {
+												"unique-id": "TargetUID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 660874047383834,
+											"parameters": {
+												"object-to-create": "Player_TargetPoint",
+												"layer": "L_Main",
+												"x": "Ball.X",
+												"y": "Ball.Y"
+											}
+										},
+										{
+											"id": "pin-to-object-properties",
+											"objectClass": "Player_TargetPoint",
+											"sid": 600579560101205,
+											"behaviorType": "Pin",
+											"parameters": {
+												"pin-to": "Ball",
+												"x": true,
+												"y": true,
+												"angle": true,
+												"width-type": "no",
+												"height-type": "no",
+												"z": false
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player_TargetPoint",
+											"sid": 116450244098107,
+											"parameters": {
+												"instance-variable": "IsTargetObject",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 230162282314017
 								}
 							]
 						}
@@ -2680,6 +2767,33 @@
 										}
 									],
 									"sid": 439263074807481
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 834124968818262,
+											"parameters": {
+												"object": "Ball"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Player Set New Target",
+											"sid": 582713868653216,
+											"parameters": [
+												"0",
+												"0",
+												"Ball.UID",
+												false,
+												true
+											]
+										}
+									],
+									"sid": 174179712079119
 								},
 								{
 									"eventType": "block",
@@ -6096,6 +6210,124 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "Ball",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 435057357244247,
+									"parameters": {
+										"object": "Ball"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-impulse-at-angle",
+									"objectClass": "Ball",
+									"sid": 587080977997352,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "1",
+										"angle": "angle(Player.X, Player.Y, Ball.X, Ball.Y)",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 530262665976939
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Bullet_P",
+									"sid": 262934904190961,
+									"parameters": {
+										"object": "Ball"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-impulse-at-angle",
+									"objectClass": "Ball",
+									"sid": 380876530370859,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "1",
+										"angle": "Bullet_P.Bullet.AngleOfMotion",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 703510656845526
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Bullet_E",
+									"sid": 689421923012932,
+									"parameters": {
+										"object": "Ball"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-impulse-at-angle",
+									"objectClass": "Ball",
+									"sid": 528507769699332,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "1",
+										"angle": "Bullet_E.Bullet.AngleOfMotion",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 126555482177758
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Bullet_N",
+									"sid": 744669413037187,
+									"parameters": {
+										"object": "Ball"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "apply-impulse-at-angle",
+									"objectClass": "Ball",
+									"sid": 247720859120752,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "1",
+										"angle": "Bullet_N.Bullet.AngleOfMotion",
+										"image-point": "0"
+									}
+								}
+							],
+							"sid": 570650201450401
+						}
+					],
+					"sid": 207542297659358
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "Hazard Spike",
 					"description": "",
 					"isActiveOnStart": true,
@@ -6186,9 +6418,17 @@
 											}
 										},
 										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "LockBlock",
+											"sid": 577885047920965,
+											"parameters": {
+												"instance-variable": "IsBallLock"
+											}
+										},
+										{
 											"id": "compare-instance-variable",
 											"objectClass": "LockBlock",
-											"sid": 154737252988092,
+											"sid": 917330505957970,
 											"parameters": {
 												"instance-variable": "KeyID",
 												"comparison": 0,
@@ -6222,9 +6462,17 @@
 											}
 										},
 										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "LockBlock",
+											"sid": 997934812459005,
+											"parameters": {
+												"instance-variable": "IsBulletLock"
+											}
+										},
+										{
 											"id": "compare-instance-variable",
 											"objectClass": "LockBlock",
-											"sid": 336037653620406,
+											"sid": 571123493062576,
 											"parameters": {
 												"instance-variable": "KeyID",
 												"comparison": 0,
@@ -6258,9 +6506,17 @@
 											}
 										},
 										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "LockBlock",
+											"sid": 832986039463799,
+											"parameters": {
+												"instance-variable": "IsTouchLock"
+											}
+										},
+										{
 											"id": "compare-instance-variable",
 											"objectClass": "LockBlock",
-											"sid": 199180140546311,
+											"sid": 702055489663153,
 											"parameters": {
 												"instance-variable": "KeyID",
 												"comparison": 0,
@@ -6332,9 +6588,17 @@
 											}
 										},
 										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "LockBlock",
+											"sid": 304200968630648,
+											"parameters": {
+												"instance-variable": "IsBallLock"
+											}
+										},
+										{
 											"id": "compare-instance-variable",
 											"objectClass": "LockBlock",
-											"sid": 121031165006601,
+											"sid": 250847715724055,
 											"parameters": {
 												"instance-variable": "KeyID",
 												"comparison": 0,
@@ -6371,9 +6635,17 @@
 											}
 										},
 										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "LockBlock",
+											"sid": 783017988661696,
+											"parameters": {
+												"instance-variable": "IsBulletLock"
+											}
+										},
+										{
 											"id": "compare-instance-variable",
 											"objectClass": "LockBlock",
-											"sid": 575818252061758,
+											"sid": 669162339614859,
 											"parameters": {
 												"instance-variable": "KeyID",
 												"comparison": 0,
@@ -6410,9 +6682,17 @@
 											}
 										},
 										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "LockBlock",
+											"sid": 763039521574491,
+											"parameters": {
+												"instance-variable": "IsTouchLock"
+											}
+										},
+										{
 											"id": "compare-instance-variable",
 											"objectClass": "LockBlock",
-											"sid": 498013772734904,
+											"sid": 357533420554707,
 											"parameters": {
 												"instance-variable": "KeyID",
 												"comparison": 0,
@@ -6487,9 +6767,17 @@
 											}
 										},
 										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "LockBlock",
+											"sid": 463660442216148,
+											"parameters": {
+												"instance-variable": "IsBallLock"
+											}
+										},
+										{
 											"id": "compare-instance-variable",
 											"objectClass": "LockBlock",
-											"sid": 169372549537956,
+											"sid": 619738396237105,
 											"parameters": {
 												"instance-variable": "KeyID",
 												"comparison": 0,
@@ -6526,9 +6814,17 @@
 											}
 										},
 										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "LockBlock",
+											"sid": 817801341165186,
+											"parameters": {
+												"instance-variable": "IsBulletLock"
+											}
+										},
+										{
 											"id": "compare-instance-variable",
 											"objectClass": "LockBlock",
-											"sid": 280632535301198,
+											"sid": 312806416153614,
 											"parameters": {
 												"instance-variable": "KeyID",
 												"comparison": 0,
@@ -6565,9 +6861,17 @@
 											}
 										},
 										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "LockBlock",
+											"sid": 228029673800046,
+											"parameters": {
+												"instance-variable": "IsTouchLock"
+											}
+										},
+										{
 											"id": "compare-instance-variable",
 											"objectClass": "LockBlock",
-											"sid": 636624049513413,
+											"sid": 766581578785236,
 											"parameters": {
 												"instance-variable": "KeyID",
 												"comparison": 0,

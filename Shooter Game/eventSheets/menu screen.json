@@ -1,0 +1,286 @@
+{
+	"name": "Menu Screen",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "GLOBAL VARIABLES"
+		},
+		{
+			"eventType": "variable",
+			"name": "SelectedLevel",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 624283087573664
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "On Start of Menu",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 115164503031843
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 300744471111774,
+							"parameters": {
+								"layer": "L_HUD1",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 681833282672824,
+							"parameters": {
+								"layer": "L_HUD2",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 950773397677247,
+							"parameters": {
+								"layer": "L_HUD3",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 782167871345036,
+							"parameters": {
+								"layer": "L_HUD4",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 673613671929880,
+							"parameters": {
+								"layer": "L_UI1",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 834915131712165,
+							"parameters": {
+								"layer": "L_UI2",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 137980243155571
+				}
+			],
+			"sid": 868722607637306
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Level Selection",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 755489277463760,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "LevelIcon"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 263751999667968,
+							"parameters": {
+								"variable": "SelectedLevel",
+								"value": "LevelIcon.Index"
+							}
+						}
+					],
+					"sid": 890359107553133
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 231356497885086,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Txt_UI"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 207749357598510,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Txt_UI",
+									"sid": 345008661867800,
+									"parameters": {
+										"instance-variable": "Tag",
+										"comparison": 0,
+										"value": "\"Start\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 684362794732112,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "LevelIcon",
+											"sid": 249066719980592,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "SelectedLevel"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout-by-name",
+											"objectClass": "System",
+											"sid": 952238390348621,
+											"parameters": {
+												"layout": "LevelIcon.LevelName"
+											}
+										}
+									],
+									"sid": 829432644069084
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 724815099735019
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "UI Text Display",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Txt_UI",
+							"sid": 810347725792246,
+							"parameters": {
+								"instance-variable": "Tag",
+								"comparison": 0,
+								"value": "\"Level Name\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Txt_UI",
+							"sid": 617030912596353,
+							"parameters": {
+								"text": "LevelIcon.Name"
+							}
+						}
+					],
+					"sid": 418631025577276
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Txt_UI",
+							"sid": 750446680436730,
+							"parameters": {
+								"instance-variable": "Tag",
+								"comparison": 0,
+								"value": "\"Level Description\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Txt_UI",
+							"sid": 542030015943456,
+							"parameters": {
+								"text": "LevelIcon.Description"
+							}
+						}
+					],
+					"sid": 536910779715414
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Txt_UI",
+							"sid": 773189044816826,
+							"parameters": {
+								"instance-variable": "Tag",
+								"comparison": 0,
+								"value": "\"Level Score\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Txt_UI",
+							"sid": 432832058750403,
+							"parameters": {
+								"text": "LevelIcon.Score"
+							}
+						}
+					],
+					"sid": 913142211842897
+				}
+			],
+			"sid": 468018787533617
+		}
+	],
+	"sid": 630708504024175
+}

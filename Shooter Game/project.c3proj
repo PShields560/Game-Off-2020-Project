@@ -398,7 +398,12 @@
 						"name": "HUD"
 					},
 					{
-						"items": [],
+						"items": [
+							"UI_Box",
+							"UI_Box_Inner",
+							"UI_SegmentLine",
+							"LevelIcon"
+						],
 						"subfolders": [],
 						"name": "UI"
 					}
@@ -450,7 +455,8 @@
 	"layouts": {
 		"items": [
 			"Test Layout",
-			"Loading Screen"
+			"Loading Screen",
+			"Menu Screen"
 		],
 		"subfolders": []
 	},
@@ -458,7 +464,8 @@
 		"items": [
 			"GAME CORE",
 			"Loading",
-			"GLOBAL VARIABLES"
+			"GLOBAL VARIABLES",
+			"Menu Screen"
 		],
 		"subfolders": []
 	},
