@@ -99,6 +99,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 378484496010007
+		},
+		{
+			"name": "IsJumpJetActive",
+			"type": "boolean",
+			"desc": "",
+			"sid": 712786656871748
 		}
 	],
 	"behaviorTypes": [
@@ -126,16 +132,6 @@
 			"behaviorId": "Tween",
 			"name": "Tween",
 			"sid": 944670844438844
-		},
-		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 992184050171265
-		},
-		{
-			"behaviorId": "Physics",
-			"name": "Physics",
-			"sid": 446688111435179
 		}
 	],
 	"effectTypes": [
@@ -156,7 +152,7 @@
 						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\Player Ships\\1_outline.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9190393,
+						"imageSpriteId": 9804516,
 						"collisionPoly": {
 							"points": [
 								0.017283950617283952,

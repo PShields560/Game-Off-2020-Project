@@ -440,6 +440,56 @@
 			"isStatic": false,
 			"isConstant": true,
 			"sid": 878295643302365
+		},
+		{
+			"eventType": "variable",
+			"name": "Level_EnemySpawnInterval",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 915108625115596
+		},
+		{
+			"eventType": "variable",
+			"name": "Level_EnemyCap",
+			"type": "number",
+			"initialValue": "30",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 551671669891318
+		},
+		{
+			"eventType": "variable",
+			"name": "Level_NextEnemyType",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 602331380594663
+		},
+		{
+			"eventType": "variable",
+			"name": "Level_NextEnemySpawnX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 134771763312098
+		},
+		{
+			"eventType": "variable",
+			"name": "Level_NextEnemySpawnY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 617371030716865
 		}
 	],
 	"sid": 861189234454270

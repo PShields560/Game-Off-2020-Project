@@ -70,18 +70,18 @@
 				{
 					"type": "Stars_White",
 					"properties": {
-						"rate": 1000,
-						"spray-cone": 360,
+						"rate": 2000,
+						"spray-cone": 60,
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 12,
 						"size": 3,
 						"opacity": 100,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 4,
+						"initial-speed-randomiser": 8,
 						"size-randomiser": 5,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
@@ -89,7 +89,7 @@
 						"angle-randomiser": 90,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 90,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 11,
@@ -115,18 +115,18 @@
 				{
 					"type": "Stars_Purple",
 					"properties": {
-						"rate": 1000,
-						"spray-cone": 360,
+						"rate": 2000,
+						"spray-cone": 60,
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 12,
 						"size": 3,
 						"opacity": 100,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 4,
+						"initial-speed-randomiser": 8,
 						"size-randomiser": 5,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
@@ -134,7 +134,7 @@
 						"angle-randomiser": 90,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 90,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 12,
@@ -160,18 +160,18 @@
 				{
 					"type": "Stars_Green",
 					"properties": {
-						"rate": 1000,
-						"spray-cone": 360,
+						"rate": 2000,
+						"spray-cone": 60,
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 12,
 						"size": 3,
 						"opacity": 100,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 4,
+						"initial-speed-randomiser": 8,
 						"size-randomiser": 5,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
@@ -179,7 +179,7 @@
 						"angle-randomiser": 90,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 90,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 13,
@@ -205,18 +205,18 @@
 				{
 					"type": "Stars_Blue",
 					"properties": {
-						"rate": 1000,
-						"spray-cone": 360,
+						"rate": 2000,
+						"spray-cone": 60,
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 12,
 						"size": 3,
 						"opacity": 100,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 4,
+						"initial-speed-randomiser": 8,
 						"size-randomiser": 5,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
@@ -224,7 +224,7 @@
 						"angle-randomiser": 90,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 90,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 14,
@@ -250,18 +250,18 @@
 				{
 					"type": "Stars_Red",
 					"properties": {
-						"rate": 1000,
-						"spray-cone": 360,
+						"rate": 2000,
+						"spray-cone": 60,
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 12,
 						"size": 3,
 						"opacity": 100,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 4,
+						"initial-speed-randomiser": 8,
 						"size-randomiser": 5,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
@@ -269,7 +269,7 @@
 						"angle-randomiser": 90,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 90,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 15,
@@ -295,26 +295,26 @@
 				{
 					"type": "Stars_Yellow",
 					"properties": {
-						"rate": 1000,
-						"spray-cone": 360,
+						"rate": 2000,
+						"spray-cone": 60,
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 12,
 						"size": 3,
 						"opacity": 100,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 4,
+						"initial-speed-randomiser": 8,
 						"size-randomiser": 5,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
 						"gravity": 0,
-						"angle-randomiser": 15,
+						"angle-randomiser": 90,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 90,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 16,
@@ -345,21 +345,21 @@
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 5,
 						"size": 200,
 						"opacity": 15,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 5,
-						"size-randomiser": 150,
+						"initial-speed-randomiser": 15,
+						"size-randomiser": 100,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
 						"gravity": 0,
 						"angle-randomiser": 15,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 0,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 18,
@@ -399,21 +399,21 @@
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 5,
 						"size": 200,
 						"opacity": 15,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 5,
-						"size-randomiser": 150,
+						"initial-speed-randomiser": 15,
+						"size-randomiser": 100,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
 						"gravity": 0,
 						"angle-randomiser": 15,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 0,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 19,
@@ -453,21 +453,21 @@
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 5,
 						"size": 200,
 						"opacity": 15,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 5,
-						"size-randomiser": 150,
+						"initial-speed-randomiser": 15,
+						"size-randomiser": 100,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
 						"gravity": 0,
 						"angle-randomiser": 15,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 0,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 20,
@@ -507,21 +507,21 @@
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 5,
 						"size": 200,
 						"opacity": 15,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 5,
-						"size-randomiser": 150,
+						"initial-speed-randomiser": 15,
+						"size-randomiser": 100,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
 						"gravity": 0,
 						"angle-randomiser": 15,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 0,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 21,
@@ -561,21 +561,21 @@
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 5,
 						"size": 200,
 						"opacity": 15,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 5,
-						"size-randomiser": 150,
+						"initial-speed-randomiser": 15,
+						"size-randomiser": 100,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
 						"gravity": 0,
 						"angle-randomiser": 15,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 0,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 22,
@@ -615,21 +615,21 @@
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 5,
 						"size": 200,
 						"opacity": 15,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 5,
-						"size-randomiser": 150,
+						"initial-speed-randomiser": 15,
+						"size-randomiser": 100,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
 						"gravity": 0,
 						"angle-randomiser": 15,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 0,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 23,
@@ -669,21 +669,21 @@
 						"type": "one-shot",
 						"object": -1,
 						"live-preview": false,
-						"speed": 3,
+						"speed": 5,
 						"size": 200,
 						"opacity": 15,
 						"grow-rate": 0,
 						"x-randomiser": 3000,
 						"y-randomiser": 3000,
-						"initial-speed-randomiser": 5,
-						"size-randomiser": 150,
+						"initial-speed-randomiser": 15,
+						"size-randomiser": 100,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
 						"gravity": 0,
 						"angle-randomiser": 15,
 						"life-speed-randomiser": 0,
 						"opacity-randomiser": 0,
-						"destroy-mode": "timeout-expired",
+						"destroy-mode": "fade-to-invisible",
 						"timeout": 9999999999999
 					},
 					"uid": 24,
@@ -717,37 +717,7 @@
 				}
 			],
 			"sid": 636819491260314,
-			"effectTypes": [
-				{
-					"effectId": "glowhorizontal",
-					"name": "GlowHorizontal",
-					"instance": {
-						"parameters": {
-							"intensity": 1.5
-						}
-					}
-				},
-				{
-					"effectId": "glowvertical",
-					"name": "GlowVertical",
-					"instance": {
-						"parameters": {
-							"intensity": 1.5
-						}
-					}
-				},
-				{
-					"effectId": "hsladjust",
-					"name": "AdjustHSL",
-					"instance": {
-						"parameters": {
-							"hue": 0,
-							"saturation": 1,
-							"luminosity": 1.5
-						}
-					}
-				}
-			],
+			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
 				1,
@@ -901,37 +871,7 @@
 				}
 			],
 			"sid": 849203121982510,
-			"effectTypes": [
-				{
-					"effectId": "glowhorizontal",
-					"name": "GlowHorizontal",
-					"instance": {
-						"parameters": {
-							"intensity": 1
-						}
-					}
-				},
-				{
-					"effectId": "glowvertical",
-					"name": "GlowVertical",
-					"instance": {
-						"parameters": {
-							"intensity": 1
-						}
-					}
-				},
-				{
-					"effectId": "hsladjust",
-					"name": "AdjustHSL",
-					"instance": {
-						"parameters": {
-							"hue": 0,
-							"saturation": 1,
-							"luminosity": 1.15
-						}
-					}
-				}
-			],
+			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
 				1,
@@ -1083,7 +1023,7 @@
 							1,
 							1,
 							1,
-							0.25
+							1
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1137,8 +1077,8 @@
 						}
 					},
 					"world": {
-						"x": 1216,
-						"y": 272,
+						"x": 360,
+						"y": 168,
 						"width": 45,
 						"height": 40,
 						"originX": 0.5,
@@ -1179,8 +1119,7 @@
 						"Energy_Max": 100,
 						"Shield_Current": 0,
 						"IsOvershieldActive": false,
-						"IsEnergyOverdriveActive": false,
-						"IsJumpJetActive": false
+						"IsEnergyOverdriveActive": false
 					},
 					"behaviors": {
 						"8Direction": {
@@ -1209,6 +1148,31 @@
 							"properties": {
 								"enabled": true
 							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": true,
+								"set-angle": false,
+								"step": true,
+								"enabled": false
+							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": true,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
 						}
 					},
 					"effects": {
@@ -1221,8 +1185,8 @@
 						}
 					},
 					"world": {
-						"x": 1216,
-						"y": 272,
+						"x": 360,
+						"y": 168,
 						"width": 45,
 						"height": 40,
 						"originX": 0.5,
@@ -1502,26 +1466,23 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 33,
+					"uid": 29,
 					"instanceVariables": {
-						"EnemyType": "Blocker",
+						"EnemyType": "Crasher",
 						"Bullet_Cooldown": 0.5,
 						"DistanceToPlayer": 0,
 						"AngleToPlayer": 0,
 						"CurrentHealth": 3,
 						"MaxHealth": 3,
 						"WeaponNum": 0,
-						"Weapon_FireRate": 1,
-						"SpawnType": "Crasher",
-						"SpawnInterval": 0,
-						"DistanceToKeepFromPlayer": 0
+						"Weapon_FireRate": 1
 					},
 					"behaviors": {
 						"Rotate": {
 							"properties": {
-								"speed": 360,
+								"speed": 180,
 								"acceleration": 0,
-								"enabled": true,
+								"enabled": false,
 								"live-preview": false
 							}
 						},
@@ -1586,10 +1547,2024 @@
 						}
 					},
 					"world": {
-						"x": -456,
-						"y": -112,
-						"width": 16,
-						"height": 16,
+						"x": 192,
+						"y": 512,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 30,
+					"instanceVariables": {
+						"EnemyType": "Crasher",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 640,
+						"y": 528,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 31,
+					"instanceVariables": {
+						"EnemyType": "Fighter",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1000,
+						"y": 528,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 33,
+					"instanceVariables": {
+						"EnemyType": "Blocker",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 976,
+						"y": 160,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 34,
+					"instanceVariables": {
+						"EnemyType": "Blocker",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 1,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1272,
+						"y": 312,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 35,
+					"instanceVariables": {
+						"EnemyType": "Blocker",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1672,
+						"y": 168,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 36,
+					"instanceVariables": {
+						"EnemyType": "Crasher",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1856,
+						"y": 648,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 37,
+					"instanceVariables": {
+						"EnemyType": "Fighter",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1016,
+						"y": 712,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 38,
+					"instanceVariables": {
+						"EnemyType": "Fighter",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 288,
+						"y": 680,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 39,
+					"instanceVariables": {
+						"EnemyType": "Move&Shoot",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 160,
+						"y": 1240,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 40,
+					"instanceVariables": {
+						"EnemyType": "Move&Shoot",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 456,
+						"y": 1096,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 41,
+					"instanceVariables": {
+						"EnemyType": "Chase",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 936,
+						"y": 1040,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 42,
+					"instanceVariables": {
+						"EnemyType": "Chase",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1184,
+						"y": 1224,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 43,
+					"instanceVariables": {
+						"EnemyType": "Sit&Shoot",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1648,
+						"y": 1376,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 44,
+					"instanceVariables": {
+						"EnemyType": "Sit&Shoot",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1512,
+						"y": 984,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 45,
+					"instanceVariables": {
+						"EnemyType": "Sit&Shoot",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1664,
+						"y": 992,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 46,
+					"instanceVariables": {
+						"EnemyType": "Chase",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1864,
+						"y": 952,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 47,
+					"instanceVariables": {
+						"EnemyType": "Sit&Shoot",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2456,
+						"y": 1328,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 48,
+					"instanceVariables": {
+						"EnemyType": "Chase",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2456,
+						"y": 536,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Controller",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 49,
+					"instanceVariables": {
+						"EnemyType": "Sit&Shoot",
+						"Bullet_Cooldown": 0.5,
+						"DistanceToPlayer": 0,
+						"AngleToPlayer": 0,
+						"CurrentHealth": 3,
+						"MaxHealth": 3,
+						"WeaponNum": 0,
+						"Weapon_FireRate": 1
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Orbit": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"primary-axis": 100,
+								"secondary-axis": 100,
+								"offset-angle": 0,
+								"match-rotation": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 16,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2464,
+						"y": 344,
+						"width": 24,
+						"height": 24,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1867,8 +3842,8 @@
 						}
 					},
 					"world": {
-						"x": -240,
-						"y": -184,
+						"x": -288,
+						"y": 40,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -1949,8 +3924,8 @@
 						}
 					},
 					"world": {
-						"x": -240,
-						"y": -88,
+						"x": -136,
+						"y": 64,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -3577,58 +5552,8 @@
 						}
 					},
 					"world": {
-						"x": 432,
-						"y": 128,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "LEVEL_SETTINGS",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 62,
-					"instanceVariables": {
-						"EnemyCap": 30,
-						"EnemySpawn1": "Blocker",
-						"EnemySpawn2": "Fighter",
-						"EnemySpawn3": "Crasher",
-						"EnemySpawn4": "Blocker",
-						"EnemySpawn5": "Fighter",
-						"EnemySpawn6": "Crasher",
-						"EnemySpawn7": "Fighter",
-						"EnemySpawn8": "Bomber",
-						"EnemySpawn9": "Healer",
-						"EnemySpawn10": "Mothership",
-						"EnemySpawnRate": 1,
-						"BGM_Track": "",
-						"SpecialCondition1": "",
-						"SpecialCondition2": "",
-						"SpecialCondition3": ""
-					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": -240,
-						"y": -272,
+						"x": 552,
+						"y": 224,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -3651,7 +5576,7 @@
 					"name": "GlowHorizontal",
 					"instance": {
 						"parameters": {
-							"intensity": 1.5
+							"intensity": 1
 						}
 					}
 				},
@@ -3660,7 +5585,7 @@
 					"name": "GlowVertical",
 					"instance": {
 						"parameters": {
-							"intensity": 1.5
+							"intensity": 1
 						}
 					}
 				},
@@ -3855,8 +5780,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -3899,8 +5824,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -3943,8 +5868,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -3987,8 +5912,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4031,8 +5956,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4075,8 +6000,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4119,8 +6044,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4163,8 +6088,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4207,8 +6132,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4251,8 +6176,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4365,8 +6290,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4409,8 +6334,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4453,8 +6378,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4497,8 +6422,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4541,8 +6466,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4585,8 +6510,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4629,8 +6554,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4673,8 +6598,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4717,8 +6642,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4761,8 +6686,8 @@
 						"right-margin": 3,
 						"top-margin": 3,
 						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
+						"edges": "stretch",
+						"fill": "stretch",
 						"initially-visible": true,
 						"origin": "top-left",
 						"seams": "exact"
@@ -4913,7 +6838,7 @@
 						"parameters": {
 							"hue": 0,
 							"saturation": 1,
-							"luminosity": 1.25
+							"luminosity": 1.15
 						}
 					}
 				}

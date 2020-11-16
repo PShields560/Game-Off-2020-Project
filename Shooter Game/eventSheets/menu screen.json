@@ -205,78 +205,97 @@
 					"conditions": [
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "Txt_UI",
-							"sid": 810347725792246,
+							"objectClass": "LevelIcon",
+							"sid": 240801682240009,
 							"parameters": {
-								"instance-variable": "Tag",
+								"instance-variable": "Index",
 								"comparison": 0,
-								"value": "\"Level Name\""
+								"value": "SelectedLevel"
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 630610559357945,
+					"children": [
 						{
-							"id": "set-text",
-							"objectClass": "Txt_UI",
-							"sid": 617030912596353,
-							"parameters": {
-								"text": "LevelIcon.Name"
-							}
-						}
-					],
-					"sid": 418631025577276
-				},
-				{
-					"eventType": "block",
-					"conditions": [
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Txt_UI",
+									"sid": 796027768870466,
+									"parameters": {
+										"instance-variable": "Tag",
+										"comparison": 0,
+										"value": "\"Level Name\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Txt_UI",
+									"sid": 913898114307547,
+									"parameters": {
+										"text": "LevelIcon.Name"
+									}
+								}
+							],
+							"sid": 819219301543273
+						},
 						{
-							"id": "compare-instance-variable",
-							"objectClass": "Txt_UI",
-							"sid": 750446680436730,
-							"parameters": {
-								"instance-variable": "Tag",
-								"comparison": 0,
-								"value": "\"Level Description\""
-							}
-						}
-					],
-					"actions": [
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Txt_UI",
+									"sid": 954156202889419,
+									"parameters": {
+										"instance-variable": "Tag",
+										"comparison": 0,
+										"value": "\"Level Description\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Txt_UI",
+									"sid": 377045453606876,
+									"parameters": {
+										"text": "LevelIcon.Description"
+									}
+								}
+							],
+							"sid": 515683431212031
+						},
 						{
-							"id": "set-text",
-							"objectClass": "Txt_UI",
-							"sid": 542030015943456,
-							"parameters": {
-								"text": "LevelIcon.Description"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Txt_UI",
+									"sid": 215461837283626,
+									"parameters": {
+										"instance-variable": "Tag",
+										"comparison": 0,
+										"value": "\"Level Score\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Txt_UI",
+									"sid": 983750028053856,
+									"parameters": {
+										"text": "LevelIcon.Score"
+									}
+								}
+							],
+							"sid": 606177425167724
 						}
-					],
-					"sid": 536910779715414
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Txt_UI",
-							"sid": 773189044816826,
-							"parameters": {
-								"instance-variable": "Tag",
-								"comparison": 0,
-								"value": "\"Level Score\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "Txt_UI",
-							"sid": 432832058750403,
-							"parameters": {
-								"text": "LevelIcon.Score"
-							}
-						}
-					],
-					"sid": 913142211842897
+					]
 				}
 			],
 			"sid": 468018787533617

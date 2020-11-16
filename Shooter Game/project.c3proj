@@ -128,22 +128,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Bullet",
-			"name": "Bullet",
-			"author": "Scirra",
-			"version": "r218",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Physics",
-			"name": "Physics",
-			"author": "Scirra",
-			"version": "r218",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "Rotate",
 			"name": "Rotate",
 			"author": "Scirra",
@@ -154,6 +138,14 @@
 			"type": "behavior",
 			"id": "destroy",
 			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
 			"author": "Scirra",
 			"version": "r218",
 			"bundled": false
@@ -178,6 +170,22 @@
 			"type": "behavior",
 			"id": "Pathfinding",
 			"name": "Pathfinding",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Persist",
+			"name": "Persist",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
 			"author": "Scirra",
 			"version": "r218",
 			"bundled": false
@@ -272,7 +280,8 @@
 							{
 								"items": [
 									"Boss_Controller",
-									"Enemy_Controller"
+									"Enemy_Controller",
+									"LEVEL_SETTINGS"
 								],
 								"subfolders": [],
 								"name": "_CONTROLLERS"
@@ -623,7 +632,7 @@
 		"gpuPreference": "high-performance",
 		"framerateMode": "vsync",
 		"compositingMode": "standard",
-		"sampling": "nearest",
+		"sampling": "trilinear",
 		"downscaling": "medium",
 		"maxSpriteSheetSize": 2048,
 		"loaderStyle": "splash",

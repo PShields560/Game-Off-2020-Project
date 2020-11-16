@@ -7,7 +7,7 @@
 		{
 			"name": "EnemyType",
 			"type": "string",
-			"desc": "Move&Shoot, Sit&Shoot, Chase",
+			"desc": "",
 			"sid": 372954486882149
 		},
 		{
@@ -51,6 +51,24 @@
 			"type": "number",
 			"desc": "",
 			"sid": 355615349029547
+		},
+		{
+			"name": "SpawnType",
+			"type": "string",
+			"desc": "",
+			"sid": 126259889657729
+		},
+		{
+			"name": "SpawnInterval",
+			"type": "number",
+			"desc": "",
+			"sid": 439678648002751
+		},
+		{
+			"name": "DistanceToKeepFromPlayer",
+			"type": "number",
+			"desc": "",
+			"sid": 984689060517909
 		}
 	],
 	"behaviorTypes": [
@@ -105,10 +123,190 @@
 						"height": 24,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\square.png",
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\ShootEnemy_Outline.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 1711046,
+						"collisionPoly": {
+							"points": [
+								0.041666666666666664,
+								0.041666666666666664,
+								0.5,
+								0,
+								0.9166666666666666,
+								0.041666666666666664,
+								0.9583333333333334,
+								0.5,
+								0.9166666666666666,
+								0.9166666666666666,
+								0.5,
+								0.9583333333333334,
+								0.041666666666666664,
+								0.9166666666666666,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\ShootEnemy_Outline.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6551590,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0,
+								0.71875,
+								0.25,
+								0.96875,
+								0.5,
+								0.71875,
+								0.71875,
+								0.5,
+								0.96875,
+								0.25,
+								0.71875,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 40,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\ShotgunEnemy_Outline.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 221662,
+						"collisionPoly": {
+							"points": [
+								0.2,
+								0.2,
+								0.5,
+								0,
+								0.775,
+								0.2,
+								0.975,
+								0.5,
+								0.775,
+								0.775,
+								0.5,
+								0.975,
+								0.2,
+								0.775,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\SpawnerEnemy2_Outline.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7110693,
+						"collisionPoly": {
+							"points": [
+								0.14583333333333334,
+								0.14583333333333334,
+								0.5,
+								0,
+								0.8333333333333334,
+								0.14583333333333334,
+								0.9791666666666666,
+								0.5,
+								0.8333333333333334,
+								0.8333333333333334,
+								0.5,
+								0.9791666666666666,
+								0.14583333333333334,
+								0.8333333333333334,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\StrikeEnemy1_Outline.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1547044,
+						"collisionPoly": {
+							"points": [
+								0.3125,
+								0.3125,
+								0.5,
+								0,
+								0.65625,
+								0.3125,
+								0.96875,
+								0.5,
+								0.65625,
+								0.65625,
+								0.5,
+								0.96875,
+								0.3125,
+								0.65625,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\SpawnerEnemy_Outline.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 539366,
+						"collisionPoly": {
+							"points": [
+								0.14583333333333334,
+								0.14583333333333334,
+								0.5,
+								0,
+								0.8333333333333334,
+								0.14583333333333334,
+								0.9791666666666666,
+								0.5,
+								0.8333333333333334,
+								0.8333333333333334,
+								0.5,
+								0.9791666666666666,
+								0.14583333333333334,
+								0.8333333333333334,
+								0,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
@@ -119,7 +317,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			}
 		],
 		"subfolders": []

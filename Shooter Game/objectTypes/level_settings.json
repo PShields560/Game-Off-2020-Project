@@ -1,0 +1,140 @@
+{
+	"name": "LEVEL_SETTINGS",
+	"plugin-id": "Sprite",
+	"sid": 848759905402648,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "EnemyCap",
+			"type": "number",
+			"desc": "",
+			"sid": 993186687379194
+		},
+		{
+			"name": "EnemySpawn1",
+			"type": "string",
+			"desc": "",
+			"sid": 898852066663080
+		},
+		{
+			"name": "EnemySpawn2",
+			"type": "string",
+			"desc": "",
+			"sid": 481725560145679
+		},
+		{
+			"name": "EnemySpawn3",
+			"type": "string",
+			"desc": "",
+			"sid": 273030186838769
+		},
+		{
+			"name": "EnemySpawn4",
+			"type": "string",
+			"desc": "",
+			"sid": 615911050740712
+		},
+		{
+			"name": "EnemySpawn5",
+			"type": "string",
+			"desc": "",
+			"sid": 929994607396067
+		},
+		{
+			"name": "EnemySpawn6",
+			"type": "string",
+			"desc": "",
+			"sid": 418710789304321
+		},
+		{
+			"name": "EnemySpawn7",
+			"type": "string",
+			"desc": "",
+			"sid": 633175680949704
+		},
+		{
+			"name": "EnemySpawn8",
+			"type": "string",
+			"desc": "",
+			"sid": 662619654449861
+		},
+		{
+			"name": "EnemySpawn9",
+			"type": "string",
+			"desc": "",
+			"sid": 932402115347743
+		},
+		{
+			"name": "EnemySpawn10",
+			"type": "string",
+			"desc": "",
+			"sid": 709065169406064
+		},
+		{
+			"name": "EnemySpawnRate",
+			"type": "number",
+			"desc": "",
+			"sid": 917849678200968
+		},
+		{
+			"name": "BGM_Track",
+			"type": "string",
+			"desc": "",
+			"sid": 537381635765361
+		},
+		{
+			"name": "SpecialCondition1",
+			"type": "string",
+			"desc": "",
+			"sid": 706294339397518
+		},
+		{
+			"name": "SpecialCondition2",
+			"type": "string",
+			"desc": "",
+			"sid": 386645970681102
+		},
+		{
+			"name": "SpecialCondition3",
+			"type": "string",
+			"desc": "",
+			"sid": 596392992831596
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 566172324780860
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6479386,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 472943367015917,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
