@@ -12,15 +12,48 @@
 			],
 			"actions": [
 				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 810559136891972,
+					"parameters": {
+						"tag": "\"Player\"",
+						"file": "Player Data.json"
+					}
+				}
+			],
+			"sid": 302908480878443
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 905178441841044,
+					"parameters": {
+						"tag": "\"Player\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "Data_Player",
+					"sid": 478815552670374,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 956874513169849,
+					"sid": 237578181666698,
 					"parameters": {
 						"layout": "Menu Screen"
 					}
 				}
 			],
-			"sid": 302908480878443
+			"sid": 325194377128467
 		}
 	],
 	"sid": 598296358585235

@@ -105,6 +105,18 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 712786656871748
+		},
+		{
+			"name": "CanFire",
+			"type": "boolean",
+			"desc": "",
+			"sid": 756107688190384
+		},
+		{
+			"name": "CanUsePower",
+			"type": "boolean",
+			"desc": "",
+			"sid": 825056826926568
 		}
 	],
 	"behaviorTypes": [

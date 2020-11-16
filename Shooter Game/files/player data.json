@@ -1,0 +1,25 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "12": "",
+        "13": "",
+        "14": "",
+        "15": "",
+        "16": "",
+        "17": "",
+        "18": "",
+        "19": "",
+        "HP": 10,
+        "Energy": 100,
+        "Weapon 1": "True",
+        "Weapon 2": "False",
+        "Weapon 3": "False",
+        "Weapon 4": "False",
+        "Weapon 5": "False",
+        "Weapon 6": "False",
+        "Power 1": "False",
+        "Power 2": "False",
+        "Power 3": "False",
+        "Power 4": "False"
+    }
+}

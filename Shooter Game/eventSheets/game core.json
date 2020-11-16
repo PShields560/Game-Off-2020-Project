@@ -65,6 +65,42 @@
 							}
 						},
 						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 195829928397609,
+							"parameters": {
+								"instance-variable": "Health_Max",
+								"value": "int(Data_Player.Get(\"HP\"))"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 925840756360293,
+							"parameters": {
+								"instance-variable": "Health_Current",
+								"value": "int(Data_Player.Get(\"HP\"))"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 369276102546702,
+							"parameters": {
+								"instance-variable": "Energy_Max",
+								"value": "int(Data_Player.Get(\"Energy\"))"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 341979449176226,
+							"parameters": {
+								"instance-variable": "Energy_Current",
+								"value": "int(Data_Player.Get(\"Energy\"))"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "HealthBar",
 							"sid": 524676789191030,
@@ -2546,6 +2582,14 @@
 									"parameters": {
 										"key": 32
 									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 825441193202299,
+									"parameters": {
+										"instance-variable": "CanUsePower"
+									}
 								}
 							],
 							"actions": [],
@@ -2666,6 +2710,14 @@
 												"comparison": 5,
 												"value": "1"
 											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Player",
+											"sid": 592132224917129,
+											"parameters": {
+												"instance-variable": "CanFire"
+											}
 										}
 									],
 									"actions": [
@@ -2705,6 +2757,14 @@
 												"instance-variable": "Energy_Current",
 												"comparison": 5,
 												"value": "Self.Weapon_CurrentEnergyCost"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Player",
+											"sid": 617973046808584,
+											"parameters": {
+												"instance-variable": "CanFire"
 											}
 										}
 									],
@@ -3340,6 +3400,32 @@
 										{
 											"id": "cursor-is-over-object",
 											"objectClass": "Mouse",
+											"sid": 596610236777561,
+											"parameters": {
+												"object": "Player_TargetPoint"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "Player_TargetPoint",
+											"sid": 896481087966751
+										}
+									],
+									"sid": 462416942752697
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 640372835439531
+										},
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
 											"sid": 172254876699041,
 											"parameters": {
 												"object": "Enemy_Controller"
@@ -3397,36 +3483,15 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "cursor-is-over-object",
-											"objectClass": "Mouse",
-											"sid": 864015957454279,
-											"parameters": {
-												"object": "Player_TargetPoint"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "destroy",
-											"objectClass": "Player_TargetPoint",
-											"sid": 478625548946833
-										}
-									],
-									"sid": 544430612839735
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
 											"id": "else",
 											"objectClass": "System",
-											"sid": 623052466712561
+											"sid": 159432668687460
 										}
 									],
 									"actions": [
 										{
 											"callFunction": "Player Set New Target",
-											"sid": 221927620997618,
+											"sid": 524308004485192,
 											"parameters": [
 												"Mouse.X",
 												"Mouse.Y",
@@ -3436,7 +3501,7 @@
 											]
 										}
 									],
-									"sid": 954614696500166
+									"sid": 744704481014397
 								}
 							]
 						}
@@ -3462,39 +3527,57 @@
 										"comparison": 0,
 										"value": "0"
 									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player",
-									"sid": 709471538992467,
-									"parameters": {
-										"instance-variable": "Bullet_Cooldown",
-										"comparison": 1,
-										"value": "Cooldown_Weapon1"
-									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 697713466849260,
+							"children": [
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 955723584739190,
-									"parameters": {
-										"instance-variable": "Bullet_Cooldown",
-										"value": "Cooldown_Weapon1"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 100044235055329,
-									"parameters": {
-										"instance-variable": "Weapon_CurrentEnergyCost",
-										"value": "Energy_Weapon1"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 593858630949657,
+											"parameters": {
+												"instance-variable": "Bullet_Cooldown",
+												"comparison": 1,
+												"value": "Cooldown_Weapon1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 506637800510315,
+											"parameters": {
+												"instance-variable": "Bullet_Cooldown",
+												"value": "Cooldown_Weapon1"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 810242676983907,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentEnergyCost",
+												"value": "Energy_Weapon1"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 902000038520635,
+											"parameters": {
+												"instance-variable": "CanFire",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 221626559003477
 								}
-							],
-							"sid": 697713466849260
+							]
 						},
 						{
 							"eventType": "block",
@@ -3508,39 +3591,93 @@
 										"comparison": 0,
 										"value": "1"
 									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player",
-									"sid": 708479899897628,
-									"parameters": {
-										"instance-variable": "Bullet_Cooldown",
-										"comparison": 1,
-										"value": "Cooldown_Weapon2"
-									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 107241763552000,
+							"children": [
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 912286419358888,
-									"parameters": {
-										"instance-variable": "Bullet_Cooldown",
-										"value": "Cooldown_Weapon2"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 323200660147220,
+											"parameters": {
+												"instance-variable": "Bullet_Cooldown",
+												"comparison": 1,
+												"value": "Cooldown_Weapon2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 397318471533564,
+											"parameters": {
+												"instance-variable": "Bullet_Cooldown",
+												"value": "Cooldown_Weapon2"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 495507985071616,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentEnergyCost",
+												"value": "Energy_Weapon2"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 651716089164274,
+											"parameters": {
+												"instance-variable": "CanFire",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 996986651040951
 								},
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 316788295409800,
-									"parameters": {
-										"instance-variable": "Weapon_CurrentEnergyCost",
-										"value": "Energy_Weapon2"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Data_Player",
+											"sid": 738264864684275,
+											"parameters": {
+												"key": "\"Weapon 2\"",
+												"comparison": 1,
+												"value": "\"True\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 239926717412959,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentWeaponNum",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 155948070677645,
+											"parameters": {
+												"instance-variable": "CanFire",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 248368111623240
 								}
-							],
-							"sid": 107241763552000
+							]
 						},
 						{
 							"eventType": "block",
@@ -3554,39 +3691,93 @@
 										"comparison": 0,
 										"value": "2"
 									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player",
-									"sid": 400738229189217,
-									"parameters": {
-										"instance-variable": "Bullet_Cooldown",
-										"comparison": 1,
-										"value": "Cooldown_Weapon3"
-									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 196457043505654,
+							"children": [
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 166157428707202,
-									"parameters": {
-										"instance-variable": "Bullet_Cooldown",
-										"value": "Cooldown_Weapon3"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 710399272837876,
+											"parameters": {
+												"instance-variable": "Bullet_Cooldown",
+												"comparison": 1,
+												"value": "Cooldown_Weapon3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 219710038663049,
+											"parameters": {
+												"instance-variable": "Bullet_Cooldown",
+												"value": "Cooldown_Weapon3"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 494615293617523,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentEnergyCost",
+												"value": "Energy_Weapon3"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 550723546882354,
+											"parameters": {
+												"instance-variable": "CanFire",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 375756764384221
 								},
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 899261117624217,
-									"parameters": {
-										"instance-variable": "Weapon_CurrentEnergyCost",
-										"value": "Energy_Weapon3"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Data_Player",
+											"sid": 600610027512139,
+											"parameters": {
+												"key": "\"Weapon 3\"",
+												"comparison": 1,
+												"value": "\"True\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 695545207632552,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentWeaponNum",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 400674803355222,
+											"parameters": {
+												"instance-variable": "CanFire",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 692928742012667
 								}
-							],
-							"sid": 196457043505654
+							]
 						},
 						{
 							"eventType": "block",
@@ -3600,39 +3791,93 @@
 										"comparison": 0,
 										"value": "3"
 									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player",
-									"sid": 177524120760582,
-									"parameters": {
-										"instance-variable": "Bullet_Cooldown",
-										"comparison": 1,
-										"value": "Cooldown_Weapon4"
-									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 983312440574091,
+							"children": [
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 363630181837213,
-									"parameters": {
-										"instance-variable": "Bullet_Cooldown",
-										"value": "Cooldown_Weapon4"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 675126749346620,
+											"parameters": {
+												"instance-variable": "Bullet_Cooldown",
+												"comparison": 1,
+												"value": "Cooldown_Weapon4"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 281950511113381,
+											"parameters": {
+												"instance-variable": "Bullet_Cooldown",
+												"value": "Cooldown_Weapon4"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 851995397770304,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentEnergyCost",
+												"value": "Energy_Weapon4"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 937336165774805,
+											"parameters": {
+												"instance-variable": "CanFire",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 884567212471486
 								},
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 983220137110918,
-									"parameters": {
-										"instance-variable": "Weapon_CurrentEnergyCost",
-										"value": "Energy_Weapon4"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Data_Player",
+											"sid": 910305563367183,
+											"parameters": {
+												"key": "\"Weapon 4\"",
+												"comparison": 1,
+												"value": "\"True\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 266157719099615,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentWeaponNum",
+												"value": "2"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 311647684700936,
+											"parameters": {
+												"instance-variable": "CanFire",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 440510152722193
 								}
-							],
-							"sid": 983312440574091
+							]
 						},
 						{
 							"eventType": "block",
@@ -3646,39 +3891,93 @@
 										"comparison": 0,
 										"value": "4"
 									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player",
-									"sid": 884650569651712,
-									"parameters": {
-										"instance-variable": "Bullet_Cooldown",
-										"comparison": 1,
-										"value": "Cooldown_Weapon5"
-									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 929881328328678,
+							"children": [
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 682337649453435,
-									"parameters": {
-										"instance-variable": "Bullet_Cooldown",
-										"value": "Cooldown_Weapon5"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 440666491072594,
+											"parameters": {
+												"instance-variable": "Bullet_Cooldown",
+												"comparison": 1,
+												"value": "Cooldown_Weapon5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 369206070037489,
+											"parameters": {
+												"instance-variable": "Bullet_Cooldown",
+												"value": "Cooldown_Weapon5"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 963823329030492,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentEnergyCost",
+												"value": "Energy_Weapon5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 604146718929624,
+											"parameters": {
+												"instance-variable": "CanFire",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 136215685211527
 								},
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 870904452944503,
-									"parameters": {
-										"instance-variable": "Weapon_CurrentEnergyCost",
-										"value": "Energy_Weapon5"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Data_Player",
+											"sid": 733908633881885,
+											"parameters": {
+												"key": "\"Weapon 5\"",
+												"comparison": 1,
+												"value": "\"True\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 682355162467326,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentWeaponNum",
+												"value": "3"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 270831750921060,
+											"parameters": {
+												"instance-variable": "CanFire",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 300744023503588
 								}
-							],
-							"sid": 929881328328678
+							]
 						},
 						{
 							"eventType": "block",
@@ -3692,30 +3991,75 @@
 										"comparison": 0,
 										"value": "0"
 									}
+								}
+							],
+							"actions": [],
+							"sid": 290745357153081,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 916363790155083,
+											"parameters": {
+												"instance-variable": "Power_CurrentEnergyCost",
+												"comparison": 1,
+												"value": "Energy_Power1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 432338062392106,
+											"parameters": {
+												"instance-variable": "Power_CurrentEnergyCost",
+												"value": "Energy_Power1"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 284450523644892,
+											"parameters": {
+												"instance-variable": "CanUsePower",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 270568215926769
 								},
 								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player",
-									"sid": 486766716258749,
-									"parameters": {
-										"instance-variable": "Power_CurrentEnergyCost",
-										"comparison": 1,
-										"value": "Energy_Power1"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Data_Player",
+											"sid": 831554240900810,
+											"parameters": {
+												"key": "\"Power 1\"",
+												"comparison": 1,
+												"value": "\"True\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 429340674731974,
+											"parameters": {
+												"instance-variable": "CanUsePower",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 130088344016041
 								}
-							],
-							"actions": [
-								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 866153616060475,
-									"parameters": {
-										"instance-variable": "Power_CurrentEnergyCost",
-										"value": "Energy_Power1"
-									}
-								}
-							],
-							"sid": 290745357153081
+							]
 						},
 						{
 							"eventType": "block",
@@ -3729,30 +4073,84 @@
 										"comparison": 0,
 										"value": "1"
 									}
+								}
+							],
+							"actions": [],
+							"sid": 885798481976038,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 400137688336429,
+											"parameters": {
+												"instance-variable": "Power_CurrentEnergyCost",
+												"comparison": 1,
+												"value": "Energy_Power2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 272512895195341,
+											"parameters": {
+												"instance-variable": "Power_CurrentEnergyCost",
+												"value": "Energy_Power2"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 729074055636126,
+											"parameters": {
+												"instance-variable": "CanUsePower",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 226176012996382
 								},
 								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player",
-									"sid": 447441813640229,
-									"parameters": {
-										"instance-variable": "Power_CurrentEnergyCost",
-										"comparison": 1,
-										"value": "Energy_Power2"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Data_Player",
+											"sid": 338539782416360,
+											"parameters": {
+												"key": "\"Power 2\"",
+												"comparison": 1,
+												"value": "\"True\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 930468290337895,
+											"parameters": {
+												"instance-variable": "Power_CurrentPowerNum",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 211578361995990,
+											"parameters": {
+												"instance-variable": "CanUsePower",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 107532242190252
 								}
-							],
-							"actions": [
-								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 708989739205513,
-									"parameters": {
-										"instance-variable": "Power_CurrentEnergyCost",
-										"value": "Energy_Power2"
-									}
-								}
-							],
-							"sid": 885798481976038
+							]
 						},
 						{
 							"eventType": "block",
@@ -3766,30 +4164,84 @@
 										"comparison": 0,
 										"value": "2"
 									}
+								}
+							],
+							"actions": [],
+							"sid": 267857077352960,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 996544217898047,
+											"parameters": {
+												"instance-variable": "Power_CurrentEnergyCost",
+												"comparison": 1,
+												"value": "Energy_Power3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 326963925714818,
+											"parameters": {
+												"instance-variable": "Power_CurrentEnergyCost",
+												"value": "Energy_Power3"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 484349273830343,
+											"parameters": {
+												"instance-variable": "CanUsePower",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 271638742850961
 								},
 								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player",
-									"sid": 506739631983467,
-									"parameters": {
-										"instance-variable": "Power_CurrentEnergyCost",
-										"comparison": 1,
-										"value": "Energy_Power3"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Data_Player",
+											"sid": 583912574148225,
+											"parameters": {
+												"key": "\"Power 3\"",
+												"comparison": 1,
+												"value": "\"True\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 917792138096698,
+											"parameters": {
+												"instance-variable": "Power_CurrentPowerNum",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 489139925907420,
+											"parameters": {
+												"instance-variable": "CanUsePower",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 478178717244038
 								}
-							],
-							"actions": [
-								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 493425065466040,
-									"parameters": {
-										"instance-variable": "Power_CurrentEnergyCost",
-										"value": "Energy_Power3"
-									}
-								}
-							],
-							"sid": 267857077352960
+							]
 						},
 						{
 							"eventType": "block",
@@ -3803,30 +4255,84 @@
 										"comparison": 0,
 										"value": "3"
 									}
+								}
+							],
+							"actions": [],
+							"sid": 553788067515212,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 215916366036231,
+											"parameters": {
+												"instance-variable": "Power_CurrentEnergyCost",
+												"comparison": 1,
+												"value": "Energy_Power4"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 309886056511377,
+											"parameters": {
+												"instance-variable": "Power_CurrentEnergyCost",
+												"value": "Energy_Power4"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 758284622715780,
+											"parameters": {
+												"instance-variable": "CanUsePower",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 343984727104454
 								},
 								{
-									"id": "compare-instance-variable",
-									"objectClass": "Player",
-									"sid": 183358712034161,
-									"parameters": {
-										"instance-variable": "Power_CurrentEnergyCost",
-										"comparison": 1,
-										"value": "Energy_Power4"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Data_Player",
+											"sid": 281040042791587,
+											"parameters": {
+												"key": "\"Power 4\"",
+												"comparison": 1,
+												"value": "\"True\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 677085972491220,
+											"parameters": {
+												"instance-variable": "Power_CurrentPowerNum",
+												"value": "2"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 487706043690521,
+											"parameters": {
+												"instance-variable": "CanUsePower",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 842923089169107
 								}
-							],
-							"actions": [
-								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 243415047524977,
-									"parameters": {
-										"instance-variable": "Power_CurrentEnergyCost",
-										"value": "Energy_Power4"
-									}
-								}
-							],
-							"sid": 553788067515212
+							]
 						}
 					],
 					"sid": 825603880415567
@@ -7597,6 +8103,200 @@
 								}
 							],
 							"sid": 413813717307005
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Health Booster",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Player",
+											"sid": 801600421830019,
+											"parameters": {
+												"object": "HealthBooster"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "HealthBooster",
+											"sid": 299918055380669,
+											"parameters": {
+												"instance-variable": "IsAvalible"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-instvar",
+											"objectClass": "Player",
+											"sid": 333517555141314,
+											"parameters": {
+												"instance-variable": "Health_Max",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 973288900084135,
+											"parameters": {
+												"instance-variable": "Health_Current",
+												"value": "Self.Health_Max"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "Data_Player",
+											"sid": 443507687049465,
+											"parameters": {
+												"key": "\"HP\"",
+												"value": "Player.Health_Max"
+											}
+										},
+										{
+											"callFunction": "Evaluate Player HP Display",
+											"sid": 838730036163730
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "HealthBooster",
+											"sid": 876812668535657,
+											"parameters": {
+												"instance-variable": "IsAvalible",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 258189992578880
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "HealthBooster",
+											"sid": 484534965792208,
+											"parameters": {
+												"instance-variable": "IsAvalible"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "HealthBooster",
+											"sid": 523090322691940,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 913494814073999
+								}
+							],
+							"sid": 267883608663225
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Energy Booster",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Player",
+											"sid": 914595642869842,
+											"parameters": {
+												"object": "EnergyBooster"
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "EnergyBooster",
+											"sid": 323907124398016,
+											"parameters": {
+												"instance-variable": "IsAvalible"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-instvar",
+											"objectClass": "Player",
+											"sid": 850704939220836,
+											"parameters": {
+												"instance-variable": "Energy_Max",
+												"value": "10"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Player",
+											"sid": 413477771780739,
+											"parameters": {
+												"instance-variable": "Energy_Current",
+												"value": "Self.Energy_Max"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "Data_Player",
+											"sid": 938925088024698,
+											"parameters": {
+												"key": "\"Energy\"",
+												"value": "Player.Energy_Max"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "EnergyBooster",
+											"sid": 530123083758702,
+											"parameters": {
+												"instance-variable": "IsAvalible",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 561410934639123
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "EnergyBooster",
+											"sid": 200872546952707,
+											"parameters": {
+												"instance-variable": "IsAvalible"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "EnergyBooster",
+											"sid": 105786398620849,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 444382878987410
+								}
+							],
+							"sid": 347251112086271
 						}
 					],
 					"sid": 626298127968288
@@ -11125,6 +11825,426 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 112888754995865,
+											"parameters": {
+												"instance-variable": "Health_Max",
+												"comparison": 5,
+												"value": "11"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "HealthBar",
+											"sid": 150494310035174,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "11"
+											}
+										},
+										{
+											"id": "is-visible",
+											"objectClass": "HealthBar",
+											"sid": 481946798132569,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "HealthBar",
+											"sid": 926625516450015,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 868040136479912
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 238319822349404,
+											"parameters": {
+												"instance-variable": "Health_Max",
+												"comparison": 5,
+												"value": "12"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "HealthBar",
+											"sid": 708690258384577,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "12"
+											}
+										},
+										{
+											"id": "is-visible",
+											"objectClass": "HealthBar",
+											"sid": 370992366067945,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "HealthBar",
+											"sid": 482009100035792,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 468832578360833
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 494670616862780,
+											"parameters": {
+												"instance-variable": "Health_Max",
+												"comparison": 5,
+												"value": "13"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "HealthBar",
+											"sid": 137849910868789,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "13"
+											}
+										},
+										{
+											"id": "is-visible",
+											"objectClass": "HealthBar",
+											"sid": 723321336583232,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "HealthBar",
+											"sid": 552214653892872,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 151097938366496
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 450361421685911,
+											"parameters": {
+												"instance-variable": "Health_Max",
+												"comparison": 5,
+												"value": "14"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "HealthBar",
+											"sid": 847315347641990,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "14"
+											}
+										},
+										{
+											"id": "is-visible",
+											"objectClass": "HealthBar",
+											"sid": 921392315943284,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "HealthBar",
+											"sid": 364982869861536,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 332059541819276
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 309597436452345,
+											"parameters": {
+												"instance-variable": "Health_Max",
+												"comparison": 5,
+												"value": "15"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "HealthBar",
+											"sid": 331238038330583,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "15"
+											}
+										},
+										{
+											"id": "is-visible",
+											"objectClass": "HealthBar",
+											"sid": 320706669880894,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "HealthBar",
+											"sid": 276379685368026,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 946472938028100
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 841308269319584,
+											"parameters": {
+												"instance-variable": "Health_Max",
+												"comparison": 5,
+												"value": "16"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "HealthBar",
+											"sid": 676441028650031,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "16"
+											}
+										},
+										{
+											"id": "is-visible",
+											"objectClass": "HealthBar",
+											"sid": 336395442349111,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "HealthBar",
+											"sid": 289462963642237,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 141954980755962
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 734651739471955,
+											"parameters": {
+												"instance-variable": "Health_Max",
+												"comparison": 5,
+												"value": "17"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "HealthBar",
+											"sid": 886468799112245,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "17"
+											}
+										},
+										{
+											"id": "is-visible",
+											"objectClass": "HealthBar",
+											"sid": 532995216559404,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "HealthBar",
+											"sid": 660440521718211,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 889879622793114
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 473140703412325,
+											"parameters": {
+												"instance-variable": "Health_Max",
+												"comparison": 5,
+												"value": "18"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "HealthBar",
+											"sid": 828332387033561,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "18"
+											}
+										},
+										{
+											"id": "is-visible",
+											"objectClass": "HealthBar",
+											"sid": 501740005951354,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "HealthBar",
+											"sid": 111726539847932,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 901810301574707
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 795214179765473,
+											"parameters": {
+												"instance-variable": "Health_Max",
+												"comparison": 5,
+												"value": "19"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "HealthBar",
+											"sid": 812904827718950,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "19"
+											}
+										},
+										{
+											"id": "is-visible",
+											"objectClass": "HealthBar",
+											"sid": 546168307186134,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "HealthBar",
+											"sid": 468687319841193,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 215787771124667
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 376540354425503,
+											"parameters": {
+												"instance-variable": "Health_Max",
+												"comparison": 5,
+												"value": "20"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "HealthBar",
+											"sid": 904790389857058,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "20"
+											}
+										},
+										{
+											"id": "is-visible",
+											"objectClass": "HealthBar",
+											"sid": 494810482678319,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "HealthBar",
+											"sid": 338309340518968,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 481895011212699
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "for",
 											"objectClass": "System",
 											"sid": 718360735695816,
@@ -11414,7 +12534,17 @@
 			"title": "UI",
 			"description": "",
 			"isActiveOnStart": true,
-			"children": [],
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pause",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 674118557620037
+				}
+			],
 			"sid": 497492820647270
 		}
 	],

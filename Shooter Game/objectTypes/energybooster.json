@@ -1,0 +1,38 @@
+{
+	"name": "EnergyBooster",
+	"plugin-id": "NinePatch",
+	"sid": 332386165602905,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "IsAvalible",
+			"type": "boolean",
+			"desc": "",
+			"sid": 645901488529907
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 905694255074962
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 714305129424238
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 61,
+		"height": 8,
+		"originX": 0.5,
+		"originY": 0.6640625,
+		"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\EnergyBarInner.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6477194,
+		"useCollisionPoly": true
+	}
+}

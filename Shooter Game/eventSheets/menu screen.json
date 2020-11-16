@@ -299,6 +299,44 @@
 				}
 			],
 			"sid": 468018787533617
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Menu Music",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 741703916862836,
+							"parameters": {
+								"tag": "\"BGM\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 529755610175846,
+							"parameters": {
+								"audio-file": "MainMenu_Loop",
+								"loop": "looping",
+								"volume": "0",
+								"tag-optional": "\"BGM\""
+							}
+						}
+					],
+					"sid": 267288103029741
+				}
+			],
+			"sid": 935199559611603
 		}
 	],
 	"sid": 630708504024175
