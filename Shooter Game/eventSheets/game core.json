@@ -143,6 +143,11 @@
 								"layer": "L_HUD4",
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Enemy_Controller",
+							"sid": 418484710496412
 						}
 					],
 					"sid": 261339697548126,
@@ -547,6 +552,15 @@
 										"instance-variable": "IsImmobile"
 									},
 									"isInverted": true
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 684396408071511,
+									"parameters": {
+										"variable": "IsPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -588,6 +602,15 @@
 				{
 					"eventType": "block",
 					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 287872531890420,
+							"parameters": {
+								"variable": "IsPaused"
+							},
+							"isInverted": true
+						},
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
@@ -2497,6 +2520,30 @@
 									"sid": 847204510747875
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 965375076299383,
+									"parameters": {
+										"key": 80
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "toggle-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 261630738020506,
+									"parameters": {
+										"variable": "IsPaused"
+									}
+								}
+							],
+							"sid": 514049749410680
 						},
 						{
 							"eventType": "block",
@@ -6071,6 +6118,15 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 969464325860059,
+									"parameters": {
+										"variable": "IsPaused"
+									},
+									"isInverted": true
+								},
+								{
 									"id": "compare-instance-variable",
 									"objectClass": "Enemy_Controller",
 									"sid": 349471836521267,
@@ -6324,6 +6380,15 @@
 						{
 							"eventType": "block",
 							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 548193755726088,
+									"parameters": {
+										"variable": "IsPaused"
+									},
+									"isInverted": true
+								},
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Enemy_Controller",
@@ -6803,6 +6868,15 @@
 						{
 							"eventType": "block",
 							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 520629539854266,
+									"parameters": {
+										"variable": "IsPaused"
+									},
+									"isInverted": true
+								},
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Enemy_Controller",
@@ -7389,6 +7463,15 @@
 									"parameters": {
 										"tag": "\"Bomb Timer\""
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 727328887435032,
+									"parameters": {
+										"variable": "IsPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -7425,6 +7508,15 @@
 						{
 							"eventType": "block",
 							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 725651700789725,
+									"parameters": {
+										"variable": "IsPaused"
+									},
+									"isInverted": true
+								},
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Enemy_Controller",
@@ -7647,6 +7739,15 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 185118869562140,
+									"parameters": {
+										"variable": "IsPaused"
+									},
+									"isInverted": true
+								},
+								{
 									"id": "compare-instance-variable",
 									"objectClass": "Enemy_Controller",
 									"sid": 506158205860773,
@@ -7716,6 +7817,15 @@
 									"parameters": {
 										"tag": "\"Spawn Timer\""
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 270723370494538,
+									"parameters": {
+										"variable": "IsPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -7735,6 +7845,15 @@
 						{
 							"eventType": "block",
 							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 101348159752259,
+									"parameters": {
+										"variable": "IsPaused"
+									},
+									"isInverted": true
+								},
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Enemy_Controller",
@@ -12541,7 +12660,251 @@
 					"title": "Pause",
 					"description": "",
 					"isActiveOnStart": true,
-					"children": [],
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 630332777051887,
+									"parameters": {
+										"variable": "IsPaused"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 945536620393295,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 920824439489075
+										}
+									],
+									"actions": [
+										{
+											"id": "set-object-time-scale",
+											"objectClass": "System",
+											"sid": 658787368328782,
+											"parameters": {
+												"object": "Asteroids",
+												"time-scale": "0"
+											}
+										},
+										{
+											"id": "set-object-time-scale",
+											"objectClass": "System",
+											"sid": 183628392172480,
+											"parameters": {
+												"object": "Bullets",
+												"time-scale": "0"
+											}
+										},
+										{
+											"id": "set-object-time-scale",
+											"objectClass": "System",
+											"sid": 656169363075782,
+											"parameters": {
+												"object": "Ball",
+												"time-scale": "0"
+											}
+										},
+										{
+											"id": "set-object-time-scale",
+											"objectClass": "System",
+											"sid": 845345111046172,
+											"parameters": {
+												"object": "Boss_Controller",
+												"time-scale": "0"
+											}
+										},
+										{
+											"id": "set-object-time-scale",
+											"objectClass": "System",
+											"sid": 683368293112414,
+											"parameters": {
+												"object": "Enemy_Controller",
+												"time-scale": "0"
+											}
+										},
+										{
+											"id": "set-object-time-scale",
+											"objectClass": "System",
+											"sid": 231317182647825,
+											"parameters": {
+												"object": "Player",
+												"time-scale": "0"
+											}
+										},
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 595676242809813,
+											"parameters": {
+												"layer": "L_HUD4",
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 639286554832291
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 113982533896469,
+									"parameters": {
+										"variable": "IsPaused"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 878701310405276,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 588939366768375
+										}
+									],
+									"actions": [
+										{
+											"id": "restore-object-time-scale",
+											"objectClass": "System",
+											"sid": 706673519979786,
+											"parameters": {
+												"object": "Asteroids"
+											}
+										},
+										{
+											"id": "restore-object-time-scale",
+											"objectClass": "System",
+											"sid": 222127510236397,
+											"parameters": {
+												"object": "Bullets"
+											}
+										},
+										{
+											"id": "restore-object-time-scale",
+											"objectClass": "System",
+											"sid": 313564344004322,
+											"parameters": {
+												"object": "Ball"
+											}
+										},
+										{
+											"id": "restore-object-time-scale",
+											"objectClass": "System",
+											"sid": 203932460202511,
+											"parameters": {
+												"object": "Boss_Controller"
+											}
+										},
+										{
+											"id": "restore-object-time-scale",
+											"objectClass": "System",
+											"sid": 227112623878268,
+											"parameters": {
+												"object": "Enemy_Controller"
+											}
+										},
+										{
+											"id": "restore-object-time-scale",
+											"objectClass": "System",
+											"sid": 304959997088865,
+											"parameters": {
+												"object": "Player"
+											}
+										},
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 605465187328111,
+											"parameters": {
+												"layer": "L_HUD4",
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 936299166885482
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 412626540964085,
+									"parameters": {
+										"layer": "L_HUD4"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 366568211783881,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 564515253231107,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "Txt_UI"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 298012681717320,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"Exit\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 786340918862675,
+											"parameters": {
+												"variable": "IsPaused",
+												"value": "false"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 889745873650180,
+											"parameters": {
+												"layout": "Menu Screen"
+											}
+										}
+									],
+									"sid": 183407853778225
+								}
+							]
+						}
+					],
 					"sid": 674118557620037
 				}
 			],
