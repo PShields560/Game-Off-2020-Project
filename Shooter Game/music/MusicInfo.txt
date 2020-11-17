@@ -1,0 +1,9 @@
+Track: Main Menu
+Key: Dm
+Bpm: 120
+Samplerate:  44100
+
+Track: Level 1
+Key: D maj
+Bpm: 100
+Samplerate:  44100
