@@ -9569,7 +9569,7 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"functionName": "Create Effect Particle",
+					"functionName": "Create Effect Particle Sprite",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -9581,6 +9581,41 @@
 							"initialValue": "0",
 							"comment": "",
 							"sid": 348797698444796
+						},
+						{
+							"name": "SpriteName",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 161176004709948
+						},
+						{
+							"name": "X",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 576941065210267
+						},
+						{
+							"name": "Y",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 489542825505455
+						},
+						{
+							"name": "DestroyTimer",
+							"type": "number",
+							"initialValue": "1",
+							"comment": "",
+							"sid": 139268452443147
+						},
+						{
+							"name": "Layer",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 882314333847416
 						},
 						{
 							"name": "Hue",
@@ -9625,11 +9660,11 @@
 							"sid": 707446675789260
 						},
 						{
-							"name": "IsOneShot",
+							"name": "IsBallParticle",
 							"type": "boolean",
 							"initialValue": "false",
 							"comment": "",
-							"sid": 103275951430778
+							"sid": 732233545234448
 						},
 						{
 							"name": "IsPinParticle",
@@ -9641,8 +9676,589 @@
 					],
 					"eventType": "function-block",
 					"conditions": [],
-					"actions": [],
-					"sid": 874256586795480
+					"actions": [
+						{
+							"id": "create-object-by-name",
+							"objectClass": "System",
+							"sid": 729429840022238,
+							"parameters": {
+								"object-name": "SpriteName",
+								"layer": "Layer",
+								"x": "X",
+								"y": "Y"
+							}
+						}
+					],
+					"sid": 454349366178854,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-last-created",
+									"objectClass": "System",
+									"sid": 716255524559032,
+									"parameters": {
+										"object": "Particle_EffectSprites"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "Particle_EffectSprites",
+									"sid": 399705036152186,
+									"parameters": {
+										"effect": "\"AdjustHSL\"",
+										"parameter-index": "0",
+										"value": "Hue"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "Particle_EffectSprites",
+									"sid": 877685027869734,
+									"parameters": {
+										"effect": "\"AdjustHSL\"",
+										"parameter-index": "1",
+										"value": "Saturation"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "Particle_EffectSprites",
+									"sid": 955022851143988,
+									"parameters": {
+										"effect": "\"AdjustHSL\"",
+										"parameter-index": "2",
+										"value": "Luminosity"
+									}
+								}
+							],
+							"sid": 442312033530187,
+							"disabled": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 213098985369830,
+											"parameters": {
+												"variable": "IsPinParticle"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 116627335290068,
+									"disabled": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 780948561986930,
+													"parameters": {
+														"variable": "IsPlayerParticle"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 308192277771779,
+											"disabled": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 295424305313883
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 632585379229782,
+													"parameters": {
+														"variable": "IsEnemyParticle"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 351974883866396,
+											"disabled": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 948319733500277
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 787778495595776,
+													"parameters": {
+														"variable": "IsBallParticle"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 884763165485587,
+											"disabled": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 819973148584837
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 759065368184906,
+													"parameters": {
+														"variable": "IsProjectileParticle"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 845205371603759,
+											"disabled": true
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "Particle Effect - Energy Streak",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "OwnerUID",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 327865772417040
+						},
+						{
+							"name": "X",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 905461384381869
+						},
+						{
+							"name": "Y",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 191579855181038
+						},
+						{
+							"name": "DestroyTimer",
+							"type": "number",
+							"initialValue": "1",
+							"comment": "",
+							"sid": 455253499944022
+						},
+						{
+							"name": "Speed",
+							"type": "number",
+							"initialValue": "1",
+							"comment": "",
+							"sid": 694782953662629
+						},
+						{
+							"name": "AngleOfMotion",
+							"type": "number",
+							"initialValue": "1",
+							"comment": "",
+							"sid": 136124618014272
+						},
+						{
+							"name": "Layer",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 337885253670825
+						},
+						{
+							"name": "Hue",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 734244556226094
+						},
+						{
+							"name": "Saturation",
+							"type": "number",
+							"initialValue": "100",
+							"comment": "",
+							"sid": 301128688053715
+						},
+						{
+							"name": "Luminosity",
+							"type": "number",
+							"initialValue": "100",
+							"comment": "",
+							"sid": 543231943706788
+						},
+						{
+							"name": "IsTargeted",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"sid": 442856080626052
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 455671594079314,
+							"parameters": {
+								"object-to-create": "Effect_EnergyStreak",
+								"layer": "Layer",
+								"x": "X",
+								"y": "Y"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Effect_EnergyStreak",
+							"sid": 932998638500009,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "0",
+								"value": "Hue"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Effect_EnergyStreak",
+							"sid": 412345968050109,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "1",
+								"value": "Saturation"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Effect_EnergyStreak",
+							"sid": 140280389708413,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "2",
+								"value": "Luminosity"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Effect_EnergyStreak",
+							"sid": 619887763598723,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-bounce-off-solids",
+							"objectClass": "Effect_EnergyStreak",
+							"sid": 117697386014352,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": true
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Effect_EnergyStreak",
+							"sid": 687923926499600,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "Speed"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Effect_EnergyStreak",
+							"sid": 832007568622086,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "AngleOfMotion"
+							}
+						},
+						{
+							"id": "start-timer",
+							"objectClass": "Effect_EnergyStreak",
+							"sid": 283170381966284,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "DestroyTimer",
+								"type": "once",
+								"tag": "\"Destroy\""
+							}
+						}
+					],
+					"sid": 384092830142061,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 210999625068427,
+									"parameters": {
+										"variable": "IsTargeted"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Effect_EnergyStreak",
+									"sid": 488760921320641,
+									"parameters": {
+										"instance-variable": "HasTarget",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Effect_EnergyStreak",
+									"sid": 410218203204658,
+									"parameters": {
+										"instance-variable": "TargetUID",
+										"value": "OwnerUID"
+									}
+								}
+							],
+							"sid": 697550861205255
+						}
+					]
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Energy Streaks",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-timer",
+									"objectClass": "Effect_EnergyStreak",
+									"sid": 484293252870840,
+									"behaviorType": "Timer",
+									"parameters": {
+										"tag": "\"Destroy\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-fade-out-time",
+									"objectClass": "Effect_EnergyStreak",
+									"sid": 615074253002825,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-out-time": "0.1"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "Effect_EnergyStreak",
+									"sid": 217447070808655,
+									"behaviorType": "Fade"
+								}
+							],
+							"sid": 367256683275958
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "Player",
+									"sid": 226969084527301,
+									"behaviorType": "8Direction"
+								},
+								{
+									"id": "compare-speed",
+									"objectClass": "Player",
+									"sid": 995340919911346,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"comparison": 4,
+										"speed": "30"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Particle Effect - Energy Streak",
+									"sid": 302401817526483,
+									"parameters": [
+										"Player.UID",
+										"Player.ImagePointX(5)",
+										"Player.ImagePointY(5)",
+										"0.2",
+										"100",
+										"Player.8Direction.MovingAngle-(180 + (random(90)-45))",
+										"L_Main",
+										"0",
+										"100",
+										"125",
+										false
+									]
+								}
+							],
+							"sid": 196643888299840
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 149999309911918,
+									"parameters": {
+										"interval-seconds": "0.05"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 635527777654703,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each-ordered",
+											"objectClass": "System",
+											"sid": 286864197295991,
+											"parameters": {
+												"object": "Bullet_P",
+												"expression": "0",
+												"order": "ascending"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 285850332673475,
+											"parameters": [
+												"0",
+												"Bullet_P.X",
+												"Bullet_P.Y",
+												"0.1",
+												"50",
+												"Bullet_P.Bullet.AngleOfMotion - (180 + (random(90)-45))",
+												"L_Main",
+												"0",
+												"100",
+												"125",
+												false
+											]
+										}
+									],
+									"sid": 989236537510460
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each-ordered",
+											"objectClass": "System",
+											"sid": 573782801532087,
+											"parameters": {
+												"object": "Bullet_E",
+												"expression": "0",
+												"order": "ascending"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 392096169209032,
+											"parameters": [
+												"0",
+												"Bullet_E.X",
+												"Bullet_E.Y",
+												"0.1",
+												"50",
+												"Bullet_E.Bullet.AngleOfMotion - (180 + (random(90)-45))",
+												"L_Main",
+												"35",
+												"100",
+												"125",
+												false
+											]
+										}
+									],
+									"sid": 503057683679677
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each-ordered",
+											"objectClass": "System",
+											"sid": 442085996249347,
+											"parameters": {
+												"object": "Bullet_N",
+												"expression": "0",
+												"order": "ascending"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 710360019059663,
+											"parameters": [
+												"0",
+												"Bullet_N.X",
+												"Bullet_N.Y",
+												"0.1",
+												"50",
+												"Bullet_N.Bullet.AngleOfMotion - (180 + (random(90)-45))",
+												"L_Main",
+												"50",
+												"100",
+												"125",
+												false
+											]
+										}
+									],
+									"sid": 524244738514829
+								}
+							]
+						}
+					],
+					"sid": 631114117328284
 				}
 			],
 			"sid": 553040764439674
@@ -10752,6 +11368,73 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 602864221304754,
+											"parameters": {
+												"count": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 925251091443218,
+											"parameters": [
+												"Enemy_Controller.UID",
+												"Enemy_Controller.X",
+												"Enemy_Controller.Y",
+												"0.15",
+												"500",
+												"random(360)",
+												"L_Main",
+												"35",
+												"100",
+												"125",
+												false
+											]
+										},
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 376559612459098,
+											"parameters": [
+												"Enemy_Controller.UID",
+												"Enemy_Controller.X",
+												"Enemy_Controller.Y",
+												"0.15",
+												"500",
+												"random(360)",
+												"L_Main",
+												"35",
+												"100",
+												"125",
+												false
+											]
+										},
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 170333347861870,
+											"parameters": [
+												"Enemy_Controller.UID",
+												"Enemy_Controller.X",
+												"Enemy_Controller.Y",
+												"0.15",
+												"500",
+												"random(360)",
+												"L_Main",
+												"0",
+												"100",
+												"125",
+												false
+											]
+										}
+									],
+									"sid": 574428442082840
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "is-boolean-instance-variable-set",
 											"objectClass": "Bullet_P",
 											"sid": 379466274998686,
@@ -10796,6 +11479,73 @@
 							],
 							"sid": 729539265813022,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 926324088237327,
+											"parameters": {
+												"count": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 650238303408019,
+											"parameters": [
+												"Asteroids.UID",
+												"Asteroids.X",
+												"Asteroids.Y",
+												"0.15",
+												"500",
+												"random(360)",
+												"L_Main",
+												"50",
+												"100",
+												"200",
+												false
+											]
+										},
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 903166713423511,
+											"parameters": [
+												"Asteroids.UID",
+												"Asteroids.X",
+												"Asteroids.Y",
+												"0.15",
+												"500",
+												"random(360)",
+												"L_Main",
+												"50",
+												"100",
+												"200",
+												false
+											]
+										},
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 692822658751649,
+											"parameters": [
+												"Asteroids.UID",
+												"Asteroids.X",
+												"Asteroids.Y",
+												"0.15",
+												"500",
+												"random(360)",
+												"L_Main",
+												"0",
+												"100",
+												"125",
+												false
+											]
+										}
+									],
+									"sid": 521693340031965
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -11118,7 +11868,59 @@
 									"sid": 123293609622844
 								}
 							],
-							"sid": 995994820260573
+							"sid": 995994820260573,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 267023356748593,
+											"parameters": {
+												"count": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 350935991312643,
+											"parameters": [
+												"Bullet_P.UID",
+												"Bullet_P.X",
+												"Bullet_P.Y",
+												"0.15",
+												"500",
+												"random(360)",
+												"L_Main",
+												"50",
+												"100",
+												"200",
+												false
+											]
+										},
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 527965012626653,
+											"parameters": [
+												"Bullet_P.UID",
+												"Bullet_P.X",
+												"Bullet_P.Y",
+												"0.15",
+												"500",
+												"random(360)",
+												"L_Main",
+												"0",
+												"100",
+												"125",
+												false
+											]
+										}
+									],
+									"sid": 956305481108468
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -11356,6 +12158,56 @@
 							"actions": [],
 							"sid": 399465308109640,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 408245593600685,
+											"parameters": {
+												"count": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 803973666108285,
+											"parameters": [
+												"0",
+												"Bullet_E.X",
+												"Bullet_E.Y",
+												"0.15",
+												"500",
+												"random(360)",
+												"L_Main",
+												"50",
+												"100",
+												"200",
+												false
+											]
+										},
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 388167107654503,
+											"parameters": [
+												"0",
+												"Bullet_E.X",
+												"Bullet_E.Y",
+												"0.15",
+												"500",
+												"random(360)",
+												"L_Main",
+												"35",
+												"100",
+												"125",
+												false
+											]
+										}
+									],
+									"sid": 253468090237067
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -11658,7 +12510,59 @@
 									"sid": 734567227496554
 								}
 							],
-							"sid": 925859484718024
+							"sid": 925859484718024,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 582162935287480,
+											"parameters": {
+												"count": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 621455420122783,
+											"parameters": [
+												"Bullet_E.UID",
+												"Bullet_E.X",
+												"Bullet_E.Y",
+												"0.15",
+												"500",
+												"random(360)",
+												"L_Main",
+												"50",
+												"100",
+												"200",
+												false
+											]
+										},
+										{
+											"callFunction": "Particle Effect - Energy Streak",
+											"sid": 870836809441608,
+											"parameters": [
+												"Bullet_E.UID",
+												"Bullet_E.X",
+												"Bullet_E.Y",
+												"0.15",
+												"500",
+												"random(360)",
+												"L_Main",
+												"35",
+												"100",
+												"125",
+												false
+											]
+										}
+									],
+									"sid": 230644124595085
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -12909,6 +13813,384 @@
 				}
 			],
 			"sid": 497492820647270
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Music",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "LEVEL_SETTINGS",
+							"sid": 869438989757007,
+							"parameters": {
+								"instance-variable": "BGM_Track",
+								"comparison": 0,
+								"value": "Level_CurrentBGMTrack"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 809972959359451,
+							"parameters": {
+								"tag": "\"BGM\""
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 228744975167635,
+							"parameters": {
+								"folder": "music",
+								"audio-file-name": "LEVEL_SETTINGS.BGM_Track",
+								"loop": "looping",
+								"volume": "0",
+								"tag-optional": "\"BGM\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 708191125774124,
+							"parameters": {
+								"variable": "Level_CurrentBGMTrack",
+								"value": "LEVEL_SETTINGS.BGM_Track"
+							}
+						}
+					],
+					"sid": 556780059816693
+				}
+			],
+			"sid": 536771517630056
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Mesh Grid Background",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 435823746442435
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "MeshPoint",
+							"sid": 848362905026825
+						},
+						{
+							"id": "set-mesh-size",
+							"objectClass": "BG_Grid",
+							"sid": 683341896028949,
+							"parameters": {
+								"cols": "ceil(Self.Width/16)",
+								"rows": "ceil(Self.Height/16)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 869985144537745,
+							"parameters": {
+								"variable": "MeshLeft",
+								"value": "BG_Grid.BBoxLeft"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 162698065691233,
+							"parameters": {
+								"variable": "MeshTop",
+								"value": "BG_Grid.BBoxTop"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 645358363055535,
+							"parameters": {
+								"variable": "MeshRight",
+								"value": "BG_Grid.BBoxRight"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 205888104625276,
+							"parameters": {
+								"variable": "MeshBottom",
+								"value": "BG_Grid.BBoxBottom"
+							}
+						}
+					],
+					"sid": 967571004147330,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 806993359323610,
+									"parameters": {
+										"name": "\"x\"",
+										"start-index": "0",
+										"end-index": "BG_Grid.MeshColumns - 1"
+									}
+								},
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 929885468638781,
+									"parameters": {
+										"name": "\"y\"",
+										"start-index": "0",
+										"end-index": "BG_Grid.MeshRows - 1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 397566047174779,
+									"parameters": {
+										"object-to-create": "MeshPoint",
+										"layer": "L_BG3",
+										"x": "lerp(MeshLeft, MeshRight, loopindex(\"x\") / (BG_Grid.MeshColumns - 1))",
+										"y": "lerp(MeshTop, MeshBottom, loopindex(\"y\") / (BG_Grid.MeshRows - 1))"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "MeshPoint",
+									"sid": 823574788991114,
+									"parameters": {
+										"instance-variable": "MeshColumn",
+										"value": "loopindex(\"x\")"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "MeshPoint",
+									"sid": 302206810515160,
+									"parameters": {
+										"instance-variable": "MeshRow",
+										"value": "loopindex(\"y\")"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "MeshPoint",
+									"sid": 793474717512278,
+									"parameters": {
+										"instance-variable": "OriginalX",
+										"value": "Self.X"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "MeshPoint",
+									"sid": 176469725171906,
+									"parameters": {
+										"instance-variable": "OriginalY",
+										"value": "Self.Y"
+									}
+								}
+							],
+							"sid": 942207182126486
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-screen",
+							"objectClass": "MeshPoint",
+							"sid": 419899259203344
+						}
+					],
+					"actions": [],
+					"sid": 832442741220204,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 637325423161158,
+									"parameters": {
+										"object": "MeshPoint"
+									}
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "Bullets",
+									"sid": 747813477077060,
+									"parameters": {
+										"which": "nearest",
+										"x": "MeshPoint.X",
+										"y": "MeshPoint.Y"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 684348654421872,
+									"parameters": {
+										"first-value": "distance(MeshPoint.X, MeshPoint.Y, Bullets.X, Bullets.Y)",
+										"comparison": 3,
+										"second-value": "48"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-at-angle",
+									"objectClass": "MeshPoint",
+									"sid": 660036335799353,
+									"parameters": {
+										"angle": "angle(Self.X, Self.Y, Bullets.X, Bullets.Y)-180",
+										"distance": "2"
+									}
+								}
+							],
+							"sid": 788677358862519
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "MeshPoint",
+									"sid": 186908640073876,
+									"parameters": {
+										"instance-variable": "OriginalX",
+										"comparison": 0,
+										"value": "Self.X"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "MeshPoint",
+									"sid": 733905433957995,
+									"parameters": {
+										"instance-variable": "OriginalY",
+										"comparison": 0,
+										"value": "Self.Y"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 116183955889550,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 389387906754454,
+											"parameters": {
+												"first-value": "distance(MeshPoint.X, MeshPoint.Y, MeshPoint.OriginalX, MeshPoint.OriginalY)",
+												"comparison": 3,
+												"second-value": "0.25"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "MeshPoint",
+											"sid": 598375244321403,
+											"parameters": {
+												"x": "Self.OriginalX",
+												"y": "Self.OriginalY"
+											}
+										}
+									],
+									"sid": 678158342617982
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 632247818626620
+										}
+									],
+									"actions": [
+										{
+											"id": "move-at-angle",
+											"objectClass": "MeshPoint",
+											"sid": 594084071501622,
+											"parameters": {
+												"angle": "angle(Self.X, Self.Y, Self.OriginalX, Self.OriginalY)",
+												"distance": "1"
+											}
+										}
+									],
+									"sid": 655684675694194
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 194672031685788,
+											"parameters": {
+												"object": "MeshPoint"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mesh-point",
+											"objectClass": "BG_Grid",
+											"sid": 766271162285416,
+											"parameters": {
+												"col": "MeshPoint.MeshColumn",
+												"row": "MeshPoint.MeshRow",
+												"mode": "absolute",
+												"posx": "unlerp(MeshLeft, MeshRight, MeshPoint.X)",
+												"posy": "unlerp(MeshTop, MeshBottom, MeshPoint.Y)",
+												"texx": "-1",
+												"texy": "-1"
+											}
+										}
+									],
+									"sid": 121567220405291
+								}
+							],
+							"isOrBlock": true
+						}
+					]
+				}
+			],
+			"sid": 444055596020784
 		}
 	],
 	"sid": 350339920077027

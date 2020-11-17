@@ -231,6 +231,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "hsladjust",
 			"name": "Adjust HSL",
@@ -383,7 +391,10 @@
 			},
 			{
 				"items": [
-					"BG_BLACK"
+					"BG_BLACK",
+					"Piggy",
+					"MeshPoint",
+					"BG_Grid"
 				],
 				"subfolders": [],
 				"name": "Backgrounds"
@@ -411,6 +422,13 @@
 						],
 						"subfolders": [],
 						"name": "Background"
+					},
+					{
+						"items": [
+							"Effect_EnergyStreak"
+						],
+						"subfolders": [],
+						"name": "Effect Particle Sprites"
 					}
 				],
 				"name": "Particles"
@@ -487,7 +505,8 @@
 			"Bullets",
 			"Asteroids",
 			"Pickups",
-			"Keys"
+			"Keys",
+			"Particle_EffectSprites"
 		],
 		"subfolders": []
 	},
@@ -523,6 +542,11 @@
 					"name": "MainMenu_Loop.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 301964053353261
+				},
+				{
+					"name": "Level1_Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 801604925237796
 				}
 			],
 			"subfolders": []

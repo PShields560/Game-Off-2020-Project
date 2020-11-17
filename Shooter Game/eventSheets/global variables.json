@@ -305,7 +305,7 @@
 			"eventType": "variable",
 			"name": "Cooldown_Weapon2",
 			"type": "number",
-			"initialValue": "0.02",
+			"initialValue": "0.0166666666",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": true,
@@ -500,6 +500,56 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 514770329095163
+		},
+		{
+			"eventType": "variable",
+			"name": "Level_CurrentBGMTrack",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 632496392628506
+		},
+		{
+			"eventType": "variable",
+			"name": "MeshLeft",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 294360953313080
+		},
+		{
+			"eventType": "variable",
+			"name": "MeshTop",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 981899099661683
+		},
+		{
+			"eventType": "variable",
+			"name": "MeshRight",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 718255467267479
+		},
+		{
+			"eventType": "variable",
+			"name": "MeshBottom",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 451893859010324
 		}
 	],
 	"sid": 861189234454270

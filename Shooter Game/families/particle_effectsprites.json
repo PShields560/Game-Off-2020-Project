@@ -1,0 +1,70 @@
+{
+	"name": "Particle_EffectSprites",
+	"plugin-id": "Sprite",
+	"sid": 637489021727065,
+	"instanceVariables": [
+		{
+			"name": "HasTarget",
+			"type": "boolean",
+			"desc": "",
+			"sid": 558197713594509
+		},
+		{
+			"name": "TargetUID",
+			"type": "number",
+			"desc": "",
+			"sid": 167010779470928
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 262173629483760
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 893148195771485
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 329555914749079
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 534595200844217
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 753462603063840
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 795061152656424
+		},
+		{
+			"behaviorId": "Orbit",
+			"name": "Orbit",
+			"sid": 577973261648509
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 720587431956017
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "hsladjust",
+			"name": "AdjustHSL"
+		}
+	],
+	"members": [
+		"Effect_EnergyStreak"
+	]
+}
