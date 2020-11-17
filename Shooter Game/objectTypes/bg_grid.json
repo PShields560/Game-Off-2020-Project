@@ -1,0 +1,32 @@
+{
+	"name": "BG_Grid",
+	"plugin-id": "TiledBg",
+	"sid": 165077222074468,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 16,
+		"height": 16,
+		"originX": 2.4642857142857144,
+		"originY": 3.821428571428571,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 4748654,
+		"collisionPoly": {
+			"points": [
+				0.25,
+				0.25,
+				0.75,
+				0.25,
+				0.75,
+				0.75,
+				0.25,
+				0.75
+			]
+		},
+		"useCollisionPoly": true
+	}
+}

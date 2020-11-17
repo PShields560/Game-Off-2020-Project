@@ -206,6 +206,11 @@
 								"name": "Image Point 4",
 								"x": 1,
 								"y": 1
+							},
+							{
+								"name": "Image Point 5",
+								"x": 0.15555555555555556,
+								"y": 0.5
 							}
 						],
 						"duration": 1

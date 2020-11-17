@@ -331,6 +331,15 @@
 								"volume": "0",
 								"tag-optional": "\"BGM\""
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 102778407304319,
+							"parameters": {
+								"variable": "Level_CurrentBGMTrack",
+								"value": "\"MainMenu_Loop\""
+							}
 						}
 					],
 					"sid": 267288103029741
