@@ -5,26 +5,31 @@
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "water",
+			"name": "Water"
+		}
+	],
 	"image": {
-		"width": 16,
-		"height": 16,
-		"originX": 2.4642857142857144,
-		"originY": 3.821428571428571,
+		"width": 32,
+		"height": 32,
+		"originX": -0.2321428571428572,
+		"originY": -0.9107142857142856,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 4748654,
+		"imageSpriteId": 5378993,
 		"collisionPoly": {
 			"points": [
-				0.25,
-				0.25,
-				0.75,
-				0.25,
-				0.75,
-				0.75,
-				0.25,
-				0.75
+				0.875,
+				0.875,
+				0.625,
+				0.875,
+				0.625,
+				0.625,
+				0.875,
+				0.625
 			]
 		},
 		"useCollisionPoly": true

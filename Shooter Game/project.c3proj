@@ -80,6 +80,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -243,6 +251,14 @@
 			"id": "hsladjust",
 			"name": "Adjust HSL",
 			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "water",
+			"name": "Water",
+			"author": "Viktor Korsun",
 			"version": "r225",
 			"bundled": false
 		},
@@ -483,7 +499,8 @@
 				"items": [
 					"AJAX",
 					"Data_Player",
-					"Audio"
+					"Audio",
+					"MeshPoints"
 				],
 				"subfolders": [],
 				"name": "Data"
@@ -533,7 +550,128 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Player Bomb Explosion.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 254740841782964
+				},
+				{
+					"name": "Player Death.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 776576631646213
+				},
+				{
+					"name": "Player Hit By Projectile.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 686881594027348
+				},
+				{
+					"name": "Player Impact Hazard Spike.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 779129957800930
+				},
+				{
+					"name": "Player Set Target Ball.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 452582185558037
+				},
+				{
+					"name": "Player Set Target Enemy.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 344186840699826
+				},
+				{
+					"name": "Player Set Target Failure.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 420820431969908
+				},
+				{
+					"name": "Player Set Target.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 529292682947234
+				},
+				{
+					"name": "Player Shoot Bouncy Bombs SHOT.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 823679872219281
+				},
+				{
+					"name": "Player Shoot Bouncy Bombs WINDUP.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 842979992618098
+				},
+				{
+					"name": "Player Shoot Machine Gun RELEASE.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 403227996804066
+				},
+				{
+					"name": "Player Shoot Machine Gun SHOT.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 310262905993546
+				},
+				{
+					"name": "Player Shoot Machine Gun WINDUP.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 656054965848587
+				},
+				{
+					"name": "Player Shoot Particle Shotgun SHOT.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 561120105042814
+				},
+				{
+					"name": "Player Shoot Particle Shotgun WINDUP.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 332849675806712
+				},
+				{
+					"name": "Player Shoot Photon Laser RELEASE.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 544377914122058
+				},
+				{
+					"name": "Player Shoot Photon Laser SHOT.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 482409586217583
+				},
+				{
+					"name": "Player Shoot Seeking Darts SHOT.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 889626697774646
+				},
+				{
+					"name": "Player Shoot Seeking Darts WINDUP.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 189287600883925
+				},
+				{
+					"name": "Player Touch Ball.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 737310715315252
+				},
+				{
+					"name": "Player Touch Energy Pickup.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 502017867574474
+				},
+				{
+					"name": "Player Touch Health Pickup.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 839900418213165
+				},
+				{
+					"name": "Player Touch Shield Pickup.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 786680344242646
+				},
+				{
+					"name": "Player Touch Wall.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 721708766858573
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

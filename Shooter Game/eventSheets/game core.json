@@ -148,6 +148,104 @@
 							"id": "destroy",
 							"objectClass": "Enemy_Controller",
 							"sid": 418484710496412
+						},
+						{
+							"id": "destroy",
+							"objectClass": "MeshPoint",
+							"sid": 848362905026825
+						},
+						{
+							"id": "set-mesh-size",
+							"objectClass": "BG_Grid",
+							"sid": 234458384962062,
+							"parameters": {
+								"cols": "ceil(Self.Width/32)",
+								"rows": "ceil(Self.Height/32)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 869985144537745,
+							"parameters": {
+								"variable": "MeshLeft",
+								"value": "BG_Grid.BBoxLeft"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 162698065691233,
+							"parameters": {
+								"variable": "MeshTop",
+								"value": "BG_Grid.BBoxTop"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 645358363055535,
+							"parameters": {
+								"variable": "MeshRight",
+								"value": "BG_Grid.BBoxRight"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 205888104625276,
+							"parameters": {
+								"variable": "MeshBottom",
+								"value": "BG_Grid.BBoxBottom"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 838439702246791,
+							"parameters": {
+								"variable": "Level_IsReady",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "MeshPoints",
+							"sid": 359601557567399,
+							"parameters": {
+								"width": "BG_Grid.MeshColumns",
+								"height": "BG_Grid.MeshRows",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "MeshPoints",
+							"sid": 349265655204057,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"callFunction": "Create Mesh Points - Initial",
+							"sid": 744484797544985
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 568554515739067,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 916315661267463,
+							"parameters": {
+								"variable": "Level_IsReady",
+								"value": "true"
+							}
 						}
 					],
 					"sid": 261339697548126,
@@ -538,7 +636,44 @@
 				{
 					"eventType": "block",
 					"conditions": [],
-					"actions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 326474032497576,
+							"parameters": {
+								"variable": "Screen_MeshLeft",
+								"value": "floor(ViewportLeft(L_BG3)/16)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 603449431482379,
+							"parameters": {
+								"variable": "Screen_MeshTop",
+								"value": "floor(ViewportTop(L_BG3)/16)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 947371969403585,
+							"parameters": {
+								"variable": "Screen_MeshRight",
+								"value": "ceil(ViewportRight(L_BG3)/16)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 665684189022910,
+							"parameters": {
+								"variable": "Screen_MeshBottom",
+								"value": "ceil(ViewportBottom(L_BG3)/16)"
+							}
+						}
+					],
 					"sid": 306009652805590,
 					"children": [
 						{
@@ -1058,14 +1193,49 @@
 					"functionParameters": [],
 					"eventType": "function-block",
 					"conditions": [],
-					"actions": [
+					"actions": [],
+					"sid": 302462141326077,
+					"children": [
 						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 787706726546085
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 543954902351539,
+									"parameters": {
+										"variable": "Option_IsSFXon"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 828865353380156,
+									"parameters": {
+										"audio-file": "Player Death",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"SFX\""
+									}
+								}
+							],
+							"sid": 948458306125004
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 545219415034890
+								}
+							],
+							"sid": 196644180465424
 						}
-					],
-					"sid": 302462141326077
+					]
 				}
 			],
 			"sid": 735937632217130
@@ -1090,10 +1260,10 @@
 						{
 							"id": "tween-two-properties",
 							"objectClass": "Camera",
-							"sid": 630240867508420,
+							"sid": 843691039050332,
 							"behaviorType": "Tween",
 							"parameters": {
-								"tags": "\"\"",
+								"tags": "\"Camera\"",
 								"property": "position",
 								"end-x": "Player.X",
 								"end-y": "Player.Y",
@@ -1125,7 +1295,65 @@
 							"sid": 473970206894441
 						}
 					],
-					"sid": 182933857712724
+					"sid": 182933857712724,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 867712729103694,
+									"parameters": {
+										"variable": "Level_IsReady"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Create Mesh Points",
+									"sid": 878672719910308
+								}
+							],
+							"sid": 725679613825174,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Camera",
+							"sid": 686243076259735,
+							"parameters": {
+								"object": "Player"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 642406127461947,
+							"parameters": {
+								"variable": "Level_IsReady"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 682349349527863,
+							"parameters": {
+								"variable": "Level_IsReady",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 805680582256779,
+					"disabled": true
 				}
 			],
 			"sid": 387606181202228
@@ -2887,7 +3115,36 @@
 													]
 												}
 											],
-											"sid": 879028019515098
+											"sid": 879028019515098,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 546162657878831,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 279798509086029,
+															"parameters": {
+																"audio-file": "Player Shoot Machine Gun SHOT",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 435234070099224
+												}
+											]
 										},
 										{
 											"eventType": "block",
@@ -2940,7 +3197,7 @@
 														{
 															"id": "is-boolean-instance-variable-set",
 															"objectClass": "Player",
-															"sid": 869393104002663,
+															"sid": 547054261831142,
 															"parameters": {
 																"instance-variable": "IsImmobile"
 															},
@@ -2951,14 +3208,41 @@
 														{
 															"id": "set-boolean-instvar",
 															"objectClass": "Player",
-															"sid": 569355241644608,
+															"sid": 577396602739504,
 															"parameters": {
 																"instance-variable": "IsImmobile",
 																"value": "true"
 															}
 														}
 													],
-													"sid": 949393486999939
+													"sid": 984953750861324
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 388147872204328,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 860886366842796,
+															"parameters": {
+																"audio-file": "Player Shoot Photon Laser SHOT",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 952466242318218
 												}
 											]
 										},
@@ -3059,7 +3343,36 @@
 													]
 												}
 											],
-											"sid": 785454274257831
+											"sid": 785454274257831,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 476364665112074,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 874091653698270,
+															"parameters": {
+																"audio-file": "Player Shoot Bouncy Bombs SHOT",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 549037241512998
+												}
+											]
 										},
 										{
 											"eventType": "block",
@@ -3131,7 +3444,36 @@
 													]
 												}
 											],
-											"sid": 475607097913264
+											"sid": 475607097913264,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 198509596595171,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 720707457691850,
+															"parameters": {
+																"audio-file": "Player Shoot Seeking Darts SHOT",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 223792808819388
+												}
+											]
 										},
 										{
 											"eventType": "block",
@@ -3284,7 +3626,36 @@
 													]
 												}
 											],
-											"sid": 357174764129282
+											"sid": 357174764129282,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 408542517965992,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 684638754524329,
+															"parameters": {
+																"audio-file": "Player Shoot Particle Shotgun SHOT",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\"\n"
+															}
+														}
+													],
+													"sid": 589038124167041
+												}
+											]
 										}
 									]
 								},
@@ -3315,7 +3686,227 @@
 											}
 										}
 									],
-									"sid": 602524545986350
+									"sid": 602524545986350,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player",
+													"sid": 160216051496912,
+													"parameters": {
+														"instance-variable": "Weapon_CurrentWeaponNum",
+														"comparison": 0,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 655308662527819,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 349825023357144,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 490212659490624,
+															"parameters": {
+																"audio-file": "Player Shoot Machine Gun WINDUP",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 769964804727735
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player",
+													"sid": 657178094250078,
+													"parameters": {
+														"instance-variable": "Weapon_CurrentWeaponNum",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 743334383432072,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 268820846794414,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [],
+													"sid": 895638830564258
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player",
+													"sid": 992787047794123,
+													"parameters": {
+														"instance-variable": "Weapon_CurrentWeaponNum",
+														"comparison": 0,
+														"value": "2"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 572578120880592,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 356911479826520,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 534597749948260,
+															"parameters": {
+																"audio-file": "Player Shoot Bouncy Bombs WINDUP",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 233327998277771
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player",
+													"sid": 296680449068129,
+													"parameters": {
+														"instance-variable": "Weapon_CurrentWeaponNum",
+														"comparison": 0,
+														"value": "3"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 555262951219188,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 530588506850359,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 418207420632575,
+															"parameters": {
+																"audio-file": "Player Shoot Seeking Darts WINDUP",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 399751550060277
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player",
+													"sid": 898831697029596,
+													"parameters": {
+														"instance-variable": "Weapon_CurrentWeaponNum",
+														"comparison": 0,
+														"value": "4"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 951666046967716,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 265166904059527,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 457413760211927,
+															"parameters": {
+																"audio-file": "Player Shoot Particle Shotgun WINDUP",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 998239545953818
+												}
+											]
+										}
+									]
 								}
 							]
 						},
@@ -3363,6 +3954,200 @@
 										}
 									],
 									"sid": 954660796462492
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 406377555850015,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentWeaponNum",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 587828880230725,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 857817415841572,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 958551799647679,
+													"parameters": {
+														"audio-file": "Player Shoot Machine Gun RELEASE",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 882167673267496
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 966150951203523,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentWeaponNum",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 636249680608288,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 753992795414580,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 186804870232359,
+													"parameters": {
+														"audio-file": "Player Shoot Photon Laser RELEASE",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 606544550129239
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 180216731163328,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentWeaponNum",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 634759455057109,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 575643483388906,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 621138458831407
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 247639472892114,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentWeaponNum",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 554778431447318,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 545380451678830,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 155166111482542
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 543554962591170,
+											"parameters": {
+												"instance-variable": "Weapon_CurrentWeaponNum",
+												"comparison": 0,
+												"value": "4"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 346646852819014,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 864027898640776,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 390167199889570
+										}
+									]
 								}
 							]
 						},
@@ -3427,15 +4212,6 @@
 										"mouse-button": "right",
 										"click-type": "clicked"
 									}
-								},
-								{
-									"id": "cursor-is-over-object",
-									"objectClass": "Mouse",
-									"sid": 984802215987249,
-									"parameters": {
-										"object": "NoTargetZone"
-									},
-									"isInverted": true
 								}
 							],
 							"actions": [],
@@ -3447,84 +4223,213 @@
 										{
 											"id": "cursor-is-over-object",
 											"objectClass": "Mouse",
-											"sid": 596610236777561,
+											"sid": 959580442678711,
 											"parameters": {
-												"object": "Player_TargetPoint"
-											}
+												"object": "NoTargetZone"
+											},
+											"isInverted": true
 										}
 									],
-									"actions": [
+									"actions": [],
+									"sid": 823997008320197,
+									"children": [
 										{
-											"id": "destroy",
-											"objectClass": "Player_TargetPoint",
-											"sid": 896481087966751
-										}
-									],
-									"sid": 462416942752697
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "else",
-											"objectClass": "System",
-											"sid": 640372835439531
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 232493154335221,
+													"parameters": {
+														"object": "Player_TargetPoint"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "Player_TargetPoint",
+													"sid": 192335635431712
+												}
+											],
+											"sid": 516698570094431
 										},
 										{
-											"id": "cursor-is-over-object",
-											"objectClass": "Mouse",
-											"sid": 172254876699041,
-											"parameters": {
-												"object": "Enemy_Controller"
-											}
-										}
-									],
-									"actions": [
-										{
-											"callFunction": "Player Set New Target",
-											"sid": 577565348206811,
-											"parameters": [
-												"0",
-												"0",
-												"Enemy_Controller.UID",
-												false,
-												true
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 641165894619024
+												},
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 937954162002766,
+													"parameters": {
+														"object": "Enemy_Controller"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "Player Set New Target",
+													"sid": 789671313602736,
+													"parameters": [
+														"0",
+														"0",
+														"Enemy_Controller.UID",
+														false,
+														true
+													]
+												}
+											],
+											"sid": 991623383007412,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 948995791867004,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 813632463195275,
+															"parameters": {
+																"audio-file": "Player Set Target Enemy",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 301808326894167
+												}
 											]
-										}
-									],
-									"sid": 439263074807481
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "else",
-											"objectClass": "System",
-											"sid": 245245409260128
 										},
 										{
-											"id": "cursor-is-over-object",
-											"objectClass": "Mouse",
-											"sid": 834124968818262,
-											"parameters": {
-												"object": "Ball"
-											}
-										}
-									],
-									"actions": [
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 673031229605153
+												},
+												{
+													"id": "cursor-is-over-object",
+													"objectClass": "Mouse",
+													"sid": 961496518315121,
+													"parameters": {
+														"object": "Ball"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "Player Set New Target",
+													"sid": 985733409587247,
+													"parameters": [
+														"0",
+														"0",
+														"Ball.UID",
+														false,
+														true
+													]
+												}
+											],
+											"sid": 245833034227921,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 712329423162554,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 663786220821150,
+															"parameters": {
+																"audio-file": "Player Set Target Ball",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 935366900487368
+												}
+											]
+										},
 										{
-											"callFunction": "Player Set New Target",
-											"sid": 582713868653216,
-											"parameters": [
-												"0",
-												"0",
-												"Ball.UID",
-												false,
-												true
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 512410936126656
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "Player Set New Target",
+													"sid": 787860151192866,
+													"parameters": [
+														"Mouse.X",
+														"Mouse.Y",
+														"0",
+														true,
+														false
+													]
+												}
+											],
+											"sid": 331589646032908,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 105687512117373,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 678401097717022,
+															"parameters": {
+																"audio-file": "Player Set Target",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 245454245368693
+												}
 											]
 										}
-									],
-									"sid": 174179712079119
+									]
 								},
 								{
 									"eventType": "block",
@@ -3532,23 +4437,40 @@
 										{
 											"id": "else",
 											"objectClass": "System",
-											"sid": 159432668687460
+											"sid": 935281840502149
 										}
 									],
-									"actions": [
+									"actions": [],
+									"sid": 107765221244461,
+									"children": [
 										{
-											"callFunction": "Player Set New Target",
-											"sid": 524308004485192,
-											"parameters": [
-												"Mouse.X",
-												"Mouse.Y",
-												"0",
-												true,
-												false
-											]
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 120677518165674,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 878085368205673,
+													"parameters": {
+														"audio-file": "Player Set Target Failure",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 450069081969646
 										}
-									],
-									"sid": 744704481014397
+									]
 								}
 							]
 						}
@@ -4563,6 +5485,33 @@
 										}
 									],
 									"sid": 822415056691339
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 580775855077092,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 813575542220524,
+											"parameters": {
+												"audio-file": "Player Hit By Projectile",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 511202673086628
 								}
 							]
 						},
@@ -8065,7 +9014,36 @@
 											]
 										}
 									],
-									"sid": 318392181332913
+									"sid": 318392181332913,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 822512561739978,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 576343493308768,
+													"parameters": {
+														"audio-file": "Player Touch Health Pickup",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 735695111802283
+										}
+									]
 								}
 							],
 							"sid": 706783224892884
@@ -8116,7 +9094,36 @@
 											"sid": 943863295142456
 										}
 									],
-									"sid": 701960325348055
+									"sid": 701960325348055,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 481022918064936,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 477098677199418,
+													"parameters": {
+														"audio-file": "Player Touch Energy Pickup",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 207305966946976
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -8175,6 +9182,33 @@
 									],
 									"sid": 376843538865094,
 									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 797934795407525,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 856918502211247,
+													"parameters": {
+														"audio-file": "Player Touch Shield Pickup",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 484465158501281
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -8292,7 +9326,36 @@
 											}
 										}
 									],
-									"sid": 258189992578880
+									"sid": 258189992578880,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 582785340061606,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 609312026536427,
+													"parameters": {
+														"audio-file": "Player Touch Health Pickup",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 179872554400628
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -8387,7 +9450,36 @@
 											}
 										}
 									],
-									"sid": 561410934639123
+									"sid": 561410934639123,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 470968649132854,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 158800524616563,
+													"parameters": {
+														"audio-file": "Player Touch Health Pickup",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 173033057186732
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -8834,7 +9926,36 @@
 									}
 								}
 							],
-							"sid": 530262665976939
+							"sid": 530262665976939,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 444965841078589,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 311527958896789,
+											"parameters": {
+												"audio-file": "Player Touch Ball",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 264825414139408
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -8859,6 +9980,11 @@
 										"angle": "Bullet_P.Bullet.AngleOfMotion",
 										"image-point": "0"
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Bullet_P",
+									"sid": 729859975713561
 								}
 							],
 							"sid": 703510656845526
@@ -8886,6 +10012,11 @@
 										"angle": "Bullet_E.Bullet.AngleOfMotion",
 										"image-point": "0"
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Bullet_E",
+									"sid": 627193358792494
 								}
 							],
 							"sid": 126555482177758
@@ -8913,6 +10044,11 @@
 										"angle": "Bullet_N.Bullet.AngleOfMotion",
 										"image-point": "0"
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Bullet_N",
+									"sid": 114704649638504
 								}
 							],
 							"sid": 570650201450401
@@ -8948,7 +10084,36 @@
 									]
 								}
 							],
-							"sid": 220727205011571
+							"sid": 220727205011571,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 217263150525132,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 411433046767282,
+											"parameters": {
+												"audio-file": "Player Impact Hazard Spike",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 810340798821955
+								}
+							]
 						}
 					],
 					"sid": 930395110021897
@@ -12128,6 +13293,33 @@
 												}
 											],
 											"sid": 573696529401558
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 721776249513409,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 705844699254579,
+													"parameters": {
+														"audio-file": "Player Bomb Explosion",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 764980011215971
 										}
 									]
 								}
@@ -12803,7 +13995,52 @@
 					"title": "Solid Wall",
 					"description": "",
 					"isActiveOnStart": true,
-					"children": [],
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 410858759888808,
+									"parameters": {
+										"object": "Wall_Solid"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 600592204981362,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 858334728682077,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 809863049379678,
+											"parameters": {
+												"audio-file": "Player Touch Wall",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 836357293458520
+								}
+							]
+						}
+					],
 					"sid": 409398409839159
 				},
 				{
@@ -13883,146 +15120,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 435823746442435
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "MeshPoint",
-							"sid": 848362905026825
-						},
-						{
-							"id": "set-mesh-size",
-							"objectClass": "BG_Grid",
-							"sid": 683341896028949,
-							"parameters": {
-								"cols": "ceil(Self.Width/16)",
-								"rows": "ceil(Self.Height/16)"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 869985144537745,
-							"parameters": {
-								"variable": "MeshLeft",
-								"value": "BG_Grid.BBoxLeft"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 162698065691233,
-							"parameters": {
-								"variable": "MeshTop",
-								"value": "BG_Grid.BBoxTop"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 645358363055535,
-							"parameters": {
-								"variable": "MeshRight",
-								"value": "BG_Grid.BBoxRight"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 205888104625276,
-							"parameters": {
-								"variable": "MeshBottom",
-								"value": "BG_Grid.BBoxBottom"
-							}
-						}
-					],
-					"sid": 967571004147330,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "for",
-									"objectClass": "System",
-									"sid": 806993359323610,
-									"parameters": {
-										"name": "\"x\"",
-										"start-index": "0",
-										"end-index": "BG_Grid.MeshColumns - 1"
-									}
-								},
-								{
-									"id": "for",
-									"objectClass": "System",
-									"sid": 929885468638781,
-									"parameters": {
-										"name": "\"y\"",
-										"start-index": "0",
-										"end-index": "BG_Grid.MeshRows - 1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "create-object",
-									"objectClass": "System",
-									"sid": 397566047174779,
-									"parameters": {
-										"object-to-create": "MeshPoint",
-										"layer": "L_BG3",
-										"x": "lerp(MeshLeft, MeshRight, loopindex(\"x\") / (BG_Grid.MeshColumns - 1))",
-										"y": "lerp(MeshTop, MeshBottom, loopindex(\"y\") / (BG_Grid.MeshRows - 1))"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "MeshPoint",
-									"sid": 823574788991114,
-									"parameters": {
-										"instance-variable": "MeshColumn",
-										"value": "loopindex(\"x\")"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "MeshPoint",
-									"sid": 302206810515160,
-									"parameters": {
-										"instance-variable": "MeshRow",
-										"value": "loopindex(\"y\")"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "MeshPoint",
-									"sid": 793474717512278,
-									"parameters": {
-										"instance-variable": "OriginalX",
-										"value": "Self.X"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "MeshPoint",
-									"sid": 176469725171906,
-									"parameters": {
-										"instance-variable": "OriginalY",
-										"value": "Self.Y"
-									}
-								}
-							],
-							"sid": 942207182126486
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "is-on-screen",
 							"objectClass": "MeshPoint",
 							"sid": 419899259203344
@@ -14107,15 +15204,61 @@
 							"children": [
 								{
 									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "move-at-angle",
+											"objectClass": "MeshPoint",
+											"sid": 709356750643693,
+											"parameters": {
+												"angle": "angle(Self.X, Self.Y, Self.OriginalX, Self.OriginalY)",
+												"distance": "1"
+											}
+										}
+									],
+									"sid": 395264199147071
+								},
+								{
+									"eventType": "block",
 									"conditions": [
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 389387906754454,
+											"sid": 702777505734713,
+											"parameters": {
+												"first-value": "Bullets.Count",
+												"comparison": 4,
+												"second-value": "0"
+											}
+										},
+										{
+											"id": "pick-nearestfurthest",
+											"objectClass": "Bullets",
+											"sid": 153705444630705,
+											"parameters": {
+												"which": "nearest",
+												"x": "MeshPoint.X",
+												"y": "MeshPoint.Y"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 961461802488233,
+											"parameters": {
+												"first-value": "distance(MeshPoint.X, MeshPoint.Y, Bullets.X, Bullets.Y)",
+												"comparison": 3,
+												"second-value": "16"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 248082338017777,
 											"parameters": {
 												"first-value": "distance(MeshPoint.X, MeshPoint.Y, MeshPoint.OriginalX, MeshPoint.OriginalY)",
 												"comparison": 3,
-												"second-value": "0.25"
+												"second-value": "4"
 											}
 										}
 									],
@@ -14136,56 +15279,476 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "else",
-											"objectClass": "System",
-											"sid": 632247818626620
+											"id": "compare-instance-variable",
+											"objectClass": "MeshPoint",
+											"sid": 830743718946886,
+											"parameters": {
+												"instance-variable": "OriginalX",
+												"comparison": 0,
+												"value": "Self.X"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "MeshPoint",
+											"sid": 936490287069301,
+											"parameters": {
+												"instance-variable": "OriginalY",
+												"comparison": 0,
+												"value": "Self.Y"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [],
+									"sid": 491287836641422,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for-each",
+													"objectClass": "System",
+													"sid": 423628708927392,
+													"parameters": {
+														"object": "MeshPoint"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-mesh-point",
+													"objectClass": "BG_Grid",
+													"sid": 117776202452679,
+													"parameters": {
+														"col": "MeshPoint.MeshColumn",
+														"row": "MeshPoint.MeshRow",
+														"mode": "absolute",
+														"posx": "unlerp(MeshLeft, MeshRight, MeshPoint.X)",
+														"posy": "unlerp(MeshTop, MeshBottom, MeshPoint.Y)",
+														"texx": "-1",
+														"texy": "-1"
+													}
+												}
+											],
+											"sid": 490953298500764
+										}
+									],
+									"isOrBlock": true
+								}
+							],
+							"isOrBlock": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 502622737204382,
+							"parameters": {
+								"variable": "Level_IsReady"
+							}
+						},
+						{
+							"id": "is-on-screen",
+							"objectClass": "MeshPoint",
+							"sid": 553861099865011,
+							"isInverted": true
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 140452991862891,
+							"parameters": {
+								"object": "MeshPoint"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "MeshPoint",
+							"sid": 874293485653093,
+							"parameters": {
+								"x": "Self.OriginalX",
+								"y": "Self.OriginalY"
+							}
+						},
+						{
+							"id": "set-mesh-point",
+							"objectClass": "BG_Grid",
+							"sid": 575705765399840,
+							"parameters": {
+								"col": "MeshPoint.MeshColumn",
+								"row": "MeshPoint.MeshRow",
+								"mode": "absolute",
+								"posx": "unlerp(MeshLeft, MeshRight, MeshPoint.X)",
+								"posy": "unlerp(MeshTop, MeshBottom, MeshPoint.Y)",
+								"texx": "-1",
+								"texy": "-1"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "MeshPoints",
+							"sid": 720440403037523,
+							"parameters": {
+								"x": "MeshPoint.MeshColumn",
+								"y": "MeshPoint.MeshRow",
+								"value": "0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "MeshPoint",
+							"sid": 155250344555331
+						}
+					],
+					"sid": 609540726968830,
+					"disabled": true
+				},
+				{
+					"functionName": "Create Mesh Points",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 293624518879829,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 704052685572982,
+									"parameters": {
+										"name": "\"x\"",
+										"start-index": "Screen_MeshLeft",
+										"end-index": "Screen_MeshRight"
+									}
+								},
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 654126296099330,
+									"parameters": {
+										"name": "\"y\"",
+										"start-index": "Screen_MeshTop",
+										"end-index": "Screen_MeshBottom"
+									}
+								},
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 891540531909402,
+									"disabled": true,
+									"parameters": {
+										"name": "\"x\"",
+										"start-index": "0",
+										"end-index": "BG_Grid.MeshColumns - 1"
+									}
+								},
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 883067588444193,
+									"disabled": true,
+									"parameters": {
+										"name": "\"y\"",
+										"start-index": "0",
+										"end-index": "BG_Grid.MeshRows - 1"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "MeshPoint",
+									"sid": 454946584709597,
+									"disabled": true,
+									"parameters": {
+										"instance-variable": "OriginalX",
+										"comparison": 0,
+										"value": "loopindex(\"x\") * 16"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "MeshPoint",
+									"sid": 101890625963288,
+									"disabled": true,
+									"parameters": {
+										"instance-variable": "OriginalY",
+										"comparison": 0,
+										"value": "loopindex(\"y\") * 16"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-at-xy",
+									"objectClass": "MeshPoints",
+									"sid": 179329600957898,
+									"parameters": {
+										"x": "loopindex(\"x\")",
+										"y": "loopindex(\"y\")",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 322328685812829,
+									"parameters": {
+										"object-to-create": "MeshPoint",
+										"layer": "L_BG3",
+										"x": "lerp(MeshLeft, MeshRight, loopindex(\"x\") / (BG_Grid.MeshColumns - 1))",
+										"y": "lerp(MeshTop, MeshBottom, loopindex(\"y\") / (BG_Grid.MeshRows - 1))"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "MeshPoint",
+									"sid": 438534801499951,
+									"parameters": {
+										"instance-variable": "MeshColumn",
+										"value": "loopindex(\"x\")"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "MeshPoint",
+									"sid": 873523758094174,
+									"parameters": {
+										"instance-variable": "MeshRow",
+										"value": "loopindex(\"y\")"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "MeshPoint",
+									"sid": 530974779792131,
+									"parameters": {
+										"instance-variable": "OriginalX",
+										"value": "Self.X"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "MeshPoint",
+									"sid": 142552048275252,
+									"parameters": {
+										"instance-variable": "OriginalY",
+										"value": "Self.Y"
+									}
+								}
+							],
+							"sid": 174095806943185,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-on-screen",
+											"objectClass": "MeshPoint",
+											"sid": 789409368686565,
+											"isInverted": true
 										}
 									],
 									"actions": [
 										{
-											"id": "move-at-angle",
+											"id": "destroy",
 											"objectClass": "MeshPoint",
-											"sid": 594084071501622,
-											"parameters": {
-												"angle": "angle(Self.X, Self.Y, Self.OriginalX, Self.OriginalY)",
-												"distance": "1"
-											}
+											"sid": 701658658327985
 										}
 									],
-									"sid": 655684675694194
+									"sid": 550846492236073,
+									"disabled": true
 								},
 								{
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "for-each",
-											"objectClass": "System",
-											"sid": 194672031685788,
+											"id": "is-overlapping-another-object",
+											"objectClass": "MeshPoint",
+											"sid": 886420707864957,
 											"parameters": {
 												"object": "MeshPoint"
+											}
+										},
+										{
+											"id": "pick-topbottom",
+											"objectClass": "MeshPoint",
+											"sid": 698584962773660,
+											"parameters": {
+												"which": "top"
 											}
 										}
 									],
 									"actions": [
 										{
-											"id": "set-mesh-point",
-											"objectClass": "BG_Grid",
-											"sid": 766271162285416,
-											"parameters": {
-												"col": "MeshPoint.MeshColumn",
-												"row": "MeshPoint.MeshRow",
-												"mode": "absolute",
-												"posx": "unlerp(MeshLeft, MeshRight, MeshPoint.X)",
-												"posy": "unlerp(MeshTop, MeshBottom, MeshPoint.Y)",
-												"texx": "-1",
-												"texy": "-1"
-											}
+											"id": "destroy",
+											"objectClass": "MeshPoint",
+											"sid": 532634804858193
 										}
 									],
-									"sid": 121567220405291
+									"sid": 137256960542891,
+									"disabled": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "Create Mesh Points - Initial",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 956821771458380,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 649121619846118,
+									"disabled": true,
+									"parameters": {
+										"name": "\"x\"",
+										"start-index": "Screen_MeshLeft",
+										"end-index": "Screen_MeshRight"
+									}
+								},
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 188843025608382,
+									"disabled": true,
+									"parameters": {
+										"name": "\"x\"",
+										"start-index": "Screen_MeshTop",
+										"end-index": "Screen_MeshBottom"
+									}
+								},
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 802925239927147,
+									"parameters": {
+										"name": "\"x\"",
+										"start-index": "0",
+										"end-index": "BG_Grid.MeshColumns - 1"
+									}
+								},
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 267901315940051,
+									"parameters": {
+										"name": "\"y\"",
+										"start-index": "0",
+										"end-index": "BG_Grid.MeshRows - 1"
+									}
 								}
 							],
-							"isOrBlock": true
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 673779993538020,
+									"parameters": {
+										"object-to-create": "MeshPoint",
+										"layer": "L_BG3",
+										"x": "lerp(MeshLeft, MeshRight, loopindex(\"x\") / (BG_Grid.MeshColumns - 1))",
+										"y": "lerp(MeshTop, MeshBottom, loopindex(\"y\") / (BG_Grid.MeshRows - 1))"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "MeshPoints",
+									"sid": 731926942316947,
+									"parameters": {
+										"x": "loopindex(\"x\")",
+										"y": "loopindex(\"y\")",
+										"value": "MeshPoint.UID"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "MeshPoint",
+									"sid": 731398152502700,
+									"parameters": {
+										"instance-variable": "MeshColumn",
+										"value": "loopindex(\"x\")"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "MeshPoint",
+									"sid": 180603061473102,
+									"parameters": {
+										"instance-variable": "MeshRow",
+										"value": "loopindex(\"y\")"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "MeshPoint",
+									"sid": 498534321997230,
+									"parameters": {
+										"instance-variable": "OriginalX",
+										"value": "Self.X"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "MeshPoint",
+									"sid": 555971614861866,
+									"parameters": {
+										"instance-variable": "OriginalY",
+										"value": "Self.Y"
+									}
+								}
+							],
+							"sid": 155597195378835,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-on-screen",
+											"objectClass": "MeshPoint",
+											"sid": 108516954757730,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "MeshPoint",
+											"sid": 201075912796205
+										}
+									],
+									"sid": 286332186701453,
+									"disabled": true
+								}
+							]
 						}
 					]
 				}

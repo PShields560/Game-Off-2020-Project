@@ -92,6 +92,18 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 560844469690022
+		},
+		{
+			"name": "NearestMeshX",
+			"type": "number",
+			"desc": "",
+			"sid": 446094559458283
+		},
+		{
+			"name": "NearestMeshY",
+			"type": "number",
+			"desc": "",
+			"sid": 132476233053639
 		}
 	],
 	"behaviorTypes": [

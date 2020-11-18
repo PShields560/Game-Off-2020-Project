@@ -503,6 +503,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "Level_IsReady",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 996994701160780
+		},
+		{
+			"eventType": "variable",
 			"name": "Level_CurrentBGMTrack",
 			"type": "string",
 			"initialValue": "",
@@ -550,6 +560,66 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 451893859010324
+		},
+		{
+			"eventType": "variable",
+			"name": "Screen_MeshLeft",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 217007167140197
+		},
+		{
+			"eventType": "variable",
+			"name": "Screen_MeshTop",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 468955794342749
+		},
+		{
+			"eventType": "variable",
+			"name": "Screen_MeshRight",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 824844077171961
+		},
+		{
+			"eventType": "variable",
+			"name": "Screen_MeshBottom",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 541604285535242
+		},
+		{
+			"eventType": "variable",
+			"name": "Option_IsMusicOn",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 676433314876197
+		},
+		{
+			"eventType": "variable",
+			"name": "Option_IsSFXon",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 336872524144396
 		}
 	],
 	"sid": 861189234454270
