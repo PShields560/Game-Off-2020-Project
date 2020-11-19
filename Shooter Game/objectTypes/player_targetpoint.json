@@ -2,7 +2,7 @@
 	"name": "Player_TargetPoint",
 	"plugin-id": "Sprite",
 	"sid": 585130012639710,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [
 		{
 			"name": "IsTargetPosition",

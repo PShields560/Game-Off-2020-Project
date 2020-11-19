@@ -1,14 +1,6 @@
 {
     "c2dictionary": true,
     "data": {
-        "12": "",
-        "13": "",
-        "14": "",
-        "15": "",
-        "16": "",
-        "17": "",
-        "18": "",
-        "19": "",
         "HP": 10,
         "Energy": 100,
         "Weapon 1": "True",
@@ -20,6 +12,23 @@
         "Power 1": "True",
         "Power 2": "True",
         "Power 3": "True",
-        "Power 4": "True"
+        "Power 4": "True",
+        "Weapon 1 Level": 2,
+        "Weapon 2 Level": 2,
+        "Weapon 3 Level": 2,
+        "Weapon 4 Level": 2,
+        "Weapon 5 Level": 2,
+        "Weapon 6 Level": 2,
+        "Upgrade Points": 0,
+        "Weapon 1 Upgrade Cost": 1000,
+        "Weapon 2 Upgrade Cost": 1000,
+        "Weapon 3 Upgrade Cost": 1000,
+        "Weapon 4 Upgrade Cost": 1000,
+        "Weapon 5 Upgrade Cost": 1000,
+        "Weapon 6 Upgrade Cost": 1000,
+        "HP Upgrade Cost": 500,
+        "Energy Upgrade Cost": 500,
+        "Highest Level": 0,
+        "Current Level": 0
     }
 }

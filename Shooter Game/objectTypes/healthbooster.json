@@ -2,7 +2,7 @@
 	"name": "HealthBooster",
 	"plugin-id": "NinePatch",
 	"sid": 488977337070224,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [
 		{
 			"name": "IsAvalible",

@@ -2,7 +2,7 @@
 	"name": "Player_ParticleShield",
 	"plugin-id": "Sprite",
 	"sid": 648608862515798,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{

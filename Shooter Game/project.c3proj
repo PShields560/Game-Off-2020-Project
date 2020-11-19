@@ -208,16 +208,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Persist",
-			"name": "Persist",
+			"id": "Physics",
+			"name": "Physics",
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "Physics",
-			"name": "Physics",
+			"id": "Persist",
+			"name": "Persist",
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
@@ -329,70 +329,39 @@
 								"items": [
 									"Boss_Controller",
 									"Enemy_Controller",
-									"LEVEL_SETTINGS"
+									"EnemySpawner_SingleShot"
 								],
 								"subfolders": [],
 								"name": "_CONTROLLERS"
-							},
-							{
-								"items": [
-									"Enemy_SitShooter_1"
-								],
-								"subfolders": [],
-								"name": "Stationary Shooter"
-							},
-							{
-								"items": [
-									"Enemy_ChaseHit_1"
-								],
-								"subfolders": [],
-								"name": "Chasing Melee"
-							},
-							{
-								"items": [
-									"Enemy_Bomber_1"
-								],
-								"subfolders": [],
-								"name": "Stealth Bomber"
-							},
-							{
-								"items": [
-									"Enemy_Healer_1"
-								],
-								"subfolders": [],
-								"name": "Healer"
-							},
-							{
-								"items": [
-									"Enemy_Spawner_1"
-								],
-								"subfolders": [],
-								"name": "Spawner Mothership"
-							},
-							{
-								"items": [
-									"Enemy_ChaseShoot_1"
-								],
-								"subfolders": [],
-								"name": "Chasing Shooter"
 							}
 						],
 						"name": "Enemies"
 					},
 					{
 						"items": [
-							"Key_Touch",
+							"Key_Unlock_Touch",
 							"Pickup_Shield",
 							"Pickup_HP_Restore",
 							"Pickup_EnergyOverdrive",
 							"HazardSpike",
 							"NoTargetZone",
 							"LockBlock",
-							"Key_Bullet",
-							"Key_Ball",
+							"Key_Unlock_Bullet",
+							"Key_Unlock_Ball",
 							"Ball",
 							"EnergyBooster",
-							"HealthBooster"
+							"HealthBooster",
+							"Key_ZoneChange",
+							"Key_LevelComplete",
+							"Key_LevelComplete_Inner",
+							"Pickup_Points_Score",
+							"Pickup_Points_Upgrade",
+							"Pickup_Points_Upgrade_Big",
+							"Pickup_Points_Upgrade_Huge",
+							"Pickup_Points_Upgrade_Mega",
+							"Pickup_Points_Score_Big",
+							"Pickup_Points_Score_Huge",
+							"Pickup_Points_Score_Mega"
 						],
 						"subfolders": [],
 						"name": "Interactable Objects"
@@ -481,7 +450,8 @@
 			},
 			{
 				"items": [
-					"Camera"
+					"Camera",
+					"LEVEL_SETTINGS"
 				],
 				"subfolders": [],
 				"name": "_CONTROL OBJECTS"
@@ -500,7 +470,8 @@
 					"AJAX",
 					"Data_Player",
 					"Audio",
-					"MeshPoints"
+					"MeshPoints",
+					"Data_WeaponUpgradesText"
 				],
 				"subfolders": [],
 				"name": "Data"
@@ -533,7 +504,16 @@
 			"Loading Screen",
 			"Menu Screen"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Level 1",
+					"Level 2"
+				],
+				"subfolders": [],
+				"name": "Levels"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
@@ -785,6 +765,11 @@
 					"name": "Player Data.json",
 					"type": "application/json",
 					"sid": 780957837683041
+				},
+				{
+					"name": "Weapon Upgrades Text.json",
+					"type": "application/json",
+					"sid": 915305445624615
 				}
 			],
 			"subfolders": []

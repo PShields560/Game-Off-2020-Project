@@ -45,8 +45,8 @@
 						"origin": "top-left",
 						"wrap-horizontal": "repeat",
 						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
+						"image-offset-x": 12,
+						"image-offset-y": 12,
 						"image-scale-x": 1,
 						"image-scale-y": 1,
 						"image-angle": 0
@@ -840,10 +840,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": -640,
-						"y": 48,
-						"width": 32,
-						"height": 32,
+						"x": -688,
+						"y": 8,
+						"width": 4,
+						"height": 4,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1085,7 +1085,7 @@
 							"height": 91,
 							"max-width": 163,
 							"max-height": 92,
-							"data": "3410x0,1,20x12,23,70x0,2,20x13,24,70x0,3,20x14,25,11380x0"
+							"data": "14996x0"
 						},
 						"tile-width": 16,
 						"tile-height": 16,
@@ -1095,8 +1095,8 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": -8,
-						"y": -8,
+						"x": -16,
+						"y": -16,
 						"width": 2576,
 						"height": 1456,
 						"originX": 0,
@@ -1219,7 +1219,7 @@
 						"Power_CurrentEnergyCost": 0,
 						"IsDroneActive": false,
 						"Drone_CurrentDroneNum": 0,
-						"Weapon_CurrentWeaponNum": 3,
+						"Weapon_CurrentWeaponNum": 0,
 						"Weapon_CurrentEnergyCost": 0,
 						"IsImmobile": false,
 						"Health_Current": 10,
@@ -1329,228 +1329,6 @@
 					}
 				},
 				{
-					"type": "Bullet_P",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 26,
-					"instanceVariables": {
-						"DestroyOnImpact_Enemy": false,
-						"DestroyOnImpact_Wall": false,
-						"BouneOnWall": false,
-						"SeekEnemy": false,
-						"ExplodeOnDestruction": false,
-						"DestroyTimer": 2,
-						"Speed": 150,
-						"TargetUID": 0,
-						"Damage": 1,
-						"IsMediumWeapon": false,
-						"IsHeavyWeapon": false,
-						"ExplosionNum": 0,
-						"HasDestroyTimer": false,
-						"AngleToTarget": 0,
-						"IsReady": false,
-						"NearestMeshX": 0,
-						"NearestMeshY": 0
-					},
-					"behaviors": {
-						"Timer": {
-							"properties": {}
-						},
-						"DestroyOutsideLayout": {
-							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 200,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"AdjustHSL": {
-							"parameters": {
-								"hue": 0,
-								"saturation": 1,
-								"luminosity": 1.5
-							}
-						}
-					},
-					"world": {
-						"x": -616,
-						"y": -272,
-						"width": 9,
-						"height": 9,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Bullet_E",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 27,
-					"instanceVariables": {
-						"DestroyOnImpact_Enemy": false,
-						"DestroyOnImpact_Wall": false,
-						"BouneOnWall": false,
-						"SeekEnemy": false,
-						"ExplodeOnDestruction": false,
-						"DestroyTimer": 2,
-						"Speed": 150,
-						"TargetUID": 0,
-						"Damage": 1,
-						"IsMediumWeapon": false,
-						"IsHeavyWeapon": false,
-						"ExplosionNum": 0,
-						"HasDestroyTimer": false,
-						"AngleToTarget": 0,
-						"IsReady": false,
-						"NearestMeshX": 0,
-						"NearestMeshY": 0
-					},
-					"behaviors": {
-						"Timer": {
-							"properties": {}
-						},
-						"DestroyOutsideLayout": {
-							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 200,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"AdjustHSL": {
-							"parameters": {
-								"hue": 0.3,
-								"saturation": 1,
-								"luminosity": 1.5
-							}
-						}
-					},
-					"world": {
-						"x": -512,
-						"y": -272,
-						"width": 9,
-						"height": 9,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Bullet_N",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 28,
-					"instanceVariables": {
-						"DestroyOnImpact_Enemy": false,
-						"DestroyOnImpact_Wall": false,
-						"BouneOnWall": false,
-						"SeekEnemy": false,
-						"ExplodeOnDestruction": false,
-						"DestroyTimer": 2,
-						"Speed": 150,
-						"TargetUID": 0,
-						"Damage": 1,
-						"IsMediumWeapon": false,
-						"IsHeavyWeapon": false,
-						"ExplosionNum": 0,
-						"HasDestroyTimer": false,
-						"AngleToTarget": 0,
-						"IsReady": false,
-						"NearestMeshX": 0,
-						"NearestMeshY": 0
-					},
-					"behaviors": {
-						"Timer": {
-							"properties": {}
-						},
-						"DestroyOutsideLayout": {
-							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 200,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"AdjustHSL": {
-							"parameters": {
-								"hue": 0.5,
-								"saturation": 1,
-								"luminosity": 1.5
-							}
-						}
-					},
-					"world": {
-						"x": -408,
-						"y": -272,
-						"width": 9,
-						"height": 9,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Enemy_Controller",
 					"properties": {
 						"initially-visible": true,
@@ -1643,8 +1421,8 @@
 						}
 					},
 					"world": {
-						"x": -456,
-						"y": -112,
+						"x": -432,
+						"y": 0,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1900,271 +1678,6 @@
 					}
 				},
 				{
-					"type": "Player_ParticleShield",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 54,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": "Shield"
-							}
-						},
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": -240,
-						"y": -184,
-						"width": 64,
-						"height": 64,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Player_TargetPoint",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 64,
-					"instanceVariables": {
-						"IsTargetPosition": false,
-						"IsTargetObject": false,
-						"TargetUID": 0
-					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": true
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						},
-						"DestroyOutsideLayout": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": -240,
-						"y": -88,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Pickup_EnergyOverdrive",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 89,
-					"instanceVariables": {},
-					"behaviors": {
-						"Sine": {
-							"properties": {
-								"movement": "size",
-								"wave": "sine",
-								"period": 0.5,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 1,
-								"magnitude": 2,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						},
-						"Timer": {
-							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": true,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": -472,
-						"y": -56,
-						"width": 12,
-						"height": 17,
-						"originX": 0.5444444444444444,
-						"originY": 0.4392156862745098,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Pickup_HP_Restore",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 90,
-					"instanceVariables": {},
-					"behaviors": {
-						"Sine": {
-							"properties": {
-								"movement": "size",
-								"wave": "sine",
-								"period": 0.5,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 1,
-								"magnitude": 2,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						},
-						"Timer": {
-							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": true,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": -448,
-						"y": -8,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5296296296296297,
-						"originY": 0.4392156862745098,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Pickup_Shield",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 91,
-					"instanceVariables": {},
-					"behaviors": {
-						"Sine": {
-							"properties": {
-								"movement": "size",
-								"wave": "sine",
-								"period": 0.5,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 1,
-								"magnitude": 2,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						},
-						"Timer": {
-							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": true,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": -408,
-						"y": -56,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5333333333333333,
-						"originY": 0.4666666666666667,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "HazardSpike",
 					"properties": {
 						"initially-visible": true,
@@ -2345,7 +1858,8 @@
 						"BGM_Track": "",
 						"SpecialCondition1": "",
 						"SpecialCondition2": "",
-						"SpecialCondition3": ""
+						"SpecialCondition3": "",
+						"DoesSpawnEnemies": false
 					},
 					"behaviors": {
 						"Persist": {
@@ -2353,223 +1867,10 @@
 						}
 					},
 					"world": {
-						"x": -240,
-						"y": -272,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "HealthBooster",
-					"properties": {
-						"left-margin": 3,
-						"right-margin": 3,
-						"top-margin": 3,
-						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
-						"initially-visible": true,
-						"origin": "center",
-						"seams": "exact"
-					},
-					"uid": 29,
-					"instanceVariables": {
-						"IsAvalible": true
-					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"effects": {
-						"AdjustHSL": {
-							"parameters": {
-								"hue": 0,
-								"saturation": 1,
-								"luminosity": 1
-							}
-						}
-					},
-					"world": {
-						"x": -464,
-						"y": 48,
-						"width": 10,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "EnergyBooster",
-					"properties": {
-						"left-margin": 3,
-						"right-margin": 3,
-						"top-margin": 3,
-						"bottom-margin": 3,
-						"edges": "tile",
-						"fill": "tile",
-						"initially-visible": true,
-						"origin": "center",
-						"seams": "exact"
-					},
-					"uid": 30,
-					"instanceVariables": {
-						"IsAvalible": true
-					},
-					"behaviors": {
-						"Persist": {
-							"properties": {}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": -424,
-						"y": 48,
-						"width": 10,
-						"height": 24,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Effect_EnergyStreak",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 56,
-					"instanceVariables": {
-						"HasTarget": false,
-						"TargetUID": 0
-					},
-					"behaviors": {
-						"Timer": {
-							"properties": {}
-						},
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						},
-						"Tween": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 50,
-								"magnitude-random": 0,
-								"enabled": false,
-								"live-preview": false
-							}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 600,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": true,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": false,
-								"live-preview": false
-							}
-						},
-						"Orbit": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"primary-axis": 100,
-								"secondary-axis": 100,
-								"offset-angle": 0,
-								"match-rotation": true,
-								"enabled": false,
-								"live-preview": false
-							}
-						},
-						"Fade": {
-							"properties": {
-								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 1,
-								"destroy": true,
-								"enabled": false,
-								"live-preview": false
-							}
-						}
-					},
-					"effects": {
-						"AdjustHSL": {
-							"parameters": {
-								"hue": 0.35,
-								"saturation": 1,
-								"luminosity": 2
-							}
-						}
-					},
-					"world": {
-						"x": -624,
-						"y": -160,
-						"width": 6,
-						"height": 1,
+						"x": -576,
+						"y": -360,
+						"width": 624,
+						"height": 128,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2599,10 +1900,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1120,
-						"y": 192,
-						"width": 400,
-						"height": 400,
+						"x": -480,
+						"y": 48,
+						"width": 96,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -2610,6 +1911,108 @@
 							1,
 							1,
 							0.7
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Key_LevelComplete",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 345,
+					"instanceVariables": {
+						"KeyID": 0,
+						"IsHold": false,
+						"IsActive": false
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 150,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"AdjustHSL": {
+							"parameters": {
+								"hue": 0,
+								"saturation": 1,
+								"luminosity": 1
+							}
+						}
+					},
+					"world": {
+						"x": -320,
+						"y": 496,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Key_LevelComplete_Inner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 346,
+					"instanceVariables": {
+						"KeyID": 0,
+						"IsHold": false,
+						"IsActive": false
+					},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": -180,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"AdjustHSL": {
+							"parameters": {
+								"hue": 0,
+								"saturation": 1,
+								"luminosity": 1
+							}
+						}
+					},
+					"world": {
+						"x": -320,
+						"y": 496,
+						"width": 80,
+						"height": 80,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -6607,7 +6010,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 8,
-						"y": 44,
+						"y": 148,
 						"width": 100,
 						"height": 20,
 						"originX": 0,
@@ -6640,7 +6043,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 12,
-						"y": 64,
+						"y": 168,
 						"width": 92,
 						"height": 4,
 						"originX": 0,
@@ -6672,9 +6075,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 124,
+						"x": 128,
 						"y": 72,
-						"width": 244,
+						"width": 240,
 						"height": 4,
 						"originX": 0,
 						"originY": 0,
@@ -6949,7 +6352,7 @@
 				{
 					"type": "Txt_UI",
 					"properties": {
-						"text": "Outramsean0",
+						"text": "Ed Gray",
 						"enable-bbcode": true,
 						"font": "Munro",
 						"size": 12,
@@ -7084,7 +6487,7 @@
 				{
 					"type": "Txt_UI",
 					"properties": {
-						"text": "Artist",
+						"text": "Sound Desogner/Composer",
 						"enable-bbcode": true,
 						"font": "Munro",
 						"size": 6,
@@ -7183,9 +6586,9 @@
 					"uid": 248,
 					"instanceVariables": {
 						"Index": 0,
-						"LevelName": "Test Layout",
-						"Name": "Baby Steps",
-						"Description": "",
+						"LevelName": "Level 1",
+						"Name": "Level 1 Test",
+						"Description": "Everyone's gotta start somewhere and in your case, you get to start at level 1!",
 						"Score": 0
 					},
 					"behaviors": {},
@@ -7218,9 +6621,9 @@
 					"uid": 249,
 					"instanceVariables": {
 						"Index": 1,
-						"LevelName": "Test Layout",
-						"Name": "",
-						"Description": "",
+						"LevelName": "Level 2",
+						"Name": "THE SECOND LEVEL!",
+						"Description": "Goes to level 2?",
 						"Score": 0
 					},
 					"behaviors": {},
@@ -8914,6 +8317,3195 @@
 						"y": 44,
 						"width": 568,
 						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 26,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 232,
+						"y": 84,
+						"width": 132,
+						"height": 132,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Health",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 27,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 88,
+						"width": 96,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Energy",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 28,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 124,
+						"width": 96,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Powers",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 29,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 160,
+						"width": 96,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Weapons",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 30,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 196,
+						"width": 96,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 54,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 220,
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 56,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 172,
+						"y": 220,
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 64,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 212,
+						"y": 220,
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 89,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 252,
+						"y": 220,
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 90,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 292,
+						"y": 220,
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 91,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 332,
+						"y": 220,
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_SegmentLine",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 324,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 128,
+						"y": 256,
+						"width": 240,
+						"height": 4,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Ship Upgrades",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 325,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 120,
+						"y": 260,
+						"width": 256,
+						"height": 28,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Health Increase",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 326,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 292,
+						"width": 96,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Energy Increase",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 332,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 324,
+						"width": 96,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Machine Gun Upgrade",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 333,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 356,
+						"width": 124,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Ion Laser Upgrade",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 334,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 388,
+						"width": 124,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Bouncy Bomb Upgrade",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 335,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 420,
+						"width": 124,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Seeker Darts Upgrade",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 336,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 452,
+						"width": 124,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Particle Shotgun Upgrade",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 341,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 484,
+						"width": 140,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Health Upgrade Text",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 342,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Health Upgrade Text"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 136,
+						"y": 308,
+						"width": 168,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Energy Upgrade Text",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 343,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Energy Upgrade Text"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 136,
+						"y": 340,
+						"width": 168,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Machine Gun Upgrade Text",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 409,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Weapon 1 Upgrade Text"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 136,
+						"y": 372,
+						"width": 168,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Laser Upgrade Text",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 410,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Weapon 2 Upgrade Text"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 136,
+						"y": 404,
+						"width": 168,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Bouncy Bomb Upgrade Text",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 411,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Weapon 3 Upgrade Text"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 136,
+						"y": 436,
+						"width": 168,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Seeker Darts Upgrade Text",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 412,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Weapon 4 Upgrade Text"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 136,
+						"y": 468,
+						"width": 168,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Particle Shotgun Upgrade Text",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 413,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Weapon 5 Upgrade Text"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 136,
+						"y": 500,
+						"width": 168,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 414,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 304,
+						"y": 304,
+						"width": 60,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 415,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 304,
+						"y": 336,
+						"width": 60,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 416,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 304,
+						"y": 368,
+						"width": 60,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 417,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 304,
+						"y": 400,
+						"width": 60,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 418,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 304,
+						"y": 432,
+						"width": 60,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 419,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 304,
+						"y": 464,
+						"width": 60,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 420,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 304,
+						"y": 496,
+						"width": 60,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Music",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 421,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 176,
+						"width": 92,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Sound Effects",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 422,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 216,
+						"width": 92,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Control Setup",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 423,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 256,
+						"width": 92,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "WASD Controls",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 424,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "WASD Controls"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 276,
+						"width": 92,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Arrow Key Controls",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 425,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Arrow Key Controls"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 292,
+						"width": 92,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "ON",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 426,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "SFX On"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 236,
+						"width": 44,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "OFF",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 427,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "SFX Off"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 60,
+						"y": 236,
+						"width": 44,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "ON",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 428,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Music On"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 196,
+						"width": 44,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "OFF",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 429,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Music Off"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 60,
+						"y": 196,
+						"width": 44,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Fluid Grid BG",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 430,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 344,
+						"width": 92,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Graphic Options",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 431,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 8,
+						"y": 316,
+						"width": 100,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_SegmentLine",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 432,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 336,
+						"width": 92,
+						"height": 4,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "ON",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 435,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Grid BG On"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 364,
+						"width": 44,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "OFF",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 436,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Grid BG Off"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 60,
+						"y": 364,
+						"width": 44,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "999999999",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 441,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Health Upgrade Cost"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 324,
+						"y": 296,
+						"width": 36,
+						"height": 8,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "999999999",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 442,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Energy Upgrade Cost"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 324,
+						"y": 328,
+						"width": 36,
+						"height": 8,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "999999999",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 443,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Weapon 1 Upgrade Cost"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 324,
+						"y": 360,
+						"width": 36,
+						"height": 8,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "999999999",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 444,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Weapon 2 Upgrade Cost"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 324,
+						"y": 392,
+						"width": 36,
+						"height": 8,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "999999999",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 445,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Weapon 3 Upgrade Cost"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 324,
+						"y": 424,
+						"width": 36,
+						"height": 8,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "999999999",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 446,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Weapon 4 Upgrade Cost"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 324,
+						"y": 456,
+						"width": 36,
+						"height": 8,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "999999999",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 447,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Weapon 5 Upgrade Cost"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 324,
+						"y": 488,
+						"width": 36,
+						"height": 8,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Health Upgrade Text",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 448,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Current Energy"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 144,
+						"width": 92,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Health Upgrade Text",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 6,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 449,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Current Health"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 108,
+						"width": 92,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 450,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 132,
+						"y": 178,
+						"width": 20,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 451,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 156,
+						"y": 178,
+						"width": 20,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 452,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 180,
+						"y": 178,
+						"width": 20,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 453,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 204,
+						"y": 178,
+						"width": 20,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Upgrade",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 454,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Upgrade HP"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 308,
+						"y": 304,
+						"width": 52,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Upgrade",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 455,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Upgrade Energy"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 308,
+						"y": 336,
+						"width": 52,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Upgrade",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 456,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Upgrade Weapon 1"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 308,
+						"y": 368,
+						"width": 52,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Upgrade",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 457,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Upgrade Weapon 2"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 308,
+						"y": 400,
+						"width": 52,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Upgrade",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 458,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Upgrade Weapon 3"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 308,
+						"y": 432,
+						"width": 52,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Upgrade",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 459,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Upgrade Weapon 4"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 308,
+						"y": 464,
+						"width": 52,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Upgrade",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 460,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Upgrade Weapon 5"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 308,
+						"y": 496,
+						"width": 52,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Save Data",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 433,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 8,
+						"y": 48,
+						"width": 100,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_SegmentLine",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 437,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 68,
+						"width": 92,
+						"height": 4,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 438,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 76,
+						"width": 88,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Load Saved Game",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 461,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Load Game"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 16,
+						"y": 76,
+						"width": 80,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Box_Inner",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "exact"
+					},
+					"uid": 434,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 96,
+						"width": 88,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "Save Game",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 439,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Save Game"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 16,
+						"y": 96,
+						"width": 80,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "AUTOSAVE",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 440,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 112,
+						"width": 92,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "ON",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 462,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Autosave On"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 12,
+						"y": 128,
+						"width": 44,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_UI",
+					"properties": {
+						"text": "OFF",
+						"enable-bbcode": true,
+						"font": "Munro",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 463,
+					"instanceVariables": {
+						"Index": 0,
+						"Tag": "Autosave Off"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 60,
+						"y": 128,
+						"width": 44,
+						"height": 20,
 						"originX": 0,
 						"originY": 0,
 						"color": [

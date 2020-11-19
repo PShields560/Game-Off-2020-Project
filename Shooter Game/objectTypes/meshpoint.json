@@ -2,7 +2,7 @@
 	"name": "MeshPoint",
 	"plugin-id": "Sprite",
 	"sid": 399491239903264,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [
 		{
 			"name": "MeshColumn",

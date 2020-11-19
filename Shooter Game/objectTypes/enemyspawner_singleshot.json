@@ -1,0 +1,44 @@
+{
+	"name": "EnemySpawner_SingleShot",
+	"plugin-id": "Sprite",
+	"sid": 531579465047251,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "EnemyType",
+			"type": "string",
+			"desc": "",
+			"sid": 639435487846356
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1416430,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 198718198020325,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

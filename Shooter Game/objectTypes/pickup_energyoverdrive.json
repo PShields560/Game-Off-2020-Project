@@ -2,7 +2,7 @@
 	"name": "Pickup_EnergyOverdrive",
 	"plugin-id": "Sprite",
 	"sid": 741642156619892,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],

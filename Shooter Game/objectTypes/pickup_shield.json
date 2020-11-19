@@ -2,7 +2,7 @@
 	"name": "Pickup_Shield",
 	"plugin-id": "Sprite",
 	"sid": 818731447117494,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],

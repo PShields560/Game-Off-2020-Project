@@ -18,12 +18,25 @@
 			"behaviorId": "Bullet",
 			"name": "Bullet",
 			"sid": 243355275068807
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 117470796760561
 		}
 	],
 	"effectTypes": [],
 	"members": [
 		"Pickup_EnergyOverdrive",
 		"Pickup_HP_Restore",
-		"Pickup_Shield"
+		"Pickup_Shield",
+		"Pickup_Points_Score",
+		"Pickup_Points_Upgrade",
+		"Pickup_Points_Upgrade_Big",
+		"Pickup_Points_Upgrade_Huge",
+		"Pickup_Points_Upgrade_Mega",
+		"Pickup_Points_Score_Big",
+		"Pickup_Points_Score_Huge",
+		"Pickup_Points_Score_Mega"
 	]
 }

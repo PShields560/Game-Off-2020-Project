@@ -1,0 +1,44 @@
+{
+	"name": "Key_ZoneChange",
+	"plugin-id": "Sprite",
+	"sid": 702888637573550,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ZoneName",
+			"type": "string",
+			"desc": "",
+			"sid": 593215819500198
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\empty key.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2248131,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 466230696442858,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

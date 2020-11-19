@@ -45,15 +45,48 @@
 					}
 				},
 				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 478558583408518,
+					"parameters": {
+						"tag": "\"Weapons\"",
+						"file": "Weapon Upgrades Text.json"
+					}
+				}
+			],
+			"sid": 325194377128467
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 479544479366242,
+					"parameters": {
+						"tag": "\"Weapons\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "Data_WeaponUpgradesText",
+					"sid": 863592858479309,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 237578181666698,
+					"sid": 820859882933408,
 					"parameters": {
 						"layout": "Menu Screen"
 					}
 				}
 			],
-			"sid": 325194377128467
+			"sid": 558097473243413
 		}
 	],
 	"sid": 598296358585235

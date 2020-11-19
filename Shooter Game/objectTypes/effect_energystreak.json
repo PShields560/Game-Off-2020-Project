@@ -2,7 +2,7 @@
 	"name": "Effect_EnergyStreak",
 	"plugin-id": "Sprite",
 	"sid": 249302950086651,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],

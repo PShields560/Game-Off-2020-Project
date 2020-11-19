@@ -1,0 +1,37 @@
+{
+	"name": "Key_Unlock_Bullet",
+	"plugin-id": "Sprite",
+	"sid": 218399575766561,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\Bullet Key.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7186406,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 781792546625178,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

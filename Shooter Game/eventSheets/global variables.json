@@ -355,7 +355,7 @@
 			"eventType": "variable",
 			"name": "Energy_Weapon2",
 			"type": "number",
-			"initialValue": "3",
+			"initialValue": "2",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": true,
@@ -493,6 +493,26 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "Level_Score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 377529577855400
+		},
+		{
+			"eventType": "variable",
+			"name": "Level_CollectedUpgradePoints",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 525227198726839
+		},
+		{
+			"eventType": "variable",
 			"name": "IsPaused",
 			"type": "boolean",
 			"initialValue": "false",
@@ -510,6 +530,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 996994701160780
+		},
+		{
+			"eventType": "variable",
+			"name": "Level_IsComplete",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 556577567466975
 		},
 		{
 			"eventType": "variable",
@@ -605,7 +635,7 @@
 			"eventType": "variable",
 			"name": "Option_IsMusicOn",
 			"type": "boolean",
-			"initialValue": "false",
+			"initialValue": "true",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -615,11 +645,41 @@
 			"eventType": "variable",
 			"name": "Option_IsSFXon",
 			"type": "boolean",
-			"initialValue": "false",
+			"initialValue": "true",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 336872524144396
+		},
+		{
+			"eventType": "variable",
+			"name": "Autosave",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 808473007872409
+		},
+		{
+			"eventType": "variable",
+			"name": "Option_WASDcontrols",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 342099629935243
+		},
+		{
+			"eventType": "variable",
+			"name": "Option_IsFluidGridOn",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 268439609548751
 		}
 	],
 	"sid": 861189234454270

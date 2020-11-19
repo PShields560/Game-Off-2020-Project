@@ -2,7 +2,7 @@
 	"name": "Pickup_HP_Restore",
 	"plugin-id": "Sprite",
 	"sid": 148351525208493,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],

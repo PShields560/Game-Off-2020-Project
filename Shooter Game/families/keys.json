@@ -14,13 +14,33 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 616392129256044
+		},
+		{
+			"name": "IsActive",
+			"type": "boolean",
+			"desc": "",
+			"sid": 491686602506392
 		}
 	],
-	"behaviorTypes": [],
-	"effectTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 740254399581916
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "hsladjust",
+			"name": "AdjustHSL"
+		}
+	],
 	"members": [
-		"Key_Ball",
-		"Key_Bullet",
-		"Key_Touch"
+		"Key_Unlock_Ball",
+		"Key_Unlock_Bullet",
+		"Key_Unlock_Touch",
+		"Key_ZoneChange",
+		"Key_LevelComplete",
+		"Key_LevelComplete_Inner"
 	]
 }

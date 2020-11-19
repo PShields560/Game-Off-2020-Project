@@ -2,7 +2,7 @@
 	"name": "EnergyBooster",
 	"plugin-id": "NinePatch",
 	"sid": 332386165602905,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [
 		{
 			"name": "IsAvalible",
