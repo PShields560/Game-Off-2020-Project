@@ -1,0 +1,4 @@
+19/11
+Proton Laser sound should stop when energy runs out instead of unclick.
+Shield/Energy/Health pickup sounds probably shouldn't stack up because it gets a bit too strong - maybe restart the sound instead of adding new sound for each successive pickup?
+I'm going to add an effect for the speed/ram weapon thing
