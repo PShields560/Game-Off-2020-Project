@@ -6,16 +6,6 @@
 			"includeSheet": "GLOBAL VARIABLES"
 		},
 		{
-			"eventType": "variable",
-			"name": "SelectedLevel",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 624283087573664
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "On Start of Menu",
@@ -85,9 +75,75 @@
 								"layer": "L_UI2",
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 937814023440911,
+							"parameters": {
+								"layer": "L_UI3",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "MeshPoint",
+							"sid": 270889126643100
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Bullets",
+							"sid": 160595539514356
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Pickups",
+							"sid": 959495825789449
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Particle_EffectSprites",
+							"sid": 503585292014192
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "UI_Player",
+							"sid": 575299373646912,
+							"parameters": {
+								"angle": "random(360)"
+							}
 						}
 					],
-					"sid": 137980243155571
+					"sid": 137980243155571,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "UI_SlideBar",
+									"sid": 951229671540168,
+									"parameters": {
+										"instance-variable": "OriginalX",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "UI_SlideBar",
+									"sid": 833972772793650,
+									"parameters": {
+										"instance-variable": "OriginalX",
+										"value": "Self.X"
+									}
+								}
+							],
+							"sid": 727987165791198
+						}
+					]
 				}
 			],
 			"sid": 868722607637306
@@ -138,7 +194,36 @@
 							}
 						}
 					],
-					"sid": 890359107553133
+					"sid": 890359107553133,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 502319685221959,
+									"parameters": {
+										"variable": "Option_IsSFXon"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 453678367853355,
+									"parameters": {
+										"audio-file": "UI Button Click",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"SFX\""
+									}
+								}
+							],
+							"sid": 622485700579031
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -744,7 +829,36 @@
 									}
 								}
 							],
-							"sid": 723846223590290
+							"sid": 723846223590290,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 367245677365871,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 918693067186398,
+											"parameters": {
+												"audio-file": "UI Button Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 226539224364528
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -770,7 +884,36 @@
 									}
 								}
 							],
-							"sid": 502286840394871
+							"sid": 502286840394871,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 565155865417614,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 659766434300979,
+											"parameters": {
+												"audio-file": "UI Button Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 143415975826430
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -805,7 +948,36 @@
 									}
 								}
 							],
-							"sid": 378464892250777
+							"sid": 378464892250777,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 317945778644316,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 937432036972110,
+											"parameters": {
+												"audio-file": "UI Interactible Text Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 148776275335760
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -840,7 +1012,36 @@
 									}
 								}
 							],
-							"sid": 295345396626970
+							"sid": 295345396626970,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 765400962491676,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 812586768201138,
+											"parameters": {
+												"audio-file": "UI Interactible Text Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 998508105784484
+								}
+							]
 						}
 					]
 				},
@@ -973,7 +1174,36 @@
 									}
 								}
 							],
-							"sid": 871203824431837
+							"sid": 871203824431837,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 647551742773383,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 945434148913085,
+											"parameters": {
+												"audio-file": "UI Interactible Text Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 439613180953320
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1016,7 +1246,36 @@
 									}
 								}
 							],
-							"sid": 645362072369908
+							"sid": 645362072369908,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 758723172209491,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 230686054413014,
+											"parameters": {
+												"audio-file": "UI Interactible Text Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 206115463066128
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1051,7 +1310,36 @@
 									}
 								}
 							],
-							"sid": 546359668054149
+							"sid": 546359668054149,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 599103014981782,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 730959288085792,
+											"parameters": {
+												"audio-file": "UI Interactible Text Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 417632021080393
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1094,7 +1382,36 @@
 									}
 								}
 							],
-							"sid": 547758580887812
+							"sid": 547758580887812,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 193303279234079,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 140762891769375,
+											"parameters": {
+												"audio-file": "UI Interactible Text Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 913534464600277
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1129,7 +1446,36 @@
 									}
 								}
 							],
-							"sid": 892432582557294
+							"sid": 892432582557294,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 690336533989619,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 133262439755211,
+											"parameters": {
+												"audio-file": "UI Interactible Text Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 293730775750671
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1164,7 +1510,36 @@
 									}
 								}
 							],
-							"sid": 243289892149694
+							"sid": 243289892149694,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 163953555037292,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 326678265203424,
+											"parameters": {
+												"audio-file": "UI Interactible Text Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 407207343502532
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1199,7 +1574,36 @@
 									}
 								}
 							],
-							"sid": 441769967682547
+							"sid": 441769967682547,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 409933892315554,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 971536309707769,
+											"parameters": {
+												"audio-file": "UI Interactible Text Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 802769578436160
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1234,7 +1638,36 @@
 									}
 								}
 							],
-							"sid": 553814246245159
+							"sid": 553814246245159,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 773884352306394,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 193969605797954,
+											"parameters": {
+												"audio-file": "UI Interactible Text Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 302415058710560
+								}
+							]
 						}
 					]
 				},
@@ -1513,6 +1946,282 @@
 						}
 					],
 					"sid": 797046138449371
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Txt_UI",
+							"sid": 748905611118304,
+							"parameters": {
+								"instance-variable": "Tag",
+								"comparison": 0,
+								"value": "\"Music On\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 830538743507842,
+							"parameters": {
+								"variable": "Option_IsMusicOn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "Txt_UI",
+							"sid": 919029662233180,
+							"parameters": {
+								"color": "rgbEx(255, 255, 0)"
+							}
+						}
+					],
+					"sid": 955910292326974
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Txt_UI",
+							"sid": 160622166697925,
+							"parameters": {
+								"instance-variable": "Tag",
+								"comparison": 0,
+								"value": "\"Music Off\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 112941071684981,
+							"parameters": {
+								"variable": "Option_IsMusicOn"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "Txt_UI",
+							"sid": 706102453296039,
+							"parameters": {
+								"color": "rgbEx(255, 255, 0)"
+							}
+						}
+					],
+					"sid": 434728040868457
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Txt_UI",
+							"sid": 927717889128311,
+							"parameters": {
+								"instance-variable": "Tag",
+								"comparison": 0,
+								"value": "\"SFX On\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 139595401742478,
+							"parameters": {
+								"variable": "Option_IsSFXon"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "Txt_UI",
+							"sid": 162943158701172,
+							"parameters": {
+								"color": "rgbEx(255, 255, 0)"
+							}
+						}
+					],
+					"sid": 689593163979702
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Txt_UI",
+							"sid": 958152836886955,
+							"parameters": {
+								"instance-variable": "Tag",
+								"comparison": 0,
+								"value": "\"SFX Off\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 737446708081487,
+							"parameters": {
+								"variable": "Option_IsSFXon"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "Txt_UI",
+							"sid": 371742842531048,
+							"parameters": {
+								"color": "rgbEx(255, 255, 0)"
+							}
+						}
+					],
+					"sid": 184833665563673
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Txt_UI",
+							"sid": 264193669896742,
+							"parameters": {
+								"instance-variable": "Tag",
+								"comparison": 0,
+								"value": "\"WASD Controls\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 315511420004425,
+							"parameters": {
+								"variable": "Option_WASDcontrols"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "Txt_UI",
+							"sid": 644865816554695,
+							"parameters": {
+								"color": "rgbEx(255, 255, 0)"
+							}
+						}
+					],
+					"sid": 794163253486844
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Txt_UI",
+							"sid": 614517617866929,
+							"parameters": {
+								"instance-variable": "Tag",
+								"comparison": 0,
+								"value": "\"Arrow Key Controls\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 245743796077702,
+							"parameters": {
+								"variable": "Option_WASDcontrols"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "Txt_UI",
+							"sid": 571038874408248,
+							"parameters": {
+								"color": "rgbEx(255, 255, 0)"
+							}
+						}
+					],
+					"sid": 257574393040575
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Txt_UI",
+							"sid": 572451866034653,
+							"parameters": {
+								"instance-variable": "Tag",
+								"comparison": 0,
+								"value": "\"Grid BG On\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 875303818223237,
+							"parameters": {
+								"variable": "Option_IsFluidGridOn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "Txt_UI",
+							"sid": 920901857619106,
+							"parameters": {
+								"color": "rgbEx(255, 255, 0)"
+							}
+						}
+					],
+					"sid": 784667496997202
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Txt_UI",
+							"sid": 660575402792818,
+							"parameters": {
+								"instance-variable": "Tag",
+								"comparison": 0,
+								"value": "\"Grid BG Off\""
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 842540906766546,
+							"parameters": {
+								"variable": "Option_IsFluidGridOn"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "Txt_UI",
+							"sid": 474488956277439,
+							"parameters": {
+								"color": "rgbEx(255, 255, 0)"
+							}
+						}
+					],
+					"sid": 706191422823116
 				}
 			],
 			"sid": 278981814626032
@@ -1632,6 +2341,33 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 925766813519211,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 604701999928109,
+											"parameters": {
+												"audio-file": "UI Button Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 673756448334553
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "compare-value",
 											"objectClass": "Data_Player",
 											"sid": 181165257175792,
@@ -1674,6 +2410,33 @@
 							"actions": [],
 							"sid": 383100740075957,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 256520664161690,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 602138197043318,
+											"parameters": {
+												"audio-file": "UI Button Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 830289245075401
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -1724,6 +2487,33 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 737898239919698,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 503958982611098,
+											"parameters": {
+												"audio-file": "UI Button Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 401944523540116
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "compare-value",
 											"objectClass": "Data_Player",
 											"sid": 400260887009376,
@@ -1766,6 +2556,33 @@
 							"actions": [],
 							"sid": 255809755538619,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 380412765404167,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 855735084199308,
+											"parameters": {
+												"audio-file": "UI Button Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 939058044135812
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -1816,6 +2633,33 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 446927596099037,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 515719631824535,
+											"parameters": {
+												"audio-file": "UI Button Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 408683908509248
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "compare-value",
 											"objectClass": "Data_Player",
 											"sid": 386124888315542,
@@ -1862,6 +2706,33 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 614332928619360,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 693025311087077,
+											"parameters": {
+												"audio-file": "UI Button Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 135767246249499
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "compare-value",
 											"objectClass": "Data_Player",
 											"sid": 847828897425443,
@@ -1904,6 +2775,33 @@
 							"actions": [],
 							"sid": 736874016385669,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 898721864081061,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 810726574323792,
+											"parameters": {
+												"audio-file": "UI Button Click",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 519083648415711
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -2396,9 +3294,418 @@
 							"sid": 151499224408713
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "UI_SlideBar",
+							"sid": 734450530439726,
+							"parameters": {
+								"instance-variable": "IsMoving"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "UI_SlideBar",
+							"sid": 537984301713329,
+							"parameters": {
+								"x": "Mouse.X"
+							}
+						}
+					],
+					"sid": 567519284699740,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "UI_SlideBar",
+									"sid": 721559123449353,
+									"parameters": {
+										"instance-variable": "IsHue"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "Data_Player",
+									"sid": 745626895220472,
+									"parameters": {
+										"key": "\"Player Hue\"",
+										"value": "(UI_SlideBar.X - UI_SlideBar.OriginalX)"
+									}
+								}
+							],
+							"sid": 250922665370047
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "UI_SlideBar",
+									"sid": 446550228733780,
+									"parameters": {
+										"instance-variable": "IsSat"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "Data_Player",
+									"sid": 696831863137633,
+									"parameters": {
+										"key": "\"Player Sat\"",
+										"value": "(UI_SlideBar.X - UI_SlideBar.OriginalX) + 100"
+									}
+								}
+							],
+							"sid": 944573394432946
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "UI_SlideBar",
+									"sid": 689033580532665,
+									"parameters": {
+										"instance-variable": "IsLum"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "Data_Player",
+									"sid": 598455950893526,
+									"parameters": {
+										"key": "\"Player Lum\"",
+										"value": "((UI_SlideBar.X - UI_SlideBar.OriginalX)/5) + 150"
+									}
+								}
+							],
+							"sid": 538479624087995
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "UI_SlideBar",
+							"sid": 951473514533309,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "Self.OriginalX - 255"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "UI_SlideBar",
+							"sid": 296857111342946,
+							"parameters": {
+								"x": "Self.OriginalX-255"
+							}
+						}
+					],
+					"sid": 749895572670215
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "UI_SlideBar",
+							"sid": 912820102707810,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "Self.OriginalX + 255"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "UI_SlideBar",
+							"sid": 605327188068343,
+							"parameters": {
+								"x": "Self.OriginalX + 255"
+							}
+						}
+					],
+					"sid": 933590199083341
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 217843985885336,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "UI_SlideBar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "UI_SlideBar",
+							"sid": 542570583110051,
+							"parameters": {
+								"instance-variable": "IsMoving",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 431283172084417
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-released",
+							"objectClass": "Mouse",
+							"sid": 249043042763554,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "UI_SlideBar",
+							"sid": 139712001801484,
+							"parameters": {
+								"instance-variable": "IsMoving",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 815458224337242
 				}
 			],
 			"sid": 958476037025806
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Ship Select",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-pinned",
+							"objectClass": "UI_Player_Fill",
+							"sid": 179095505031728,
+							"behaviorType": "Pin",
+							"isInverted": true
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 762191368283059,
+							"parameters": {
+								"object": "UI_Player_Fill"
+							}
+						},
+						{
+							"id": "pick-nearestfurthest",
+							"objectClass": "UI_Player",
+							"sid": 130165024697763,
+							"parameters": {
+								"which": "nearest",
+								"x": "UI_Player_Fill.X",
+								"y": "UI_Player_Fill.Y"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "UI_Player_Fill",
+							"sid": 450055815421064,
+							"parameters": {
+								"object": "UI_Player",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "UI_Player_Fill",
+							"sid": 379637860616062,
+							"parameters": {
+								"angle": "UI_Player.Angle"
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "UI_Player_Fill",
+							"sid": 839746216788244,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "UI_Player",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 738654970942942
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 103856958118982,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "UI_Player"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "UI_Player",
+							"sid": 587304894408307,
+							"parameters": {
+								"instance-variable": "IsOption"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-key",
+							"objectClass": "Data_Player",
+							"sid": 272861512246224,
+							"parameters": {
+								"key": "\"Ship Number\"",
+								"value": "UI_Player.AnimationFrame"
+							}
+						}
+					],
+					"sid": 696891351451422,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 918835529133336,
+									"parameters": {
+										"variable": "Option_IsSFXon"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 303512393401365,
+									"parameters": {
+										"audio-file": "UI Button Click",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"SFX\""
+									}
+								}
+							],
+							"sid": 169263629897553
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "UI_Player",
+							"sid": 383709220046438,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "0",
+								"value": "int(Data_Player.Get(\"Player Hue\"))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "UI_Player_Fill",
+							"sid": 992557028226607,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "0",
+								"value": "int(Data_Player.Get(\"Player Hue\"))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "UI_Player",
+							"sid": 424555178115364,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "1",
+								"value": "int(Data_Player.Get(\"Player Sat\"))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "UI_Player_Fill",
+							"sid": 439433697675993,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "1",
+								"value": "int(Data_Player.Get(\"Player Sat\"))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "UI_Player",
+							"sid": 498268483322122,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "2",
+								"value": "int(Data_Player.Get(\"Player Lum\"))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "UI_Player_Fill",
+							"sid": 316369891146730,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "2",
+								"value": "int(Data_Player.Get(\"Player Lum\"))"
+							}
+						}
+					],
+					"sid": 628254851332584
+				}
+			],
+			"sid": 534643796313819
 		}
 	],
 	"sid": 630708504024175

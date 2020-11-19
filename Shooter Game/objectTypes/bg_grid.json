@@ -9,6 +9,18 @@
 		{
 			"effectId": "water",
 			"name": "Water"
+		},
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		},
+		{
+			"effectId": "glowvertical",
+			"name": "GlowVertical"
+		},
+		{
+			"effectId": "hsladjust",
+			"name": "AdjustHSL"
 		}
 	],
 	"image": {

@@ -513,6 +513,26 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "Level_CurrentTime",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 436970379295785
+		},
+		{
+			"eventType": "variable",
+			"name": "Level_DefeatedEnemies",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 777401581197131
+		},
+		{
+			"eventType": "variable",
 			"name": "IsPaused",
 			"type": "boolean",
 			"initialValue": "false",
@@ -680,6 +700,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 268439609548751
+		},
+		{
+			"eventType": "variable",
+			"name": "SelectedLevel",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 184799674596174
 		}
 	],
 	"sid": 861189234454270

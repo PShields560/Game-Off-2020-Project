@@ -1,0 +1,74 @@
+{
+	"name": "UI_SlideBar",
+	"plugin-id": "Sprite",
+	"sid": 458696704210010,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "IsMoving",
+			"type": "boolean",
+			"desc": "",
+			"sid": 636456717230883
+		},
+		{
+			"name": "OriginalX",
+			"type": "number",
+			"desc": "",
+			"sid": 828764322008379
+		},
+		{
+			"name": "IsHue",
+			"type": "boolean",
+			"desc": "",
+			"sid": 246720623345551
+		},
+		{
+			"name": "IsSat",
+			"type": "boolean",
+			"desc": "",
+			"sid": 429734457110018
+		},
+		{
+			"name": "IsLum",
+			"type": "boolean",
+			"desc": "",
+			"sid": 106687289488907
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 538407922289440
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 12,
+						"height": 12,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1935436,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 349151682281355,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

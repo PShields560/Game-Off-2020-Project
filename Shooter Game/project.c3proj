@@ -440,7 +440,10 @@
 							"UI_Box",
 							"UI_Box_Inner",
 							"UI_SegmentLine",
-							"LevelIcon"
+							"LevelIcon",
+							"UI_SlideBar",
+							"UI_Player",
+							"UI_Player_Fill"
 						],
 						"subfolders": [],
 						"name": "UI"
@@ -650,6 +653,161 @@
 					"name": "Player Touch Wall.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 721708766858573
+				},
+				{
+					"name": "Asteroid Explosion.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 144553642756642
+				},
+				{
+					"name": "Asteroid Impact Wall.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 144425838726910
+				},
+				{
+					"name": "Ball Key Activate.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 108675881322285
+				},
+				{
+					"name": "Ball Key Deactivate.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 999153673831407
+				},
+				{
+					"name": "Bullet Key Activate.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 758626519161537
+				},
+				{
+					"name": "Bullet Key Deactivate.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 658090206017002
+				},
+				{
+					"name": "Lock Block Toggle Off.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 742639873275417
+				},
+				{
+					"name": "Lock Block Toggle On.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 418492843210568
+				},
+				{
+					"name": "Player Hit By Projectile V2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 459076237444077
+				},
+				{
+					"name": "Projectile Bounce 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 376805522771267
+				},
+				{
+					"name": "Projectile Bounce 2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 156878216849450
+				},
+				{
+					"name": "Projectile Bounce 3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 155292994286094
+				},
+				{
+					"name": "Projectile Bounce 4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 476732332765098
+				},
+				{
+					"name": "Projectile Bounce 5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 541620931815720
+				},
+				{
+					"name": "Projectile Impact Asteroid 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 218988625356334
+				},
+				{
+					"name": "Projectile Impact Asteroid 2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 928828938822943
+				},
+				{
+					"name": "Projectile Impact Asteroid 3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 205106593836631
+				},
+				{
+					"name": "Projectile Impact Wall.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 965142595786548
+				},
+				{
+					"name": "Touch Key Activate.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 879908783704136
+				},
+				{
+					"name": "Touch Key Deactivate.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 318620758562834
+				},
+				{
+					"name": "Enemy Bomb Explosion.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 858389588277692
+				},
+				{
+					"name": "Enemy Death Alt 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 640904894150944
+				},
+				{
+					"name": "Enemy Death Alt 2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 582814307583598
+				},
+				{
+					"name": "Enemy Death.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 678055870906313
+				},
+				{
+					"name": "Enemy Hit By Projectile.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 264978984594481
+				},
+				{
+					"name": "Enemy Impact Player.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 380107932764879
+				},
+				{
+					"name": "Pause Menu Close.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 518729828354442
+				},
+				{
+					"name": "Pause Menu Open.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 171048032721846
+				},
+				{
+					"name": "UI Button Click.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 999367803751381
+				},
+				{
+					"name": "UI Hover.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 146877416011651
+				},
+				{
+					"name": "UI Interactible Text Click.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 490859118209803
 				}
 			],
 			"subfolders": []

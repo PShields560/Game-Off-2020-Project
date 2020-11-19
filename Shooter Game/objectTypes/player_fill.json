@@ -11,7 +11,12 @@
 			"sid": 609247588510228
 		}
 	],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "hsladjust",
+			"name": "AdjustHSL"
+		}
+	],
 	"animations": {
 		"items": [
 			{
@@ -24,15 +29,15 @@
 						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\Player Ships\\1_fill.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8588816,
+						"imageSpriteId": 35010,
 						"collisionPoly": {
 							"points": [
 								0,
-								0.3444444444444445,
+								0.34444444444444455,
 								0.2333333333333329,
 								0,
 								0.7604938271604939,
-								0.21388888888888896,
+								0.21388888888888902,
 								0.9876543209876546,
 								0.5000000000000001,
 								0.7456790123456788,
@@ -47,6 +52,358 @@
 						},
 						"useCollisionPoly": true,
 						"duration": 1
+					},
+					{
+						"width": 47,
+						"height": 52,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\2_fill.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6148214,
+						"collisionPoly": {
+							"points": [
+								0.5106382978723405,
+								0.4423076923076923,
+								0.6808510638297872,
+								0.5,
+								0.5106382978723405,
+								0.5384615384615384,
+								0.5,
+								0.9038461538461539,
+								0.276595744680851,
+								0.75,
+								0.12765957446808507,
+								0.5,
+								0.276595744680851,
+								0.23076923076923078,
+								0.5,
+								0.07692307692307693
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\3_fill.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2349015,
+						"collisionPoly": {
+							"points": [
+								0.8333333333333334,
+								0.16666666666666666,
+								0.9166666666666666,
+								0.5,
+								0.8333333333333334,
+								0.8125,
+								0.5,
+								0.8958333333333334,
+								0.20833333333333337,
+								0.7916666666666666,
+								0.14583333333333337,
+								0.5,
+								0.20833333333333337,
+								0.1875,
+								0.5,
+								0.08333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\4_fill.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2384000,
+						"collisionPoly": {
+							"points": [
+								0.75,
+								0.25,
+								0.8333333333333334,
+								0.5,
+								0.75,
+								0.7291666666666666,
+								0.5,
+								0.7916666666666666,
+								0.22916666666666663,
+								0.7708333333333334,
+								0.16666666666666663,
+								0.5,
+								0.22916666666666663,
+								0.20833333333333334,
+								0.5,
+								0.1875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\5_fill.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2488507,
+						"collisionPoly": {
+							"points": [
+								0.75,
+								0.25,
+								0.7291666666666667,
+								0.5,
+								0.75,
+								0.7291666666666666,
+								0.5,
+								0.8541666666666666,
+								0.20833333333333337,
+								0.7916666666666666,
+								0.1875,
+								0.5,
+								0.20833333333333337,
+								0.1875,
+								0.5,
+								0.125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\6_fill.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 512031,
+						"collisionPoly": {
+							"points": [
+								0.625,
+								0.375,
+								0.9583333333333334,
+								0.5,
+								0.625,
+								0.6041666666666666,
+								0.5,
+								0.625,
+								0.1875,
+								0.8125,
+								0.16666666666666663,
+								0.5,
+								0.1875,
+								0.16666666666666666,
+								0.5,
+								0.3541666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\7_fill.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3294305,
+						"collisionPoly": {
+							"points": [
+								0.7708333333333334,
+								0.22916666666666666,
+								0.9375,
+								0.5,
+								0.7708333333333334,
+								0.75,
+								0.5,
+								0.8541666666666666,
+								0.33333333333333337,
+								0.6666666666666666,
+								0.08333333333333337,
+								0.5,
+								0.33333333333333337,
+								0.3125,
+								0.5,
+								0.125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\8_fill.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4073249,
+						"collisionPoly": {
+							"points": [
+								0.625,
+								0.375,
+								0.9583333333333334,
+								0.5,
+								0.625,
+								0.6041666666666666,
+								0.5,
+								0.9166666666666666,
+								0.45833333333333337,
+								0.5416666666666666,
+								0.0625,
+								0.5,
+								0.45833333333333337,
+								0.4375,
+								0.5,
+								0.0625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\9_fill.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2203279,
+						"collisionPoly": {
+							"points": [
+								0.6041666666666667,
+								0.3958333333333333,
+								0.9583333333333334,
+								0.5,
+								0.6041666666666667,
+								0.5833333333333334,
+								0.5,
+								0.6666666666666666,
+								0.16666666666666663,
+								0.8333333333333334,
+								0.14583333333333337,
+								0.5,
+								0.16666666666666663,
+								0.14583333333333334,
+								0.5,
+								0.3125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\10_fill.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1199912,
+						"collisionPoly": {
+							"points": [
+								0.625,
+								0.375,
+								0.9583333333333334,
+								0.5,
+								0.625,
+								0.6041666666666666,
+								0.5,
+								0.7083333333333334,
+								0.20833333333333337,
+								0.7916666666666666,
+								0.08333333333333337,
+								0.5,
+								0.20833333333333337,
+								0.1875,
+								0.5,
+								0.2708333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\11_fill.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3656049,
+						"collisionPoly": {
+							"points": [
+								0.6666666666666667,
+								0.3333333333333333,
+								0.9583333333333334,
+								0.5,
+								0.6666666666666667,
+								0.6458333333333334,
+								0.5,
+								0.6666666666666666,
+								0.27083333333333337,
+								0.7291666666666666,
+								0.14583333333333337,
+								0.5,
+								0.27083333333333337,
+								0.25,
+								0.5,
+								0.3125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "A:\\Dropbox\\Game Off 2020\\Images\\12_fill.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6758674,
+						"collisionPoly": {
+							"points": [
+								0.625,
+								0.375,
+								0.8958333333333334,
+								0.5,
+								0.625,
+								0.6041666666666666,
+								0.5,
+								0.9166666666666666,
+								0.375,
+								0.625,
+								0.20833333333333337,
+								0.5,
+								0.375,
+								0.3541666666666667,
+								0.5,
+								0.0625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
 					}
 				],
 				"sid": 503510056064478,
@@ -55,7 +412,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			}
 		],
 		"subfolders": []

@@ -244,7 +244,7 @@
 						"parameters": {
 							"hue": 0,
 							"saturation": 1,
-							"luminosity": 1.15
+							"luminosity": 1.1
 						}
 					}
 				}
@@ -419,6 +419,15 @@
 							}
 						}
 					},
+					"effects": {
+						"AdjustHSL": {
+							"parameters": {
+								"hue": 0,
+								"saturation": 1,
+								"luminosity": 1
+							}
+						}
+					},
 					"world": {
 						"x": 1568,
 						"y": 1232,
@@ -430,7 +439,7 @@
 							1,
 							1,
 							1,
-							1
+							0.5
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1089,7 +1098,7 @@
 						"EnemySpawn9": "Healer",
 						"EnemySpawn10": "Mothership",
 						"EnemySpawnRate": 1,
-						"BGM_Track": "",
+						"BGM_Track": "Level1_Loop",
 						"SpecialCondition1": "",
 						"SpecialCondition2": "",
 						"SpecialCondition3": "",

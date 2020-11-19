@@ -29,6 +29,10 @@
         "HP Upgrade Cost": 500,
         "Energy Upgrade Cost": 500,
         "Highest Level": 0,
-        "Current Level": 0
+        "Current Level": 0,
+        "Ship Number": 10,
+        "Player Hue": 0,
+        "Player Sat": 100,
+        "Player Lum": 150
     }
 }

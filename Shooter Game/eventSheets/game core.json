@@ -101,6 +101,82 @@
 							}
 						},
 						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 565956075842854,
+							"parameters": {
+								"frame-number": "int(Data_Player.Get(\"Ship Number\"))"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player_Fill",
+							"sid": 700414275300918,
+							"parameters": {
+								"frame-number": "int(Data_Player.Get(\"Ship Number\"))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Player",
+							"sid": 198160630879996,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "0",
+								"value": "int(Data_Player.Get(\"Player Hue\"))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Player_Fill",
+							"sid": 598534521079759,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "0",
+								"value": "int(Data_Player.Get(\"Player Hue\"))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Player",
+							"sid": 449110759720992,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "1",
+								"value": "int(Data_Player.Get(\"Player Sat\"))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Player_Fill",
+							"sid": 850806797154681,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "1",
+								"value": "int(Data_Player.Get(\"Player Sat\"))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Player",
+							"sid": 970949323424948,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "2",
+								"value": "int(Data_Player.Get(\"Player Lum\"))"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "Player_Fill",
+							"sid": 444109297475350,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "2",
+								"value": "int(Data_Player.Get(\"Player Lum\"))"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "HealthBar",
 							"sid": 524676789191030,
@@ -129,19 +205,19 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 884147694120072,
+							"sid": 143968991950290,
 							"parameters": {
 								"layer": "L_HUD3",
-								"visibility": "visible"
+								"visibility": "invisible"
 							}
 						},
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 959888405570554,
+							"sid": 118359106344522,
 							"parameters": {
 								"layer": "L_HUD4",
-								"visibility": "visible"
+								"visibility": "invisible"
 							}
 						},
 						{
@@ -210,9 +286,54 @@
 							}
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 578082537852876,
+							"parameters": {
+								"variable": "Level_CollectedUpgradePoints",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 388075266437443,
+							"parameters": {
+								"variable": "Level_Score",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 520320699144600,
+							"parameters": {
+								"variable": "Level_DefeatedEnemies",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 219335210790019,
+							"parameters": {
+								"variable": "Level_CurrentTime",
+								"value": "0"
+							}
+						},
+						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 838439702246791,
+							"sid": 180206082518406,
+							"parameters": {
+								"variable": "Level_IsComplete",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 622379307254578,
 							"parameters": {
 								"variable": "Level_IsReady",
 								"value": "false"
@@ -729,6 +850,15 @@
 										"variable": "IsPaused"
 									},
 									"isInverted": true
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 145089017238607,
+									"parameters": {
+										"variable": "Level_IsComplete"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -912,7 +1042,7 @@
 									"actions": [
 										{
 											"callFunction": "Spawn Enemy",
-											"sid": 427511233445567,
+											"sid": 413779512658423,
 											"parameters": [
 												"LEVEL_SETTINGS.EnemySpawn1",
 												"Level_NextEnemySpawnX",
@@ -7171,9 +7301,9 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 813575542220524,
+											"sid": 299297169726896,
 											"parameters": {
-												"audio-file": "Player Hit By Projectile",
+												"audio-file": "Player Hit By Projectile V2",
 												"loop": "not-looping",
 												"volume": "0",
 												"tag-optional": "\"SFX\""
@@ -7226,7 +7356,7 @@
 										{
 											"id": "is-boolean-instance-variable-set",
 											"objectClass": "Player",
-											"sid": 608444140648788,
+											"sid": 517600689305576,
 											"parameters": {
 												"instance-variable": "IsJumpJetActive"
 											},
@@ -7236,13 +7366,40 @@
 									"actions": [
 										{
 											"callFunction": "Damage Player",
-											"sid": 901674907435986,
+											"sid": 574444420865757,
 											"parameters": [
 												"Bullet_N.Damage"
 											]
 										}
 									],
-									"sid": 140345494385232
+									"sid": 279475084420254
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 813095684576986,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 682872473823555,
+											"parameters": {
+												"audio-file": "Player Hit By Projectile V2",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 707176041155503
 								}
 							]
 						},
@@ -7271,6 +7428,110 @@
 							],
 							"sid": 814714981258432,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 360594879509828,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 377328235290498,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 273876256117185,
+													"parameters": {
+														"first-value": "random(100)",
+														"comparison": 3,
+														"second-value": "35"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 271010211958048,
+													"parameters": {
+														"audio-file": "Projectile Impact Asteroid 1",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 477332452351652
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 345539582206137
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 797921645850208,
+													"parameters": {
+														"first-value": "random(100)",
+														"comparison": 3,
+														"second-value": "35"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 419436309182229,
+													"parameters": {
+														"audio-file": "Projectile Impact Asteroid 2",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 503003403466512
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 306435705037865
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 401949363728666,
+													"parameters": {
+														"audio-file": "Projectile Impact Asteroid 3",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 498875342007919
+										}
+									]
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -8140,30 +8401,65 @@
 							}
 						}
 					],
-					"sid": 679387864749543,
-					"children": [
+					"sid": 679387864749543
+				},
+				{
+					"eventType": "block",
+					"conditions": [
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "Enemy_Controller",
-									"sid": 177741158867405,
-									"parameters": {
-										"object": "Wall_Solid"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "destroy",
-									"objectClass": "Enemy_Controller",
-									"sid": 852690789832078
-								}
-							],
-							"sid": 372747420648417
+							"id": "is-overlapping-another-object",
+							"objectClass": "Enemy_Controller",
+							"sid": 610261149201601,
+							"parameters": {
+								"object": "Wall_Solid"
+							}
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "Enemy_Controller",
+							"sid": 924725024781720,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "16"
+							}
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "Enemy_Controller",
+							"sid": 954048121569369,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "LayoutWidth - 16"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "Enemy_Controller",
+							"sid": 709558503280424,
+							"parameters": {
+								"comparison": 2,
+								"y-co-ordinate": "16"
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "Enemy_Controller",
+							"sid": 999299214156982,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "LayoutHeight - 16"
+							}
 						}
-					]
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Enemy_Controller",
+							"sid": 805793240799981
+						}
+					],
+					"sid": 590948384731979,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -8334,6 +8630,46 @@
 								"object": "Wall_Solid"
 							},
 							"isInverted": true
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "Enemy_Controller",
+							"sid": 117405121727041,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "16"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "Enemy_Controller",
+							"sid": 987997553345336,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "LayoutWidth - 16"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "Enemy_Controller",
+							"sid": 351254186472686,
+							"parameters": {
+								"comparison": 2,
+								"y-co-ordinate": "16"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "Enemy_Controller",
+							"sid": 242669789278160,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "LayoutHeight - 16"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [],
@@ -8370,7 +8706,48 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 744132664590571,
+											"parameters": {
+												"object": "Pickup_Points_Upgrade_Mega",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 476490305706801,
+											"parameters": {
+												"object": "Pickup_Points_Score",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 603269643697091,
+											"parameters": {
+												"object": "Pickup_Points_Score",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 962156567774423,
+											"parameters": {
+												"object": "Pickup_Points_Score",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										}
+									],
 									"sid": 620601418506839
 								},
 								{
@@ -8392,7 +8769,38 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 155271317060644,
+											"parameters": {
+												"object": "Pickup_Points_Upgrade_Huge",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 949544324358036,
+											"parameters": {
+												"object": "Pickup_Points_Score",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 550237475458178,
+											"parameters": {
+												"object": "Pickup_Points_Score",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										}
+									],
 									"sid": 258489991074802
 								},
 								{
@@ -8414,7 +8822,28 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 156190069253824,
+											"parameters": {
+												"object": "Pickup_Points_Upgrade_Big",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 793597203635355,
+											"parameters": {
+												"object": "Pickup_Points_Score",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										}
+									],
 									"sid": 557773761809712
 								},
 								{
@@ -8436,7 +8865,38 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 141350025184146,
+											"parameters": {
+												"object": "Pickup_Points_Upgrade",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 585015698447646,
+											"parameters": {
+												"object": "Pickup_Points_Upgrade",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 202381410183819,
+											"parameters": {
+												"object": "Pickup_Points_Upgrade",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										}
+									],
 									"sid": 786809553027457
 								},
 								{
@@ -8448,7 +8908,18 @@
 											"sid": 573695949636540
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Asteroids",
+											"sid": 649891840270859,
+											"parameters": {
+												"object": "Pickup_Points_Upgrade",
+												"layer": "L_Main",
+												"image-point": "0"
+											}
+										}
+									],
 									"sid": 832394382589559
 								}
 							]
@@ -8478,10 +8949,10 @@
 								{
 									"id": "apply-impulse-at-angle",
 									"objectClass": "Asteroids",
-									"sid": 969136153502076,
+									"sid": 653859269469363,
 									"behaviorType": "Physics",
 									"parameters": {
-										"impulse": "2",
+										"impulse": "1",
 										"angle": "Bullet_P.Bullet.AngleOfMotion",
 										"image-point": "0"
 									}
@@ -8500,17 +8971,6 @@
 							],
 							"actions": [
 								{
-									"id": "apply-impulse-at-angle",
-									"objectClass": "Asteroids",
-									"sid": 115845926081157,
-									"behaviorType": "Physics",
-									"parameters": {
-										"impulse": "0.5",
-										"angle": "random(360)",
-										"image-point": "0"
-									}
-								},
-								{
 									"id": "set-friction",
 									"objectClass": "Asteroids",
 									"sid": 358149217240052,
@@ -8527,9 +8987,77 @@
 									"parameters": {
 										"elasticity": "1"
 									}
+								},
+								{
+									"id": "apply-impulse-at-angle",
+									"objectClass": "Asteroids",
+									"sid": 566593226247654,
+									"behaviorType": "Physics",
+									"parameters": {
+										"impulse": "0.2",
+										"angle": "random(360)",
+										"image-point": "0"
+									}
 								}
 							],
 							"sid": 942440734900328
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Asteroids",
+									"sid": 806041383948039,
+									"parameters": {
+										"object": "Wall_Solid"
+									}
+								},
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Asteroids",
+									"sid": 201763269056441,
+									"parameters": {
+										"object": "Wall_Bullet"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 666380170502623,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 135268854406426,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play-at-object",
+											"objectClass": "Audio",
+											"sid": 624389458133377,
+											"parameters": {
+												"audio-file": "Asteroid Impact Wall",
+												"loop": "not-looping",
+												"volume": "0",
+												"object": "Asteroids",
+												"inner-angle": "360",
+												"outer-angle": "360",
+												"outer-gain": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 914655572722980
+								}
+							],
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -8543,6 +9071,33 @@
 							"actions": [],
 							"sid": 783041198065210,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 214079289188869,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 470640612685637,
+											"parameters": {
+												"audio-file": "Asteroid Explosion",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 516798859820986
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -12961,7 +13516,36 @@
 											}
 										}
 									],
-									"sid": 213894270812587
+									"sid": 213894270812587,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 968232996576967,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 903325362270594,
+													"parameters": {
+														"audio-file": "Bullet Key Activate",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 636459277825028
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -13009,7 +13593,36 @@
 											}
 										}
 									],
-									"sid": 769053725169332
+									"sid": 769053725169332,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 989028115554175,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 611573341960230,
+													"parameters": {
+														"audio-file": "Bullet Key Activate",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 659397702226504
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -13058,7 +13671,36 @@
 											}
 										}
 									],
-									"sid": 264510835121339
+									"sid": 264510835121339,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 772695151861428,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 568982986622662,
+													"parameters": {
+														"audio-file": "Bullet Key Deactivate",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 507768426081327
+										}
+									]
 								}
 							],
 							"sid": 195488430175478
@@ -13112,7 +13754,36 @@
 											}
 										}
 									],
-									"sid": 376023234257525
+									"sid": 376023234257525,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 648157351001381,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 402461518051206,
+													"parameters": {
+														"audio-file": "Touch Key Activate",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 393333312893125
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -13160,7 +13831,36 @@
 											}
 										}
 									],
-									"sid": 645919894380230
+									"sid": 645919894380230,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 643496760253042,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 890124167696136,
+													"parameters": {
+														"audio-file": "Touch Key Activate",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 158393034861653
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -13209,7 +13909,36 @@
 											}
 										}
 									],
-									"sid": 238564900813219
+									"sid": 238564900813219,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 429172026005386,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 188066909155563,
+													"parameters": {
+														"audio-file": "Touch Key Deactivate",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 588584494963106
+										}
+									]
 								}
 							],
 							"sid": 372446704837478
@@ -13263,7 +13992,36 @@
 											}
 										}
 									],
-									"sid": 910635186531368
+									"sid": 910635186531368,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 594807767925934,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 599674335442753,
+													"parameters": {
+														"audio-file": "Ball Key Activate",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 503289834743063
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -13311,7 +14069,36 @@
 											}
 										}
 									],
-									"sid": 784560250513912
+									"sid": 784560250513912,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 353926931423314,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 475550640045098,
+													"parameters": {
+														"audio-file": "Ball Key Activate",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 727784768465607
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -13360,7 +14147,36 @@
 											}
 										}
 									],
-									"sid": 637931211938150
+									"sid": 637931211938150,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 622038037761760,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 987649898993138,
+													"parameters": {
+														"audio-file": "Ball Key Deactivate",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 337683387981257
+										}
+									]
 								}
 							],
 							"sid": 312932288700106
@@ -13849,7 +14665,36 @@
 													]
 												}
 											],
-											"sid": 381405981003607
+											"sid": 381405981003607,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 570679099578045,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 587363034093710,
+															"parameters": {
+																"audio-file": "Lock Block Toggle Off",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 615118780132282
+												}
+											]
 										},
 										{
 											"eventType": "block",
@@ -13961,7 +14806,36 @@
 													]
 												}
 											],
-											"sid": 334420335971003
+											"sid": 334420335971003,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 202433203820522,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 940508543773154,
+															"parameters": {
+																"audio-file": "Lock Block Toggle Off",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 396971061324400
+												}
+											]
 										},
 										{
 											"eventType": "block",
@@ -14073,7 +14947,36 @@
 													]
 												}
 											],
-											"sid": 457601364362122
+											"sid": 457601364362122,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 159829507692188,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 318311202230179,
+															"parameters": {
+																"audio-file": "Lock Block Toggle Off",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 582773261348902
+												}
+											]
 										}
 									]
 								}
@@ -14160,7 +15063,36 @@
 											}
 										}
 									],
-									"sid": 795736227851492
+									"sid": 795736227851492,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 712482354136858,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 705649704644608,
+													"parameters": {
+														"audio-file": "Lock Block Toggle Off",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 304929355180851
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -14207,7 +15139,36 @@
 											}
 										}
 									],
-									"sid": 881557401357607
+									"sid": 881557401357607,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 897815583327371,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 656994361720972,
+													"parameters": {
+														"audio-file": "Lock Block Toggle Off",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 257389718989600
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -14254,7 +15215,36 @@
 											}
 										}
 									],
-									"sid": 281092976703225
+									"sid": 281092976703225,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 392567993701756,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 481194202904349,
+													"parameters": {
+														"audio-file": "Lock Block Toggle Off",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 197916987827422
+										}
+									]
 								}
 							]
 						},
@@ -14339,7 +15329,36 @@
 											}
 										}
 									],
-									"sid": 185284240972302
+									"sid": 185284240972302,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 288232696435329,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 112359949678514,
+													"parameters": {
+														"audio-file": "Lock Block Toggle On",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 869132564943953
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -14386,7 +15405,36 @@
 											}
 										}
 									],
-									"sid": 469280815927777
+									"sid": 469280815927777,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 971130290310969,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 500683824873250,
+													"parameters": {
+														"audio-file": "Lock Block Toggle On",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 584699064130465
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -14433,7 +15481,36 @@
 											}
 										}
 									],
-									"sid": 117992863365116
+									"sid": 117992863365116,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 549716937940114,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 631621753448084,
+													"parameters": {
+														"audio-file": "Lock Block Toggle On",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 828174098040201
+										}
+									]
 								}
 							]
 						},
@@ -14612,6 +15689,99 @@
 					"isActiveOnStart": true,
 					"children": [
 						{
+							"functionName": "Check Final Score",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 669559185656809
+						},
+						{
+							"functionName": "Level Complete",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [
+								{
+									"name": "LevelNum",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"sid": 965451255112821
+								}
+							],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 468496181765541,
+									"parameters": {
+										"variable": "Level_IsComplete",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "Data_Player",
+									"sid": 252371973100823,
+									"parameters": {
+										"key": "\"Upgrade Points\"",
+										"value": "int(Data_Player.Get(\"Upgrade Points\")) + Level_CollectedUpgradePoints"
+									}
+								},
+								{
+									"callFunction": "Check Final Score",
+									"sid": 778728833975301
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 502685803195379,
+									"parameters": {
+										"layer": "L_HUD3",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 491203784549350,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "Data_Player",
+											"sid": 703490099461248,
+											"parameters": {
+												"key": "\"Highest Level\"",
+												"comparison": 0,
+												"value": "LevelNum"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-key",
+											"objectClass": "Data_Player",
+											"sid": 973761084186487,
+											"parameters": {
+												"key": "\"Highest Level\"",
+												"value": "LevelNum+1"
+											}
+										}
+									],
+									"sid": 709886173417760
+								}
+							]
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -14637,6 +15807,13 @@
 									"id": "destroy",
 									"objectClass": "Bullets",
 									"sid": 862771493845862
+								},
+								{
+									"callFunction": "Level Complete",
+									"sid": 229140242787736,
+									"parameters": [
+										"SelectedLevel"
+									]
 								}
 							],
 							"sid": 528033426866859
@@ -15193,6 +16370,54 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 854139839099914,
+									"parameters": {
+										"variable": "Hue",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "Effect_EnergyStreak",
+									"sid": 888844022309196,
+									"parameters": {
+										"effect": "\"AdjustHSL\"",
+										"parameter-index": "0",
+										"value": "int(Data_Player.Get(\"Player Hue\"))"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "Effect_EnergyStreak",
+									"sid": 626515387006279,
+									"parameters": {
+										"effect": "\"AdjustHSL\"",
+										"parameter-index": "1",
+										"value": "int(Data_Player.Get(\"Player Sat\"))"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "Effect_EnergyStreak",
+									"sid": 743109913876632,
+									"parameters": {
+										"effect": "\"AdjustHSL\"",
+										"parameter-index": "2",
+										"value": "int(Data_Player.Get(\"Player Lum\"))"
+									}
+								}
+							],
+							"sid": 818613233922398
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "compare-boolean-eventvar",
 									"objectClass": "System",
 									"sid": 210999625068427,
@@ -15673,6 +16898,36 @@
 											"parameters": {
 												"instance-variable": "DestroyTimer",
 												"value": "DestroyTimer"
+											}
+										},
+										{
+											"id": "set-effect-parameter",
+											"objectClass": "Bullet_P",
+											"sid": 622460347285248,
+											"parameters": {
+												"effect": "\"AdjustHSL\"",
+												"parameter-index": "0",
+												"value": "int(Data_Player.Get(\"Player Hue\"))"
+											}
+										},
+										{
+											"id": "set-effect-parameter",
+											"objectClass": "Bullet_P",
+											"sid": 600402104364035,
+											"parameters": {
+												"effect": "\"AdjustHSL\"",
+												"parameter-index": "1",
+												"value": "int(Data_Player.Get(\"Player Sat\"))"
+											}
+										},
+										{
+											"id": "set-effect-parameter",
+											"objectClass": "Bullet_P",
+											"sid": 234475145809006,
+											"parameters": {
+												"effect": "\"AdjustHSL\"",
+												"parameter-index": "2",
+												"value": "int(Data_Player.Get(\"Player Lum\"))"
 											}
 										},
 										{
@@ -17048,74 +18303,289 @@
 									"parameters": {
 										"object": "Wall_Solid"
 									}
-								},
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Bullet_P",
-									"sid": 939925820816376,
-									"parameters": {
-										"instance-variable": "DestroyOnImpact_Wall"
-									}
 								}
 							],
-							"actions": [
-								{
-									"id": "destroy",
-									"objectClass": "Bullet_P",
-									"sid": 123293609622844
-								}
-							],
+							"actions": [],
 							"sid": 995994820260573,
 							"children": [
 								{
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "repeat",
-											"objectClass": "System",
-											"sid": 267023356748593,
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Bullet_P",
+											"sid": 557922322800138,
 											"parameters": {
-												"count": "2"
+												"instance-variable": "DestroyOnImpact_Wall"
 											}
 										}
 									],
 									"actions": [
 										{
-											"callFunction": "Particle Effect - Energy Streak",
-											"sid": 350935991312643,
-											"parameters": [
-												"Bullet_P.UID",
-												"Bullet_P.X",
-												"Bullet_P.Y",
-												"0.15",
-												"500",
-												"random(360)",
-												"L_Main",
-												"50",
-												"100",
-												"200",
-												false
-											]
-										},
-										{
-											"callFunction": "Particle Effect - Energy Streak",
-											"sid": 527965012626653,
-											"parameters": [
-												"Bullet_P.UID",
-												"Bullet_P.X",
-												"Bullet_P.Y",
-												"0.15",
-												"500",
-												"random(360)",
-												"L_Main",
-												"0",
-												"100",
-												"125",
-												false
-											]
+											"id": "destroy",
+											"objectClass": "Bullet_P",
+											"sid": 831850560509238
 										}
 									],
-									"sid": 956305481108468
+									"sid": 727555486882286,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "repeat",
+													"objectClass": "System",
+													"sid": 131964401467982,
+													"parameters": {
+														"count": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "Particle Effect - Energy Streak",
+													"sid": 628040876976692,
+													"parameters": [
+														"Bullet_P.UID",
+														"Bullet_P.X",
+														"Bullet_P.Y",
+														"0.15",
+														"500",
+														"random(360)",
+														"L_Main",
+														"50",
+														"100",
+														"200",
+														false
+													]
+												},
+												{
+													"callFunction": "Particle Effect - Energy Streak",
+													"sid": 256939804215965,
+													"parameters": [
+														"Bullet_P.UID",
+														"Bullet_P.X",
+														"Bullet_P.Y",
+														"0.15",
+														"500",
+														"random(360)",
+														"L_Main",
+														"0",
+														"100",
+														"125",
+														false
+													]
+												}
+											],
+											"sid": 736135921171494
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 506389003741735
+										}
+									],
+									"actions": [],
+									"sid": 450656388983817,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 118023973229412,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 128513800181563,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 913992900479020,
+															"parameters": {
+																"first-value": "random(100)",
+																"comparison": 3,
+																"second-value": "20"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play-at-object",
+															"objectClass": "Audio",
+															"sid": 751825033016973,
+															"parameters": {
+																"audio-file": "Projectile Bounce 1",
+																"loop": "not-looping",
+																"volume": "0",
+																"object": "Bullet_P",
+																"inner-angle": "360",
+																"outer-angle": "360",
+																"outer-gain": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 509901818897887
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 544685296657928
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 957397756695365,
+															"parameters": {
+																"first-value": "random(100)",
+																"comparison": 3,
+																"second-value": "20"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play-at-object",
+															"objectClass": "Audio",
+															"sid": 289054122026924,
+															"parameters": {
+																"audio-file": "Projectile Bounce 2",
+																"loop": "not-looping",
+																"volume": "0",
+																"object": "Bullet_P",
+																"inner-angle": "360",
+																"outer-angle": "360",
+																"outer-gain": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 726080650754178
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 746391977203821
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 476219178433997,
+															"parameters": {
+																"first-value": "random(100)",
+																"comparison": 3,
+																"second-value": "20"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play-at-object",
+															"objectClass": "Audio",
+															"sid": 272263253254578,
+															"parameters": {
+																"audio-file": "Projectile Bounce 3",
+																"loop": "not-looping",
+																"volume": "0",
+																"object": "Bullet_P",
+																"inner-angle": "360",
+																"outer-angle": "360",
+																"outer-gain": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 807740321452126
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 977643674138630
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 240618754738027,
+															"parameters": {
+																"first-value": "random(100)",
+																"comparison": 3,
+																"second-value": "20"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play-at-object",
+															"objectClass": "Audio",
+															"sid": 239516565483077,
+															"parameters": {
+																"audio-file": "Projectile Bounce 4",
+																"loop": "not-looping",
+																"volume": "0",
+																"object": "Bullet_P",
+																"inner-angle": "360",
+																"outer-angle": "360",
+																"outer-gain": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 545492875933992
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 936161669538426
+														}
+													],
+													"actions": [
+														{
+															"id": "play-at-object",
+															"objectClass": "Audio",
+															"sid": 269030896712181,
+															"parameters": {
+																"audio-file": "Projectile Bounce 5",
+																"loop": "not-looping",
+																"volume": "0",
+																"object": "Bullet_P",
+																"inner-angle": "360",
+																"outer-angle": "360",
+																"outer-gain": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 872972201537110
+												}
+											]
+										}
+									]
 								}
 							]
 						},
@@ -17721,74 +19191,289 @@
 									"parameters": {
 										"object": "Wall_Solid"
 									}
-								},
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Bullet_E",
-									"sid": 400444062321027,
-									"parameters": {
-										"instance-variable": "DestroyOnImpact_Wall"
-									}
 								}
 							],
-							"actions": [
-								{
-									"id": "destroy",
-									"objectClass": "Bullet_E",
-									"sid": 734567227496554
-								}
-							],
+							"actions": [],
 							"sid": 925859484718024,
 							"children": [
 								{
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "repeat",
-											"objectClass": "System",
-											"sid": 582162935287480,
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Bullet_E",
+											"sid": 831029993456603,
 											"parameters": {
-												"count": "2"
+												"instance-variable": "DestroyOnImpact_Wall"
 											}
 										}
 									],
 									"actions": [
 										{
-											"callFunction": "Particle Effect - Energy Streak",
-											"sid": 621455420122783,
-											"parameters": [
-												"Bullet_E.UID",
-												"Bullet_E.X",
-												"Bullet_E.Y",
-												"0.15",
-												"500",
-												"random(360)",
-												"L_Main",
-												"50",
-												"100",
-												"200",
-												false
-											]
-										},
-										{
-											"callFunction": "Particle Effect - Energy Streak",
-											"sid": 870836809441608,
-											"parameters": [
-												"Bullet_E.UID",
-												"Bullet_E.X",
-												"Bullet_E.Y",
-												"0.15",
-												"500",
-												"random(360)",
-												"L_Main",
-												"35",
-												"100",
-												"125",
-												false
-											]
+											"id": "destroy",
+											"objectClass": "Bullet_E",
+											"sid": 176230843760838
 										}
 									],
-									"sid": 230644124595085
+									"sid": 489829080333410,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "repeat",
+													"objectClass": "System",
+													"sid": 753758255574860,
+													"parameters": {
+														"count": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "Particle Effect - Energy Streak",
+													"sid": 296637283086632,
+													"parameters": [
+														"Bullet_E.UID",
+														"Bullet_E.X",
+														"Bullet_E.Y",
+														"0.15",
+														"500",
+														"random(360)",
+														"L_Main",
+														"50",
+														"100",
+														"200",
+														false
+													]
+												},
+												{
+													"callFunction": "Particle Effect - Energy Streak",
+													"sid": 709646884501352,
+													"parameters": [
+														"Bullet_E.UID",
+														"Bullet_E.X",
+														"Bullet_E.Y",
+														"0.15",
+														"500",
+														"random(360)",
+														"L_Main",
+														"35",
+														"100",
+														"125",
+														false
+													]
+												}
+											],
+											"sid": 544531538577925
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 536275686701022
+										}
+									],
+									"actions": [],
+									"sid": 147946896622815,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 845084300594645,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 985262293629778,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 157724758215720,
+															"parameters": {
+																"first-value": "random(100)",
+																"comparison": 3,
+																"second-value": "20"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play-at-object",
+															"objectClass": "Audio",
+															"sid": 191844023899595,
+															"parameters": {
+																"audio-file": "Projectile Bounce 1",
+																"loop": "not-looping",
+																"volume": "0",
+																"object": "Bullet_E",
+																"inner-angle": "360",
+																"outer-angle": "360",
+																"outer-gain": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 357935173038930
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 889582306078684
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 772645790911835,
+															"parameters": {
+																"first-value": "random(100)",
+																"comparison": 3,
+																"second-value": "20"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play-at-object",
+															"objectClass": "Audio",
+															"sid": 951252112251177,
+															"parameters": {
+																"audio-file": "Projectile Bounce 2",
+																"loop": "not-looping",
+																"volume": "0",
+																"object": "Bullet_E",
+																"inner-angle": "360",
+																"outer-angle": "360",
+																"outer-gain": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 336777506857047
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 951756433528751
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 267865739584149,
+															"parameters": {
+																"first-value": "random(100)",
+																"comparison": 3,
+																"second-value": "20"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play-at-object",
+															"objectClass": "Audio",
+															"sid": 694336148064608,
+															"parameters": {
+																"audio-file": "Projectile Bounce 3",
+																"loop": "not-looping",
+																"volume": "0",
+																"object": "Bullet_E",
+																"inner-angle": "360",
+																"outer-angle": "360",
+																"outer-gain": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 259191829370677
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 886041282080243
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 177719033579348,
+															"parameters": {
+																"first-value": "random(100)",
+																"comparison": 3,
+																"second-value": "20"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play-at-object",
+															"objectClass": "Audio",
+															"sid": 244855394636760,
+															"parameters": {
+																"audio-file": "Projectile Bounce 4",
+																"loop": "not-looping",
+																"volume": "0",
+																"object": "Bullet_E",
+																"inner-angle": "360",
+																"outer-angle": "360",
+																"outer-gain": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 713528520129350
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 593995564751430
+														}
+													],
+													"actions": [
+														{
+															"id": "play-at-object",
+															"objectClass": "Audio",
+															"sid": 580824648742824,
+															"parameters": {
+																"audio-file": "Projectile Bounce 5",
+																"loop": "not-looping",
+																"volume": "0",
+																"object": "Bullet_E",
+																"inner-angle": "360",
+																"outer-angle": "360",
+																"outer-gain": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 623563183793619
+												}
+											]
+										}
+									]
 								}
 							]
 						},
@@ -18928,6 +20613,967 @@
 										}
 									],
 									"sid": 639286554832291
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 339643635306606,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "Txt_UI"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 178995383285098,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Txt_UI",
+													"sid": 143253612634762,
+													"parameters": {
+														"instance-variable": "Tag",
+														"comparison": 0,
+														"value": "\"Music On\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-font-color",
+													"objectClass": "Txt_UI",
+													"sid": 265489099151706,
+													"parameters": {
+														"color": "rgbEx(255, 255, 0)"
+													}
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 815323677040417,
+													"parameters": {
+														"variable": "Option_IsMusicOn",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 562569477448227,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 184943847699842,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 200495984817364,
+															"parameters": {
+																"audio-file": "UI Interactible Text Click",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 111430908247607
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Txt_UI",
+													"sid": 708198142880298,
+													"parameters": {
+														"instance-variable": "Tag",
+														"comparison": 0,
+														"value": "\"Music Off\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-font-color",
+													"objectClass": "Txt_UI",
+													"sid": 352956618837806,
+													"parameters": {
+														"color": "rgbEx(255, 255, 0)"
+													}
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 749847019815934,
+													"parameters": {
+														"variable": "Option_IsMusicOn",
+														"value": "false"
+													}
+												},
+												{
+													"id": "stop",
+													"objectClass": "Audio",
+													"sid": 336168007281464,
+													"parameters": {
+														"tag": "\"BGM\""
+													}
+												}
+											],
+											"sid": 208603257010168,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 660057787579775,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 581892911515692,
+															"parameters": {
+																"audio-file": "UI Interactible Text Click",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 504693837153485
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Txt_UI",
+													"sid": 861688113765692,
+													"parameters": {
+														"instance-variable": "Tag",
+														"comparison": 0,
+														"value": "\"SFX On\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-font-color",
+													"objectClass": "Txt_UI",
+													"sid": 851560410506184,
+													"parameters": {
+														"color": "rgbEx(255, 255, 0)"
+													}
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 553205917402551,
+													"parameters": {
+														"variable": "Option_IsSFXon",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 539245668420123,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 381394162225294,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 491088981623497,
+															"parameters": {
+																"audio-file": "UI Interactible Text Click",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 492616916905790
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Txt_UI",
+													"sid": 577240957605889,
+													"parameters": {
+														"instance-variable": "Tag",
+														"comparison": 0,
+														"value": "\"SFX Off\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-font-color",
+													"objectClass": "Txt_UI",
+													"sid": 408226104909955,
+													"parameters": {
+														"color": "rgbEx(255, 255, 0)"
+													}
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 106487410144583,
+													"parameters": {
+														"variable": "Option_IsSFXon",
+														"value": "false"
+													}
+												},
+												{
+													"id": "stop",
+													"objectClass": "Audio",
+													"sid": 303098632524426,
+													"parameters": {
+														"tag": "\"SFX\""
+													}
+												}
+											],
+											"sid": 933529411918358,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 754226970534623,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 403798702107268,
+															"parameters": {
+																"audio-file": "UI Interactible Text Click",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 622972732839512
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Txt_UI",
+													"sid": 402872950002650,
+													"parameters": {
+														"instance-variable": "Tag",
+														"comparison": 0,
+														"value": "\"WASD Controls\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-font-color",
+													"objectClass": "Txt_UI",
+													"sid": 398675915292158,
+													"parameters": {
+														"color": "rgbEx(255, 255, 0)"
+													}
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 762309245608224,
+													"parameters": {
+														"variable": "Option_WASDcontrols",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 311128076906345,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 836715004532527,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 397715709406481,
+															"parameters": {
+																"audio-file": "UI Interactible Text Click",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 228010103371285
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Txt_UI",
+													"sid": 749594288443048,
+													"parameters": {
+														"instance-variable": "Tag",
+														"comparison": 0,
+														"value": "\"Arrow Key Controls\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-font-color",
+													"objectClass": "Txt_UI",
+													"sid": 446634785036002,
+													"parameters": {
+														"color": "rgbEx(255, 255, 0)"
+													}
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 904988886577458,
+													"parameters": {
+														"variable": "Option_WASDcontrols",
+														"value": "false"
+													}
+												}
+											],
+											"sid": 527207005306194,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 750378754010823,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 549436094778167,
+															"parameters": {
+																"audio-file": "UI Interactible Text Click",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 674158061686340
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Txt_UI",
+													"sid": 285252374083269,
+													"parameters": {
+														"instance-variable": "Tag",
+														"comparison": 0,
+														"value": "\"Grid BG On\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-font-color",
+													"objectClass": "Txt_UI",
+													"sid": 859730423088071,
+													"parameters": {
+														"color": "rgbEx(255, 255, 0)"
+													}
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 782146032614539,
+													"parameters": {
+														"variable": "Option_IsFluidGridOn",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 821083797619293,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 790927383462036,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 482137192232357,
+															"parameters": {
+																"audio-file": "UI Interactible Text Click",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 679621773981590
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Txt_UI",
+													"sid": 994860556729671,
+													"parameters": {
+														"instance-variable": "Tag",
+														"comparison": 0,
+														"value": "\"Grid BG Off\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-font-color",
+													"objectClass": "Txt_UI",
+													"sid": 751286395687917,
+													"parameters": {
+														"color": "rgbEx(255, 255, 0)"
+													}
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 480767048614134,
+													"parameters": {
+														"variable": "Option_IsFluidGridOn",
+														"value": "false"
+													}
+												}
+											],
+											"sid": 656688282284930,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 618705697313749,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 348862417080622,
+															"parameters": {
+																"audio-file": "UI Interactible Text Click",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 662492646005632
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 959865149583254,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"Music On\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 157390464720575,
+											"parameters": {
+												"variable": "Option_IsMusicOn"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Txt_UI",
+											"sid": 427966489016269,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										}
+									],
+									"sid": 557897565538361
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 366248104022798,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"Music Off\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 408305637098265,
+											"parameters": {
+												"variable": "Option_IsMusicOn"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Txt_UI",
+											"sid": 687737890489850,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										}
+									],
+									"sid": 318278427863914
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 869250187850732,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"SFX On\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 197854219352954,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Txt_UI",
+											"sid": 989262138888984,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										}
+									],
+									"sid": 538509435824323
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 150186585827613,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"SFX Off\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 994989592123369,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Txt_UI",
+											"sid": 563632949473241,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										}
+									],
+									"sid": 365460509778735
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 309472798250522,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"WASD Controls\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 739159948165693,
+											"parameters": {
+												"variable": "Option_WASDcontrols"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Txt_UI",
+											"sid": 247897091580532,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										}
+									],
+									"sid": 148333576094745
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 927295526057734,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"Arrow Key Controls\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 286249828957034,
+											"parameters": {
+												"variable": "Option_WASDcontrols"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Txt_UI",
+											"sid": 742456591157278,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										}
+									],
+									"sid": 981894549248299
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 349221143353451,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"Music On\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 819316314976396,
+											"parameters": {
+												"variable": "Option_IsMusicOn"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Txt_UI",
+											"sid": 696224567446978,
+											"parameters": {
+												"color": "rgbEx(255, 255, 0)"
+											}
+										}
+									],
+									"sid": 595747821848690
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 954630326262636,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"Music Off\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 126593719046061,
+											"parameters": {
+												"variable": "Option_IsMusicOn"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Txt_UI",
+											"sid": 109772405111120,
+											"parameters": {
+												"color": "rgbEx(255, 255, 0)"
+											}
+										}
+									],
+									"sid": 252828213856764
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 798183027101076,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"SFX On\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 881951242655996,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Txt_UI",
+											"sid": 928171872793352,
+											"parameters": {
+												"color": "rgbEx(255, 255, 0)"
+											}
+										}
+									],
+									"sid": 165590378457848
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 640333110767968,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"SFX Off\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 245453785521786,
+											"parameters": {
+												"variable": "Option_IsSFXon"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Txt_UI",
+											"sid": 141309483255779,
+											"parameters": {
+												"color": "rgbEx(255, 255, 0)"
+											}
+										}
+									],
+									"sid": 567855487897127
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 150024008255420,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"WASD Controls\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 488511741881125,
+											"parameters": {
+												"variable": "Option_WASDcontrols"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Txt_UI",
+											"sid": 560446321446951,
+											"parameters": {
+												"color": "rgbEx(255, 255, 0)"
+											}
+										}
+									],
+									"sid": 864267231949343
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Txt_UI",
+											"sid": 376542628791695,
+											"parameters": {
+												"instance-variable": "Tag",
+												"comparison": 0,
+												"value": "\"Arrow Key Controls\""
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 726690219523901,
+											"parameters": {
+												"variable": "Option_WASDcontrols"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Txt_UI",
+											"sid": 181503698468097,
+											"parameters": {
+												"color": "rgbEx(255, 255, 0)"
+											}
+										}
+									],
+									"sid": 915164211227660
 								}
 							]
 						},
@@ -19029,6 +21675,14 @@
 									"parameters": {
 										"layer": "L_HUD4"
 									}
+								},
+								{
+									"id": "layer-is-visible",
+									"objectClass": "System",
+									"sid": 534071331564148,
+									"parameters": {
+										"layer": "L_HUD3"
+									}
 								}
 							],
 							"actions": [],
@@ -19077,9 +21731,39 @@
 											}
 										}
 									],
-									"sid": 183407853778225
+									"sid": 183407853778225,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 883171062668512,
+													"parameters": {
+														"variable": "Option_IsSFXon"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 955001185052871,
+													"parameters": {
+														"audio-file": "UI Button Click",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"SFX\""
+													}
+												}
+											],
+											"sid": 560685373052020
+										}
+									]
 								}
-							]
+							],
+							"isOrBlock": true
 						}
 					],
 					"sid": 674118557620037
