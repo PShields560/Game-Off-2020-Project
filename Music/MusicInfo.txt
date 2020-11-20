@@ -11,3 +11,13 @@ Samplerate:  44100
 Track: Boss 1
 Key: Bm
 Samplerate:  44100
+
+Track: Level 2
+Key:Eb maj
+Bpm: 96
+Samplerate 44100
+
+Track Boss 2
+Key: Cm
+Bpm: 132
+Samplerate 44100
