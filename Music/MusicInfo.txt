@@ -31,3 +31,8 @@ Track: Level 4
 Key: Fm
 Bpm: 112
 Samplerate: 44100
+
+Track: Level 5
+Key: F#m
+Bpm: 116
+Samplerate: 44100
