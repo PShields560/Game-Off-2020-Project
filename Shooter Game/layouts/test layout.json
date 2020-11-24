@@ -854,7 +854,8 @@
 						"MeshColumn": 0,
 						"MeshRow": 0,
 						"OriginalX": 0,
-						"OriginalY": 0
+						"OriginalY": 0,
+						"DistanceToOriginalPos": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -1081,20 +1082,6 @@
 								"enabled": true,
 								"tags": "Bullet Wall"
 							}
-						},
-						"Physics": {
-							"properties": {
-								"immovable": true,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
 						}
 					},
 					"ownData": {
@@ -1111,6 +1098,25 @@
 						"tile-y-offset": 0,
 						"tile-x-spacing": 0,
 						"tile-y-spacing": 0
+					},
+					"effects": {
+						"GlowHorizontal": {
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"GlowVertical": {
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"AdjustHSL": {
+							"parameters": {
+								"hue": 0,
+								"saturation": 1,
+								"luminosity": 1
+							}
+						}
 					},
 					"world": {
 						"x": -16,
@@ -1505,6 +1511,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1565,6 +1574,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1625,6 +1637,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1685,6 +1700,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1891,6 +1909,9 @@
 					"behaviors": {
 						"Persist": {
 							"properties": {}
+						},
+						"Timer": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -2035,6 +2056,80 @@
 						"height": 80,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pickup_NewWeapon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 583,
+					"instanceVariables": {
+						"IsCollected": false,
+						"IsWeapon": false,
+						"IsPower": false,
+						"Num": 0
+					},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "size",
+								"wave": "sine",
+								"period": 0.5,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 1,
+								"magnitude": 2,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": true,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 10000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": -384,
+						"y": -128,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5333333333333333,
+						"originY": 0.4666666666666667,
 						"color": [
 							1,
 							1,
@@ -7625,9 +7720,9 @@
 					"uid": 248,
 					"instanceVariables": {
 						"Index": 0,
-						"LevelName": "Level 1",
-						"Name": "Level 1 Test",
-						"Description": "Everyone's gotta start somewhere and in your case, you get to start at level 1!",
+						"LevelName": "Tutorial",
+						"Name": "Tutorials are poop.",
+						"Description": "Don't expect me to hold your hand in this game.",
 						"Score": 0
 					},
 					"behaviors": {},
@@ -7660,9 +7755,9 @@
 					"uid": 249,
 					"instanceVariables": {
 						"Index": 1,
-						"LevelName": "Level 2",
-						"Name": "THE SECOND LEVEL!",
-						"Description": "Goes to level 2?",
+						"LevelName": "Level 1",
+						"Name": "Asteroid Field",
+						"Description": "This is your first real test, Pilot! You have to navitgate through this treacherous asteroid field, but I'm sure with your incredible weaponry, you'll do just fine! It's only the first level of the game after all... how hard could it really be?",
 						"Score": 0
 					},
 					"behaviors": {},
@@ -7695,9 +7790,9 @@
 					"uid": 250,
 					"instanceVariables": {
 						"Index": 2,
-						"LevelName": "Test Layout",
-						"Name": "",
-						"Description": "",
+						"LevelName": "Level 2",
+						"Name": "Level 2",
+						"Description": "No fun game has just one level. You made it through the tutoria;l... you braved the daunting trials of level 1. Now go ahead, brave soul... make your way onward... to LEVEL TWO!!!",
 						"Score": 0
 					},
 					"behaviors": {},
@@ -7730,7 +7825,7 @@
 					"uid": 251,
 					"instanceVariables": {
 						"Index": 3,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 3",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -7765,7 +7860,7 @@
 					"uid": 252,
 					"instanceVariables": {
 						"Index": 4,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 4",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -7800,7 +7895,7 @@
 					"uid": 253,
 					"instanceVariables": {
 						"Index": 5,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 5",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -7835,7 +7930,7 @@
 					"uid": 254,
 					"instanceVariables": {
 						"Index": 6,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 6",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -7870,7 +7965,7 @@
 					"uid": 255,
 					"instanceVariables": {
 						"Index": 7,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 7",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -7905,7 +8000,7 @@
 					"uid": 256,
 					"instanceVariables": {
 						"Index": 8,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 8",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -7940,7 +8035,7 @@
 					"uid": 257,
 					"instanceVariables": {
 						"Index": 9,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 9",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -7975,7 +8070,7 @@
 					"uid": 258,
 					"instanceVariables": {
 						"Index": 10,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 10",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8010,7 +8105,7 @@
 					"uid": 259,
 					"instanceVariables": {
 						"Index": 11,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 11",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8045,7 +8140,7 @@
 					"uid": 260,
 					"instanceVariables": {
 						"Index": 12,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 12",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8080,7 +8175,7 @@
 					"uid": 261,
 					"instanceVariables": {
 						"Index": 13,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 13",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8115,7 +8210,7 @@
 					"uid": 262,
 					"instanceVariables": {
 						"Index": 14,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 14",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8150,7 +8245,7 @@
 					"uid": 263,
 					"instanceVariables": {
 						"Index": 15,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 15",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8320,7 +8415,7 @@
 					"uid": 134,
 					"instanceVariables": {
 						"Index": 16,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 16",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8355,7 +8450,7 @@
 					"uid": 135,
 					"instanceVariables": {
 						"Index": 17,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 17",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8390,7 +8485,7 @@
 					"uid": 136,
 					"instanceVariables": {
 						"Index": 18,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 18",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8425,7 +8520,7 @@
 					"uid": 137,
 					"instanceVariables": {
 						"Index": 19,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 19",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8460,7 +8555,7 @@
 					"uid": 138,
 					"instanceVariables": {
 						"Index": 20,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 20",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8495,7 +8590,7 @@
 					"uid": 139,
 					"instanceVariables": {
 						"Index": 21,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 21",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8530,7 +8625,7 @@
 					"uid": 140,
 					"instanceVariables": {
 						"Index": 22,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 22",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8565,7 +8660,7 @@
 					"uid": 141,
 					"instanceVariables": {
 						"Index": 23,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 23",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8600,7 +8695,7 @@
 					"uid": 142,
 					"instanceVariables": {
 						"Index": 24,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 24",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8635,7 +8730,7 @@
 					"uid": 143,
 					"instanceVariables": {
 						"Index": 25,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 25",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8670,7 +8765,7 @@
 					"uid": 144,
 					"instanceVariables": {
 						"Index": 26,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 26",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8705,7 +8800,7 @@
 					"uid": 145,
 					"instanceVariables": {
 						"Index": 27,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 27",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8740,7 +8835,7 @@
 					"uid": 146,
 					"instanceVariables": {
 						"Index": 28,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 28",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8775,7 +8870,7 @@
 					"uid": 147,
 					"instanceVariables": {
 						"Index": 29,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 29",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8810,7 +8905,7 @@
 					"uid": 148,
 					"instanceVariables": {
 						"Index": 30,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 30",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8845,7 +8940,7 @@
 					"uid": 149,
 					"instanceVariables": {
 						"Index": 31,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 31",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8880,7 +8975,7 @@
 					"uid": 150,
 					"instanceVariables": {
 						"Index": 32,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 32",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8915,7 +9010,7 @@
 					"uid": 151,
 					"instanceVariables": {
 						"Index": 33,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 33",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8950,7 +9045,7 @@
 					"uid": 152,
 					"instanceVariables": {
 						"Index": 34,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 34",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -8985,7 +9080,7 @@
 					"uid": 153,
 					"instanceVariables": {
 						"Index": 35,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 35",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -9020,7 +9115,7 @@
 					"uid": 154,
 					"instanceVariables": {
 						"Index": 36,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 36",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -9055,7 +9150,7 @@
 					"uid": 155,
 					"instanceVariables": {
 						"Index": 37,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 37",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -9090,7 +9185,7 @@
 					"uid": 156,
 					"instanceVariables": {
 						"Index": 38,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 38",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -9125,7 +9220,7 @@
 					"uid": 157,
 					"instanceVariables": {
 						"Index": 39,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 39",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -9160,7 +9255,7 @@
 					"uid": 158,
 					"instanceVariables": {
 						"Index": 40,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 40",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -9195,7 +9290,7 @@
 					"uid": 159,
 					"instanceVariables": {
 						"Index": 41,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 41",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -9230,7 +9325,7 @@
 					"uid": 160,
 					"instanceVariables": {
 						"Index": 42,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 42",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -9265,7 +9360,7 @@
 					"uid": 161,
 					"instanceVariables": {
 						"Index": 43,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 43",
 						"Name": "",
 						"Description": "",
 						"Score": 0
@@ -9300,7 +9395,7 @@
 					"uid": 162,
 					"instanceVariables": {
 						"Index": 44,
-						"LevelName": "Test Layout",
+						"LevelName": "Level 44",
 						"Name": "",
 						"Description": "",
 						"Score": 0

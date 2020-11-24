@@ -9,14 +9,22 @@
 			"behaviorId": "solid",
 			"name": "Solid",
 			"sid": 792511296090515
-		},
-		{
-			"behaviorId": "Physics",
-			"name": "Physics",
-			"sid": 817892110698325
 		}
 	],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		},
+		{
+			"effectId": "glowvertical",
+			"name": "GlowVertical"
+		},
+		{
+			"effectId": "hsladjust",
+			"name": "AdjustHSL"
+		}
+	],
 	"image": {
 		"width": 176,
 		"height": 80,

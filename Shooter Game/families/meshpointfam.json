@@ -1,0 +1,11 @@
+{
+	"name": "MeshpointFam",
+	"plugin-id": "Sprite",
+	"sid": 123001104553015,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"MeshPoint"
+	]
+}

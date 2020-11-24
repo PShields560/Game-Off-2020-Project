@@ -27,6 +27,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 161450210946659
+		},
+		{
+			"name": "DistanceToOriginalPos",
+			"type": "number",
+			"desc": "",
+			"sid": 721958009566727
 		}
 	],
 	"behaviorTypes": [],

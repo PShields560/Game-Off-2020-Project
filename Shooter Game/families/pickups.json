@@ -37,6 +37,7 @@
 		"Pickup_Points_Upgrade_Mega",
 		"Pickup_Points_Score_Big",
 		"Pickup_Points_Score_Huge",
-		"Pickup_Points_Score_Mega"
+		"Pickup_Points_Score_Mega",
+		"Pickup_NewWeapon"
 	]
 }

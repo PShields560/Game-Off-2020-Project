@@ -112,6 +112,11 @@
 			"behaviorId": "Persist",
 			"name": "Persist",
 			"sid": 566172324780860
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 810628341369940
 		}
 	],
 	"effectTypes": [],

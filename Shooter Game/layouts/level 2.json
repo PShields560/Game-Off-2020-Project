@@ -191,7 +191,7 @@
 							"height": 88,
 							"max-width": 178,
 							"max-height": 149,
-							"data": "7x1,69x37,12x1,61x0,88x1,61x0,88x1,61x0,88x1,61x0,88x1,61x0,88x1,61x0,88x1,61x0,88x1,61x0,88x1,61x0,88x1,61x0,14x1,34,13x29,45,59x1,61x0,13x1,34,5,13x0,27,2x29,45,56x1,61x0,12x1,34,5,17x0,27,29,45,54x1,61x0,12x1,13,20x0,27,29,45,52x1,61x0,12x1,13,22x0,27,29,45,50x1,61x0,11x1,34,5,24x0,43,50x1,61x0,11x1,13,25x0,27,45,20x1,34,6x29,45,21x1,61x0,10x1,34,5,26x0,27,45,14x1,34,4x29,5,6x0,43,21x1,61x0,10x1,13,28x0,43,14x1,13,11x0,27,2x29,45,18x1,61x0,10x1,13,28x0,27,45,10x1,34,2x29,5,14x0,27,45,17x1,61x0,9x1,34,5,29x0,43,10x1,13,18x0,27,29,45,15x1,61x0,8x1,34,5,30x0,43,10x1,13,20x0,27,29,45,13x1,61x0,7x1,34,5,31x0,43,7x1,34,2x29,1,22x0,43,13x1,61x0,7x1,13,32x0,43,7x1,13,25x0,27,29,45,11x1,61x0,43,6x1,13,32x0,43,7x1,13,27x0,27,2x29,45,8x1,61x0,43,6x1,13,32x0,43,5x1,34,29,5,13x0,35,37,8,14x0,43,8x1,61x0,43,6x1,13,32x0,43,5x1,13,13x0,35,37,46,1,42,2x37,8,11x0,43,8x1,61x0,43,6x1,13,29x0,35,2x37,46,5x1,13,11x0,35,37,46,6x1,42,2x37,8,8x0,43,8x1,61x0,43,6x1,13,28x0,35,46,7x1,34,5,11x0,43,11x1,13,8x0,27,29,45,6x1,61x0,43,6x1,13,24x0,35,3x37,46,7x1,34,5,10x0,35,37,46,4x1,34,6x29,5,10x0,43,6x1,61x0,43,6x1,13,22x0,35,37,46,1,34,4x29,45,3x1,34,5,10x0,35,46,6x1,13,17x0,43,6x1,61x0,43,6x1,13,21x0,35,46,2x1,34,5,4x0,27,3x29,5,10x0,35,46,5x1,34,29,5,17x0,43,6x1,61x0,43,5x1,34,5,21x0,43,3x1,13,19x0,35,46,5x1,34,5,19x0,43,6x1,61x0,43,5x1,13,21x0,35,46,2x1,34,5,19x0,43,5x1,34,5,20x0,27,45,5x1,61x0,43,4x1,34,5,21x0,43,2x1,34,5,20x0,43,5x1,13,22x0,27,45,4x1,61x0,43,4x1,13,22x0,43,2x1,13,20x0,35,46,5x1,13,23x0,43,4x1,61x0,43,4x1,13,22x0,43,1,34,5,19x0,35,46,6x1,13,23x0,43,4x1,61x0,43,4x1,13,20x0,35,37,46,1,13,20x0,43,7x1,13,23x0,43,4x1,61x0,43,4x1,13,17x0,35,2x37,46,3x1,13,19x0,35,46,6x1,34,5,23x0,43,4x1,61x0,43,4x1,13,16x0,35,46,5x1,34,5,18x0,35,46,7x1,13,24x0,43,4x1,61x0,43,4x1,13,16x0,43,6x1,13,18x0,35,46,8x1,13,24x0,43,4x1,61x0,43,3x1,34,5,14x0,35,37,46,6x1,13,18x0,43,9x1,13,24x0,43,4x1,61x0,43,3x1,13,13x0,35,37,46,8x1,13,18x0,43,9x1,13,24x0,43,4x1,61x0,43,3x1,13,12x0,35,46,9x1,34,5,18x0,43,9x1,13,24x0,43,4x1,61x0,43,3x1,13,11x0,35,46,9x1,34,5,18x0,35,46,8x1,34,5,24x0,43,4x1,61x0,43,3x1,13,10x0,35,46,8x1,34,29,5,19x0,43,9x1,13,24x0,35,46,4x1,61x0,43,3x1,13,10x0,27,45,6x1,34,29,5,21x0,43,8x1,34,5,24x0,43,5x1,61x0,43,3x1,13,11x0,27,6x29,5,23x0,43,7x1,34,5,25x0,43,5x1,61x0,43,3x1,13,42x0,43,7x1,13,26x0,43,5x1,61x0,43,3x1,13,42x0,43,6x1,34,5,26x0,43,5x1,61x0,43,3x1,13,41x0,35,46,6x1,13,27x0,43,5x1,61x0,43,3x1,13,41x0,43,7x1,13,26x0,35,46,5x1,61x0,43,3x1,13,41x0,43,7x1,13,26x0,43,6x1,61x0,43,3x1,13,41x0,27,45,5x1,34,5,18x0,35,7x37,46,6x1,61x0,43,3x1,13,23x0,35,37,8,16x0,43,5x1,13,19x0,43,14x1,61x0,43,3x1,13,22x0,35,46,1,42,8,14x0,35,46,5x1,13,14x0,35,4x37,46,14x1,61x0,43,3x1,13,20x0,35,37,46,3x1,42,8,13x0,43,5x1,34,5,7x0,35,6x37,46,19x1,61x0,43,2x1,34,5,19x0,35,46,6x1,42,2x37,8,9x0,35,46,5x1,13,8x0,27,3x29,45,22x1,61x0,43,2x1,13,18x0,35,37,46,10x1,42,8,6x0,35,37,46,6x1,42,8,11x0,27,7x29,45,14x1,61x0,43,2x1,13,16x0,35,37,46,13x1,42,37,8,2x0,35,37,46,9x1,13,19x0,27,45,13x1,61x0,43,2x1,13,16x0,43,17x1,42,2x37,46,11x1,42,8,19x0,27,3x29,45,9x1,61x0,43,2x1,13,13x0,35,2x37,46,33x1,13,23x0,27,45,8x1,61x0,43,2x1,42,8,12x0,43,36x1,13,24x0,43,8x1,61x0,43,3x1,13,10x0,35,37,46,36x1,42,37,8,22x0,27,45,7x1,61x0,43,3x1,13,10x0,27,3x29,45,36x1,42,8,22x0,43,7x1,61x0,43,2x1,34,5,14x0,27,5x29,45,31x1,42,6x37,8,15x0,43,7x1,61x0,43,2x1,13,21x0,27,3x29,45,34x1,13,15x0,43,7x1,61x0,43,1,34,5,25x0,27,45,33x1,42,5x37,8,9x0,43,7x1,61x0,43,1,13,27x0,27,2x29,45,36x1,13,9x0,27,45,6x1,61x0,43,1,13,30x0,27,29,45,34x1,42,37,8,8x0,43,6x1,61x0,43,1,13,32x0,27,29,45,34x1,42,37,8,6x0,43,6x1,61x0,43,1,13,34x0,27,45,34x1,34,5,6x0,27,45,5x1,61x0,43,1,42,8,34x0,27,45,31x1,34,29,5,8x0,43,5x1,61x0,43,2x1,13,35x0,43,31x1,13,10x0,43,5x1,61x0,43,2x1,13,35x0,27,45,30x1,13,10x0,43,5x1,61x0,43,2x1,13,36x0,43,27x1,34,2x29,5,9x0,35,46,5x1,61x0,43,2x1,13,36x0,43,26x1,34,5,12x0,43,6x1,61x0,43,2x1,13,36x0,27,29,45,24x1,13,12x0,35,46,6x1,61x0,43,2x1,13,38x0,27,29,45,21x1,34,5,11x0,35,46,7x1,61x0,43,2x1,42,8,39x0,27,45,19x1,34,5,12x0,43,8x1,61x0,43,3x1,42,37,8,38x0,43,18x1,34,5,12x0,35,46,8x1,61x0,43,5x1,13,38x0,27,2x29,45,11x1,34,3x29,5,12x0,35,46,9x1,61x0,43,5x1,13,41x0,27,45,9x1,34,5,15x0,35,46,10x1,61x0,43,5x1,13,42x0,27,45,7x1,34,5,13x0,35,2x37,46,11x1,61x0,43,5x1,42,8,42x0,43,7x1,13,14x0,43,14x1,61x0,43,6x1,13,42x0,43,7x1,13,12x0,35,37,46,14x1,61x0,43,6x1,13,42x0,27,45,5x1,34,5,12x0,43,16x1,61x0,43,6x1,13,43x0,43,5x1,13,12x0,35,46,16x1,61x0,43,6x1,13,43x0,27,29,45,3x1,13,11x0,35,46,17x1,61x0,43,6x1,42,8,44x0,27,45,2x1,42,8,10x0,43,18x1,61x0,43,7x1,42,8,44x0,27,45,2x1,13,10x0,27,29,45,16x1,61x0,43,8x1,13,45x0,43,2x1,13,12x0,27,29,45,14x1,61x0,43,8x1,42,2x37,8,42x0,43,2x1,42,8,13x0,27,4x29,45,9x1,61x0,43,11x1,42,8,41x0,43,3x1,42,8,17x0,27,29,45,7x1,61x0,43,12x1,42,8,40x0,27,45,3x1,42,2x37,8,16x0,27,29,45,5x1,61x0,43,13x1,42,8,40x0,43,6x1,13,18x0,43,5x1,61x0,43,14x1,13,40x0,43,6x1,42,8,17x0,43,5x1,61x0,43,14x1,42,8,39x0,43,7x1,42,8,16x0,43,5x1,61x0,43,15x1,42,2x37,8,36x0,43,8x1,13,16x0,43,5x1,61x0,43,18x1,13,36x0,43,8x1,42,8,15x0,27,45,4x1,61x0,19x1,42,8,35x0,43,9x1,42,37,8,14x0,27,45,3x1,61x0,20x1,42,5x37,8,29x0,43,11x1,13,15x0,43,3x1,61x0,26x1,13,28x0,35,46,11x1,42,8,14x0,43,3x1,61x0,26x1,42,8,26x0,35,46,13x1,42,37,8,12x0,43,3x1,61x0,27x1,42,37,8,24x0,43,16x1,42,8,11x0,43,3x1,61x0,29x1,42,7x37,8,10x0,35,5x37,46,17x1,42,8,10x0,43,3x1,61x0,37x1,42,10x37,46,24x1,42,8,4x0,35,4x37,46,3x1,61x0,74x1,42,8,3x0,43,8x1,61x0,75x1,42,3x37,46,8x1,61x0,88x1,61x0,88x1,61x0,88x1,61x0,88x1,9746x0"
+							"data": "7x1,69x37,12x1,61x0,88x1,61x0,88x1,61x0,23x1,34,7x29,45,56x1,61x0,12x1,34,3x29,45,34,5x29,5,7x0,27,9x29,45,46x1,61x0,9x1,34,2x29,5,3x0,27,5,23x0,27,5x29,45,40x1,61x0,8x1,34,5,37x0,27,2x29,45,37x1,61x0,6x1,34,29,5,41x0,27,29,45,35x1,61x0,5x1,34,5,45x0,27,45,34x1,61x0,5x1,13,47x0,27,45,33x1,61x0,5x1,13,48x0,27,45,32x1,61x0,4x1,34,5,49x0,27,45,31x1,61x0,4x1,13,51x0,43,31x1,61x0,3x1,34,5,51x0,27,45,30x1,61x0,3x1,13,53x0,43,30x1,61x0,3x1,13,12x0,35,7x37,8,14x0,35,2x37,8,14x0,43,30x1,61x0,2x1,34,5,11x0,35,46,34,4x29,45,1,42,8,12x0,35,46,2x1,42,8,13x0,43,30x1,61x0,2x1,13,11x0,35,46,34,5,4x0,27,29,45,42,37,8,10x0,43,4x1,13,13x0,27,45,29x1,61x0,2x1,13,11x0,43,34,5,7x0,27,29,45,42,10x37,46,4x1,13,14x0,43,29x1,61x0,2x1,13,11x0,43,13,10x0,27,2x29,45,13x1,13,14x0,43,29x1,61x0,2x1,13,11x0,30,5,13x0,27,5x29,45,7x1,13,14x0,43,29x1,61x0,2x1,13,10x0,35,12,20x0,27,2x29,45,3x1,34,5,13x0,35,46,29x1,61x0,2x1,42,8,9x0,43,13,23x0,43,2x1,34,5,14x0,43,30x1,61x0,3x1,13,9x0,43,13,23x0,27,2x29,5,15x0,43,30x1,61x0,43,2x1,13,9x0,27,40,8,40x0,35,46,30x1,61x0,43,2x1,13,10x0,43,13,39x0,35,46,31x1,61x0,43,2x1,13,10x0,27,11,37x0,35,37,46,32x1,61x0,43,2x1,13,11x0,38,8,33x0,35,2x37,46,34x1,61x0,43,2x1,42,8,10x0,43,42,8,30x0,35,37,46,37x1,61x0,43,3x1,13,10x0,27,45,13,28x0,35,37,46,3x1,34,3x29,45,31x1,61x0,43,3x1,13,11x0,43,42,8,26x0,35,46,2x1,34,2x29,5,3x0,27,4x29,45,26x1,61x0,43,3x1,42,8,10x0,27,45,42,8,24x0,35,46,1,34,29,5,11x0,27,2x29,45,23x1,61x0,43,4x1,42,8,10x0,27,45,42,37,8,20x0,35,37,46,1,34,5,16x0,27,45,22x1,61x0,43,5x1,42,8,10x0,27,45,1,42,8,19x0,43,2x1,34,5,18x0,43,22x1,61x0,43,6x1,13,11x0,27,29,45,42,8,17x0,35,46,1,34,5,19x0,27,45,21x1,61x0,43,6x1,42,8,12x0,27,45,13,17x0,43,2x1,13,6x0,35,5x37,8,8x0,43,21x1,61x0,43,7x1,13,13x0,27,40,8,15x0,35,46,1,34,5,5x0,35,46,5x1,42,8,7x0,27,45,20x1,61x0,43,7x1,42,37,8,12x0,27,40,8,13x0,35,46,1,34,5,5x0,35,46,7x1,42,37,8,6x0,43,20x1,61x0,43,9x1,42,8,12x0,43,42,2x37,8,9x0,35,46,2x1,13,5x0,35,46,10x1,13,6x0,43,20x1,61x0,43,10x1,42,2x37,8,9x0,27,45,2x1,42,4x37,8,3x0,35,46,2x1,34,5,5x0,43,11x1,42,8,5x0,43,20x1,61x0,43,13x1,42,3x37,8,6x0,27,45,6x1,42,3x37,46,3x1,13,5x0,35,46,12x1,13,5x0,27,4x29,45,15x1,61x0,43,17x1,42,8,6x0,43,13x1,34,5,5x0,43,10x1,34,2x29,5,10x0,27,29,45,13x1,61x0,43,18x1,42,8,5x0,43,13x1,13,6x0,43,8x1,34,29,5,15x0,27,29,45,11x1,61x0,43,19x1,13,5x0,43,13x1,13,5x0,35,46,6x1,34,29,5,19x0,27,45,10x1,61x0,43,19x1,42,8,4x0,43,13x1,13,5x0,43,6x1,34,5,22x0,27,45,9x1,61x0,43,20x1,13,4x0,43,13x1,13,5x0,43,5x1,34,5,24x0,27,45,8x1,61x0,43,20x1,13,4x0,43,13x1,13,5x0,43,5x1,13,26x0,27,45,7x1,61x0,43,19x1,34,5,4x0,43,13x1,13,5x0,43,5x1,13,27x0,43,7x1,61x0,43,19x1,13,5x0,43,13x1,13,5x0,43,4x1,34,5,27x0,27,45,6x1,61x0,43,19x1,13,4x0,35,46,13x1,13,5x0,27,45,3x1,13,29x0,27,45,5x1,61x0,43,18x1,34,5,4x0,43,13x1,34,5,6x0,43,2x1,34,5,30x0,43,5x1,61x0,43,18x1,13,5x0,43,13x1,13,7x0,43,2x1,13,31x0,27,45,4x1,61x0,43,18x1,13,4x0,35,46,12x1,34,5,7x0,43,2x1,13,32x0,43,4x1,61x0,43,17x1,34,5,4x0,43,13x1,13,8x0,43,2x1,13,32x0,27,45,3x1,61x0,43,17x1,13,5x0,43,12x1,34,5,8x0,43,2x1,13,33x0,43,3x1,61x0,43,17x1,13,5x0,43,12x1,13,9x0,27,45,1,13,33x0,43,3x1,61x0,43,16x1,34,5,4x0,35,46,11x1,34,5,10x0,43,1,13,33x0,43,3x1,61x0,43,16x1,13,5x0,43,12x1,13,11x0,43,1,13,33x0,43,3x1,61x0,43,15x1,34,5,5x0,43,11x1,34,5,11x0,43,1,13,33x0,43,3x1,61x0,43,8x1,34,6x29,5,5x0,35,46,11x1,13,12x0,43,1,13,33x0,43,3x1,61x0,43,6x1,34,29,5,12x0,43,12x1,13,12x0,43,1,13,33x0,43,3x1,61x0,43,6x1,13,13x0,14,28,29,45,9x1,34,5,12x0,43,1,13,33x0,43,3x1,61x0,43,5x1,34,5,16x0,27,29,45,7x1,13,13x0,43,1,13,33x0,27,45,2x1,61x0,43,5x1,13,19x0,27,2x29,45,4x1,13,13x0,43,1,13,34x0,43,2x1,61x0,43,5x1,13,22x0,43,4x1,13,13x0,43,1,13,34x0,43,2x1,61x0,43,5x1,13,22x0,43,4x1,13,13x0,43,1,13,34x0,43,2x1,61x0,43,5x1,13,22x0,27,45,3x1,13,13x0,43,1,13,34x0,43,2x1,61x0,43,5x1,13,23x0,27,45,2x1,13,13x0,43,1,13,34x0,43,2x1,61x0,43,5x1,13,24x0,43,2x1,42,8,12x0,43,1,42,8,33x0,43,2x1,61x0,43,5x1,13,24x0,43,3x1,13,12x0,43,2x1,13,33x0,43,2x1,61x0,43,5x1,13,24x0,27,45,2x1,13,12x0,43,2x1,13,33x0,43,2x1,61x0,43,5x1,13,25x0,43,2x1,13,12x0,27,45,1,42,8,31x0,35,46,2x1,61x0,43,5x1,13,25x0,43,2x1,13,13x0,43,2x1,13,31x0,43,3x1,61x0,43,5x1,13,25x0,43,2x1,13,13x0,43,2x1,13,31x0,43,3x1,61x0,43,5x1,13,25x0,43,1,34,5,13x0,43,2x1,42,8,29x0,35,46,3x1,61x0,43,5x1,42,8,24x0,43,1,13,14x0,27,45,2x1,13,29x0,43,4x1,61x0,43,6x1,13,24x0,43,1,13,15x0,43,2x1,42,8,26x0,35,37,46,4x1,61x0,43,6x1,13,24x0,43,1,13,15x0,43,3x1,42,37,8,23x0,35,46,6x1,61x0,43,6x1,13,23x0,35,46,1,13,15x0,27,45,4x1,13,22x0,35,46,7x1,61x0,43,6x1,13,23x0,43,2x1,13,16x0,43,4x1,42,37,8,20x0,43,8x1,61x0,43,6x1,13,23x0,43,2x1,42,8,15x0,27,45,5x1,42,37,8,17x0,35,46,8x1,61x0,43,6x1,13,23x0,43,3x1,13,16x0,43,7x1,42,37,8,14x0,35,46,9x1,61x0,43,6x1,13,23x0,43,3x1,13,16x0,27,45,8x1,42,5x37,8,6x0,35,37,46,10x1,61x0,43,6x1,42,8,21x0,35,46,3x1,42,8,16x0,43,14x1,13,6x0,43,12x1,61x0,43,7x1,13,21x0,43,5x1,42,8,15x0,43,14x1,13,6x0,43,12x1,61x0,43,7x1,13,21x0,43,6x1,13,15x0,27,45,13x1,13,6x0,43,12x1,61x0,43,7x1,42,8,19x0,35,46,6x1,42,8,15x0,43,13x1,13,6x0,43,12x1,61x0,43,8x1,13,19x0,43,8x1,13,15x0,43,9x1,34,3x29,5,6x0,27,2x29,45,9x1,61x0,43,8x1,42,8,18x0,43,8x1,13,15x0,43,8x1,34,5,13x0,27,45,8x1,61x0,43,9x1,13,18x0,27,45,6x1,34,5,15x0,43,7x1,34,5,15x0,27,45,7x1,61x0,43,9x1,13,19x0,27,29,45,3x1,34,5,16x0,43,7x1,13,17x0,27,45,6x1,61x0,43,9x1,42,8,20x0,27,3x29,5,17x0,43,6x1,34,5,18x0,43,6x1,61x0,43,10x1,13,42x0,43,6x1,13,19x0,43,6x1,61x0,43,10x1,13,42x0,43,5x1,34,5,19x0,27,45,5x1,61x0,43,10x1,42,8,41x0,43,5x1,13,21x0,27,45,4x1,61x0,43,11x1,13,41x0,43,5x1,13,22x0,43,4x1,61x0,43,11x1,42,8,40x0,43,5x1,13,22x0,43,4x1,61x0,43,12x1,13,40x0,43,4x1,34,5,22x0,43,4x1,61x0,43,12x1,13,40x0,43,4x1,13,23x0,43,4x1,61x0,43,12x1,42,8,38x0,35,46,4x1,13,23x0,43,4x1,61x0,14x1,13,38x0,43,5x1,13,23x0,27,45,3x1,61x0,14x1,42,8,36x0,35,46,5x1,13,24x0,43,3x1,61x0,15x1,13,35x0,35,46,6x1,13,24x0,43,3x1,61x0,15x1,42,8,34x0,43,7x1,13,24x0,43,3x1,61x0,16x1,42,8,31x0,35,37,46,7x1,42,8,23x0,43,3x1,61x0,17x1,42,8,27x0,35,2x37,46,10x1,42,8,22x0,43,3x1,61x0,18x1,42,2x37,8,22x0,35,37,46,14x1,13,20x0,35,37,46,3x1,61x0,21x1,42,3x37,8,15x0,35,2x37,46,16x1,42,8,17x0,35,37,46,5x1,61x0,25x1,42,4x37,8,7x0,35,2x37,46,20x1,42,8,15x0,35,46,7x1,61x0,30x1,42,7x37,46,24x1,42,4x37,8,5x0,35,4x37,46,8x1,61x0,68x1,42,5x37,46,13x1,61x0,88x1,61x0,88x1,9746x0"
 						},
 						"tile-width": 16,
 						"tile-height": 16,
@@ -297,20 +297,6 @@
 								"enabled": true,
 								"tags": "Bullet Wall"
 							}
-						},
-						"Physics": {
-							"properties": {
-								"immovable": true,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
 						}
 					},
 					"ownData": {
@@ -327,6 +313,25 @@
 						"tile-y-offset": 0,
 						"tile-x-spacing": 0,
 						"tile-y-spacing": 0
+					},
+					"effects": {
+						"GlowHorizontal": {
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"GlowVertical": {
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"AdjustHSL": {
+							"parameters": {
+								"hue": 0,
+								"saturation": 1,
+								"luminosity": 1
+							}
+						}
 					},
 					"world": {
 						"x": 0,
@@ -429,8 +434,8 @@
 						}
 					},
 					"world": {
-						"x": 1568,
-						"y": 1232,
+						"x": 1664,
+						"y": 1136,
 						"width": 45,
 						"height": 40,
 						"originX": 0.5,
@@ -515,8 +520,8 @@
 						}
 					},
 					"world": {
-						"x": 1568,
-						"y": 1232,
+						"x": 1664,
+						"y": 1136,
 						"width": 45,
 						"height": 40,
 						"originX": 0.5,
@@ -721,6 +726,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -781,6 +789,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -841,6 +852,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -901,6 +915,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1009,8 +1026,8 @@
 						}
 					},
 					"world": {
-						"x": -312,
-						"y": 0,
+						"x": 1344,
+						"y": 1104,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -1107,6 +1124,9 @@
 					"behaviors": {
 						"Persist": {
 							"properties": {}
+						},
+						"Timer": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1194,8 +1214,8 @@
 						}
 					},
 					"world": {
-						"x": 1552,
-						"y": 800,
+						"x": 352,
+						"y": 320,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
@@ -1245,8 +1265,8 @@
 						}
 					},
 					"world": {
-						"x": 1552,
-						"y": 800,
+						"x": 352,
+						"y": 320,
 						"width": 80,
 						"height": 80,
 						"originX": 0.5,
@@ -1262,9 +1282,9 @@
 					}
 				},
 				{
-					"type": "Key_Unlock_Touch",
+					"type": "EnemySpawner_SingleShot",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1272,34 +1292,18 @@
 					},
 					"uid": 349,
 					"instanceVariables": {
-						"KeyID": 0,
-						"IsHold": false,
-						"IsActive": false
+						"EnemyType": "Blocker"
 					},
 					"behaviors": {
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"effects": {
-						"AdjustHSL": {
-							"parameters": {
-								"hue": 0,
-								"saturation": 1,
-								"luminosity": 1
-							}
+						"Persist": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 240,
-						"y": 336,
-						"width": 80,
-						"height": 80,
+						"x": 336,
+						"y": 448,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1313,9 +1317,9 @@
 					}
 				},
 				{
-					"type": "LockBlock",
+					"type": "EnemySpawner_SingleShot",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1323,38 +1327,18 @@
 					},
 					"uid": 350,
 					"instanceVariables": {
-						"IsTouchLock": true,
-						"IsBulletLock": false,
-						"IsBallLock": false,
-						"KeyID": 0
+						"EnemyType": "Blocker"
 					},
 					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Physics": {
-							"properties": {
-								"immovable": true,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
+						"Persist": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 1008,
-						"y": 208,
-						"width": 32,
-						"height": 32,
+						"x": 400,
+						"y": 432,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1368,9 +1352,9 @@
 					}
 				},
 				{
-					"type": "LockBlock",
+					"type": "EnemySpawner_SingleShot",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1378,38 +1362,18 @@
 					},
 					"uid": 351,
 					"instanceVariables": {
-						"IsTouchLock": true,
-						"IsBulletLock": false,
-						"IsBallLock": false,
-						"KeyID": 0
+						"EnemyType": "Blocker"
 					},
 					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Physics": {
-							"properties": {
-								"immovable": true,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
+						"Persist": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 1008,
-						"y": 176,
-						"width": 32,
-						"height": 32,
+						"x": 448,
+						"y": 400,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1423,9 +1387,9 @@
 					}
 				},
 				{
-					"type": "LockBlock",
+					"type": "EnemySpawner_SingleShot",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1433,38 +1397,18 @@
 					},
 					"uid": 352,
 					"instanceVariables": {
-						"IsTouchLock": true,
-						"IsBulletLock": false,
-						"IsBallLock": false,
-						"KeyID": 0
+						"EnemyType": "Blocker"
 					},
 					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Physics": {
-							"properties": {
-								"immovable": true,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
+						"Persist": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 1008,
-						"y": 144,
-						"width": 32,
-						"height": 32,
+						"x": 480,
+						"y": 352,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1478,9 +1422,9 @@
 					}
 				},
 				{
-					"type": "LockBlock",
+					"type": "EnemySpawner_SingleShot",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1488,38 +1432,18 @@
 					},
 					"uid": 353,
 					"instanceVariables": {
-						"IsTouchLock": true,
-						"IsBulletLock": false,
-						"IsBallLock": false,
-						"KeyID": 0
+						"EnemyType": "Blocker"
 					},
 					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Physics": {
-							"properties": {
-								"immovable": true,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
+						"Persist": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 1008,
-						"y": 112,
-						"width": 32,
-						"height": 32,
+						"x": 512,
+						"y": 624,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1533,9 +1457,9 @@
 					}
 				},
 				{
-					"type": "LockBlock",
+					"type": "EnemySpawner_SingleShot",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1543,38 +1467,18 @@
 					},
 					"uid": 354,
 					"instanceVariables": {
-						"IsTouchLock": true,
-						"IsBulletLock": false,
-						"IsBallLock": false,
-						"KeyID": 0
+						"EnemyType": "Blocker"
 					},
 					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Physics": {
-							"properties": {
-								"immovable": true,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
+						"Persist": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 1008,
-						"y": 80,
-						"width": 32,
-						"height": 32,
+						"x": 400,
+						"y": 576,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1600,10 +1504,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 624,
-						"y": 1024,
+						"x": 288,
+						"y": 800,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1631,10 +1539,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 768,
-						"y": 1184,
+						"x": 96,
+						"y": 560,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1662,10 +1574,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 544,
-						"y": 1216,
+						"x": 240,
+						"y": 544,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1693,10 +1609,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 480,
-						"y": 784,
+						"x": 1456,
+						"y": 448,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1724,10 +1644,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 864,
-						"y": 640,
+						"x": 1664,
+						"y": 368,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1755,10 +1679,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 672,
-						"y": 528,
+						"x": 1584,
+						"y": 352,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1786,10 +1714,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 736,
-						"y": 112,
+						"x": 1504,
+						"y": 384,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1817,10 +1749,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 624,
-						"y": 272,
+						"x": 1360,
+						"y": 656,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1848,10 +1784,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 448,
-						"y": 176,
+						"x": 1232,
+						"y": 752,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1879,10 +1819,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 352,
-						"y": 576,
+						"x": 1216,
+						"y": 592,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1910,10 +1854,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 240,
-						"y": 432,
+						"x": 1040,
+						"y": 720,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1941,10 +1889,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 432,
-						"y": 336,
+						"x": 928,
+						"y": 624,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1972,10 +1924,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 1104,
-						"y": 240,
+						"x": 1088,
+						"y": 416,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -2003,10 +1959,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 1328,
-						"y": 224,
+						"x": 1024,
+						"y": 320,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -2034,10 +1994,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 1216,
-						"y": 400,
+						"x": 1024,
+						"y": 208,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -2065,10 +2029,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 1488,
-						"y": 304,
+						"x": 1088,
+						"y": 128,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -2096,10 +2064,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 1424,
-						"y": 480,
+						"x": 1008,
+						"y": 864,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -2127,10 +2099,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 1312,
-						"y": 592,
+						"x": 848,
+						"y": 1024,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -2158,10 +2134,14 @@
 					"instanceVariables": {
 						"EnemyType": "Blocker"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
-						"x": 1568,
-						"y": 496,
+						"x": 912,
+						"y": 1216,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -2187,11 +2167,750 @@
 					},
 					"uid": 374,
 					"instanceVariables": {
-						"EnemyType": "Blocker"
+						"EnemyType": "Crasher"
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1280,
+						"y": 1136,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 375,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 768,
+						"y": 896,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 376,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 784,
+						"y": 1184,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 377,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1008,
+						"y": 1056,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 378,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 592,
+						"y": 736,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 379,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 864,
+						"y": 672,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 380,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1216,
+						"y": 672,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 381,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 1488,
+						"y": 736,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 382,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1600,
+						"y": 496,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 383,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1136,
+						"y": 336,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 384,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1120,
+						"y": 240,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 385,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 736,
+						"y": 368,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 386,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 512,
+						"y": 208,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 387,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 288,
+						"y": 80,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 388,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 192,
+						"y": 192,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 389,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 112,
+						"y": 336,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 390,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 192,
+						"y": 448,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 391,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 160,
+						"y": 624,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 392,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 160,
+						"y": 768,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 393,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 240,
+						"y": 864,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 394,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 368,
+						"y": 736,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemySpawner_SingleShot",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 395,
+					"instanceVariables": {
+						"EnemyType": "Crasher"
+					},
+					"behaviors": {
+						"Persist": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 432,
 						"y": 656,
 						"width": 16,
 						"height": 16,
@@ -2208,1269 +2927,9 @@
 					}
 				},
 				{
-					"type": "AsteroidLvl0",
+					"type": "EnemySpawner_SingleShot",
 					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 375,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 320,
-						"y": 896,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 376,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 416,
-						"y": 784,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 377,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 768,
-						"y": 656,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 378,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 576,
-						"y": 704,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 379,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 784,
-						"y": 496,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 380,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 624,
-						"y": 560,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 381,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 400,
-						"y": 496,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 382,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 320,
-						"y": 256,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 383,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 272,
-						"y": 512,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 384,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 592,
-						"y": 192,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 385,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 896,
-						"y": 208,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 386,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 1200,
-						"y": 144,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 387,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 1312,
-						"y": 368,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 388,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 1424,
-						"y": 240,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 389,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 1104,
-						"y": 384,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 390,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 1376,
-						"y": 672,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 391,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 1488,
-						"y": 448,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl0",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 392,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 5,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 1600,
-						"y": 672,
-						"width": 18,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.47058823529411764,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 393,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 4,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 336,
-						"y": 416,
-						"width": 34,
-						"height": 34,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 394,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 4,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 528,
-						"y": 240,
-						"width": 34,
-						"height": 34,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 395,
-					"instanceVariables": {
-						"Health": 3
-					},
-					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 4,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 768,
-						"y": 560,
-						"width": 34,
-						"height": 34,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AsteroidLvl1",
-					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -3478,43 +2937,18 @@
 					},
 					"uid": 396,
 					"instanceVariables": {
-						"Health": 3
+						"EnemyType": "Crasher"
 					},
 					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 4,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
+						"Persist": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 576,
-						"y": 752,
-						"width": 34,
-						"height": 34,
+						"x": 544,
+						"y": 528,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3528,9 +2962,9 @@
 					}
 				},
 				{
-					"type": "AsteroidLvl1",
+					"type": "EnemySpawner_SingleShot",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -3538,43 +2972,18 @@
 					},
 					"uid": 397,
 					"instanceVariables": {
-						"Health": 3
+						"EnemyType": "Crasher"
 					},
 					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 4,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
+						"Persist": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 912,
-						"y": 144,
-						"width": 34,
-						"height": 34,
+						"x": 352,
+						"y": 512,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3588,9 +2997,9 @@
 					}
 				},
 				{
-					"type": "AsteroidLvl1",
+					"type": "EnemySpawner_SingleShot",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -3598,43 +3007,18 @@
 					},
 					"uid": 398,
 					"instanceVariables": {
-						"Health": 3
+						"EnemyType": "Crasher"
 					},
 					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 4,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
+						"Persist": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 1248,
-						"y": 288,
-						"width": 34,
-						"height": 34,
+						"x": 528,
+						"y": 416,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3648,9 +3032,9 @@
 					}
 				},
 				{
-					"type": "AsteroidLvl1",
+					"type": "EnemySpawner_SingleShot",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -3658,43 +3042,18 @@
 					},
 					"uid": 399,
 					"instanceVariables": {
-						"Health": 3
+						"EnemyType": "Crasher"
 					},
 					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 4,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Rotate": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
+						"Persist": {
+							"properties": {}
 						}
 					},
 					"world": {
-						"x": 1248,
-						"y": 512,
-						"width": 34,
-						"height": 34,
+						"x": 464,
+						"y": 496,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3708,7 +3067,7 @@
 					}
 				},
 				{
-					"type": "AsteroidLvl1",
+					"type": "Key_Unlock_Touch",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -3718,29 +3077,11 @@
 					},
 					"uid": 400,
 					"instanceVariables": {
-						"Health": 3
+						"KeyID": 0,
+						"IsHold": false,
+						"IsActive": false
 					},
 					"behaviors": {
-						"Physics": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": true,
-								"density": 4,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
 						"Rotate": {
 							"properties": {
 								"speed": 180,
@@ -3750,11 +3091,130 @@
 							}
 						}
 					},
+					"effects": {
+						"AdjustHSL": {
+							"parameters": {
+								"hue": 0,
+								"saturation": 1,
+								"luminosity": 1
+							}
+						}
+					},
 					"world": {
-						"x": 1504,
-						"y": 544,
-						"width": 34,
-						"height": 34,
+						"x": 1408,
+						"y": 1136,
+						"width": 80,
+						"height": 80,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "LockBlock",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 584,
+					"instanceVariables": {
+						"IsTouchLock": true,
+						"IsBulletLock": false,
+						"IsBallLock": false,
+						"KeyID": 0
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": true,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1344,
+						"y": 1136,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "LockBlock",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 585,
+					"instanceVariables": {
+						"IsTouchLock": true,
+						"IsBulletLock": false,
+						"IsBallLock": false,
+						"KeyID": 0
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": true,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1344,
+						"y": 1168,
+						"width": 32,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

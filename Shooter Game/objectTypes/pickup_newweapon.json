@@ -1,0 +1,88 @@
+{
+	"name": "Pickup_NewWeapon",
+	"plugin-id": "Sprite",
+	"sid": 128514691718417,
+	"isGlobal": true,
+	"instanceVariables": [
+		{
+			"name": "IsCollected",
+			"type": "boolean",
+			"desc": "",
+			"sid": 537169516208977
+		},
+		{
+			"name": "IsWeapon",
+			"type": "boolean",
+			"desc": "",
+			"sid": 471820493845512
+		},
+		{
+			"name": "IsPower",
+			"type": "boolean",
+			"desc": "",
+			"sid": 889664400253378
+		},
+		{
+			"name": "Num",
+			"type": "number",
+			"desc": "",
+			"sid": 998582840000400
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 413215694669831
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 15,
+						"height": 15,
+						"originX": 0.5333333333333333,
+						"originY": 0.4666666666666667,
+						"originalSource": "A:\\Dropbox\\Shootervania\\Sprites\\ShieldRestore.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5796642,
+						"collisionPoly": {
+							"points": [
+								0.10158730158730159,
+								0.034920634920634915,
+								0.5333333333333333,
+								0,
+								0.9142857142857143,
+								0.034920634920634915,
+								1,
+								0.4666666666666667,
+								0.9142857142857143,
+								0.8476190476190476,
+								0.5333333333333333,
+								0.9492063492063492,
+								0.10158730158730159,
+								0.8476190476190476,
+								0,
+								0.4666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 357797794331780,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -25,6 +25,11 @@
 			"behaviorId": "Rotate",
 			"name": "Rotate",
 			"sid": 534878120813041
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 752918901280745
 		}
 	],
 	"effectTypes": [],

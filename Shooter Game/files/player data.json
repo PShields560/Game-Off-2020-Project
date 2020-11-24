@@ -28,7 +28,7 @@
         "Weapon 6 Upgrade Cost": 1000,
         "HP Upgrade Cost": 500,
         "Energy Upgrade Cost": 500,
-        "Highest Level": 0,
+        "Highest Level": 50,
         "Current Level": 0,
         "Ship Number": 10,
         "Player Hue": 0,

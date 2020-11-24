@@ -208,16 +208,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Physics",
-			"name": "Physics",
+			"id": "Persist",
+			"name": "Persist",
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "Persist",
-			"name": "Persist",
+			"id": "Physics",
+			"name": "Physics",
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
@@ -361,7 +361,8 @@
 							"Pickup_Points_Upgrade_Mega",
 							"Pickup_Points_Score_Big",
 							"Pickup_Points_Score_Huge",
-							"Pickup_Points_Score_Mega"
+							"Pickup_Points_Score_Mega",
+							"Pickup_NewWeapon"
 						],
 						"subfolders": [],
 						"name": "Interactable Objects"
@@ -497,7 +498,8 @@
 			"Asteroids",
 			"Pickups",
 			"Keys",
-			"Particle_EffectSprites"
+			"Particle_EffectSprites",
+			"MeshpointFam"
 		],
 		"subfolders": []
 	},
@@ -510,8 +512,27 @@
 		"subfolders": [
 			{
 				"items": [
+					"Tutorial",
 					"Level 1",
-					"Level 2"
+					"Level 2",
+					"Level 3",
+					"Level 4",
+					"Level 5",
+					"Level 6",
+					"Level 7",
+					"Level 8",
+					"Level 9",
+					"Level 10",
+					"Level 11",
+					"Level 12",
+					"Level 13",
+					"Level 14",
+					"Level 15",
+					"Level 16",
+					"Level 17",
+					"Level 18",
+					"Level 19",
+					"Level 20"
 				],
 				"subfolders": [],
 				"name": "Levels"
