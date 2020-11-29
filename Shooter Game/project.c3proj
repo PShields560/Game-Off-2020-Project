@@ -329,7 +329,8 @@
 								"items": [
 									"Boss_Controller",
 									"Enemy_Controller",
-									"EnemySpawner_SingleShot"
+									"EnemySpawner_SingleShot",
+									"EnemySpawner_Continuous"
 								],
 								"subfolders": [],
 								"name": "_CONTROLLERS"
@@ -362,7 +363,8 @@
 							"Pickup_Points_Score_Big",
 							"Pickup_Points_Score_Huge",
 							"Pickup_Points_Score_Mega",
-							"Pickup_NewWeapon"
+							"Pickup_NewWeapon",
+							"NoEnemyZone"
 						],
 						"subfolders": [],
 						"name": "Interactable Objects"
@@ -455,7 +457,8 @@
 			{
 				"items": [
 					"Camera",
-					"LEVEL_SETTINGS"
+					"LEVEL_SETTINGS",
+					"HazardController"
 				],
 				"subfolders": [],
 				"name": "_CONTROL OBJECTS"
@@ -829,6 +832,31 @@
 					"name": "UI Interactible Text Click.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 490859118209803
+				},
+				{
+					"name": "Player Bomb Explosion V2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 674116827284744
+				},
+				{
+					"name": "Enemy Shoot Bouncy Bombs.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 684764200914071
+				},
+				{
+					"name": "Enemy Shoot Machine Gun.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 548112596873746
+				},
+				{
+					"name": "Enemy Shoot Particle Shotgun.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 926006947864323
+				},
+				{
+					"name": "Enemy Shoot Seeking Darts.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 220058501339457
 				}
 			],
 			"subfolders": []
@@ -844,6 +872,31 @@
 					"name": "Level1_Loop.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 801604925237796
+				},
+				{
+					"name": "Boss1_Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 319789076150738
+				},
+				{
+					"name": "Boss2_Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 715434132692749
+				},
+				{
+					"name": "Level2_Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 941678705932506
+				},
+				{
+					"name": "Level3_Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 877380773743891
+				},
+				{
+					"name": "Level4_Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 643091405817788
 				}
 			],
 			"subfolders": []

@@ -1404,11 +1404,6 @@
 								"use-collision-cells": true
 							}
 						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
 						"Solid": {
 							"properties": {
 								"enabled": true,
@@ -1451,6 +1446,9 @@
 								"default-controls": false,
 								"enabled": true
 							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1752,6 +1750,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						}
 					},
@@ -7826,8 +7829,8 @@
 					"instanceVariables": {
 						"Index": 3,
 						"LevelName": "Level 3",
-						"Name": "",
-						"Description": "",
+						"Name": "The... THIRD level! (of the game)",
+						"Description": "Descriptionis are quite descriptive when you're trying to describe things, but when you're not... they're kinda useless. Good luck with the third level! :'D",
 						"Score": 0
 					},
 					"behaviors": {},
@@ -7861,8 +7864,8 @@
 					"instanceVariables": {
 						"Index": 4,
 						"LevelName": "Level 4",
-						"Name": "",
-						"Description": "",
+						"Name": "Fight Night",
+						"Description": "Everything is in space... it's always night! Also there are enemies that will try to kill you. If you haven't learned how to shoot by now, then you better figure it out.",
 						"Score": 0
 					},
 					"behaviors": {},
@@ -7896,8 +7899,8 @@
 					"instanceVariables": {
 						"Index": 5,
 						"LevelName": "Level 5",
-						"Name": "",
-						"Description": "",
+						"Name": "Purple People Eaters",
+						"Description": "The title has nothing to do with what's going to be in this level. Sadly, there are no purple people eaters in the game. There are more enemies in this level though... the enemies are probably not going away any time soon, so you'd better get used to them.",
 						"Score": 0
 					},
 					"behaviors": {},
@@ -7931,8 +7934,8 @@
 					"instanceVariables": {
 						"Index": 6,
 						"LevelName": "Level 6",
-						"Name": "",
-						"Description": "",
+						"Name": "Spikes, Spikes, and EVEN MORE SPIKES!!!",
+						"Description": "For once, there is an apt title and description for a level. You will encounter lots of pointy things here. I do not reccomend touching them.",
 						"Score": 0
 					},
 					"behaviors": {},
@@ -7966,8 +7969,8 @@
 					"instanceVariables": {
 						"Index": 7,
 						"LevelName": "Level 7",
-						"Name": "",
-						"Description": "",
+						"Name": "Video Game Physics",
+						"Description": "Did you take that class yet?",
 						"Score": 0
 					},
 					"behaviors": {},
@@ -8001,8 +8004,8 @@
 					"instanceVariables": {
 						"Index": 8,
 						"LevelName": "Level 8",
-						"Name": "",
-						"Description": "",
+						"Name": "Die. I want you dead.",
+						"Description": "We are not friends anymore. I'm going to kill you over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over and over.........",
 						"Score": 0
 					},
 					"behaviors": {},
@@ -8036,8 +8039,8 @@
 					"instanceVariables": {
 						"Index": 9,
 						"LevelName": "Level 9",
-						"Name": "",
-						"Description": "",
+						"Name": "The enemies are gone.",
+						"Description": "Forever! I promise... I won't try to kill you anymore if you didn't like the last level. I'll only be exceedingly nice to you from here on out. As a gesture of goodwill, this level is just a puzzle!",
 						"Score": 0
 					},
 					"behaviors": {},

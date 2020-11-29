@@ -88,11 +88,6 @@
 			"sid": 677313715025391
 		},
 		{
-			"behaviorId": "bound",
-			"name": "BoundToLayout",
-			"sid": 500540316060284
-		},
-		{
 			"behaviorId": "solid",
 			"name": "Solid",
 			"sid": 617416326022623
@@ -111,6 +106,11 @@
 			"behaviorId": "EightDir",
 			"name": "8Direction",
 			"sid": 576824990686254
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 979150575596980
 		}
 	],
 	"effectTypes": [],

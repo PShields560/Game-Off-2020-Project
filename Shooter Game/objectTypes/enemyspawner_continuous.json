@@ -1,0 +1,50 @@
+{
+	"name": "EnemySpawner_Continuous",
+	"plugin-id": "Sprite",
+	"sid": 108247095679878,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "EnemyType",
+			"type": "string",
+			"desc": "",
+			"sid": 571519176760914
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 615057777139835
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2828509,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 224220901647886,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

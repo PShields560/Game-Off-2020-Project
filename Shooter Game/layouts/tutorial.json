@@ -619,11 +619,6 @@
 								"use-collision-cells": true
 							}
 						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
 						"Solid": {
 							"properties": {
 								"enabled": true,
@@ -666,6 +661,9 @@
 								"default-controls": false,
 								"enabled": true
 							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -967,6 +965,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						}
 					},

@@ -5,7 +5,7 @@
 			"name": "BG_1",
 			"overriden": 1,
 			"instances": [],
-			"sid": 684817449376613,
+			"sid": 514949738039515,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -33,7 +33,7 @@
 			"name": "BG_2",
 			"overriden": 1,
 			"instances": [],
-			"sid": 251926773975330,
+			"sid": 549997387030137,
 			"effectTypes": [
 				{
 					"effectId": "glowhorizontal",
@@ -91,7 +91,7 @@
 			"name": "BG_3",
 			"overriden": 1,
 			"instances": [],
-			"sid": 854181193285135,
+			"sid": 668381088695287,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -119,7 +119,7 @@
 			"name": "BG_4",
 			"overriden": 1,
 			"instances": [],
-			"sid": 282322576097850,
+			"sid": 146473097921439,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -161,7 +161,7 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 857,
+					"uid": 1528,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -187,11 +187,11 @@
 					},
 					"ownData": {
 						"tilemapData": {
-							"width": 113,
-							"height": 88,
-							"max-width": 178,
-							"max-height": 149,
-							"data": "35,75x37,12x1,61x0,43,87x1,61x0,43,1,34,73x29,12x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,43,1,13,82x0,3x1,61x0,3x1,82x0,3x1,61x0,3x1,82x0,3x1,61x0,3x1,82x0,3x1,61x0,3x1,82x0,3x1,61x0,3x1,82x0,3x1,61x0,3x1,82x0,3x1,61x0,3x1,82x0,3x1,61x0,3x1,82x0,3x1,61x0,3x1,82x0,3x1,61x0,3x1,82x0,3x1,61x0,88x1,61x0,88x1,61x0,88x1,9746x0"
+							"width": 114,
+							"height": 89,
+							"max-width": 179,
+							"max-height": 150,
+							"data": "89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,61x0,89x1,9811x0"
 						},
 						"tile-width": 16,
 						"tile-height": 16,
@@ -203,8 +203,8 @@
 					"world": {
 						"x": -16,
 						"y": -16,
-						"width": 1808,
-						"height": 1408,
+						"width": 1824,
+						"height": 1424,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -217,7 +217,7 @@
 					}
 				}
 			],
-			"sid": 134594557417176,
+			"sid": 694829647734257,
 			"effectTypes": [
 				{
 					"effectId": "glowhorizontal",
@@ -289,7 +289,7 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 856,
+					"uid": 1527,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -350,7 +350,7 @@
 					}
 				}
 			],
-			"sid": 273064926812173,
+			"sid": 284448806141844,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -378,7 +378,7 @@
 			"name": "BG_Obj_3",
 			"overriden": 0,
 			"instances": [],
-			"sid": 814473168218304,
+			"sid": 529551327637822,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -415,7 +415,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 858,
+					"uid": 1529,
 					"instanceVariables": {},
 					"behaviors": {
 						"Pin": {
@@ -459,7 +459,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 859,
+					"uid": 1530,
 					"instanceVariables": {
 						"Bullet_Cooldown": 0.1,
 						"IsPowerActive": false,
@@ -545,7 +545,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 860,
+					"uid": 1531,
 					"instanceVariables": {},
 					"behaviors": {
 						"ScrollTo": {
@@ -585,7 +585,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 861,
+					"uid": 1532,
 					"instanceVariables": {
 						"EnemyType": "Blocker",
 						"Bullet_Cooldown": 0.5,
@@ -617,11 +617,6 @@
 								"range": 500,
 								"cone-of-view": 360,
 								"use-collision-cells": true
-							}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
 							}
 						},
 						"Solid": {
@@ -666,6 +661,9 @@
 								"default-controls": false,
 								"enabled": true
 							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -694,7 +692,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 862,
+					"uid": 1533,
 					"instanceVariables": {
 						"Health": 3
 					},
@@ -757,7 +755,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 863,
+					"uid": 1534,
 					"instanceVariables": {
 						"Health": 3
 					},
@@ -820,7 +818,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 864,
+					"uid": 1535,
 					"instanceVariables": {
 						"Health": 3
 					},
@@ -883,7 +881,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 865,
+					"uid": 1536,
 					"instanceVariables": {
 						"Health": 3
 					},
@@ -946,7 +944,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 866,
+					"uid": 1537,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -967,6 +965,11 @@
 								"angular-damping": 0.01,
 								"bullet": false,
 								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
 							}
 						}
 					},
@@ -996,7 +999,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 867,
+					"uid": 1538,
 					"instanceVariables": {
 						"IsTouchLock": true,
 						"IsBulletLock": false,
@@ -1051,7 +1054,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 868,
+					"uid": 1539,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1101,7 +1104,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 869,
+					"uid": 1540,
 					"instanceVariables": {
 						"EnemyCap": 30,
 						"EnemySpawn1": "Blocker",
@@ -1159,7 +1162,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 870,
+					"uid": 1541,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1188,7 +1191,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 871,
+					"uid": 1542,
 					"instanceVariables": {
 						"KeyID": 0,
 						"IsHold": false,
@@ -1239,7 +1242,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 872,
+					"uid": 1543,
 					"instanceVariables": {
 						"KeyID": 0,
 						"IsHold": false,
@@ -1290,7 +1293,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 873,
+					"uid": 1544,
 					"instanceVariables": {
 						"IsCollected": false,
 						"IsWeapon": false,
@@ -1356,7 +1359,7 @@
 					}
 				}
 			],
-			"sid": 262491531443343,
+			"sid": 716709674623188,
 			"effectTypes": [
 				{
 					"effectId": "glowhorizontal",
@@ -1414,7 +1417,7 @@
 			"name": "FG_Obj_1",
 			"overriden": 0,
 			"instances": [],
-			"sid": 275430895549031,
+			"sid": 660341908071552,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1442,7 +1445,7 @@
 			"name": "FG_Obj_2",
 			"overriden": 0,
 			"instances": [],
-			"sid": 385743062077614,
+			"sid": 473766774426098,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1470,7 +1473,7 @@
 			"name": "HUD_1",
 			"overriden": 1,
 			"instances": [],
-			"sid": 293643148996308,
+			"sid": 657251581898746,
 			"effectTypes": [
 				{
 					"effectId": "glowhorizontal",
@@ -1528,7 +1531,7 @@
 			"name": "HUD_2",
 			"overriden": 1,
 			"instances": [],
-			"sid": 170008131098790,
+			"sid": 838831356356937,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1556,7 +1559,7 @@
 			"name": "HUD_3",
 			"overriden": 1,
 			"instances": [],
-			"sid": 212827673083676,
+			"sid": 591565729331671,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1584,7 +1587,7 @@
 			"name": "HUD_4",
 			"overriden": 1,
 			"instances": [],
-			"sid": 909975788141357,
+			"sid": 484672898263987,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -1612,7 +1615,7 @@
 			"name": "UI_1",
 			"overriden": 1,
 			"instances": [],
-			"sid": 548545067699116,
+			"sid": 519146584565661,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -1640,7 +1643,7 @@
 			"name": "UI_2",
 			"overriden": 1,
 			"instances": [],
-			"sid": 461014692294871,
+			"sid": 200921999787033,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -1668,7 +1671,7 @@
 			"name": "UI_3",
 			"overriden": 1,
 			"instances": [],
-			"sid": 382628604552043,
+			"sid": 988684696930646,
 			"effectTypes": [
 				{
 					"effectId": "glowhorizontal",
@@ -1726,7 +1729,7 @@
 			"name": "UI_4",
 			"overriden": 1,
 			"instances": [],
-			"sid": 192710143473226,
+			"sid": 476252692083114,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -1754,7 +1757,7 @@
 			"name": "UI_5",
 			"overriden": 1,
 			"instances": [],
-			"sid": 825935845797368,
+			"sid": 206090619853938,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -1782,7 +1785,7 @@
 			"name": "UI_6",
 			"overriden": 1,
 			"instances": [],
-			"sid": 174148126120291,
+			"sid": 834247724981982,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -1810,7 +1813,7 @@
 			"name": "UI_7",
 			"overriden": 1,
 			"instances": [],
-			"sid": 262219262900335,
+			"sid": 559439704584520,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -1838,7 +1841,7 @@
 			"name": "UI_8",
 			"overriden": 1,
 			"instances": [],
-			"sid": 966513543225157,
+			"sid": 228046068295864,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -1866,7 +1869,7 @@
 			"name": "UI_9",
 			"overriden": 1,
 			"instances": [],
-			"sid": 933253249860185,
+			"sid": 467107636056632,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -1894,7 +1897,7 @@
 			"name": "UI_10",
 			"overriden": 1,
 			"instances": [],
-			"sid": 982601906782309,
+			"sid": 319082558267325,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -1922,7 +1925,7 @@
 			"name": "UI_11",
 			"overriden": 1,
 			"instances": [],
-			"sid": 377216942181929,
+			"sid": 745314367027375,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -1950,7 +1953,7 @@
 			"name": "UI_12",
 			"overriden": 1,
 			"instances": [],
-			"sid": 373667368030592,
+			"sid": 766373349928647,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -1978,7 +1981,7 @@
 			"name": "UI_13",
 			"overriden": 1,
 			"instances": [],
-			"sid": 873615750599761,
+			"sid": 286498145341900,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -2006,7 +2009,7 @@
 			"name": "UI_14",
 			"overriden": 1,
 			"instances": [],
-			"sid": 778836065681057,
+			"sid": 231409965154572,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -2034,7 +2037,7 @@
 			"name": "UI_15",
 			"overriden": 1,
 			"instances": [],
-			"sid": 413742957161312,
+			"sid": 384902740498423,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -2059,7 +2062,7 @@
 			"global": false
 		}
 	],
-	"sid": 230365210416835,
+	"sid": 286517255727351,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1800,
