@@ -36,3 +36,9 @@ Track: Level 5
 Key: F#m
 Bpm: 116
 Samplerate: 44100
+
+Track Boss 3
+Key: Em
+Bpm: 144
+Samplerate: 44100
+
