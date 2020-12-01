@@ -369,7 +369,33 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "Txt_UI",
-							"sid": 637622810159581,
+							"sid": 648931060906777,
+							"parameters": {
+								"instance-variable": "Tag",
+								"comparison": 0,
+								"value": "\"Upgrade Points\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Txt_UI",
+							"sid": 817688876635728,
+							"parameters": {
+								"text": "Data_Player.Get(\"Upgrade Points\")"
+							}
+						}
+					],
+					"sid": 874830210352569
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Txt_UI",
+							"sid": 924790176388049,
 							"parameters": {
 								"instance-variable": "Tag",
 								"comparison": 0,
@@ -381,13 +407,13 @@
 						{
 							"id": "set-text",
 							"objectClass": "Txt_UI",
-							"sid": 857686453433850,
+							"sid": 845881729988227,
 							"parameters": {
 								"text": "Data_Player.Get(\"HP\")"
 							}
 						}
 					],
-					"sid": 874830210352569
+					"sid": 580518834095015
 				},
 				{
 					"eventType": "block",

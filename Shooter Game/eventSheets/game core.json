@@ -1033,6 +1033,40 @@
 								}
 							],
 							"sid": 179098883411809
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-layer",
+									"objectClass": "Bullet_P_Icon",
+									"sid": 830362820959470,
+									"parameters": {
+										"layer": "L_HUD1"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Bullet_P_Icon",
+									"sid": 984217561266659,
+									"parameters": {
+										"comparison": 0,
+										"number": "Player.Weapon_CurrentWeaponNum"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Bullet_P_Icon",
+									"sid": 201185944162191,
+									"parameters": {
+										"frame-number": "Player.Weapon_CurrentWeaponNum"
+									}
+								}
+							],
+							"sid": 254172423185067
 						}
 					]
 				},
@@ -3069,10 +3103,10 @@
 																{
 																	"id": "set-instvar-value",
 																	"objectClass": "Player",
-																	"sid": 392506015761702,
+																	"sid": 488411402288384,
 																	"parameters": {
 																		"instance-variable": "Weapon_CurrentWeaponNum",
-																		"value": "5"
+																		"value": "4"
 																	}
 																}
 															],
@@ -3133,11 +3167,11 @@
 																{
 																	"id": "compare-instance-variable",
 																	"objectClass": "Player",
-																	"sid": 309315505824089,
+																	"sid": 891298783035744,
 																	"parameters": {
 																		"instance-variable": "Weapon_CurrentWeaponNum",
 																		"comparison": 0,
-																		"value": "5"
+																		"value": "4"
 																	}
 																}
 															],
@@ -3485,10 +3519,10 @@
 																{
 																	"id": "set-instvar-value",
 																	"objectClass": "Player",
-																	"sid": 747780258650770,
+																	"sid": 520282517883167,
 																	"parameters": {
 																		"instance-variable": "Weapon_CurrentWeaponNum",
-																		"value": "5"
+																		"value": "4"
 																	}
 																}
 															],
@@ -3549,11 +3583,11 @@
 																{
 																	"id": "compare-instance-variable",
 																	"objectClass": "Player",
-																	"sid": 244780092580932,
+																	"sid": 402605677098085,
 																	"parameters": {
 																		"instance-variable": "Weapon_CurrentWeaponNum",
 																		"comparison": 0,
-																		"value": "5"
+																		"value": "4"
 																	}
 																}
 															],
@@ -3766,6 +3800,7 @@
 											],
 											"actions": [],
 											"sid": 665031786094826,
+											"disabled": true,
 											"children": [
 												{
 													"eventType": "block",
@@ -3791,6 +3826,7 @@
 														}
 													],
 													"sid": 697404029266367,
+													"disabled": true,
 													"children": [
 														{
 															"eventType": "block",
@@ -3816,7 +3852,8 @@
 																	}
 																}
 															],
-															"sid": 950705332853648
+															"sid": 950705332853648,
+															"disabled": true
 														}
 													]
 												}
@@ -3843,7 +3880,8 @@
 													]
 												}
 											],
-											"sid": 613667782169799
+											"sid": 613667782169799,
+											"disabled": true
 										},
 										{
 											"eventType": "block",
@@ -5898,14 +5936,6 @@
 												{
 													"callFunction": "Player Deactivate Jump Jet",
 													"sid": 847778665115273
-												},
-												{
-													"id": "stop",
-													"objectClass": "Audio",
-													"sid": 399488718860880,
-													"parameters": {
-														"tag": "\"SFX Player Laser\""
-													}
 												}
 											],
 											"sid": 767542517034539,
@@ -6011,6 +6041,14 @@
 																}
 															],
 															"actions": [
+																{
+																	"id": "stop",
+																	"objectClass": "Audio",
+																	"sid": 825739106269415,
+																	"parameters": {
+																		"tag": "\"SFX Player Laser\""
+																	}
+																},
 																{
 																	"id": "play",
 																	"objectClass": "Audio",
@@ -6452,6 +6490,60 @@
 												}
 											],
 											"sid": 315859582694215
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Player",
+													"sid": 618359294492097,
+													"parameters": {
+														"instance-variable": "Weapon_CurrentWeaponNum",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 536690383087482,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 981301092349128,
+															"parameters": {
+																"variable": "Option_IsSFXon"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "stop",
+															"objectClass": "Audio",
+															"sid": 707582700707289,
+															"parameters": {
+																"tag": "\"SFX Player Laser\""
+															}
+														},
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 605764334303486,
+															"parameters": {
+																"audio-file": "Player Shoot Photon Laser RELEASE",
+																"loop": "not-looping",
+																"volume": "0",
+																"tag-optional": "\"SFX\""
+															}
+														}
+													],
+													"sid": 619751299449321
+												}
+											]
 										}
 									],
 									"isOrBlock": true
@@ -6480,7 +6572,8 @@
 									}
 								}
 							],
-							"sid": 888346991031743
+							"sid": 888346991031743,
+							"disabled": true
 						}
 					],
 					"sid": 175016874707121
@@ -14646,7 +14739,8 @@
 													}
 												}
 											],
-											"sid": 507768426081327
+											"sid": 507768426081327,
+											"disabled": true
 										}
 									]
 								}
@@ -14929,7 +15023,8 @@
 													}
 												}
 											],
-											"sid": 588584494963106
+											"sid": 588584494963106,
+											"disabled": true
 										}
 									]
 								}
@@ -15212,7 +15307,8 @@
 													}
 												}
 											],
-											"sid": 337683387981257
+											"sid": 337683387981257,
+											"disabled": true
 										}
 									]
 								}
